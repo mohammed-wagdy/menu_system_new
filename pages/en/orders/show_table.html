@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="rtl">
+<html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
 
 <head>
@@ -9,7 +9,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>جميع الطلبات</title>
+    <title>عرض الطلبات علي الطاولات</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
@@ -42,7 +42,7 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css/custom.css">
     <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../../../assets/css.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/custom.css">
     <!-- END: Custom CSS-->
 
 </head>
@@ -419,10 +419,10 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">الطلبات</h2>
+                            <h2 class="content-header-title float-left mb-0">الطاولات</h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="orders.html">كل الطلبات</a>
+                                    <li class="breadcrumb-item"><a href="orders.html">تفاصيل الطاولات</a>
                                     </li>
                                 </ol>
                             </div>
@@ -433,32 +433,298 @@
             </div>
             <div class="content-body">
 
-                <a type="button" class="btn btn-primary waves-effect waves-float waves-light mb-2 mt-3" href="add_otder.html">إضافة طلب جديد</a>
+               <div class="row">
+                  
 
-              <!-- Basic table -->
-              <section id="basic-datatable">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <table class="datatables-basic table">
-                                <thead>
+    
+
+                   <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">سجل الطلبات التي تمت علي الطاولة</h4>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="thead-dark">
                                     <tr>
-                                        <th>رقم الفاتورة</th>
-                                        <th>رقم الطابور</th>
-                                        <th>الفرع</th>
-                                        <th>العميل</th>
-                                        <th>النوع</th>
-                                        <th>الحالة</th>
-                                        <th>وقت الطلب</th>
+                                        <th>رقم الطاولة</th>
+                                        <th>رقم الطلب</th>
+                                        <th>نوع الطلب</th>
+                                        <th>تاريخ الطلب</th>
+                                        <th>إسم المنتج</th>
+                                        <th>العدد</th>
+                                        <th>السعر</th>
+                                        <th>الضريبة</th>
+                                        <th>نسبة الخصم</th>
+                                        <th>طريقة الدفع</th>
                                     </tr>
                                 </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> الأستلام من الفرع</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">20/12/2022</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">فته شاورما سوري</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> x5</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 25 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 2.5 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 10%</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> الدفع عند الإستلام</span>
+                                        </td>
+                                    </tr>       
+                                    <tr>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> الأستلام من الفرع</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">20/12/2022</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">فته شاورما سوري</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> x5</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 25 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 2.5 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 10%</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> بطاقة إئتمانية</span>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> الأستلام من الفرع</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">20/12/2022</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">فته شاورما سوري</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> x5</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 25 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 2.5 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 10%</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> الدفع عند الإستلام</span>
+                                        </td>
+                                    </tr>       
+                                    <tr>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> الأستلام من الفرع</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">20/12/2022</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">فته شاورما سوري</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> x5</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 25 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 2.5 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 10%</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> بطاقة إئتمانية</span>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> الأستلام من الفرع</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">20/12/2022</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">فته شاورما سوري</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> x5</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 25 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 2.5 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 10%</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> الدفع عند الإستلام</span>
+                                        </td>
+                                    </tr>       
+                                    <tr>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> الأستلام من الفرع</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">20/12/2022</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">فته شاورما سوري</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> x5</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 25 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 2.5 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 10%</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> بطاقة إئتمانية</span>
+                                        </td>
+                                    </tr> 
+                                     <tr>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> الأستلام من الفرع</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">20/12/2022</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">فته شاورما سوري</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> x5</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 25 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 2.5 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 10%</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> الدفع عند الإستلام</span>
+                                        </td>
+                                    </tr>       
+                                    <tr>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">12345</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> الأستلام من الفرع</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">20/12/2022</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold">فته شاورما سوري</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> x5</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 25 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 2.5 رس</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> 10%</span>
+                                        </td>
+                                        <td>
+                                            <span class="font-weight-bold"> بطاقة إئتمانية</span>
+                                        </td>
+                                    </tr>           
+                                </tbody>
                             </table>
                         </div>
                     </div>
-                </div>
-            
-            </section>
-            <!--/ Basic table -->
+                   </div>
+                  
+               </div>
+               <button type="button" class="btn btn-dark waves-effect waves-float waves-light">طباعة</button>
+               <button type="button" class="btn btn-primary waves-effect waves-float waves-light">PDF</button>
             </div>
         </div>
     </div>
