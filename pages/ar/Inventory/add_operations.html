@@ -9,7 +9,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>إضافة مادة جديدة</title>
+    <title>إنشاء عملية جديدة</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
@@ -448,10 +448,10 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">المخزون</h2>
+                            <h2 class="content-header-title float-left mb-0">العمليات</h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="orders.html">إضافة مادة جديدة</a>
+                                    <li class="breadcrumb-item"><a href="orders.html">إضافة عملية جديدة</a>
                                     </li>
                                 </ol>
                             </div>
@@ -465,96 +465,67 @@
                     <div class="col-md-12 col-12">
                       <div class="card">
                         <div class="card-header">
-                          <h4 class="card-title">يمكنك الأن إضافة مادة جديدة </h4>
+                          <h4 class="card-title"> البيانات الأساسية </h4>
                         </div>
                         <div class="card-body">
                           <form class="form form-vertical">
                             <div class="row">
+                             
+                                <div class="col-12">
+                                    <div class="form-group">
+                                      <label for="email-id-vertical">تاريخ العمل</label>
+                                      <p class="lead">20/10/2020</p>
+                                    </div>
+                                  </div>
+
                               <div class="col-12">
                                 <div class="form-group">
-                                  <label for="first-name-vertical">الأسم (الإنجليزية)</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="أدخل الأسم باللغة الإنجليزية">
-                                                             
+                                  <label for="email-id-vertical">الفرع</label>
+                                  <input type="text" class="form-control" id="basicInput" placeholder="إدخل إسم الفرع">
                                 </div>
                               </div>
-                              
+
                               <div class="col-12">
                                 <div class="form-group">
-                                  <label for="email-id-vertical">الأسم (العربية)</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="أدخل الإسم باللغة العربية">
+                                  <label for="email-id-vertical">المورد</label>
+                                  <input type="text" class="form-control" id="basicInput" placeholder="إدخل إسم المورد">
+                                </div>
+                              </div>
+
+
+                              <div class="col-12">
+                                <div class="form-group">
+                                  <label for="email-id-vertical">رقم الفاتورة</label>
+                                  <input type="text" class="form-control" id="basicInput" placeholder="إدخل رقم الفاتورة">
+                                </div>
+                              </div>
+
+
+                              <div class="col-12">
+                                <div class="form-group">
+                                  <label for="email-id-vertical">تاريخ الفاتورة</label>
+                                  <input type="text" id="fp-default" class="form-control flatpickr-basic" placeholder="YYYY-MM-DD" />                                </div>
+                                </div>
+                              
+
+                              <div class="col-12">
+                                <div class="form-group">
+                                  <label for="email-id-vertical"> الضريبة المدفوعة</label>
+                                  <input type="number" class="form-control" id="basicInput" placeholder="إدخل الضريبة المدفوعة">
+                                </div>
+                              </div>
+
+                              <div class="col-12">
+                                <div class="form-group">
+                                  <label for="email-id-vertical">ملاحظات</label>
+                                  <textarea name="" id="" cols="20" rows="5"  class="form-control" placeholder="إدخل إسم الفرع"></textarea>
                                 </div>
                               </div>
                             
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="email-id-vertical"> النوع</label>
-                                  <select class="select2 form-control" id="default-select_2">
-                                    <option value="square"> نوع المادة 1 </option>
-                                    <option value="rectangle">نوع المادة 2</option>
-                                </select>
-                                </div>
-                              </div>
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="email-id-vertical">كود التعريف</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="أدخل كود التعريف">
-                                </div>
-                              </div>
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="email-id-vertical">الباركود</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="أدخل البار كود ">
-                                </div>
-                              </div>
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="email-id-vertical">الوسوم</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="أدخل الوسوم ">
-                                </div>
-                              </div>
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="email-id-vertical">وحدة الشراء</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="أدخل وحدة الشراء ">
-                                </div>
-                              </div>
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="email-id-vertical">وحدة التخزين</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="أدخل وحدة التخزين  ">
-                                </div>
-                              </div>
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="email-id-vertical">وحدة الوصفة</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="أدخل الوصفة   ">
-                                </div>
-                              </div>
+                        
                         
                               <div class="col-12">
-                                <div class="form-group">
-                                  <label for="email-id-vertical"> معامل تحويل الوحدة بين التخزين والشراء</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="أدخل معامل تخزين الوحدة">
-                                </div>
-                              </div>
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="email-id-vertical"> معامل تحويل الوحدة بين التخزين الوصفة</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="أدخل معامل تخزين الوحدة">
-                                </div>
-                              </div>
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="email-id-vertical"> نوع التكلفة</label>
-                                  <select class="select2 form-control" id="default-select">
-                                    <option value="square"> نوع التكلفة 1 </option>
-                                    <option value="rectangle">نوع التكلفة 2</option>
-                                </select>
-                                </div>
-                              </div>
-                        
-                              <div class="col-12">
-                                <button type="reset" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ المادة</button>
+                                <button type="reset" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ </button>
                               </div>
                             </div>
                           </form>
@@ -566,135 +537,99 @@
 
                   <div class="row">
                     <div class="col-md-12 col-12">
-                      <div class="card">
-                        <div class="card-header">
-                          <h4 class="card-title">مستويات التنبيه للمخزون</h4>
-                        </div>
-                        <div class="card-body">
-                          <form class="form form-vertical">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="first-name-vertical">أدني مستوي للفروع</label>
-                                  <input type="number" class="form-control" id="basicInput" placeholder="أدخل أدني مستوي للفروع بالكيلو جرامات">
-                                                             
+                        <form class="form form-vertical">
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">وحدات العملية</h4>
                                 </div>
-                              </div>
-                              
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="first-name-vertical">أدني مستوي للمخازن</label>
-                                  <input type="number" class="form-control" id="basicInput" placeholder="أدخل أدني مستوي للمخازن بالكيلو جرامات">
-                                                             
-                                </div>
-                              </div>
-
-
-
-
-
-
-
-
-
-                              <div class="col-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h4 class="card-title">المستويات المخصصة</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <button type="button" class="btn btn-outline-primary waves-effect" data-toggle="modal" data-target="#default">
-                                           إضافة جديد
-                                        </button>
-                                        <div class="modal fade text-left" id="default" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h4 class="modal-title" id="myModalLabel1">أضافة المستويات المتخصصة</h4>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">×</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                       <form action="">
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <div class="form-group">
-                                                                    <label for="first-name-vertical">أسم الفرع</label>
-                                                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل أسم الفرع">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="col-12">
-                                                                <div class="form-group">
-                                                                    <label for="first-name-vertical">الحد الأدني للفرع</label>
-                                                                    <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الحد الأدني للفرع بالجرامات">
-                                                                </div>
+                                <div class="card-body">
+                                    <button type="button" class="btn btn-outline-primary waves-effect mb-2" data-toggle="modal" data-target="#default">
+                                       إضافة جديد
+                                    </button>
+                                    <div class="modal fade text-left" id="default" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title" id="myModalLabel1"> إنشاء وحدة جديدة</h4>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                   <form action="">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <label for="first-name-vertical">الوحدة</label>
+                                                                <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل أسم الوحدة">
                                                             </div>
                                                         </div>
-                                                       </form>
+
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <label for="first-name-vertical">  الكمية</label>
+                                                                <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالكيلو جرامات">
+                                                            </div>
+                                                        </div>
+
+                                                        
+                                                        <div class="col-12">
+                                                          <div class="form-group">
+                                                              <label for="first-name-vertical">  الكمية</label>
+                                                              <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالجرامات">
+                                                          </div>
+                                                      </div>
+
+                                                      <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label for="first-name-vertical">  التكلفة</label>
+                                                            <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل التكلفة">
+                                                        </div>
                                                     </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
+
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label for="first-name-vertical">  Unit Cost</label>
+                                                            <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="">
+                                                        </div>
                                                     </div>
+
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                          <label for="email-id-vertical">تاريخ إنتهاء الصلاحية</label>
+                                                          <input type="text" id="fp-default" class="form-control flatpickr-basic" placeholder="YYYY-MM-DD" />                                </div>
+                                                        </div>
+                                                    </div>
+                                                   </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
+
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class="thead-dark">
                                                 <tr>
-                                                    <th>الفرع</th>
-                                                    <th>أدني مستوي</th>
-                                                    <th>العمليات</th>
+                                                    <th>#</th>
+                                                    <th>الأسم</th>
+                                                    <th>الكمية</th>
+                                                    <th>التكلفة</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
+                                                  <td>1</td>
                                                     <td>
                                                         فرع مدينة جدة
                                                     </td>
                                                     <td>15</td>
                                                     <td>
-                                                        <button type="reset" class="btn btn-info waves-effect waves-float waves-light" data-toggle="modal" data-target="#default_2">تعديل</button>
-                                                        <button type="reset" class="btn btn-danger waves-effect waves-float waves-light">حذف</button>
-
-
-                                                        <div class="modal fade text-left" id="default_2" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
-                                                            <div class="modal-dialog" role="document">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header">
-                                                                        <h4 class="modal-title" id="myModalLabel1">تعديل المستويات المتخصصة</h4>
-                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                            <span aria-hidden="true">×</span>
-                                                                        </button>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                       <form action="">
-                                                                        <div class="row">
-                                                                            <div class="col-12">
-                                                                                <div class="form-group">
-                                                                                    <label for="first-name-vertical">أسم الفرع</label>
-                                                                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل أسم الفرع">
-                                                                                </div>
-                                                                            </div>
-                
-                                                                            <div class="col-12">
-                                                                                <div class="form-group">
-                                                                                    <label for="first-name-vertical">الحد الأدني للفرع</label>
-                                                                                    <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الحد الأدني للفرع بالجرامات">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                       </form>
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                       232
                                                     </td>
                                                 </tr>
                                              
@@ -703,21 +638,20 @@
                                         </table>
                                     </div>
                                   
-                                    
+                                    <div class="col-12">
+                                        <button type="reset" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ</button>
+                                      </div>
                                 </div>
+                                
                             </div>
 
 
 
-                        
-                        
-                              <div class="col-12">
-                                <button type="reset" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ</button>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
+                      
+                            
+                        </form>
+                          
+                          </div>
                     </div>
                   </div>
             </div>
@@ -772,6 +706,8 @@
 
  <!-- BEGIN: Page JS-->
  <script src="../../../app-assets/js/scripts/forms/form-select2.js"></script>
+ <script src="../../../app-assets/js/scripts/forms/pickers/form-pickers.js"></script> 
+ <script src="../../../app-assets/js/scripts/forms/form-input-mask.js"></script>
  <!-- END: Page JS-->
 
 <script>
