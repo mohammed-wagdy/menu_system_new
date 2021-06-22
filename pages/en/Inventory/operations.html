@@ -9,7 +9,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>جميع المواد</title>
+    <title>العمليات</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
@@ -448,10 +448,10 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">المخزون</h2>
+                            <h2 class="content-header-title float-left mb-0">العمليات</h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="orders.html">المواد</a>
+                                    <li class="breadcrumb-item"><a href="orders.html">قائمة العمليات</a>
                                     </li>
                                 </ol>
                             </div>
@@ -462,8 +462,17 @@
             </div>
             <div class="content-body">
 
-                <a type="button" class="btn btn-primary waves-effect waves-float waves-light mb-2 mt-3" href="add_material.html">إضافة مادة جديدة</a>
-
+                <div class="btn-group mb-2">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        إضافة جديد
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="javascript:void(0);">إنشاء</a>
+                        <a class="dropdown-item" href="javascript:void(0);">تحويل</a>
+                        <a class="dropdown-item" href="javascript:void(0);">تالف</a>
+                    </div>
+                </div>
+                
               <!-- Basic table -->
               <section id="basic-datatable">
                 <div class="row">
@@ -472,10 +481,11 @@
                             <table class="datatables-basic table">
                                 <thead>
                                     <tr>
-                                        <th>الكود</th>
-                                        <th>أسم المادة</th>
-                                        <th>النوع</th>
-                                        <th>الإجراءات</th>
+                                        <th>الرقم المرجعي</th>
+                                        <th>تاريخ العمل</th>
+                                        <th>الفرع</th>
+                                        <th>المستخدم</th>
+                                        <th>ملاحظات</th>
                                     </tr>
                                 </thead>
                             </table>
