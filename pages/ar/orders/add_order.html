@@ -481,10 +481,26 @@
                     <div class="bs-stepper-content">
                         <!-- Checkout Place order starts -->
                         <div id="step-address" class="content">
-                            <div id="place-order" class="list-view product-checkout">
+
+
+                            <div class="shuffle_buttons">
+                                <button type="button"  data-mixitup-control data-filter="all" >الكل</button>
+                                <button type="button"  data-mixitup-control  data-filter=".category-a">الفطور</button>
+                                <button type="button"  data-mixitup-control  data-filter=".category-b">وجبات الغداء</button>
+                                <button type="button"  data-mixitup-control  data-filter=".category-c">وجبات العشاء</button>
+                                <button type="button"  data-mixitup-control  data-filter=".category-d">المشروبات</button>
+                                <button type="button"  data-mixitup-control  data-filter=".category-e">الحلويات</button>
+                                <button type="button"   data-mixitup-control data-filter=".category-f">العروض</button>
+                                <button type="button"  data-mixitup-control  data-filter=".category-g">الأكلات المميزة</button>
+                               </div>
+
+                          
+
+
+                            <div id="place-order" class="list-view product-checkout myContainer">
                                 <!-- Checkout Place Order Left starts -->
                                 <div class="checkout-items">
-                                    <div class="card ecommerce-card">
+                                    <div class="card ecommerce-card mix category-a">
                                         <div class="item-img">
                                             <a href="app-ecommerce-details.html">
                                                 <img src="../../../app-assets/images/pages/eCommerce/1.png" alt="img-placeholder" />
@@ -525,9 +541,70 @@
                                             <button type="button" class="btn btn-primary btn-cart move-cart">
                                                 <span class="text-truncate">إضافة المنتج</span>
                                             </button>
+                                            <button type="button" class="btn btn-outline-primary mt-1" data-toggle="modal" data-target="#default">
+                                                إضافات
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title" id="myModalLabel1">أختر إضافات وحجم الوجبة</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          
+                                                            <div>
+                                                                <label>الحجم</label>
+                                                                <div class="form-group">
+                                                                    <select class="select2 form-control" id="default-select_6">
+                                                                        <option value="square">صغير جدا</option>
+                                                                        <option value="rectangle">صغير</option>
+                                                                        <option value="rombo">وسط</option>
+                                                                        <option value="romboid">عادي</option>
+                                                                        <option value="trapeze">كبير</option>
+                                                                        <option value="traible">كبير جدا</option>
+                                                                        <option value="polygon">أكس لارج</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Multiple -->
+                                                            <div class="mb-1">
+                                                                <label style="font-weight: 500;">الإضافات</label>
+                                                                <select class="select2 form-control" multiple>
+                                                                
+                                                                    <optgroup label="الإضافات">
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                    </optgroup>
+                                                                
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary" data-dismiss="modal">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card ecommerce-card">
+                                    </div> 
+                                    <div class="card ecommerce-card mix category-b">
                                         <div class="item-img">
                                             <a href="app-ecommerce-details.html">
                                                 <img src="../../../app-assets/images/pages/eCommerce/1.png" alt="img-placeholder" />
@@ -568,9 +645,70 @@
                                             <button type="button" class="btn btn-primary btn-cart move-cart">
                                                 <span class="text-truncate">إضافة المنتج</span>
                                             </button>
+                                            <button type="button" class="btn btn-outline-primary mt-1" data-toggle="modal" data-target="#default">
+                                                إضافات
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title" id="myModalLabel1">أختر إضافات وحجم الوجبة</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          
+                                                            <div>
+                                                                <label>الحجم</label>
+                                                                <div class="form-group">
+                                                                    <select class="select2 form-control" id="default-select_6">
+                                                                        <option value="square">صغير جدا</option>
+                                                                        <option value="rectangle">صغير</option>
+                                                                        <option value="rombo">وسط</option>
+                                                                        <option value="romboid">عادي</option>
+                                                                        <option value="trapeze">كبير</option>
+                                                                        <option value="traible">كبير جدا</option>
+                                                                        <option value="polygon">أكس لارج</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Multiple -->
+                                                            <div class="mb-1">
+                                                                <label style="font-weight: 500;">الإضافات</label>
+                                                                <select class="select2 form-control" multiple>
+                                                                
+                                                                    <optgroup label="الإضافات">
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                    </optgroup>
+                                                                
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary" data-dismiss="modal">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card ecommerce-card">
+                                    </div>   
+                                    <div class="card ecommerce-card mix category-c">
                                         <div class="item-img">
                                             <a href="app-ecommerce-details.html">
                                                 <img src="../../../app-assets/images/pages/eCommerce/1.png" alt="img-placeholder" />
@@ -611,9 +749,70 @@
                                             <button type="button" class="btn btn-primary btn-cart move-cart">
                                                 <span class="text-truncate">إضافة المنتج</span>
                                             </button>
+                                            <button type="button" class="btn btn-outline-primary mt-1" data-toggle="modal" data-target="#default">
+                                                إضافات
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title" id="myModalLabel1">أختر إضافات وحجم الوجبة</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          
+                                                            <div>
+                                                                <label>الحجم</label>
+                                                                <div class="form-group">
+                                                                    <select class="select2 form-control" id="default-select_6">
+                                                                        <option value="square">صغير جدا</option>
+                                                                        <option value="rectangle">صغير</option>
+                                                                        <option value="rombo">وسط</option>
+                                                                        <option value="romboid">عادي</option>
+                                                                        <option value="trapeze">كبير</option>
+                                                                        <option value="traible">كبير جدا</option>
+                                                                        <option value="polygon">أكس لارج</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Multiple -->
+                                                            <div class="mb-1">
+                                                                <label style="font-weight: 500;">الإضافات</label>
+                                                                <select class="select2 form-control" multiple>
+                                                                
+                                                                    <optgroup label="الإضافات">
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                    </optgroup>
+                                                                
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary" data-dismiss="modal">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card ecommerce-card">
+                                    </div> 
+                                    <div class="card ecommerce-card mix category-d">
                                         <div class="item-img">
                                             <a href="app-ecommerce-details.html">
                                                 <img src="../../../app-assets/images/pages/eCommerce/1.png" alt="img-placeholder" />
@@ -654,9 +853,70 @@
                                             <button type="button" class="btn btn-primary btn-cart move-cart">
                                                 <span class="text-truncate">إضافة المنتج</span>
                                             </button>
+                                            <button type="button" class="btn btn-outline-primary mt-1" data-toggle="modal" data-target="#default">
+                                                إضافات
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title" id="myModalLabel1">أختر إضافات وحجم الوجبة</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          
+                                                            <div>
+                                                                <label>الحجم</label>
+                                                                <div class="form-group">
+                                                                    <select class="select2 form-control" id="default-select_6">
+                                                                        <option value="square">صغير جدا</option>
+                                                                        <option value="rectangle">صغير</option>
+                                                                        <option value="rombo">وسط</option>
+                                                                        <option value="romboid">عادي</option>
+                                                                        <option value="trapeze">كبير</option>
+                                                                        <option value="traible">كبير جدا</option>
+                                                                        <option value="polygon">أكس لارج</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Multiple -->
+                                                            <div class="mb-1">
+                                                                <label style="font-weight: 500;">الإضافات</label>
+                                                                <select class="select2 form-control" multiple>
+                                                                
+                                                                    <optgroup label="الإضافات">
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                    </optgroup>
+                                                                
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary" data-dismiss="modal">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card ecommerce-card">
+                                    </div>  
+                                    <div class="card ecommerce-card mix category-e">
                                         <div class="item-img">
                                             <a href="app-ecommerce-details.html">
                                                 <img src="../../../app-assets/images/pages/eCommerce/1.png" alt="img-placeholder" />
@@ -697,9 +957,70 @@
                                             <button type="button" class="btn btn-primary btn-cart move-cart">
                                                 <span class="text-truncate">إضافة المنتج</span>
                                             </button>
+                                            <button type="button" class="btn btn-outline-primary mt-1" data-toggle="modal" data-target="#default">
+                                                إضافات
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title" id="myModalLabel1">أختر إضافات وحجم الوجبة</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          
+                                                            <div>
+                                                                <label>الحجم</label>
+                                                                <div class="form-group">
+                                                                    <select class="select2 form-control" id="default-select_6">
+                                                                        <option value="square">صغير جدا</option>
+                                                                        <option value="rectangle">صغير</option>
+                                                                        <option value="rombo">وسط</option>
+                                                                        <option value="romboid">عادي</option>
+                                                                        <option value="trapeze">كبير</option>
+                                                                        <option value="traible">كبير جدا</option>
+                                                                        <option value="polygon">أكس لارج</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Multiple -->
+                                                            <div class="mb-1">
+                                                                <label style="font-weight: 500;">الإضافات</label>
+                                                                <select class="select2 form-control" multiple>
+                                                                
+                                                                    <optgroup label="الإضافات">
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                    </optgroup>
+                                                                
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary" data-dismiss="modal">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card ecommerce-card">
+                                    </div> 
+                                    <div class="card ecommerce-card mix category-f">
                                         <div class="item-img">
                                             <a href="app-ecommerce-details.html">
                                                 <img src="../../../app-assets/images/pages/eCommerce/1.png" alt="img-placeholder" />
@@ -740,9 +1061,70 @@
                                             <button type="button" class="btn btn-primary btn-cart move-cart">
                                                 <span class="text-truncate">إضافة المنتج</span>
                                             </button>
+                                            <button type="button" class="btn btn-outline-primary mt-1" data-toggle="modal" data-target="#default">
+                                                إضافات
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title" id="myModalLabel1">أختر إضافات وحجم الوجبة</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          
+                                                            <div>
+                                                                <label>الحجم</label>
+                                                                <div class="form-group">
+                                                                    <select class="select2 form-control" id="default-select_6">
+                                                                        <option value="square">صغير جدا</option>
+                                                                        <option value="rectangle">صغير</option>
+                                                                        <option value="rombo">وسط</option>
+                                                                        <option value="romboid">عادي</option>
+                                                                        <option value="trapeze">كبير</option>
+                                                                        <option value="traible">كبير جدا</option>
+                                                                        <option value="polygon">أكس لارج</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Multiple -->
+                                                            <div class="mb-1">
+                                                                <label style="font-weight: 500;">الإضافات</label>
+                                                                <select class="select2 form-control" multiple>
+                                                                
+                                                                    <optgroup label="الإضافات">
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                    </optgroup>
+                                                                
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary" data-dismiss="modal">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card ecommerce-card">
+                                    </div>   
+                                    <div class="card ecommerce-card mix category-g">
                                         <div class="item-img">
                                             <a href="app-ecommerce-details.html">
                                                 <img src="../../../app-assets/images/pages/eCommerce/1.png" alt="img-placeholder" />
@@ -783,9 +1165,70 @@
                                             <button type="button" class="btn btn-primary btn-cart move-cart">
                                                 <span class="text-truncate">إضافة المنتج</span>
                                             </button>
+                                            <button type="button" class="btn btn-outline-primary mt-1" data-toggle="modal" data-target="#default">
+                                                إضافات
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title" id="myModalLabel1">أختر إضافات وحجم الوجبة</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          
+                                                            <div>
+                                                                <label>الحجم</label>
+                                                                <div class="form-group">
+                                                                    <select class="select2 form-control" id="default-select_6">
+                                                                        <option value="square">صغير جدا</option>
+                                                                        <option value="rectangle">صغير</option>
+                                                                        <option value="rombo">وسط</option>
+                                                                        <option value="romboid">عادي</option>
+                                                                        <option value="trapeze">كبير</option>
+                                                                        <option value="traible">كبير جدا</option>
+                                                                        <option value="polygon">أكس لارج</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Multiple -->
+                                                            <div class="mb-1">
+                                                                <label style="font-weight: 500;">الإضافات</label>
+                                                                <select class="select2 form-control" multiple>
+                                                                
+                                                                    <optgroup label="الإضافات">
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                    </optgroup>
+                                                                
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary" data-dismiss="modal">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card ecommerce-card">
+                                    </div> 
+                                    <div class="card ecommerce-card mix category-a">
                                         <div class="item-img">
                                             <a href="app-ecommerce-details.html">
                                                 <img src="../../../app-assets/images/pages/eCommerce/1.png" alt="img-placeholder" />
@@ -826,9 +1269,69 @@
                                             <button type="button" class="btn btn-primary btn-cart move-cart">
                                                 <span class="text-truncate">إضافة المنتج</span>
                                             </button>
+                                            <button type="button" class="btn btn-outline-primary mt-1" data-toggle="modal" data-target="#default">
+                                                إضافات
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title" id="myModalLabel1">أختر إضافات وحجم الوجبة</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          
+                                                            <div>
+                                                                <label>الحجم</label>
+                                                                <div class="form-group">
+                                                                    <select class="select2 form-control" id="default-select_6">
+                                                                        <option value="square">صغير جدا</option>
+                                                                        <option value="rectangle">صغير</option>
+                                                                        <option value="rombo">وسط</option>
+                                                                        <option value="romboid">عادي</option>
+                                                                        <option value="trapeze">كبير</option>
+                                                                        <option value="traible">كبير جدا</option>
+                                                                        <option value="polygon">أكس لارج</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Multiple -->
+                                                            <div class="mb-1">
+                                                                <label style="font-weight: 500;">الإضافات</label>
+                                                                <select class="select2 form-control" multiple>
+                                                                
+                                                                    <optgroup label="الإضافات">
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                        <option value="AL">مايونيز</option>
+                                                                        <option value="AR">كاتشب</option>
+                                                                        <option value="IL">فلفل</option>
+                                                                        <option value="IA">ملح</option>
+                                                                        <option value="KS">شنطة</option>
+                                                                        <option value="KY">صوص</option>
+                                                                        <option value="LA">ملح</option>
+                                                                    </optgroup>
+                                                                
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary" data-dismiss="modal">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                  
+                                    </div>          
                                 </div>
                                 <!-- Checkout Place Order Left ends -->
 
@@ -1099,6 +1602,7 @@
 
      <!-- BEGIN: Page JS-->
  <script src="../../../app-assets/js/scripts/forms/form-select2.js"></script>
+ <script src="../../../assets/js/mixitup.min.js"></script>
  <!-- END: Page JS-->
 
     <script>
@@ -1109,6 +1613,15 @@
                     height: 14
                 });
             }
+        });
+    </script>
+    <script>
+        var containerEl = document.querySelector('.myContainer');
+
+     mixitup(containerEl, {
+        selectors: {
+            control: '[data-mixitup-control]'
+        }
         })
     </script>
 </body>

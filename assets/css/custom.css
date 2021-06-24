@@ -3,3 +3,19 @@
 body , html , .navigation, .navigation-header span {
     font-family: 'Tajawal', sans-serif;
 }
+
+
+.shuffle_buttons {
+    margin-top: 25px !important;
+}
+.shuffle_buttons button {
+    border: none;
+    background: none
+}
+.shuffle_buttons button.mixitup-control-active {
+    color: #7367F0;
+    font-weight: bold;
+}
+.ecommerce-application .ecommerce-card:hover {
+    transform: none !important;
+}
