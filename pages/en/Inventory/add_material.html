@@ -362,7 +362,7 @@
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
                 <!-- Home Page -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="home-page.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../home-page.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الصفحة الرئيسية</span>
                 </a>
                 </li>
@@ -514,20 +514,29 @@
                               </div>
                               <div class="col-12">
                                 <div class="form-group">
-                                  <label for="email-id-vertical">وحدة الشراء</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="أدخل وحدة الشراء ">
+                                  <label for="email-id-vertical"> وحدة الشراء</label>
+                                  <select class="select2 form-control" id="default-select_8">
+                                    <option value="square"> وحدة الشراء </option>
+                                    <option value="rectangle">وحدة الشراء</option>
+                                </select>
                                 </div>
                               </div>
                               <div class="col-12">
                                 <div class="form-group">
-                                  <label for="email-id-vertical">وحدة التخزين</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="أدخل وحدة التخزين  ">
+                                  <label for="email-id-vertical"> وحدة التخزين</label>
+                                  <select class="select2 form-control" id="default-select_7">
+                                    <option value="square"> وحدة التخزين </option>
+                                    <option value="rectangle">وحدة التخزين</option>
+                                </select>
                                 </div>
                               </div>
                               <div class="col-12">
                                 <div class="form-group">
-                                  <label for="email-id-vertical">وحدة الوصفة</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="أدخل الوصفة   ">
+                                  <label for="email-id-vertical"> وحدة الوصفة</label>
+                                  <select class="select2 form-control" id="default-select_6">
+                                    <option value="square"> وحدة الوصفة </option>
+                                    <option value="rectangle">وحدة الوصفة</option>
+                                </select>
                                 </div>
                               </div>
                         
@@ -543,19 +552,8 @@
                                   <input type="text" class="form-control" id="basicInput" placeholder="أدخل معامل تخزين الوحدة">
                                 </div>
                               </div>
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="email-id-vertical"> نوع التكلفة</label>
-                                  <select class="select2 form-control" id="default-select">
-                                    <option value="square"> نوع التكلفة 1 </option>
-                                    <option value="rectangle">نوع التكلفة 2</option>
-                                </select>
-                                </div>
-                              </div>
+                             
                         
-                              <div class="col-12">
-                                <button type="reset" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ المادة</button>
-                              </div>
                             </div>
                           </form>
                         </div>
@@ -620,10 +618,13 @@
                                                         <div class="row">
                                                             <div class="col-12">
                                                                 <div class="form-group">
-                                                                    <label for="first-name-vertical">أسم الفرع</label>
-                                                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل أسم الفرع">
+                                                                  <label for="email-id-vertical"> الفرع</label>
+                                                                  <select class="select2 form-control" id="default-select_9">
+                                                                    <option value="square"> جدة </option>
+                                                                    <option value="rectangle">السعودية</option>
+                                                                </select>
                                                                 </div>
-                                                            </div>
+                                                              </div>
 
                                                             <div class="col-12">
                                                                 <div class="form-group">

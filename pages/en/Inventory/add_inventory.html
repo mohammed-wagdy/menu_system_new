@@ -362,7 +362,7 @@
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
                 <!-- Home Page -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="home-page.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../home-page.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الصفحة الرئيسية</span>
                 </a>
                 </li>
@@ -478,12 +478,15 @@
                                     </div>
                                   </div>
 
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="email-id-vertical">الفرع</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="إدخل إسم الفرع">
-                                </div>
-                              </div>
+                                  <div class="col-12">
+                                    <div class="form-group">
+                                      <label for="email-id-vertical">الفرع</label>
+                                      <select class="select2 form-control" id="default-select_6">
+                                        <option value="square"> الفرع </option>
+                                        <option value="rectangle">الفرع </option>
+                                    </select>
+                                    </div>
+                                  </div>
 
                               <div class="col-12">
                                 <div class="form-group">
@@ -494,9 +497,7 @@
                             
                         
                         
-                              <div class="col-12">
-                                <button type="reset" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ </button>
-                              </div>
+                           
                             </div>
                           </form>
                         </div>
@@ -511,7 +512,7 @@
 
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">وحدات العملية</h4>
+                                    <h4 class="card-title">وحدات الجرد</h4>
                                 </div>
                                 <div class="card-body">
                                     <button type="button" class="btn btn-outline-primary waves-effect mb-2" data-toggle="modal" data-target="#default">
@@ -521,7 +522,7 @@
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h4 class="modal-title" id="myModalLabel1">أضافة المستويات المتخصصة</h4>
+                                                    <h4 class="modal-title" id="myModalLabel1">إضافة وحدات</h4>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">×</span>
                                                     </button>
@@ -531,10 +532,13 @@
                                                     <div class="row">
                                                         <div class="col-12">
                                                             <div class="form-group">
-                                                                <label for="first-name-vertical">الوحدة</label>
-                                                                <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل أسم الوحدة">
+                                                              <label for="email-id-vertical">الوحدة</label>
+                                                              <select class="select2 form-control" id="default-select_2">
+                                                                <option value="square"> الوحدة </option>
+                                                                <option value="rectangle">الوحدة </option>
+                                                            </select>
                                                             </div>
-                                                        </div>
+                                                          </div>
 
                                                         <div class="col-12">
                                                             <div class="form-group">
@@ -543,13 +547,7 @@
                                                             </div>
                                                         </div>
 
-                                                        
-                                                        <div class="col-12">
-                                                          <div class="form-group">
-                                                              <label for="first-name-vertical">  الكمية</label>
-                                                              <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالجرامات">
-                                                          </div>
-                                                      </div>
+                                                     
                                                     </div>
                                                    </form>
                                                 </div>
@@ -566,7 +564,7 @@
                                             <thead class="thead-dark">
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>الأسم</th>
+                                                    <th>الوحدة</th>
                                                     <th>الكمية</th>
                                                     <th>العمليات</th>
                                                 </tr>
@@ -575,7 +573,7 @@
                                                 <tr>
                                                   <td>1</td>
                                                     <td>
-                                                        فرع مدينة جدة
+                                                       الوحدة
                                                     </td>
                                                     <td>15</td>
                                                     <td>
@@ -587,7 +585,7 @@
                                                             <div class="modal-dialog" role="document">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header">
-                                                                        <h4 class="modal-title" id="myModalLabel1">تعديل المستويات المتخصصة</h4>
+                                                                        <h4 class="modal-title" id="myModalLabel1">تعديل وحدات الجرد</h4>
                                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                             <span aria-hidden="true">×</span>
                                                                         </button>
@@ -595,11 +593,14 @@
                                                                     <div class="modal-body">
                                                                        <form action="">
                                                                           <div class="row">
-                                                                              <div class="col-12">
-                                                                                  <div class="form-group">
-                                                                                      <label for="first-name-vertical">الوحدة</label>
-                                                                                      <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل أسم الوحدة">
-                                                                                  </div>
+                                                                            <div class="col-12">
+                                                                                <div class="form-group">
+                                                                                  <label for="email-id-vertical">الوحدة</label>
+                                                                                  <select class="select2 form-control" id="default-select_2">
+                                                                                    <option value="square"> الوحدة </option>
+                                                                                    <option value="rectangle">الوحدة </option>
+                                                                                </select>
+                                                                                </div>
                                                                               </div>
                     
                                                                               <div class="col-12">

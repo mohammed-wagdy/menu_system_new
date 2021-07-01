@@ -1339,14 +1339,7 @@
                                 <div class="checkout-options">
                                     <div class="card">
                                         <div class="card-body">
-                                            <label class="section-label mb-1">خيارات</label>
-                                            <div class="coupons input-group input-group-merge">
-                                                <input type="text" class="form-control" placeholder="كوبون الخصم" aria-label="Coupons" aria-describedby="input-coupons" />
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text text-primary" id="input-coupons">تطبيق الكوبون</span>
-                                                </div>
-                                            </div>
-                                            <hr />
+                                          
                                             <div class="price-details">
                                                 <h6 class="price-title">تفاصيل السعر</h6>
                                                 <ul class="list-unstyled">
@@ -1393,6 +1386,58 @@
                                     <div class="card-body">
                                       <form class="form form-vertical">
                                         <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                  <label for="email-id-vertical">العميل</label>
+                                                  <select class="select2 form-control" id="default-select_4">
+                                                    <option value="square">أحمد</option>
+                                                    <option value="rectangle">محمد</option>
+                                                    <option value="rombo">محمود</option>
+                                                    <option value="romboid">سيف</option>
+                                                    <option value="trapeze">ماجد</option>
+                                                    <option value="traible">علي</option>
+                                                    <option value="polygon">محمد</option>
+                                                </select>
+                                                
+                                                <button type="button" class="btn btn-outline-primary and_new_client" data-toggle="modal" data-target="#default2">
+                                                إضافة عميل جديد
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade text-left" id="default2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title" id="myModalLabel1">إضافة عميل جديد</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="col-12">
+                                                                <div class="mb-1">
+                                                                  <label class="form-label" for="first-name-vertical">أسم العميل</label>
+                                                                  <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل أسم العميل">
+                                                                </div>
+                                                              </div>
+
+                                                              <div class="col-12">
+                                                                <div class="mb-1">
+                                                                  <label class="form-label" for="first-name-vertical">رقم الجوال</label>
+                                                                  <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل رقم الجوال">
+                                                                </div>
+                                                              </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary" data-dismiss="modal">إضافة</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                  
+                                                </div>
+                                              </div>
+                                              
                                           <div class="col-12">
                                             <div class="form-group">
                                               <label for="first-name-vertical">نوع الطلب</label>
@@ -1404,57 +1449,7 @@
                                                                          
                                             </div>
                                           </div>
-                                          <div class="col-12">
-                                            <div class="form-group">
-                                              <label for="email-id-vertical">العميل</label>
-                                              <select class="select2 form-control" id="default-select_4">
-                                                <option value="square">أحمد</option>
-                                                <option value="rectangle">محمد</option>
-                                                <option value="rombo">محمود</option>
-                                                <option value="romboid">سيف</option>
-                                                <option value="trapeze">ماجد</option>
-                                                <option value="traible">علي</option>
-                                                <option value="polygon">محمد</option>
-                                            </select>
-                                            </div>
-                                          </div>
-                                          <div class="col-12">
-                                            <div class="form-group">
-                                              <div class="demo-inline-spacing">
-                                                <div class="custom-control custom-switch custom-control-inline">
-                                                  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                                  <label class="custom-control-label" for="customSwitch1">إضافة خصم</label>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-12">
-                                            <div class="form-group">
-                                              <label for="password-vertical">نوع الخصم</label>
-                                              <select class="select2 form-control" id="default-select_2">
-                                                <option value="square">كود خصم</option>
-                                                <option value="rectangle">خصم خاص</option>
-                                            </select>
-                                            </div>
-                                          </div>
-                                          <!-- <div class="col-12">
-                                            <div class="form-group">
-                                              <label for="email-id-vertical">طريقة الدفع</label>
-                                              <select class="select2 form-control" id="default-select">
-                                                <option value="square">البنك الأهلي</option>
-                                                <option value="rectangle">بنك مصر</option>
-                                                <option value="rombo">سي اي بي</option>
-                                                <option value="romboid">فودافون كاش</option>
-                                                <option value="trapeze">الدفع عند الأستلام</option>
-                                            </select>
-                                            </div>
-                                          </div> -->
-                                          <div class="col-12">
-                                            <div class="form-group">
-                                              <label for="email-id-vertical">القسيمة الشرائية</label>
-                                              <input type="text" class="form-control" id="basicInput" placeholder="أدخل القسيمة">
-                                            </div>
-                                          </div>
+                                        
                                         </div>
                                       </form>
                                     </div>
@@ -1475,29 +1470,20 @@
                                             <p class="card-text text-muted mt-25">أختيار طريقة من طرق الدفع</p>
                                         </div>
                                         <div class="card-body">
-                                            <h6 class="card-holder-name my-75">محمد وجدي</h6>
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" id="customColorRadio1" name="paymentOptions" class="custom-control-input" checked />
-                                                <label class="custom-control-label" for="customColorRadio1">
-                                                    بطاقة الخصم المباشر
-                                                </label>
-                                            </div>
-                                            <div class="customer-cvv mt-1">
-                                                <div class="form-inline">
-                                                    <label class="mb-50" for="card-holder-cvv">أدخل CVV:</label>
-                                                    <input type="password" class="form-control ml-sm-75 ml-0 mb-50 input-cvv" name="input-cvv" id="card-holder-cvv" />
-                                                    <button type="button" class="btn btn-primary btn-cvv ml-0 ml-sm-1 mb-50">أستكمال</button>
-                                                </div>
-                                            </div>
-                                            <hr class="my-2" />
+
                                             <ul class="other-payment-options list-unstyled">
                                                 <li class="py-50">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customColorRadio2" name="paymentOptions" class="custom-control-input" />
-                                                        <label class="custom-control-label" for="customColorRadio2"> بطاقة الائتمان / الخصم / الصراف الآلي </label>
+                                                        <input type="radio" id="customColorRadio6" onclick="javascript:yesnoCheck();" name="paymentOptions" class="custom-control-input" />
+                                                        
+                                                        <label class="custom-control-label" for="customColorRadio6"> بطاقة الائتمان / الخصم / الصراف الآلي </label>
                                                     </div>
                                                 </li>
-                                                <li class="py-50">
+
+                                                <div class="mb-1" id="ifYes" style="display:none">
+                                                    <input type="text" id="first-name-column" class="form-control" placeholder="أدخل رقم عملية الدفع" name="fname-column">
+                                                  </div>
+                                                <!-- <li class="py-50">
                                                     <div class="custom-control custom-radio">
                                                         <input type="radio" id="customColorRadio3" name="paymentOptions" class="custom-control-input" />
                                                         <label class="custom-control-label" for="customColorRadio3"> البنك الألكتروني </label>
@@ -1508,14 +1494,43 @@
                                                         <input type="radio" id="customColorRadio4" name="paymentOptions" class="custom-control-input" />
                                                         <label class="custom-control-label" for="customColorRadio4"> التقسيط </label>
                                                     </div>
-                                                </li>
+                                                </li> -->
                                                 <li class="py-50">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customColorRadio5" name="paymentOptions" class="custom-control-input" />
+                                                        <input type="radio" id="customColorRadio5" onclick="javascript:yesnoCheck();" name="paymentOptions" class="custom-control-input" />
                                                         <label class="custom-control-label" for="customColorRadio5"> الدفع عند الأستلام </label>
                                                     </div>
                                                 </li>
                                             </ul>
+                                            <hr class="my-2" />
+                                          <div class="col-12">
+                                            <div class="form-group">
+                                              <div class="demo-inline-spacing">
+                                                <div class="custom-control custom-switch custom-control-inline">
+                                                  <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                  <label class="custom-control-label" for="customSwitch1">إضافة خصم</label>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-12">
+                                            <div class="form-group">
+                                              <label for="password-vertical">نوع الخصم</label>
+                                              <select class="select2 form-control" id="default-select_2">
+                                                <option value="square">كود خصم</option>
+                                                <option value="rectangle">خصم خاص</option>
+                                            </select>
+                                            </div>
+                                          </div>
+                                      
+                                          <div class="col-12">
+                                            <div class="form-group">
+                                              <label for="email-id-vertical">القسيمة الشرائية</label>
+                                              <input type="text" class="form-control" id="basicInput" placeholder="أدخل القسيمة">
+                                            </div>
+                                          </div>
+                                           
+                                            
                                             <hr class="my-2" />
                                             <div class="gift-card mb-25">
                                                 <button type="button" class="btn btn-primary btn-cvv ml-0 ml-sm-1 mb-50 waves-effect waves-float waves-light">إنهاء الطلب</button>
@@ -1623,6 +1638,18 @@
             control: '[data-mixitup-control]'
         }
         })
+    </script>
+
+<script>
+
+    function yesnoCheck() {
+        if (document.getElementById('customColorRadio6').checked) {
+            document.getElementById('ifYes').style.display = 'block';
+        } else {
+            document.getElementById('ifYes').style.display = 'none';
+    }}
+
+    
     </script>
 </body>
 <!-- END: Body-->

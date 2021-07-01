@@ -19,3 +19,9 @@ body , html , .navigation, .navigation-header span {
 .ecommerce-application .ecommerce-card:hover {
     transform: none !important;
 }
+.and_new_client {
+    float: right;
+    margin: 10px 0;
+    font-size: 13px;
+    border: none !important;
+}

@@ -432,34 +432,33 @@
                             <div class="row">
                               <div class="col-12">
                               
-                              
+                        
+
                               <div class="col-12">
                                 <div class="form-group">
-                                  <label for="email-id-vertical"> الفرع الذي يتم التحويل منه</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder=" أدخل الفرع الذي يتم التحويل منه">
+                                  <label for="email-id-vertical">الفرع الذي يتم التحويل منه</label>
+                                  <select class="select2 form-control" id="default-select_9">
+                                    <option value="square"> الفرع </option>
+                                    <option value="rectangle">الفرع </option>
+                                </select>
                                 </div>
                               </div>
 
 
                               <div class="col-12">
                                 <div class="form-group">
-                                  <label for="email-id-vertical"> الفرع الذي يتم التحويل إليه</label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder=" أدخل الفرع الذي يتم التحويل إليه">
+                                  <label for="email-id-vertical">الفرع الذي يتم التحويل إلية</label>
+                                  <select class="select2 form-control" id="default-select_7">
+                                    <option value="square"> الفرع </option>
+                                    <option value="rectangle">الفرع </option>
+                                </select>
                                 </div>
                               </div>
 
 
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="email-id-vertical">  الوحدات التي سيتم تحويلها  </label>
-                                  <input type="text" class="form-control" id="basicInput" placeholder="ادخل الوحدات التي سيتم تحويلها ">
-                                </div>
-                              </div>
+                     
 
 
-                              <div class="col-12">
-                                <button type="reset" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ </button>
-                              </div>
                          
                             </div>
                           </form>
@@ -467,6 +466,127 @@
                       </div>
                     </div>
                   </div>
+
+                  <div class="col-md-12 col-12">
+                    <form class="form form-vertical">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">الوحدات المتحولة</h4>
+                            </div>
+                            <div class="card-body">
+                                <button type="button" class="btn btn-outline-primary waves-effect mb-2" data-toggle="modal" data-target="#default">
+                                   إضافة جديد
+                                </button>
+                                <div class="modal fade text-left" id="default" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel1"> إنشاء وحدة جديدة</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                               <form action="">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                          <label for="email-id-vertical">الوحدة</label>
+                                                          <select class="select2 form-control" id="default-select_9">
+                                                            <option value="square"> الوحدة </option>
+                                                            <option value="rectangle">الوحدة </option>
+                                                        </select>
+                                                        </div>
+                                                      </div>
+
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label for="first-name-vertical">  الكمية</label>
+                                                            <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالكيلو جرامات">
+                                                        </div>
+                                                    </div>
+
+<!--                                                         
+                                                    <div class="col-12">
+                                                      <div class="form-group">
+                                                          <label for="first-name-vertical">  الكمية</label>
+                                                          <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالجرامات">
+                                                      </div>
+                                                  </div> -->
+
+                                                  <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label for="first-name-vertical">  التكلفة</label>
+                                                        <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل التكلفة">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label for="first-name-vertical">  Unit Cost</label>
+                                                        <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                      <label for="email-id-vertical">تاريخ إنتهاء الصلاحية</label>
+                                                      <input type="text" id="fp-default" class="form-control flatpickr-basic" placeholder="YYYY-MM-DD" />                                </div>
+                                                    </div>
+                                                </div>
+                                               </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th>#</th>
+                                                <th>الوحدة</th>
+                                                <th>الكمية</th>
+                                                <th>التكلفة</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                              <td>1</td>
+                                                <td>
+                                                    الوحدة
+                                                </td>
+                                                <td>15</td>
+                                                <td>
+                                                   232
+                                                </td>
+                                            </tr>
+                                         
+                                           
+                                        </tbody>
+                                    </table>
+                                </div>
+                              
+                                <div class="col-12">
+                                    <button type="reset" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ</button>
+                                  </div>
+                            </div>
+                            
+                        </div>
+
+
+
+                  
+                        
+                    </form>
+                      
+                      </div>
+                    </div>
             </div>
         </div>
     </div>

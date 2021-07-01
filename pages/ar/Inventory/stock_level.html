@@ -425,34 +425,276 @@
             </div>
             <div class="content-body">
 
-                <section id="basic-datatable">
-                    <div class="row">
-                        <div class="col-12">
+                <div class="row">
+                    <div class="col-md-12 col-12">
+                        <form class="form form-vertical">
+
                             <div class="card">
-                                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="card-header border-bottom p-1"><div class="head-label"><h6 class="mb-0">قائمة الفروع</h6></div><div class="dt-action-buttons text-right"><div class="dt-buttons d-inline-flex"> <button class="dt-button buttons-collection btn btn-outline-secondary dropdown-toggle mr-2" tabindex="0" aria-controls="DataTables_Table_0" type="button" aria-haspopup="true"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share font-small-4 mr-50"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>Export</span></button> <button class="dt-button create-new btn btn-primary" tabindex="0" aria-controls="DataTables_Table_0" type="button" data-toggle="modal" data-target="#modals-slide-in"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus mr-50 font-small-4"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>Add New Record</span></button> </div></div></div><div class="d-flex justify-content-between align-items-center mx-0 row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="custom-select form-control"><option value="7">7</option><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="75">75</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control" placeholder="" aria-controls="DataTables_Table_0"></label></div></div></div><table class="datatables-basic table dataTable no-footer dtr-column" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info" style="width: 1207px;">
-                                    <thead>
-                                        <tr role="row"><th class="control sorting_disabled" rowspan="1" colspan="1" style="width: 49px; display: none;" aria-label=""></th><th class="dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" rowspan="1" colspan="1" style="width: 49px;" data-col="1" aria-label=""><div class="custom-control custom-checkbox"> <input class="custom-control-input" type="checkbox" value="" id="checkboxSelectAll"><label class="custom-control-label" for="checkboxSelectAll"></label></div></th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 122px;" aria-label="Name: activate to sort column ascending">Name</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 126px;" aria-label="Email: activate to sort column ascending">Email</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 113px;" aria-label="Date: activate to sort column ascending">Date</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 149px;" aria-label="Salary: activate to sort column ascending">Salary</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 144px;" aria-label="Status: activate to sort column ascending">Status</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 178px;" aria-label="Actions">Actions</th></tr>
-                                    </thead>
-                                <tbody><tr class="odd"><td valign="top" colspan="7" class="dataTables_empty">Loading...</td></tr></tbody></table><div class="d-flex justify-content-between mx-0 row"><div class="col-sm-12 col-md-6"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 0 to 0 of 0 entries</div></div><div class="col-sm-12 col-md-6"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link">&nbsp;</a></li><li class="paginate_button page-item next disabled" id="DataTables_Table_0_next"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" class="page-link">&nbsp;</a></li></ul></div></div></div></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                                <div class="card-header">
+                                    <h4 class="card-title"> الفروع</h4>
+                                </div>
+                                <div class="card-body">
+                                  
 
 
-                <section id="basic-datatable">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="card-header border-bottom p-1"><div class="head-label"><h6 class="mb-0">قائمة المواد</h6></div><div class="dt-action-buttons text-right"><div class="dt-buttons d-inline-flex"> <button class="dt-button buttons-collection btn btn-outline-secondary dropdown-toggle mr-2" tabindex="0" aria-controls="DataTables_Table_0" type="button" aria-haspopup="true"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share font-small-4 mr-50"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>Export</span></button> <button class="dt-button create-new btn btn-primary" tabindex="0" aria-controls="DataTables_Table_0" type="button" data-toggle="modal" data-target="#modals-slide-in"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus mr-50 font-small-4"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>Add New Record</span></button> </div></div></div><div class="d-flex justify-content-between align-items-center mx-0 row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="custom-select form-control"><option value="7">7</option><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="75">75</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control" placeholder="" aria-controls="DataTables_Table_0"></label></div></div></div><table class="datatables-basic table dataTable no-footer dtr-column" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info" style="width: 1207px;">
-                                    <thead>
-                                        <tr role="row"><th class="control sorting_disabled" rowspan="1" colspan="1" style="width: 49px; display: none;" aria-label=""></th><th class="dt-checkboxes-cell dt-checkboxes-select-all sorting_disabled" rowspan="1" colspan="1" style="width: 49px;" data-col="1" aria-label=""><div class="custom-control custom-checkbox"> <input class="custom-control-input" type="checkbox" value="" id="checkboxSelectAll"><label class="custom-control-label" for="checkboxSelectAll"></label></div></th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 122px;" aria-label="Name: activate to sort column ascending">Name</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 126px;" aria-label="Email: activate to sort column ascending">Email</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 113px;" aria-label="Date: activate to sort column ascending">Date</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 149px;" aria-label="Salary: activate to sort column ascending">Salary</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 144px;" aria-label="Status: activate to sort column ascending">Status</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 178px;" aria-label="Actions">Actions</th></tr>
-                                    </thead>
-                                <tbody><tr class="odd"><td valign="top" colspan="7" class="dataTables_empty">Loading...</td></tr></tbody></table><div class="d-flex justify-content-between mx-0 row"><div class="col-sm-12 col-md-6"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 0 to 0 of 0 entries</div></div><div class="col-sm-12 col-md-6"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link">&nbsp;</a></li><li class="paginate_button page-item next disabled" id="DataTables_Table_0_next"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" class="page-link">&nbsp;</a></li></ul></div></div></div></div>
-                            </div>
-                        </div>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>الفرع</th>
+                                                    <th>العمليات</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                  <td>1</td>
+                                                    <td>
+                                                        الفرع
+                                                    </td>
+                                                    <td>
+                                                        <button type="reset" class="btn btn-info waves-effect waves-float waves-light" data-toggle="modal" data-target="#default_2">العرض</button>
+    
+    
+                                                        <div class="modal fade text-left" id="default_2" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title" id="myModalLabel1">المواد الخاصة بالفرع  </h4>
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">×</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="table-responsive">
+                                                                            <table class="table">
+                                                                                <thead class="thead-dark">
+                                                                                    <tr>
+                                                                                        <th>#</th>
+                                                                                        <th>المادة</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                      <td>1</td>
+                                                                                        <td>
+                                                                                            المادة
+                                                                                        </td>
+                                                                                      
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                      <tr>
+                                                                                        <td>1</td>
+                                                                                          <td>
+                                                                                              المادة
+                                                                                          </td>
+                                                                                        
+                                                                                      </tr>
+                                                                                 
+                                                                                   
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                             
+                                               
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                  
+                                 
+                                </div>
+                                
+                            </div></form>
+
+
+
+                      
+                            
+                        
+                          
+                          </div>
                     </div>
-                </section>
             </div>
         </div>
     </div>
