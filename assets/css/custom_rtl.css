@@ -24,3 +24,33 @@ body , html , .navigation, .navigation-header span {
     font-size: 13px;
     border: none !important;
 }
+.ecommerce-application .checkout-items .product_item .item-img img {
+    width: 120px !important;
+}
+.product_item {
+    text-align: center !important;
+    padding: 20px 0 !important;
+}
+.bootstrap-touchspin.input-group {
+    margin: 10px auto 10px auto;
+}
+.item-size h5 {
+    font-size: 14px;
+}
+.item-name h6 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.item_body {
+    padding: 0 !important;
+}
+.custom_button {
+    margin-top: 0 !important;
+}
+.dz-message {
+    font-size: 19px !important;
+}
+.dropzone .dz-message:before {
+    width: 31px !important;
+    height: 31px !important;
+}
