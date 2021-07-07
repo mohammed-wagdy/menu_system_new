@@ -13,6 +13,7 @@
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
@@ -78,10 +79,10 @@
                         </div>
                     </li>
                     <li class="scrollable-container media-list">
-                        <div class="media align-items-center"><img class="d-block rounded mr-1" src="app-assets/images/pages/eCommerce/1.png" alt="donuts" width="62">
+                        <div class="media align-items-center"><img class="d-block rounded mr-1" src="../../../app-assets/images/pages/eCommerce/1.png" alt="donuts" width="62">
                             <div class="media-body"><i class="ficon cart-item-remove" data-feather="x"></i>
                                 <div class="media-heading">
-                                    <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html"> Apple watch 5</a></h6><small class="cart-item-by">By Apple</small>
+                                    <h6 class="cart-item-title"><a class="text-body" href="#"> Apple watch 5</a></h6><small class="cart-item-by">By Apple</small>
                                 </div>
                                 <div class="cart-item-qty">
                                     <div class="input-group">
@@ -474,7 +475,7 @@
         </div>
         <div class="content-body">
 
-            <a type="button" class="btn btn-primary waves-effect waves-float waves-light mb-2 mt-3" href="add_category.html">إضافة تصنيف جديد</a>
+            <button type="reset" class="btn btn-primary waves-effect waves-float waves-light mb-2 mt-3" data-toggle="modal" data-target="#create_category">إضافة تصنيف جديد</button>
             <!-- Basic table -->
             <div class="table-responsive">
                 <table class="table">
@@ -492,15 +493,14 @@
                         <td>مشويات</td>
                         <td>محتوى يتم تعبئته</td>
                         <td>
-                            <button type="reset" class="btn btn-info waves-effect waves-float waves-light" data-toggle="modal" data-target="#default_2">تعديل</button>
+                            <button type="reset" class="btn btn-info waves-effect waves-float waves-light" data-toggle="modal" data-target="#edit_category">تعديل</button>
                             <button type="reset" class="btn btn-danger waves-effect waves-float waves-light">حذف</button>
 
-
-                            <div class="modal fade text-left" id="default_2" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
+                            <div class="modal fade text-left" id="create_category" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h4 class="modal-title" id="myModalLabel1"> تعديل تصنيف جديد
+                                            <h4 class="modal-title" id="myModalLabel1"> اضافة تصنيف جديد
                                             </h4>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">×</span>
@@ -515,6 +515,264 @@
                                                             <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل اسم التصنيف">
                                                         </div>
                                                     </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label for="role">الأب</label>
+                                                            <select class="form-control" id="role">
+                                                                <option>--بدون أب--</option>
+                                                                <option>--بدون أب--</option>
+                                                                <option>--بدون أب--</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label for="first-name-vertical">ترتيب العرض للتصنيف</label>
+                                                            <input type="number" class="form-control" placeholder="أدخل ترتيب العرض للتصنيف">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+
+                                                        <label for="first-name-vertical">صورة التصنيف</label>
+                                                        <div class="media mb-2">
+                                                            <img src="../../../app-assets/images/avatars/7.png" alt="users avatar" class="user-avatar users-avatar-shadow rounded mr-2 my-25 cursor-pointer" height="90" width="90" />
+                                                            <div class="media-body mt-50">
+                                                                <h4>Eleanor Aguilar</h4>
+                                                                <div class="col-12 d-flex mt-1 px-0">
+                                                                    <label class="btn btn-primary mr-75 mb-0" for="change-picture">
+                                                                        <span class="d-none d-sm-block">Change</span>
+                                                                        <input class="form-control" type="file" id="change-picture" hidden accept="image/png, image/jpeg, image/jpg" />
+                                                                        <span class="d-block d-sm-none">
+                                                        <i class="mr-0" data-feather="edit"></i>
+                                                    </span>
+                                                                    </label>
+                                                                    <button class="btn btn-outline-secondary d-none d-sm-block">Remove</button>
+                                                                    <button class="btn btn-outline-secondary d-block d-sm-none">
+                                                                        <i class="mr-0" data-feather="trash-2"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label>الوصف</label>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="أدخل وصف للتصنيف"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                       <div class="form-group">
+                                                           <label>الكلمات المفتاحية</label>
+                                                           <select class="select2 form-control" multiple>
+                                                               <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                   <option value="AK">Alaska</option>
+                                                                   <option value="HI">Hawaii</option>
+                                                               </optgroup>
+                                                               <optgroup label="Pacific Time Zone">
+                                                                   <option value="CA">California</option>
+                                                                   <option value="NV">Nevada</option>
+                                                                   <option value="OR">Oregon</option>
+                                                                   <option value="WA">Washington</option>
+                                                               </optgroup>
+                                                               <optgroup label="Mountain Time Zone">
+                                                                   <option value="AZ">Arizona</option>
+                                                                   <option value="CO" selected>Colorado</option>
+                                                                   <option value="ID">Idaho</option>
+                                                                   <option value="MT">Montana</option>
+                                                                   <option value="NE">Nebraska</option>
+                                                                   <option value="NM">New Mexico</option>
+                                                                   <option value="ND">North Dakota</option>
+                                                                   <option value="UT">Utah</option>
+                                                                   <option value="WY">Wyoming</option>
+                                                               </optgroup>
+                                                               <optgroup label="Central Time Zone">
+                                                                   <option value="AL">Alabama</option>
+                                                                   <option value="AR">Arkansas</option>
+                                                                   <option value="IL">Illinois</option>
+                                                                   <option value="IA">Iowa</option>
+                                                                   <option value="KS">Kansas</option>
+                                                                   <option value="KY">Kentucky</option>
+                                                                   <option value="LA">Louisiana</option>
+                                                                   <option value="MN">Minnesota</option>
+                                                                   <option value="MS">Mississippi</option>
+                                                                   <option value="MO">Missouri</option>
+                                                                   <option value="OK">Oklahoma</option>
+                                                                   <option value="SD">South Dakota</option>
+                                                                   <option value="TX">Texas</option>
+                                                                   <option value="TN">Tennessee</option>
+                                                                   <option value="WI">Wisconsin</option>
+                                                               </optgroup>
+                                                               <optgroup label="Eastern Time Zone">
+                                                                   <option value="CT">Connecticut</option>
+                                                                   <option value="DE">Delaware</option>
+                                                                   <option value="FL" selected>Florida</option>
+                                                                   <option value="GA">Georgia</option>
+                                                                   <option value="IN">Indiana</option>
+                                                                   <option value="ME">Maine</option>
+                                                                   <option value="MD">Maryland</option>
+                                                                   <option value="MA">Massachusetts</option>
+                                                                   <option value="MI">Michigan</option>
+                                                                   <option value="NH">New Hampshire</option>
+                                                                   <option value="NJ">New Jersey</option>
+                                                                   <option value="NY">New York</option>
+                                                                   <option value="NC">North Carolina</option>
+                                                                   <option value="OH">Ohio</option>
+                                                                   <option value="PA">Pennsylvania</option>
+                                                                   <option value="RI">Rhode Island</option>
+                                                                   <option value="SC">South Carolina</option>
+                                                                   <option value="VT">Vermont</option>
+                                                                   <option value="VA">Virginia</option>
+                                                                   <option value="WV">West Virginia</option>
+                                                               </optgroup>
+                                                           </select>
+                                                       </div>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">إضافة</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="modal fade text-left" id="edit_category" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="myModalLabel1"> تعدل تصنيف مسبق
+                                            </h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label for="first-name-vertical">اسم التصنيف</label>
+                                                            <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل اسم التصنيف">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label for="role">الأب</label>
+                                                            <select class="form-control" id="role">
+                                                                <option>--بدون أب--</option>
+                                                                <option>--بدون أب--</option>
+                                                                <option>--بدون أب--</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label for="first-name-vertical">ترتيب العرض للتصنيف</label>
+                                                            <input type="number" class="form-control" placeholder="أدخل ترتيب العرض للتصنيف">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+
+                                                        <label for="first-name-vertical">صورة التصنيف</label>
+                                                        <div class="media mb-2">
+                                                            <img src="../../../app-assets/images/avatars/7.png" alt="users avatar" class="user-avatar users-avatar-shadow rounded mr-2 my-25 cursor-pointer" height="90" width="90" />
+                                                            <div class="media-body mt-50">
+                                                                <h4>Eleanor Aguilar</h4>
+                                                                <div class="col-12 d-flex mt-1 px-0">
+                                                                    <label class="btn btn-primary mr-75 mb-0" for="change-picture">
+                                                                        <span class="d-none d-sm-block">Change</span>
+                                                                        <input class="form-control" type="file" id="change-picture" hidden accept="image/png, image/jpeg, image/jpg" />
+                                                                        <span class="d-block d-sm-none">
+                                                        <i class="mr-0" data-feather="edit"></i>
+                                                    </span>
+                                                                    </label>
+                                                                    <button class="btn btn-outline-secondary d-none d-sm-block">Remove</button>
+                                                                    <button class="btn btn-outline-secondary d-block d-sm-none">
+                                                                        <i class="mr-0" data-feather="trash-2"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label>الوصف</label>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="أدخل وصف للتصنيف"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label>الكلمات المفتاحية</label>
+                                                            <select class="select2 form-control" multiple>
+                                                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                                                    <option value="AK">Alaska</option>
+                                                                    <option value="HI">Hawaii</option>
+                                                                </optgroup>
+                                                                <optgroup label="Pacific Time Zone">
+                                                                    <option value="CA">California</option>
+                                                                    <option value="NV">Nevada</option>
+                                                                    <option value="OR">Oregon</option>
+                                                                    <option value="WA">Washington</option>
+                                                                </optgroup>
+                                                                <optgroup label="Mountain Time Zone">
+                                                                    <option value="AZ">Arizona</option>
+                                                                    <option value="CO" selected>Colorado</option>
+                                                                    <option value="ID">Idaho</option>
+                                                                    <option value="MT">Montana</option>
+                                                                    <option value="NE">Nebraska</option>
+                                                                    <option value="NM">New Mexico</option>
+                                                                    <option value="ND">North Dakota</option>
+                                                                    <option value="UT">Utah</option>
+                                                                    <option value="WY">Wyoming</option>
+                                                                </optgroup>
+                                                                <optgroup label="Central Time Zone">
+                                                                    <option value="AL">Alabama</option>
+                                                                    <option value="AR">Arkansas</option>
+                                                                    <option value="IL">Illinois</option>
+                                                                    <option value="IA">Iowa</option>
+                                                                    <option value="KS">Kansas</option>
+                                                                    <option value="KY">Kentucky</option>
+                                                                    <option value="LA">Louisiana</option>
+                                                                    <option value="MN">Minnesota</option>
+                                                                    <option value="MS">Mississippi</option>
+                                                                    <option value="MO">Missouri</option>
+                                                                    <option value="OK">Oklahoma</option>
+                                                                    <option value="SD">South Dakota</option>
+                                                                    <option value="TX">Texas</option>
+                                                                    <option value="TN">Tennessee</option>
+                                                                    <option value="WI">Wisconsin</option>
+                                                                </optgroup>
+                                                                <optgroup label="Eastern Time Zone">
+                                                                    <option value="CT">Connecticut</option>
+                                                                    <option value="DE">Delaware</option>
+                                                                    <option value="FL" selected>Florida</option>
+                                                                    <option value="GA">Georgia</option>
+                                                                    <option value="IN">Indiana</option>
+                                                                    <option value="ME">Maine</option>
+                                                                    <option value="MD">Maryland</option>
+                                                                    <option value="MA">Massachusetts</option>
+                                                                    <option value="MI">Michigan</option>
+                                                                    <option value="NH">New Hampshire</option>
+                                                                    <option value="NJ">New Jersey</option>
+                                                                    <option value="NY">New York</option>
+                                                                    <option value="NC">North Carolina</option>
+                                                                    <option value="OH">Ohio</option>
+                                                                    <option value="PA">Pennsylvania</option>
+                                                                    <option value="RI">Rhode Island</option>
+                                                                    <option value="SC">South Carolina</option>
+                                                                    <option value="VT">Vermont</option>
+                                                                    <option value="VA">Virginia</option>
+                                                                    <option value="WV">West Virginia</option>
+                                                                </optgroup>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </form>
                                         </div>
@@ -524,6 +782,9 @@
                                     </div>
                                 </div>
                             </div>
+
+
+
                         </td>
                     </tr>
                     </tbody>
@@ -581,7 +842,10 @@
 <script src="../../../app-assets/js/scripts/tables/table-datatables-basic.js"></script>
 
 <!-- BEGIN: Page JS-->
+<script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+<script src="../../../app-assets/js/scripts/forms/form-select2.js"></script>
 <!-- END: Page JS-->
+
 
 <script>
     $(window).on('load', function() {
