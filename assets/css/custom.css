@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+body , html , .navigation, .navigation-header span {
+    font-family: 'Tajawal', sans-serif;
+}
+
+
+.shuffle_buttons {
+    margin-top: 25px !important;
+}
+.shuffle_buttons button {
+    border: none;
+    background: none
+}
+.shuffle_buttons button.mixitup-control-active {
+    color: #7367F0;
+    font-weight: bold;
+}
+.ecommerce-application .ecommerce-card:hover {
+    transform: none !important;
+}
+.and_new_client {
+    float: right;
+    margin: 10px 0;
+    font-size: 13px;
+    border: none !important;
+}
+.ecommerce-application .checkout-items .ecommerce-card .item-img img {
+    width: 120px !important;
+}
+.product_item {
+    text-align: center !important;
+    padding: 20px 0 !important;
+}
+.bootstrap-touchspin.input-group {
+    margin: 10px auto 10px auto;
+}
+.item-size h5 {
+    font-size: 14px;
+}
+.item-name h6 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.item_body {
+    padding: 0 !important;
+}
+.custom_button {
+    margin-top: 0 !important;
+}
+.dz-message {
+    font-size: 19px !important;
+}
+.dropzone .dz-message:before {
+    width: 31px !important;
+    height: 31px !important;
+}
