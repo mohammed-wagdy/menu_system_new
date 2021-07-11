@@ -54,3 +54,37 @@ body , html , .navigation, .navigation-header span {
     width: 31px !important;
     height: 31px !important;
 }
+.orders .order_block {
+    background-color: white;
+    margin-bottom: 20px;
+}
+/* .order_block .order_time {
+    text-align: left;
+} */
+.orders .order_block .order_head {
+    background-color: #4B4B4B;
+    padding: 7px;
+}
+.orders .order_block .order_products {
+    padding: 7px;
+    border-bottom: 1px solid #f0efef;
+}
+.orders .order_block .order_head h4 {
+    color: white;
+}
+@media (max-width: 575.98px) {
+    .orders .order_block .order_head , .orders .order_block .order_products {
+       text-align: center !important;
+    }
+}
+@media (max-width: 767.98px) {
+    .orders .order_block .order_head , .orders .order_block .order_products {
+       text-align: center !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .order_block .order_time {
+        text-align: left;
+    }
+}

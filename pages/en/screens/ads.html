@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="rtl">
+<html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
 
 <head>
@@ -9,15 +9,15 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>عرض تفاصيل عملية الجرد</title>
+    <title> عرض الإعلانات</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors.min.css">
     <!-- END: Vendor CSS-->
-
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/file-uploaders/dropzone.min.css">
 
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
@@ -26,23 +26,24 @@
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
 
     <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap-extended.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/colors.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/components.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/dark-layout.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/bordered-layout.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/semi-dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/semi-dark-layout.css">
 
 
     <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/form-file-uploader.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
-    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
-    <link rel="stylesheet" type="text/css" href="../../../assets/css/custom_rtl.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/custom.css">
     <!-- END: Custom CSS-->
 
 </head>
@@ -330,34 +331,32 @@
                 </a>
                 </li>
 
-
+                <!-- Orders -->
                 <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">الطلبات</span><i data-feather="more-horizontal"></i>
                 </li>
 
-
-                <!-- Orders -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="../orders/orders.html">
+                  <!-- Orders -->
+                  <li class=" nav-item"><a class="d-flex align-items-center" href="orders.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الطلبات</span>
                 </a>
                 </li>
 
-
                 <!-- Clients -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="../orders/clients.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="clients.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">العملاء</span>
                 </a>
                 </li>
 
 
                   <!-- Tables -->
-                  <li class=" nav-item"><a class="d-flex align-items-center" href="../orders/tables.html">
+                  <li class=" nav-item"><a class="d-flex align-items-center" href="tables.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الطاولات</span>
                 </a>
                 </li>
 
 
                  <!-- Shifts -->
-                 <li class=" nav-item"><a class="d-flex align-items-center" href="../orders/shifts.html">
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="shifts.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الورديات</span>
                 </a>
                 </li>
@@ -368,21 +367,21 @@
                 </li>
 
                  <!-- kitchen -->
-                 <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/kitchen.html">
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="kitchen.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض المطبخ</span>
                 </a>
                 </li>
 
 
                  <!-- Waintg -->
-                 <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/waiting.html">
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="waiting.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإنتظار</span>
                 </a>
                 </li>
 
 
                  <!-- Ads -->
-                 <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/ads.html">
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="ads.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإعلانات</span>
                 </a>
                 </li>
@@ -392,42 +391,42 @@
                 </li>
 
                  <!-- Materials -->
-                 <li class=" nav-item"><a class="d-flex align-items-center" href="materials.html">
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="../Inventory/materials.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المواد</span>
                 </a>
                 </li>
 
                 <!-- Suppliers -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="suppliers.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../Inventory/suppliers.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الموردين</span>
                 </a>
                 </li>
 
 
                 <!-- Processess -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="operations.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../Inventory/operations.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">العمليات</span>
                 </a>
                 </li>
 
                  <!-- inventory -->
-                 <li class=" nav-item"><a class="d-flex align-items-center" href="inventory.html">
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="../Inventory/inventory.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الجرد</span>
                 </a>
                 </li>
 
                  <!-- Stock Level -->
-                 <li class=" nav-item"><a class="d-flex align-items-center" href="stock_level.html">
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="../Inventory/stock_level.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">مستوي المخزون</span>
                 </a>
                 </li>
 
-                
+
                 <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">الإعدادات</span><i data-feather="more-horizontal"></i>
                 </li>
 
 
-                <li class=" nav-item"><a class="d-flex align-items-center" href="units.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../Inventory/units.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الوحدات</span>
                 </a>
                 </li>
@@ -448,151 +447,199 @@
         <div class="content-overlay"></div>
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
-            <div class="content-header row">
-                <div class="content-header-left col-md-9 col-12 mb-2">
-                    <div class="row breadcrumbs-top">
+          
+            <div class="content-body">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">عرض الإعلانات</h4>
+                    </div>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-primary waves-effect mb-2" data-toggle="modal" data-target="#default">
+                           إضافة إعلان جديد
+                        </button>
+                        <div class="modal fade text-left" id="default" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myModalLabel1">إضافة إعلان جديد</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                       
+                                            <!-- single file upload starts -->
+                    <div class="row">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">الجرد</h2>
-                            <div class="breadcrumb-wrapper">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="orders.html"> عرض تفاصيل عملية الجرد</a>
-                                    </li>
-                                </ol>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">أدخل صورة أو فيديو للإعلان</h4>
+                                </div>
+                                <div class="card-body">
+                                   
+                                    <form action="#" class="dropzone dropzone-area" id="dpz-single-file">
+                                        <div class="dz-message">أضف إعلان جديد</div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            
-            </div>
-            <div class="content-body">
-
-               <div class="row">
-                   <div class="col-md-6">
-                    <div class="card">
-                     
-                        <div class="table-responsive">
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <span class="font-weight-bold">الفرع</span>
-                                        </td>
-                                        <td>فرع جدة</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="font-weight-bold">تاريخ العمل</span>
-                                        </td>
-                                        <td> 20/12/2021</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="font-weight-bold">الرقم المرجعي</span>
-                                        </td>
-                                        <td>000253</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="font-weight-bold">ملاحظات</span>
-                                        </td>
-                                        <td>الملاحظات تكتب هنا</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <!-- single file upload ends -->
+                                       
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                       
-                      
-                    </div>
-                   </div>
 
-                   <div class="col-md-6">
-                    <div class="card">
-                        
-                        <div class="table-responsive">
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <span class="font-weight-bold">النوع</span>
-                                        </td>
-                                        <td>النوع</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="font-weight-bold">الوقت الفعلي</span>
-                                        </td>
-                                        <td>20/12/2020</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="font-weight-bold">أكتملت بواسطة</span>
-                                        </td>
-                                        <td>محمد وجدي</td>
-                                    </tr>
-                                 
-                                </tbody>
-                            </table>
-                        </div>
-                       
-                      
-                    </div>
-                   </div>
 
-                   <div class="col-md-12">
-                    <div class="card">
-                       
                         <div class="table-responsive">
                             <table class="table">
                                 <thead class="thead-dark">
                                     <tr>
                                         <th>#</th>
-                                        <th>كود التعريف</th>
-                                        <th>الإسم</th>
-                                        <th>الكمية المدخلة</th>
-                                        <th>الكمية الأصلية</th>
-                                        <th> تباين الكمية</th>
-                                        <th>تكلفة الفرق</th>
+                                        <th>الإعلان</th>
+                                        <th>الإجراءات</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                      <td>1</td>
+                                      <td>
+                                          <img src="https://lallahoriye.com/wp-content/uploads/2019/04/Product_Lg_Type.jpg" width="200" height="150" alt="">
+                                      </td>
+                                       
                                         <td>
-                                            <span class="font-weight-bold">1</span>
+                                            <button type="reset" class="btn btn-info waves-effect waves-float waves-light" data-toggle="modal" data-target="#default_2">تعديل</button>
+                                            <button type="reset" class="btn btn-danger waves-effect waves-float waves-light">حذف</button>
+
+
+                                            <div class="modal fade text-left" id="default_2" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title" id="myModalLabel1">تعديل وحدات الجرد</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">×</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                           <form action="">
+                                                              <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                      <label for="email-id-vertical">الوحدة</label>
+                                                                      <div class="position-relative"><select class="select2 form-control select2-hidden-accessible" id="default-select_2" data-select2-id="default-select_2" tabindex="-1" aria-hidden="true">
+                                                                        <option value="square" data-select2-id="7"> الوحدة </option>
+                                                                        <option value="rectangle">الوحدة </option>
+                                                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="6" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-default-select_2-container"><span class="select2-selection__rendered" id="select2-default-select_2-container" role="textbox" aria-readonly="true" title=" الوحدة "> الوحدة </span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                                                                    </div>
+                                                                  </div>
+        
+                                                                  <div class="col-12">
+                                                                      <div class="form-group">
+                                                                          <label for="first-name-vertical">  الكمية</label>
+                                                                          <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالكيلو جرامات">
+                                                                      </div>
+                                                                  </div>
+        
+                                                                  
+                                                                  <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="first-name-vertical">  الكمية</label>
+                                                                        <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالجرامات">
+                                                                    </div>
+                                                                </div>
+                                                              </div>
+                                                           </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </td>
-                                        <td>
-                                            <span class="font-weight-bold">2025 </span>
-                                        </td>
-                                        <td>
-                                            <span class="font-weight-bold">محمد وجدي</span>
-                                        </td>
-                                        <td>
-                                            <span class="font-weight-bold">2035</span>
-                                        </td>
-                                        <td>
-                                            <span class="font-weight-bold">203 </span>
-                                        </td>
-                                        <td>
-                                            <span class="font-weight-bold">60</span>
-                                        </td>
-                                        <td>
-                                            <span class="font-weight-bold">368</span>
-                                        </td>
-                                    </tr>   
-                                    
-                                    <tr style="background-color: #ecf0f1;">
-                                        <td colspan="6">الإجمالي</td>
-                                        <td>1253.25</td>
                                     </tr>
-                                      
+
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <video width="200" height="150" controls>
+                                                <source src="movie.mp4" type="video/mp4">
+                                                <source src="movie.ogg" type="video/ogg">
+                                              Your browser does not support the video tag.
+                                              </video>
+                                        </td>
+                                         
+                                          <td>
+                                              <button type="reset" class="btn btn-info waves-effect waves-float waves-light" data-toggle="modal" data-target="#default_2">تعديل</button>
+                                              <button type="reset" class="btn btn-danger waves-effect waves-float waves-light">حذف</button>
+  
+  
+                                              <div class="modal fade text-left" id="default_2" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
+                                                  <div class="modal-dialog" role="document">
+                                                      <div class="modal-content">
+                                                          <div class="modal-header">
+                                                              <h4 class="modal-title" id="myModalLabel1">تعديل وحدات الجرد</h4>
+                                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                  <span aria-hidden="true">×</span>
+                                                              </button>
+                                                          </div>
+                                                          <div class="modal-body">
+                                                             <form action="">
+                                                                <div class="row">
+                                                                  <div class="col-12">
+                                                                      <div class="form-group">
+                                                                        <label for="email-id-vertical">الوحدة</label>
+                                                                        <div class="position-relative"><select class="select2 form-control select2-hidden-accessible" id="default-select_2" data-select2-id="default-select_2" tabindex="-1" aria-hidden="true">
+                                                                          <option value="square" data-select2-id="7"> الوحدة </option>
+                                                                          <option value="rectangle">الوحدة </option>
+                                                                      </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="6" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-default-select_2-container"><span class="select2-selection__rendered" id="select2-default-select_2-container" role="textbox" aria-readonly="true" title=" الوحدة "> الوحدة </span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                                                                      </div>
+                                                                    </div>
+          
+                                                                    <div class="col-12">
+                                                                        <div class="form-group">
+                                                                            <label for="first-name-vertical">  الكمية</label>
+                                                                            <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالكيلو جرامات">
+                                                                        </div>
+                                                                    </div>
+          
+                                                                    
+                                                                    <div class="col-12">
+                                                                      <div class="form-group">
+                                                                          <label for="first-name-vertical">  الكمية</label>
+                                                                          <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالجرامات">
+                                                                      </div>
+                                                                  </div>
+                                                                </div>
+                                                             </form>
+                                                          </div>
+                                                          <div class="modal-footer">
+                                                              <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </td>
+                                      </tr>
+                                 
+                                   
                                 </tbody>
                             </table>
                         </div>
+                      
+                        <div class="col-12">
+                            <button type="reset" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ</button>
+                          </div>
                     </div>
-                   </div>
-                   
-               </div>
-               <button type="button" class="btn btn-dark waves-effect waves-float waves-light">طباعة</button>
-               <button type="button" class="btn btn-primary waves-effect waves-float waves-light">PDF</button>
+                    
+                </div>
             </div>
         </div>
     </div>
@@ -601,8 +648,8 @@
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
- <!-- BEGIN: Footer-->
- <footer class="footer footer-static footer-light">
+   <!-- BEGIN: Footer-->
+   <footer class="footer footer-static footer-light">
     <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">جميع الحقوق محفوظة &copy; 2021
         <a class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">شركة طيف</a></span>
         <span class="float-md-right d-none d-md-block"> بواسطة <img src="../../../app-assets/images/logo.svg" width="100" alt="" srcset=""></span></p>
@@ -639,9 +686,9 @@
 <script src="../../../app-assets/js/core/app-menu.js"></script>
 <script src="../../../app-assets/js/core/app.js"></script>
 <!-- END: Theme JS-->
-
+<script src="../../../app-assets/vendors/js/extensions/dropzone.min.js"></script>
 <!-- BEGIN: Page JS-->
-<script src="../../../app-assets/js/scripts/tables/table-datatables-basic.js"></script>
+<script src="../../../app-assets/js/scripts/forms/form-file-uploader.js"></script>
 
 <!-- BEGIN: Page JS-->
 <!-- END: Page JS-->

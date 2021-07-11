@@ -361,6 +361,32 @@
                 </li>
 
 
+
+                <!-- Screens -->
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">شاشات العرض</span><i data-feather="more-horizontal"></i>
+                </li>
+
+                 <!-- kitchen -->
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/kitchen.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض المطبخ</span>
+                </a>
+                </li>
+
+
+                 <!-- Waintg -->
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/waiting.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإنتظار</span>
+                </a>
+                </li>
+
+
+                 <!-- Ads -->
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/ads.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإعلانات</span>
+                </a>
+                </li>
+
+
                 <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">المخزون</span><i data-feather="more-horizontal"></i>
                 </li>
 
@@ -423,36 +449,401 @@
         <div class="content-wrapper">
             
             <div class="content-body">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title">عرض المطبخ</h4>
+                <!-- Order Table -->
+                <div class="orders">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="order_block">
+                                    <div class="order_head">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6">
+                                                    <h4>الطلب رقم (#23)</h4>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h4 class="order_time">04:25 م</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_1">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 1);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 1);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_2">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 2);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 2);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_3">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 3);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 3);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_4">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 4);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 4);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                   
+                                    <div class="done p-1">
+                                        <button type="button" class="btn w-100 btn-primary waves-effect waves-float waves-light">جاهز للتسليم</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="order_block">
+                                    <div class="order_head">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6">
+                                                    <h4>الطلب رقم (#23)</h4>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h4 class="order_time">04:25 م</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_5">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 5);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 5);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_6">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 6);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 6);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_7">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 7);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 7);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_8">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 8);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 8);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                   
+                                    <div class="done p-1">
+                                        <button type="button" class="btn w-100 btn-primary waves-effect waves-float waves-light">جاهز للتسليم</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="order_block">
+                                    <div class="order_head">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6">
+                                                    <h4>الطلب رقم (#23)</h4>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h4 class="order_time">04:25 م</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_9">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 9);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 9);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_10">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 10);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 10);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_11">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 11);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 11);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_12">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 12);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 12);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_13">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 13);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 13);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                   
+                                    <div class="done p-1">
+                                        <button type="button" class="btn w-100 btn-primary waves-effect waves-float waves-light">جاهز للتسليم</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="order_block">
+                                    <div class="order_head">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6">
+                                                    <h4>الطلب رقم (#23)</h4>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h4 class="order_time">04:25 م</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_14">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 14);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 14);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                   
+                                    <div class="done p-1">
+                                        <button type="button" class="btn w-100 btn-primary waves-effect waves-float waves-light">جاهز للتسليم</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="order_block">
+                                    <div class="order_head">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6">
+                                                    <h4>الطلب رقم (#23)</h4>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h4 class="order_time">04:25 م</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_15">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 15);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 15);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                   
+                                    <div class="done p-1">
+                                        <button type="button" class="btn w-100 btn-primary waves-effect waves-float waves-light">جاهز للتسليم</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="order_block">
+                                    <div class="order_head">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-6">
+                                                    <h4>الطلب رقم (#23)</h4>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h4 class="order_time">04:25 م</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="order_products">
+                                        <div class="container">
+                                            <div class="row align-items-center">
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <h5 id="product_name_16">جمبري عادي x1</h5>
+                                                </div> 
+                                                <div class="col-md-12 col-lg-12 col-xl-6">
+                                                    <button type="button" onclick="changeColor('start', 16);" class="btn btn-outline-warning waves-effect">تجهيز</button>
+                                                    <button type="button" onclick="changeColor('ready', 16);" class="btn btn-outline-success waves-effect">جاهز</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                   
+                                    <div class="done p-1">
+                                        <button type="button" class="btn w-100 btn-primary waves-effect waves-float waves-light">جاهز للتسليم</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+                        </div>
                     </div>
-                   
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th>رقم الطابور</th>
-                                    <th>حالة الطلب</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>54</td>  
-                                    <td><div class="badge badge-warning">قيد التنفيذ</div></td>            
-                                </tr>
-                                <tr>
-                                    <td>55</td>  
-                                    <td><div class="badge badge-dark">جاري الأنتظار</div></td>           
-                                </tr>
-                                <tr>
-                                    <td>55</td>  
-                                    <td><div class="badge badge-success">تم التسليم</div></td>           
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                   
                 </div>
             </div>
         </div>
@@ -516,6 +907,23 @@
             });
         }
     })
+</script>
+
+<script>
+
+    document.getElementById('product_name').onclick = changeColor;   
+
+    function changeColor(option , index) {
+        console.log("product_name_"+index);
+        if(option == "ready") {
+            document.getElementById('product_name_'+index).style.color = "green";
+        }else if (option == "start") {
+            document.getElementById('product_name_'+index).style.color = "orange"; 
+        }
+        
+        return false;
+    }   
+
 </script>
 </body>
 <!-- END: Body-->

@@ -400,6 +400,31 @@
                 </li>
 
 
+                <!-- Screens -->
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">شاشات العرض</span><i data-feather="more-horizontal"></i>
+                </li>
+
+                 <!-- kitchen -->
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/kitchen.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض المطبخ</span>
+                </a>
+                </li>
+
+
+                 <!-- Waintg -->
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/waiting.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإنتظار</span>
+                </a>
+                </li>
+
+
+                 <!-- Ads -->
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/ads.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإعلانات</span>
+                </a>
+                </li>
+
+
                 <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">المخزون</span><i data-feather="more-horizontal"></i>
                 </li>
 
@@ -523,144 +548,69 @@
 
                   <div class="row">
                     <div class="col-md-12 col-12">
-                        <form class="form form-vertical">
-
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">وحدات الجرد</h4>
-                                </div>
-                                <div class="card-body">
-                                    <button type="button" class="btn btn-outline-primary waves-effect mb-2" data-toggle="modal" data-target="#default">
-                                       إضافة جديد
-                                    </button>
-                                    <div class="modal fade text-left" id="default" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title" id="myModalLabel1">إضافة وحدات</h4>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">×</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                   <form action="">
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                              <label for="email-id-vertical">الوحدة</label>
-                                                              <select class="select2 form-control" id="default-select_2">
-                                                                <option value="square"> الوحدة </option>
-                                                                <option value="rectangle">الوحدة </option>
-                                                            </select>
-                                                            </div>
-                                                          </div>
-
-                                                        <div class="col-12">
-                                                            <div class="form-group">
-                                                                <label for="first-name-vertical">  الكمية</label>
-                                                                <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالكيلو جرامات">
-                                                            </div>
-                                                        </div>
-
-                                                     
-                                                    </div>
-                                                   </form>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead class="thead-dark">
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>الوحدة</th>
-                                                    <th>الكمية</th>
-                                                    <th>العمليات</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                  <td>1</td>
-                                                    <td>
-                                                       الوحدة
-                                                    </td>
-                                                    <td>15</td>
-                                                    <td>
-                                                        <button type="reset" class="btn btn-info waves-effect waves-float waves-light" data-toggle="modal" data-target="#default_2">تعديل</button>
-                                                        <button type="reset" class="btn btn-danger waves-effect waves-float waves-light">حذف</button>
-    
-    
-                                                        <div class="modal fade text-left" id="default_2" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
-                                                            <div class="modal-dialog" role="document">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header">
-                                                                        <h4 class="modal-title" id="myModalLabel1">تعديل وحدات الجرد</h4>
-                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                            <span aria-hidden="true">×</span>
+                        <div class="content-body">
+                            <section class="form-control-repeater">
+                                <div class="row">
+                                    <!-- Invoice repeater -->
+                                    <div class="col-12">
+                                        <div class="card">
+                                           
+                                            <div class="card-body">
+                                                <form action="#" class="invoice-repeater">
+                                                    <div data-repeater-list="invoice">
+                                                        <div data-repeater-item>
+                                                            <div class="row d-flex align-items-end">
+                                                                <div class="col-md-4 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="email-id-vertical">الوحدة</label>
+                                                                        <select class="  form-control" id="default-select_9">
+                                                                          <option value="square"> الوحدة </option>
+                                                                          <option value="rectangle">الوحدة </option>
+                                                                      </select>
+                                                                      </div>
+                                                                </div>
+            
+                                                                <div class="col-md-4 col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="first-name-vertical"> الكمية</label>
+                                                                        <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالكيلو جرامات ">
+                                                                    </div>
+                                                                </div>
+            
+                                                             
+            
+                                                                <div class="col-md-2 col-12 mb-50">
+                                                                    <div class="form-group">
+                                                                        <button class="btn btn-outline-danger text-nowrap px-1" data-repeater-delete type="button">
+                                                                            <i data-feather="x" class="mr-25"></i>
+                                                                            <span>حذف</span>
                                                                         </button>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                       <form action="">
-                                                                          <div class="row">
-                                                                            <div class="col-12">
-                                                                                <div class="form-group">
-                                                                                  <label for="email-id-vertical">الوحدة</label>
-                                                                                  <select class="select2 form-control" id="default-select_2">
-                                                                                    <option value="square"> الوحدة </option>
-                                                                                    <option value="rectangle">الوحدة </option>
-                                                                                </select>
-                                                                                </div>
-                                                                              </div>
-                    
-                                                                              <div class="col-12">
-                                                                                  <div class="form-group">
-                                                                                      <label for="first-name-vertical">  الكمية</label>
-                                                                                      <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالكيلو جرامات">
-                                                                                  </div>
-                                                                              </div>
-                    
-                                                                              
-                                                                              <div class="col-12">
-                                                                                <div class="form-group">
-                                                                                    <label for="first-name-vertical">  الكمية</label>
-                                                                                    <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالجرامات">
-                                                                                </div>
-                                                                            </div>
-                                                                          </div>
-                                                                       </form>
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <hr />
                                                         </div>
-                                                    </td>
-                                                </tr>
-                                             
-                                               
-                                            </tbody>
-                                        </table>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <button class="btn btn-icon btn-primary" type="button" data-repeater-create>
+                                                                <i data-feather="plus" class="mr-25"></i>
+                                                                <span>إضافة</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        <button type="reset" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ</button>
+                                                      </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
-                                  
-                                    <div class="col-12">
-                                        <button type="reset" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ</button>
-                                      </div>
+                                    <!-- /Invoice repeater -->
                                 </div>
-                                
-                            </div>
-
-
-
-                      
-                            
-                        </form>
+                            </section>
+            
+                        </div>
                           
                           </div>
                     </div>
@@ -685,6 +635,7 @@
 
 <!-- BEGIN: Vendor JS-->
 <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+<script src="../../../app-assets/vendors/js/forms/repeater/jquery.repeater.min.js"></script>
 <!-- BEGIN Vendor JS-->
 
 <!-- BEGIN: Page Vendor JS-->
@@ -718,6 +669,7 @@
 
  <!-- BEGIN: Page JS-->
  <script src="../../../app-assets/js/scripts/forms/form-select2.js"></script>
+ <script src="../../../app-assets/js/scripts/forms/form-repeater.js"></script>
  <!-- END: Page JS-->
 
 <script>
