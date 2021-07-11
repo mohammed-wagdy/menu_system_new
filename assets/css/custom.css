@@ -31,6 +31,7 @@ body , html , .navigation, .navigation-header span {
 .product_item {
     text-align: center !important;
     padding: 20px 0 !important;
+    margin: 10px 20px !important;
 }
 .bootstrap-touchspin.input-group {
     margin: 10px auto 10px auto;
