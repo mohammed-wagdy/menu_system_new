@@ -549,9 +549,10 @@
                               </div>
                               <div class="col-12">
                                 <div class="form-group">
-                                  <label for="email-id-vertical"> parent</label>
-                                  <select class="select2 form-control" id="default-select_2">
-                                    <option value="none"> -- none parent -- </option>
+                                  <label for="classification-type"> type</label>
+                                  <select class="select2 form-control" id="classification-type">
+                                    <option value="main">main classification</option>
+                                    <option value="sub">subcategory</option>
                                 </select>
                                 </div>
                               </div>
@@ -589,6 +590,39 @@
                                 <div class="form-group">
                                   <label for="fp-date-time">availability times</label>
                                   <input type="text" id="fp-date-time" class="form-control flatpickr-date-time flatpickr-input active" placeholder="YYYY-MM-DD HH:MM" >
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-group">
+                                  <label for="classification-days">Classification days</label>
+                                  <div class="position-relative" >
+                                    <select class="select2 form-select select2-hidden-accessible" id="classification-days" multiple="" data-select2-id="select2-multiple" tabindex="-1" aria-hidden="true">
+                                        <option value="1">Saturday</option>
+                                        <option value="2">Sunday</option>
+                                        <option value="3">Monday</option>
+                                        <option value="4">Tuesday</option>
+                                        <option value="5">Wed</option>
+                                        <option value="6">Thursday</option>
+                                        <option value="7">Friday</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <label for="fp-time-from">availability times</label>
+                                <div class='row'>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="fp-time-from">from </label>
+                                            <input type="text" id="fp-time-from" class="form-control flatpickr-time text-start flatpickr-input active " placeholder="HH:MM" >
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="fp-time-to">to</label>
+                                            <input type="text" id="fp-time-to" class="form-control flatpickr-time text-start flatpickr-input active " placeholder="HH:MM" >
+                                        </div>
+                                    </div>
                                 </div>
                               </div>
                              <div class="col-12">

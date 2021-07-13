@@ -490,7 +490,8 @@
                 </li>
 
                   <!-- Help -->
-                  <li class=" nav-item"><a class="d-flex align-items-center" href="Inventory/units.html">
+                  <li class=" nav-item">
+                      <a class="d-flex align-items-center" href="Inventory/units.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">قسم المساعدة</span>
                 </a>
                 </li>
@@ -519,7 +520,6 @@
                         </div>
                     </div>
                 </div>
-            
             </div>
             <div class="content-body">
                 <div class="row">
@@ -535,15 +535,15 @@
                                 <div class="form-group">
                                   <label for="category-name">اسم التصنيف</label>
                                   <input type="text" class="form-control" id="category-name" placeholder="أدخل اسم التصنيف">
-                                                             
                                 </div>
                               </div>
                               <div class="col-12">
                                 <div class="form-group">
-                                  <label for="email-id-vertical"> الأب</label>
-                                  <select class="select2 form-control" id="default-select_2">
-                                    <option value="none"> -- بدن أب -- </option>
-                                </select>
+                                  <label for="classification-type">نوعه</label>
+                                  <select class="select2 form-control" id="classification-type">
+                                    <option value="main">تصنيف رئيسي </option>
+                                    <option value="sub">تصنيف فرعي </option>
+                                  </select>
                                 </div>
                               </div>
                               <div class="col-12">
@@ -554,12 +554,12 @@
                               </div>
                               <div class="col-12">
                                 <div class="form-group">
-                                  <label for="imgload">صورة التصنيف</label>
-                                <div >
-                                  <img src="#" id="imgshow"alt="image" class=" rounded me-2 my-25 cursor-pointer" height="250" width="250">
-                                  <input class="form-control" type="file" id="imgload" accept="image/*">
-                                  <span>يتم تصغير الصورة بشكل تلقائي الى 250x250</span>
-                                </div>
+                                    <label for="imgload">صورة التصنيف</label>
+                                    <div >
+                                        <img src="#" id="imgshow"alt="image" class=" rounded me-2 my-25 cursor-pointer" height="250" width="250">
+                                        <input class="form-control" type="file" id="imgload" accept="image/*">
+                                        <span>يتم تصغير الصورة بشكل تلقائي الى 250x250</span>
+                                    </div>
                                 </div>
                               </div>
                               <div class="col-12">
@@ -568,7 +568,6 @@
                                   <textarea name="" id="category-description"  class="form-control" placeholder="إدخل الوصف للتصنيف"></textarea>
                                 </div>
                               </div>
-
                               <div class="col-md-12 mb-1">
                                 <label class="form-label" for="tags">الكلمات المفتاحية</label>
                                 <div class="position-relative" >
@@ -579,8 +578,35 @@
                               </div>  
                               <div class="col-12">
                                 <div class="form-group">
-                                  <label for="fp-date-time">أوقات توفر التصنيف</label>
-                                  <input type="text" id="fp-date-time" class="form-control flatpickr-date-time flatpickr-input active" placeholder="YYYY-MM-DD HH:MM" >
+                                  <label for="classification-days">ايام توفر التصنيف</label>
+                                  <div class="position-relative" >
+                                    <select class="select2 form-select select2-hidden-accessible" id="classification-days" multiple="" data-select2-id="select2-multiple" tabindex="-1" aria-hidden="true">
+                                        <option value="1">السبت</option>
+                                        <option value="2">الأحد</option>
+                                        <option value="3">الاثنين</option>
+                                        <option value="4">الثلاثاء</option>
+                                        <option value="5">الأربعاء</option>
+                                        <option value="6">الخميس</option>
+                                        <option value="7">الجمعة</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <label for="fp-time-from"> أوقات توفر التصنيف</label>
+                                <div class='row'>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="fp-time-from">من</label>
+                                            <input type="text" id="fp-time-from" class="form-control flatpickr-time text-start flatpickr-input active " placeholder="HH:MM" >
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="fp-time-to">إلى</label>
+                                            <input type="text" id="fp-time-to" class="form-control flatpickr-time text-start flatpickr-input active " placeholder="HH:MM" >
+                                        </div>
+                                    </div>
                                 </div>
                               </div>
                              <div class="col-12">
@@ -592,8 +618,6 @@
                       </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
