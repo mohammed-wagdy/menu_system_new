@@ -11,7 +11,7 @@
     <meta name="keywords"
           content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>إضافة منتج فردي</title>
+    <title>إضافة مجموعة من المنتجات</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
@@ -576,7 +576,7 @@
             <div class="content-header-left col-md-9 col-12 mb-2">
                 <div class="row breadcrumbs-top">
                     <div class="col-12">
-                        <h2 class="content-header-title float-left mb-0">إضافة منتج فردي</h2>
+                        <h2 class="content-header-title float-left mb-0">إضافة مجموعة من المنتجات</h2>
                         <div class="breadcrumb-wrapper">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="products.html">المنتجات</a>
@@ -651,7 +651,10 @@
                                     <label>السعر</label>
                                     <input type="number" value="1" disabled class="form-control">
                                 </div>
-
+                                <div class="col-12 mt-2">
+                                    <label>اسم المجموعة</label>
+                                    <input  class="form-control" placeholder="أدخل اسم للمجموعة" />
+                                </div>
                                 <div class="col-12 mt-2">
                                     <label>الوصف</label>
                                     <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="أضف وصف للمجموعة"></textarea>
@@ -659,10 +662,15 @@
                                 <div class="col-12 mt-2">
                                     <div class="custom-control custom-control-primary custom-switch">
                                         <p class="mb-50">إضافة خصم خاص بالمجموعة</p>
-                                        <input type="checkbox"  class="custom-control-input" id="customSwitch3" />
-                                        <label class="custom-control-label" for="customSwitch3"></label>
+                                        <input type="checkbox"  class="custom-control-input" id="discount" />
+                                        <label class="custom-control-label" for="discount"></label>
                                     </div>
                                 </div>
+                                <div class="col-12 mt-2">
+                                    <label>السعر بعد الخصم</label>
+                                    <input id="discount_input" type="number" value="1" disabled  class="form-control">
+                                </div>
+
 
 
 
@@ -719,6 +727,9 @@
             });
         }
     })
+    $('#discount').click(function() {
+        $("#discount_input").prop('disabled', !$('#discount_input').prop('disabled'));
+    });
 </script>
 </body>
 <!-- END: Body-->
