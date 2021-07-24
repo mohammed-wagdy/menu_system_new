@@ -74,6 +74,10 @@ body , html , .navigation, .navigation-header span {
 .orders .order_block .order_head h4 {
     color: white;
 }
+.meal_details_head {
+    padding: 7px 5px;
+    background-color: #f8f8f8;
+}
 @media (max-width: 575.98px) {
     .orders .order_block .order_head , .orders .order_block .order_products {
        text-align: center !important;

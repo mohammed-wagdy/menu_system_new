@@ -16,6 +16,9 @@
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- END: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/file-uploaders/dropzone.min.css">
 
@@ -472,15 +475,51 @@
                                             <!-- single file upload starts -->
                     <div class="row">
                         <div class="col-12">
+                            <div class="form-group">
+                                <label for="basicInput">أسم الإعلان</label>
+                                <input type="text" class="form-control" id="basicInput" placeholder="أدخل أسم الإعلان">
+                            </div>
+                        </div>
+                        <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">أدخل صورة أو فيديو للإعلان</h4>
+                                    <h6>أدخل صورة أو فيديو للإعلان</h6>
                                 </div>
                                 <div class="card-body">
                                    
                                     <form action="#" class="dropzone dropzone-area" id="dpz-single-file">
                                         <div class="dz-message">أضف إعلان جديد</div>
                                     </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 mb-2">
+                            <div class="custom-control custom-switch custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1">ظهور الإعلان</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="fp-default">تاريخ البدء</label>
+                                    <input type="text" id="fp-default" class="form-control flatpickr-basic flatpickr-input active" placeholder="YYYY-MM-DD" readonly="readonly">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="fp-time">وقت البدء</label>
+                                    <input type="text" id="fp-time" class="form-control flatpickr-time text-left flatpickr-input" placeholder="HH:MM" readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="fp-default">ناريخ الإنتهاء</label>
+                                    <input type="text" id="fp-default" class="form-control flatpickr-basic flatpickr-input active" placeholder="YYYY-MM-DD" readonly="readonly">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="fp-time">وقت الإنتهاء</label>
+                                    <input type="text" id="fp-time" class="form-control flatpickr-time text-left flatpickr-input" placeholder="HH:MM" readonly="readonly">
                                 </div>
                             </div>
                         </div>
@@ -521,7 +560,7 @@
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h4 class="modal-title" id="myModalLabel1">تعديل وحدات الجرد</h4>
+                                                            <h4 class="modal-title" id="myModalLabel1">تعديل الإعلان</h4>
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                 <span aria-hidden="true">×</span>
                                                             </button>
@@ -532,26 +571,21 @@
                                                                 <div class="col-12">
                                                                     <div class="form-group">
                                                                       <label for="email-id-vertical">الوحدة</label>
-                                                                      <div class="position-relative"><select class="select2 form-control select2-hidden-accessible" id="default-select_2" data-select2-id="default-select_2" tabindex="-1" aria-hidden="true">
+                                                                      <select class="select2 form-control select2-hidden-accessible" id="default-select_7" data-select2-id="default-select_7" tabindex="-1" aria-hidden="true">
                                                                         <option value="square" data-select2-id="7"> الوحدة </option>
                                                                         <option value="rectangle">الوحدة </option>
-                                                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="6" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-default-select_2-container"><span class="select2-selection__rendered" id="select2-default-select_2-container" role="textbox" aria-readonly="true" title=" الوحدة "> الوحدة </span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
-                                                                    </div>
+                                                                    </select>
                                                                   </div>
         
-                                                                  <div class="col-12">
-                                                                      <div class="form-group">
-                                                                          <label for="first-name-vertical">  الكمية</label>
-                                                                          <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالكيلو جرامات">
-                                                                      </div>
-                                                                  </div>
+                                                                  <div class="form-group">
+                                                                    <label for="first-name-vertical">  الكمية</label>
+                                                                    <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالكيلو جرامات">
+                                                                </div>
         
                                                                   
-                                                                  <div class="col-12">
-                                                                    <div class="form-group">
-                                                                        <label for="first-name-vertical">  الكمية</label>
-                                                                        <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالجرامات">
-                                                                    </div>
+                                                                <div class="form-group">
+                                                                    <label for="first-name-vertical">  الكمية</label>
+                                                                    <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل الكمية بالجرامات">
                                                                 </div>
                                                               </div>
                                                            </form>
@@ -667,6 +701,10 @@
 
 
 <!-- BEGIN: Page Vendor JS-->
+<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+<script src="../../../app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
 <script src="../../../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
 <script src="../../../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
 <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
@@ -680,6 +718,8 @@
 <script src="../../../app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
 <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
 <script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+<script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+
 <!-- END: Page Vendor JS-->
 
 <!-- BEGIN: Theme JS-->
@@ -689,6 +729,8 @@
 <script src="../../../app-assets/vendors/js/extensions/dropzone.min.js"></script>
 <!-- BEGIN: Page JS-->
 <script src="../../../app-assets/js/scripts/forms/form-file-uploader.js"></script>
+<script src="../../../app-assets/js/scripts/forms/form-select2.js"></script>
+<script src="../../../app-assets/js/scripts/forms/pickers/form-pickers.js"></script>
 
 <!-- BEGIN: Page JS-->
 <!-- END: Page JS-->
