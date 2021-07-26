@@ -336,11 +336,11 @@ $(window).on('load', function () {
     colors: [window.colors.solid.primary, window.colors.solid.warning],
     series: [
       {
-        name: 'Earning',
+        name: 'الإيرادات',
         data: [95, 177, 284, 256, 105, 63, 168, 218, 72]
       },
       {
-        name: 'Expense',
+        name: 'المصروفات',
         data: [-145, -80, -60, -180, -100, -60, -85, -75, -100]
       }
     ],
