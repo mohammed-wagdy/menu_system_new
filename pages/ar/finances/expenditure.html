@@ -9,7 +9,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>الإيرادات</title>
+    <title>المصروفات</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
@@ -392,7 +392,7 @@
             </li>
 
             <!-- Revenue -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="#">
+            <li class=" nav-item"><a class="d-flex align-items-center" href="revenue.html">
                 <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإيرادات</span>
             </a>
             </li>
@@ -503,7 +503,7 @@
         </div>
         <div class="content-body">
 
-            <a type="button" class="btn btn-primary waves-effect waves-float waves-light mb-2 mt-3" href="#">إضافة</a>
+            <button type="reset" class="btn btn-primary waves-effect waves-float waves-light mb-2 mt-3" data-toggle="modal" data-target="#create">إضافة سند صرف جديد</button>
 
             <!-- Basic table -->
             <section id="basic-datatable">
@@ -513,11 +513,13 @@
                             <table class="datatables-basic table">
                                 <thead>
                                 <tr>
-                                    <th>#</th>
-                                    <th>التاريخ</th>
+                                    <th>رقم السند</th>
+                                    <th>تاريخه</th>
                                     <th></th>
-                                    <th>المبلغ</th>
-                                    <th>البيان</th>
+                                    <th>المصروف له</th>
+                                    <th>نوع الصرف</th>
+                                    <th>القيمة</th>
+                                    <th>الحالة</th>
                                     <th>خيارات</th>
                                 </tr>
                                 </thead>
@@ -525,11 +527,14 @@
                                 <tr>
                                     <td>1</td>
                                     <td>1/1/2021</td>
+                                    <td>محمد احمد</td>
+                                    <td>راتب</td>
                                     <td>2500 ريال</td>
-                                    <td>مواد بناء</td>
+                                    <td>الحالة</td>
                                     <td>
-                                        <button type="reset" class="btn btn-info waves-effect waves-float waves-light" data-toggle="modal" data-target="#edit_category">تعديل</button>
-                                        <button onclick="confirm('هل أنت متأكد من حذف هذا المصروف ؟')" type="reset" class="btn btn-danger waves-effect waves-float waves-light">حذف</button>
+                                        <button type="reset" class="btn btn-success waves-effect waves-float waves-light" data-toggle="modal" data-target="#info">التفاصيل</button>
+                                        <button type="reset" class="btn btn-info waves-effect waves-float waves-light" data-toggle="modal" data-target="#edit">تعديل</button>
+                                        <button onclick="confirm('هل أنت متأكد من حذف هذا السند ؟')" type="reset" class="btn btn-danger waves-effect waves-float waves-light">حذف</button>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -540,6 +545,291 @@
 
             </section>
             <!--/ Basic table -->
+            <!-- Start Create category -->
+            <div class="modal fade text-left" id="create" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel1"> اضافة سند صرف جديد
+                            </h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="first2-name-vertical">قيمته</label>
+                                            <input type="number" id="first2-name-vertical" class="form-control" name="fname" placeholder="أدخل قيمة الصرف">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="first-name-vertical">اسم المصروف له</label>
+                                            <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل اسم المصروف له">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="role">نوع الصرف</label>
+                                            <select class="form-control" id="role">
+                                                <option>خيار 1</option>
+                                                <option>خيار 2</option>
+                                                <option>خيار 3</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="first-name-vertical">تاريخه</label>
+                                            <input type="date" class="form-control" placeholder="أدخل تاريخ السند">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+
+                                        <label for="first-name-vertical">صورة السند</label>
+                                        <div class="media mb-2">
+                                            <img src="../../../app-assets/images/avatars/7.png" alt="users avatar" class="user-avatar users-avatar-shadow rounded mr-2 my-25 cursor-pointer" height="90" width="90" />
+                                            <div class="media-body mt-50">
+                                                <h4>Eleanor Aguilar</h4>
+                                                <div class="col-12 d-flex mt-1 px-0">
+                                                    <label class="btn btn-primary mr-75 mb-0" for="change-picture">
+                                                        <span class="d-none d-sm-block">Change</span>
+                                                        <input class="form-control" type="file" id="change-picture" hidden accept="image/png, image/jpeg, image/jpg" />
+                                                        <span class="d-block d-sm-none">
+                                                        <i class="mr-0" data-feather="edit"></i>
+                                                    </span>
+                                                    </label>
+                                                    <button class="btn btn-outline-secondary d-none d-sm-block">Remove</button>
+                                                    <button class="btn btn-outline-secondary d-block d-sm-none">
+                                                        <i class="mr-0" data-feather="trash-2"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label>الوصف</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="أدخل وصف لسند الصرف"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="role">الحالة</label>
+                                            <select class="form-control" id="aa">
+                                                <option>خيار 1</option>
+                                                <option>خيار 2</option>
+                                                <option>خيار 3</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">إضافة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Create category -->
+            <!-- Start Create category -->
+            <div class="modal fade text-left" id="edit" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel1"> تعديل سند الصرف
+                            </h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="first2-name-vertical">قيمته</label>
+                                            <input type="number" id="first2-name-vertical" class="form-control" name="fname" placeholder="أدخل قيمة الصرف">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="first-name-vertical">اسم المصروف له</label>
+                                            <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل اسم المصروف له">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="role">نوع الصرف</label>
+                                            <select class="form-control" id="role">
+                                                <option>خيار 1</option>
+                                                <option>خيار 2</option>
+                                                <option>خيار 3</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="first-name-vertical">تاريخه</label>
+                                            <input type="date" class="form-control" placeholder="أدخل تاريخ السند">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+
+                                        <label for="first-name-vertical">صورة السند</label>
+                                        <div class="media mb-2">
+                                            <img src="../../../app-assets/images/avatars/7.png" alt="users avatar" class="user-avatar users-avatar-shadow rounded mr-2 my-25 cursor-pointer" height="90" width="90" />
+                                            <div class="media-body mt-50">
+                                                <h4>Eleanor Aguilar</h4>
+                                                <div class="col-12 d-flex mt-1 px-0">
+                                                    <label class="btn btn-primary mr-75 mb-0" for="change-picture">
+                                                        <span class="d-none d-sm-block">Change</span>
+                                                        <input class="form-control" type="file" id="change-picture" hidden accept="image/png, image/jpeg, image/jpg" />
+                                                        <span class="d-block d-sm-none">
+                                                        <i class="mr-0" data-feather="edit"></i>
+                                                    </span>
+                                                    </label>
+                                                    <button class="btn btn-outline-secondary d-none d-sm-block">Remove</button>
+                                                    <button class="btn btn-outline-secondary d-block d-sm-none">
+                                                        <i class="mr-0" data-feather="trash-2"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label>الوصف</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="أدخل وصف لسند الصرف"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="role">الحالة</label>
+                                            <select class="form-control" id="aa">
+                                                <option>خيار 1</option>
+                                                <option>خيار 2</option>
+                                                <option>خيار 3</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">إضافة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Create category -->
+            <!-- Start Create category -->
+            <div class="modal fade text-left" id="info" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel1">  التفاصيل
+                            </h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="first2-name-vertical">قيمته</label>
+                                            <input type="number" id="first2-name-vertical" class="form-control" name="fname" placeholder="أدخل قيمة الصرف">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="first-name-vertical">اسم المصروف له</label>
+                                            <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل اسم المصروف له">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="role">نوع الصرف</label>
+                                            <select class="form-control" id="role">
+                                                <option>خيار 1</option>
+                                                <option>خيار 2</option>
+                                                <option>خيار 3</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="first-name-vertical">تاريخه</label>
+                                            <input type="date" class="form-control" placeholder="أدخل تاريخ السند">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+
+                                        <label for="first-name-vertical">صورة السند</label>
+                                        <div class="media mb-2">
+                                            <img src="../../../app-assets/images/avatars/7.png" alt="users avatar" class="user-avatar users-avatar-shadow rounded mr-2 my-25 cursor-pointer" height="90" width="90" />
+                                            <div class="media-body mt-50">
+                                                <h4>Eleanor Aguilar</h4>
+                                                <div class="col-12 d-flex mt-1 px-0">
+                                                    <label class="btn btn-primary mr-75 mb-0" for="change-picture">
+                                                        <span class="d-none d-sm-block">Change</span>
+                                                        <input class="form-control" type="file" id="change-picture" hidden accept="image/png, image/jpeg, image/jpg" />
+                                                        <span class="d-block d-sm-none">
+                                                        <i class="mr-0" data-feather="edit"></i>
+                                                    </span>
+                                                    </label>
+                                                    <button class="btn btn-outline-secondary d-none d-sm-block">Remove</button>
+                                                    <button class="btn btn-outline-secondary d-block d-sm-none">
+                                                        <i class="mr-0" data-feather="trash-2"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label>الوصف</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="أدخل وصف لسند الصرف"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="role">الحالة</label>
+                                            <select class="form-control" id="aa">
+                                                <option>خيار 1</option>
+                                                <option>خيار 2</option>
+                                                <option>خيار 3</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">إضافة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Create category -->
         </div>
     </div>
 </div>
