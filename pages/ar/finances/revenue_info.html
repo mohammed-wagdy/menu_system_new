@@ -9,7 +9,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>تفاصيل مبيعات شهر فبراير</title>
+    <title>عرض فواتير الوردية</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
@@ -489,10 +489,10 @@
             <div class="content-header-left col-md-9 col-12 mb-2">
                 <div class="row breadcrumbs-top">
                     <div class="col-12">
-                        <h2 class="content-header-title float-left mb-0">الإيرادات</h2>
+                        <h3 class="content-header-title float-left mb-0">فواتير المناوبة رقم 225225</h3>
                         <div class="breadcrumb-wrapper">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">تفاصيل مبيعات شهر فبراير</a>
+                                <li class="breadcrumb-item"><a href="#">جميع فواتير المناوبة رقم 225225</a>
                                 </li>
                             </ol>
                         </div>
@@ -502,78 +502,64 @@
 
         </div>
         <div class="content-body">
-            <!-- Basic table -->
-            <section id="basic-datatable">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <table class="datatables-basic table">
-                                <thead>
+
+                <div class="card">
+                    
+                    <div class="table-responsive text-center">
+                        <table class="table">
+                            <thead class="thead-dark">
                                 <tr>
                                     <th>رقم الفاتورة</th>
-                                    <th>السعر (إجمالي الفاتورة)	</th>
-                                    <th>النوع</th>
-                                    <th>الكمية المباعة</th>
-                                    <th>المبيعات قبل التخفيض</th>
-                                    <th>التخفيض</th>
-                                    <th>صافي المبيعات</th>
-                                    <th>الضرائب</th>
-                                    <th>إجمالي المبيعات</th>
+                                    <th> الموظف المنشئ</th>
+                                    <th>العميل</th>
+                                    <th>قيمة الفاتورة (قبل الضريبة)</th>
+                                    <th>قيمة الضريبة</th>
+                                    <th>الخصم</th>
+                                    <th>المجموع (بعد الضريبة)</th>
+                                    <th>عرض التفاصيل</th>
                                 </tr>
-                                </thead>
-                                <tbody>
+                            </thead>
+                            <tbody>
                                 <tr>
-                                    <td>55252</td>
-                                    <td>32563 ر.س</td>
-                                    <td>توصيل</td>
-                                    <td>50</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                </tr>
-                                <tr>
-                                    <td>55252</td>
-                                    <td>32563 ر.س</td>
-                                    <td>توصيل</td>
-                                    <td>50</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                </tr>
-                                <tr>
-                                    <td>55252</td>
-                                    <td>32563 ر.س</td>
-                                    <td>توصيل</td>
-                                    <td>50</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                </tr>
-                                <tr>
-                                    <td>55252</td>
-                                    <td>32563 ر.س</td>
-                                    <td>توصيل</td>
-                                    <td>50</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                    <td>32563 ر.س</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                 
+                                    <td>
+                                        <span class="font-weight-bold">658</span>
+                                    </td>
+                                    <td>
+                                        <span class="font-weight-bold">عبدالستار محمد</span>
+                                    </td>
+                                
+                                    <td>
+                                        <span class="font-weight-bold"> محمد وجدي</span>
+                                    </td>
+
+                                    <td>
+                                        <span class="font-weight-bold"> 6000 ر.س</span>
+                                    </td>
+                                    
+                                    <td>
+                                        <span class="font-weight-bold"> 50 ر.س</span>
+                                    </td>
+                                    <td>
+                                        <span class="font-weight-bold"> 500 ر.س</span>
+                                    </td>
+                                    <td>
+                                        <span class="font-weight-bold"> 3500 ر.س</span>
+                                    </td>
+                                    <td>
+                                        <a type="button" class="btn btn-outline-primary" href="bills_info.html">
+                                            عرض
+                                         </a>
+                                    </td>
+                                </tr>  
+                         
+                            
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-
-            </section>
-            <!--/ Basic table -->
+       
+         
         </div>
     </div>
 </div>
@@ -622,6 +608,8 @@
 <!-- END: Theme JS-->
 
 <!-- BEGIN: Page JS-->
+<script src="../../../app-assets/js/scripts/tables/table-datatables-basic.js"></script>
+
 <!-- BEGIN: Page JS-->
 <!-- END: Page JS-->
 

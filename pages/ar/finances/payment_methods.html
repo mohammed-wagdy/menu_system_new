@@ -3,8 +3,6 @@
 <!-- BEGIN: Head-->
 
 <head>
-    <script src="https://unpkg.com/feather-icons"></script>
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
@@ -36,12 +34,10 @@
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/bordered-layout.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/semi-dark-layout.css">
 
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
+
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
     <!-- END: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
@@ -496,7 +492,7 @@
                         <h2 class="content-header-title float-left mb-0">طرق الدفع</h2>
                         <div class="breadcrumb-wrapper">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">طرق الدفع المتاحة</a>
+                                <li class="breadcrumb-item"><a href="#">جميع طرق الدفع المتاحة</a>
                                 </li>
                             </ol>
                         </div>
@@ -506,55 +502,185 @@
 
         </div>
         <div class="content-body">
-            <section class="form-control-repeater">
-                <div class="row">
-                    <!-- Invoice repeater -->
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <form action="#" class="invoice-repeater">
-                                    <div data-repeater-list="invoice">
-                                        <div data-repeater-item>
-                                            <div class="row d-flex align-items-end">
-                                                <!-- Icons -->
-                                                <div class="col-md-6 mb-1">
-                                                    <label>إختر طريقة الدفع</label>
-                                                    <select data-placeholder="Select a state..." class="select2-icons form-control" id="select2-icons">
 
-                                                            <option value="mada" data-icon="facebook" selected>مدى</option>
-                                                            <option value="visa" data-icon="twitter">فيزا</option>
-                                                            <option value="mastercard" data-icon="linkedin">ماستركارد</option>
-                                                            <option value="pay on delivery" data-icon="github">الدفع عند الإستلام</option>
-                                                    </select>
-                                                </div>
+            <button type="reset" class="btn btn-primary waves-effect waves-float waves-light mb-2 mt-3" data-toggle="modal" data-target="#create"> إضافة طريقة دفع جديدة </button>
 
-                                                <div class="col-md-2 col-12 mb-50">
-                                                    <div class="form-group">
-                                                        <button class="btn btn-outline-danger text-nowrap px-1" data-repeater-delete type="button">
-                                                            <i data-feather="x" class="mr-25"></i>
-                                                            <span>حذف</span>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <hr />
-                                        </div>
-                                    </div>
+                 <!-- Start Create category -->
+                 <div class="modal fade text-left" id="create" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel1"> إضافة طريقة دفع جديدة
+                                </h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
                                     <div class="row">
                                         <div class="col-12">
-                                            <button class="btn btn-icon btn-primary" type="button" data-repeater-create>
-                                                <i data-feather="plus" class="mr-25"></i>
-                                                <span>إضافة</span>
-                                            </button>
+                                            <div class="form-group">
+                                                <label for="first2-name-vertical">طريقة الدفع</label>
+                                                <input type="text" id="first2-name-vertical" class="form-control" name="fname" placeholder="أدخل طريقة الدفع">
+                                            </div>
                                         </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="first-name-vertical">العمولة</label>
+                                                <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل عمولة طريقة الدفع">
+                                            </div>
+                                        </div>
+
+                                      
+                                       
                                     </div>
                                 </form>
                             </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
+                            </div>
                         </div>
                     </div>
-                    <!-- /Invoice repeater -->
                 </div>
-            </section>
+                <!-- End Create category -->
+
+
+
+                <div class="card">
+                    
+                    <div class="table-responsive text-center">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>#</th>
+                                    <th>طريقة الدفع</th>
+                                    <th>العمولة</th>
+                                    <th>خيارات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="font-weight-bold">1</span>
+                                    </td>
+                                    <td>
+                                        <span class="font-weight-bold">فيزا كارت</span>
+                                    </td>
+                                    <td>
+                                        <span class="font-weight-bold">20%</span>
+                                    </td>
+                                  
+                                   
+                                    <td>
+                                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#default">
+                                           تعديل
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title" id="myModalLabel1"> إضافة طريقة دفع جديدة
+                                                        </h4>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="first2-name-vertical">طريقة الدفع</label>
+                                                                        <input type="text" id="first2-name-vertical" class="form-control" name="fname" placeholder="أدخل طريقة الدفع">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="first-name-vertical">العمولة</label>
+                                                                        <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل عمولة طريقة الدفع">
+                                                                    </div>
+                                                                </div>
+                        
+                                                            
+                                                               
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>  
+                                
+                                <tr>
+                                    <td>
+                                        <span class="font-weight-bold">2</span>
+                                    </td>
+                                    <td>
+                                        <span class="font-weight-bold">الدفع عند الأستلام</span>
+                                    </td>
+                                    <td>
+                                        <span class="font-weight-bold">--</span>
+                                    </td>
+                                  
+                                   
+                                    <td>
+                                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#default">
+                                           تعديل
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title" id="myModalLabel1"> إضافة طريقة دفع جديدة
+                                                        </h4>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="first2-name-vertical">طريقة الدفع</label>
+                                                                        <input type="text" id="first2-name-vertical" class="form-control" name="fname" placeholder="أدخل طريقة الدفع">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="first-name-vertical">العمولة</label>
+                                                                        <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل عمولة طريقة الدفع">
+                                                                    </div>
+                                                                </div>
+                        
+                                                        
+                                                               
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+       
+         
         </div>
     </div>
 </div>
@@ -603,11 +729,7 @@
 <!-- END: Theme JS-->
 
 <!-- BEGIN: Page JS-->
-<script src="../../../app-assets/vendors/js/forms/repeater/jquery.repeater.min.js"></script>
-<script src="../../../app-assets/js/scripts/forms/form-repeater.js"></script>
 <script src="../../../app-assets/js/scripts/tables/table-datatables-basic.js"></script>
-<script src="../../../app-assets/js/scripts/forms/form-select2.js"></script>
-<script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
 
 <!-- BEGIN: Page JS-->
 <!-- END: Page JS-->

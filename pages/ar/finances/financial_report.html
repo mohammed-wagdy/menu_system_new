@@ -503,59 +503,41 @@
         </div>
         <div class="content-body">
 
-            <div class="row match-height">
-                <div class="col-lg-4 col-12">
-                    <div class="row match-height">
-                        <!-- Bar Chart - Orders -->
-                        <div class="col-lg-6 col-md-3 col-6">
-                            <div class="card">
-                                <div class="card-body pb-50">
-                                    <h6>الطلبات</h6>
-                                    <h4 class="font-weight-bolder mb-1">725 طلب</h4>
-                                    <div id="statistics-order-chart"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ Bar Chart - Orders -->
-
-                        <!-- Line Chart - Profit -->
-                        <div class="col-lg-6 col-md-3 col-6">
-                            <div class="card card-tiny-line-stats">
-                                <div class="card-body pb-50">
-                                    <h6>الربح</h6>
-                                    <h4 class="font-weight-bolder mb-1">3450 ر.س</h4>
-                                    <div id="statistics-profit-chart"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ Line Chart - Profit -->
-
-                        <!-- Earnings Card -->
-                        <div class="col-lg-12 col-md-6 col-12">
-                            <div class="card earnings-card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <h4 class="card-title mb-1">الأرباح</h4>
-                                            <div class="font-small-2">هذا الشهر</div>
-                                            <h5 class="mb-1">4055.56 ر.س</h5>
-                                            <p class="card-text text-muted font-small-2">
-                                                <span> أكثر من الشهر الماضي بنسبة </span><span class="font-weight-bolder">68.2%</span>
-                                            </p>
-                                        </div>
-                                        <div class="col-6">
-                                            <div id="earnings-chart"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ Earnings Card -->
-                    </div>
+            <div class="card">
+                    
+                <div class="table-responsive text-center">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>مجموع الإيرادات</th>
+                                <th>مجموع المصروفات</th>
+                                <th>الصافي</th>
+                            
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="font-weight-bold">4500 ر.س</span>
+                                </td>
+                                <td>
+                                    <span class="font-weight-bold">2000 ر.س</span>
+                                </td>
+                                <td style="background-color: #2ecc71;color: #fff;">
+                                    <span class="font-weight-bold">2500 ر.س </span>
+                                </td>
+                               
+                            </tr>                
+                        </tbody>
+                    </table>
                 </div>
+            </div>
+
+            <div class="row match-height">
+              
 
                 <!-- Revenue Report Card -->
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-12 col-12">
                     <div class="card card-revenue-budget">
                         <div class="row mx-0">
                             <div class="col-md-8 col-12 revenue-report-wrapper">
@@ -585,11 +567,8 @@
                                         <a class="dropdown-item" href="javascript:void(0);">2018</a>
                                     </div>
                                 </div>
-                                <h2 class="mb-25">25,852 ر.س</h2>
-                                <div class="d-flex justify-content-center">
-                                    <span class="font-weight-bolder mr-25">الميزانية:</span>
-                                    <span>56,800 ر.س</span>
-                                </div>
+                                <p class="font-weight-bolder">صافي الربح</p>
+                                <h2 class="mb-25">25.852 ر.س</h2>
                                 <div id="budget-chart"></div>
                             </div>
                         </div>

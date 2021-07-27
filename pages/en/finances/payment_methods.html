@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="rtl">
+<html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
 
 <head>
@@ -9,13 +9,13 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>الإيرادات</title>
+    <title>طرق الدفع</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors.min.css">
     <!-- END: Vendor CSS-->
 
 
@@ -26,23 +26,23 @@
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
 
     <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap-extended.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/colors.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/components.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/dark-layout.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/bordered-layout.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/semi-dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/themes/semi-dark-layout.css">
 
 
     <!-- BEGIN: Page CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/core/menu/menu-types/vertical-menu.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
-    <link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
-    <link rel="stylesheet" type="text/css" href="../../../assets/css/custom_rtl.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/custom.css">
     <!-- END: Custom CSS-->
 
 </head>
@@ -291,7 +291,7 @@
 <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
     <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
-            <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/rtl/vertical-menu-template/index.html"><span class="brand-logo">
+            <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/vertical-menu-template/index.html"><span class="brand-logo">
                             <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24">
                                 <defs>
                                     <lineargradient id="linearGradient-1" x1="100%" y1="10.5120544%" x2="50%" y2="89.4879456%">
@@ -489,10 +489,10 @@
             <div class="content-header-left col-md-9 col-12 mb-2">
                 <div class="row breadcrumbs-top">
                     <div class="col-12">
-                        <h2 class="content-header-title float-left mb-0">الإيرادات</h2>
+                        <h2 class="content-header-title float-left mb-0">طرق الدفع</h2>
                         <div class="breadcrumb-wrapper">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">جميع الإيرادات</a>
+                                <li class="breadcrumb-item"><a href="#">جميع طرق الدفع المتاحة</a>
                                 </li>
                             </ol>
                         </div>
@@ -503,6 +503,50 @@
         </div>
         <div class="content-body">
 
+            <button type="reset" class="btn btn-primary waves-effect waves-float waves-light mb-2 mt-3" data-toggle="modal" data-target="#create"> إضافة طريقة دفع جديدة </button>
+
+                 <!-- Start Create category -->
+                 <div class="modal fade text-left" id="create" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel1"> إضافة طريقة دفع جديدة
+                                </h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="first2-name-vertical">طريقة الدفع</label>
+                                                <input type="text" id="first2-name-vertical" class="form-control" name="fname" placeholder="أدخل طريقة الدفع">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="first-name-vertical">العمولة</label>
+                                                <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل عمولة طريقة الدفع">
+                                            </div>
+                                        </div>
+
+                                      
+                                       
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Create category -->
+
+
+
                 <div class="card">
                     
                     <div class="table-responsive text-center">
@@ -510,8 +554,9 @@
                             <thead class="thead-dark">
                                 <tr>
                                     <th>#</th>
-                                    <th>رقم المناوبة</th>
-                                    <th>عرض الإيرادات</th>
+                                    <th>طريقة الدفع</th>
+                                    <th>العمولة</th>
+                                    <th>خيارات</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -520,66 +565,116 @@
                                         <span class="font-weight-bold">1</span>
                                     </td>
                                     <td>
-                                        <span class="font-weight-bold">225225</span>
+                                        <span class="font-weight-bold">فيزا كارت</span>
                                     </td>
-                                
                                     <td>
-                                        <a type="button" class="btn btn-outline-primary" href="revenue_info.html">
-                                           عرض
-                                        </a>
+                                        <span class="font-weight-bold">20%</span>
+                                    </td>
+                                  
+                                   
+                                    <td>
+                                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#default">
+                                           تعديل
+                                        </button>
 
-                    
+                                        <!-- Modal -->
+                                        <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title" id="myModalLabel1"> إضافة طريقة دفع جديدة
+                                                        </h4>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="first2-name-vertical">طريقة الدفع</label>
+                                                                        <input type="text" id="first2-name-vertical" class="form-control" name="fname" placeholder="أدخل طريقة الدفع">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="first-name-vertical">العمولة</label>
+                                                                        <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل عمولة طريقة الدفع">
+                                                                    </div>
+                                                                </div>
+                        
+                                                            
+                                                               
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>  
+                                
                                 <tr>
                                     <td>
                                         <span class="font-weight-bold">2</span>
                                     </td>
                                     <td>
-                                        <span class="font-weight-bold">9845</span>
+                                        <span class="font-weight-bold">الدفع عند الأستلام</span>
                                     </td>
-                                
                                     <td>
-                                        <a type="button" class="btn btn-outline-primary" href="revenue_info.html">
-                                           عرض
-                                        </a>
+                                        <span class="font-weight-bold">--</span>
+                                    </td>
+                                  
+                                   
+                                    <td>
+                                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#default">
+                                           تعديل
+                                        </button>
 
-                    
+                                        <!-- Modal -->
+                                        <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title" id="myModalLabel1"> إضافة طريقة دفع جديدة
+                                                        </h4>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form action="">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="first2-name-vertical">طريقة الدفع</label>
+                                                                        <input type="text" id="first2-name-vertical" class="form-control" name="fname" placeholder="أدخل طريقة الدفع">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <label for="first-name-vertical">العمولة</label>
+                                                                        <input type="number" id="first-name-vertical" class="form-control" name="fname" placeholder="أدخل عمولة طريقة الدفع">
+                                                                    </div>
+                                                                </div>
+                        
+                                                        
+                                                               
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </td>
-                                </tr> 
-                                <tr>
-                                    <td>
-                                        <span class="font-weight-bold">3</span>
-                                    </td>
-                                    <td>
-                                        <span class="font-weight-bold">84555</span>
-                                    </td>
-                                
-                                    <td>
-                                        <a type="button" class="btn btn-outline-primary" href="revenue_info.html">
-                                           عرض
-                                        </a>
-
-                    
-                                    </td>
-                                </tr> 
-                                <tr>
-                                    <td>
-                                        <span class="font-weight-bold">4</span>
-                                    </td>
-                                    <td>
-                                        <span class="font-weight-bold">745675</span>
-                                    </td>
-                                
-                                    <td>
-                                        <a type="button" class="btn btn-outline-primary" href="revenue_info.html">
-                                           عرض
-                                        </a>
-
-                    
-                                    </td>
-                                </tr> 
-                            
+                                </tr>
                             </tbody>
                         </table>
                     </div>
