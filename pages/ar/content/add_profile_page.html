@@ -9,7 +9,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>إضافة قسيمة شرائية </title>
+    <title>إضافة صفحة محتوى</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
@@ -19,8 +19,10 @@
     <!-- END: Vendor CSS-->
 
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/editors/quill/katex.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/editors/quill/monokai-sublime.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/editors/quill/quill.snow.css">
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap.css">
@@ -35,6 +37,7 @@
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
     <!-- END: Page CSS-->
+
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
     <link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
@@ -424,27 +427,27 @@
                 <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">التسويق</span><i data-feather="more-horizontal"></i>
                 </li>
                  
-                <li class=" nav-item"><a class="d-flex align-items-center" href="discount_coupons.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../Marketing/discount_coupons.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">كوبونات الخصم</span>
                 </a>
                 </li>
                  
-                <li class=" nav-item"><a class="d-flex align-items-center" href="vouchers.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../Marketing/vouchers.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">القسائم الشرائية</span>
                 </a>
                 </li>
                  
-                <li class=" nav-item"><a class="d-flex align-items-center" href="marketing_offers.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../marketing_offers.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">العروض التسويقية </span>
                 </a>
                 </li>
                  
-                <li class=" nav-item"><a class="d-flex align-items-center" href="special_discounts.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../Marketing/special_discounts.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الخصومات الخاصة</span>
                 </a>
                 </li>
                  
-                <li class=" nav-item"><a class="d-flex align-items-center" href="loyalty_and_rewards.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../Marketing/loyalty_and_rewards.html">
                     <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الولاء والمكافآت</span>
                 </a>
                 </li>
@@ -483,6 +486,25 @@
                 </a>
                 </li>
 
+                <!-- website content -->
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">محتوى الموقع</span><i data-feather="more-horizontal"></i>
+                </li>
+
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="profile_pages.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الصفحات التعريفية</span>
+                </a>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="blog.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المدونة</span>
+                </a>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="ads.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإعلانات</span>
+                </a>
+                </li>
                 
                 <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">الإعدادات</span><i data-feather="more-horizontal"></i>
                 </li>
@@ -513,176 +535,101 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">القسائم الشرائية</h2>
+                            <h2 class="content-header-title float-left mb-0">الصفحات التعريفية</h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="add_voucher.html">إضافة قسيمة شرائية </a>
+                                    <li class="breadcrumb-item"><a href="add_profile_page.html">إضافة صفحة تعريفية</a>
                                     </li>
                                 </ol>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="content-body">
+            
+            </div> 
+        </div>
+        <div class="content-body">
                 <div class="row">
                     <div class="col-md-12 col-12">
-                      <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title"> انشاء قسيمة شرائية </h4>
-                        </div>
-                        <div class="card-body">
-                          <form class="form form-vertical">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for="coupon-name">الاسم</label>
-                                         <input type="text" name="" class="form-control" id="coupon-name" placeholder="أدخل اسم القسيمة الشرائية">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for="coupon-name">القيمة</label>
-                                        <div class="input-group">
-                                            <input type="number" class="form-control"  aria-describedby="value">
-                                            <span class="input-group-text" id="value">SAR</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                        <div class="form-group">
-                                            <label for="coupon-number">عدد القسائم</label>
-                                            <input type="number" name="" class="form-control" id="coupon-number" >
-                                    </div>
-                                </div>
-                                    
-                                <div class="col-12">
-                                    <label>مدة صلاحية القسيمة الشرائية</label>
+                        <div class="card">
+                            <div class="card-body">
+                                <form class="form form-vertical">
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-12">
                                             <div class="form-group">
-                                                <label for="fp-date-from">من</label>
-                                                <input type="text" id="fp-date-from" class="form-control flatpickr-basic flatpickr-input" placeholder="YYYY-MM-DD" readonly="readonly">
+                                                <label for="page-title">عنوان الصفحة</label>
+                                                <input type="text" name="" class="form-control" id="page-title" placeholder="أدخل عنوان الصفحة ">
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-12">
                                             <div class="form-group">
-                                                <label for="fp-date-to">إلى</label>
-                                                <input type="text" id="fp-date-to" class="form-control flatpickr-basic flatpickr-input" placeholder="YYYY-MM-DD" readonly="readonly">
+                                                <label for="page-url">رابط الصفحة</label>
+                                                <input class="form-control" type="text" id='page-url' placeholder="https://www.example/page"> 
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for="days">ايام توفر القسيمة</label>
-                                        <div class="position-relative" >
-                                            <select class="select2 form-select select2-hidden-accessible" id="days" multiple="" data-select2-id="select2-multiple" tabindex="-1" aria-hidden="true">
-                                                <option value="1">السبت</option>
-                                                <option value="2">الأحد</option>
-                                                <option value="3">الاثنين</option>
-                                                <option value="4">الثلاثاء</option>
-                                                <option value="5">الأربعاء</option>
-                                                <option value="6">الخميس</option>
-                                                <option value="7">الجمعة</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <label for="fp-time-from"> أوقات توفر القسيمة</label>
-                                    <div class='row'>
-                                        <div class="col-6">
-                                            <div class="form-group">
-                                                <label for="fp-time-from">من</label>
-                                                <input type="text" id="fp-time-from" class="form-control flatpickr-time text-start flatpickr-input active " placeholder="HH:MM" >
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="form-group">
-                                                <label for="fp-time-to">إلى</label>
-                                                <input type="text" id="fp-time-to" class="form-control flatpickr-time text-start flatpickr-input active " placeholder="HH:MM" >
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="modal fade" id="exportModal" tabindex="-1" aria-labelledby="exportModallLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exportModalLabel">تصدير القسيمة الشرائية</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">×</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label for="date">التاريخ</label>
-                                                        <input type="text" name="" class="form-control" id="date" >
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label for="usage">تم استعماله</label>
-                                                        <select class="select2 form-control" id="usage">
-                                                            <option value="no">لا </option>
-                                                            <option value="yes">نعم</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                    
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label for="active">فعال</label>
-                                                        <select class="select2 form-control" id="active">
-                                                            <option value="no">لا </option>
-                                                            <option value="yes">نعم</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label for="type">النوع</label>
-                                                        <select class="select2 form-control" id="type">
-                                                            <option value="all">نسبة </option>
-                                                            <option value="type">قيمة</option>
-                                                        </select>
+                                        <div class="col-12">
+                                            <div class="mb-2">
+                                            <label class="form-label">محتوى الصفحة</label>
+                                            <div id="blog-editor-wrapper">
+                                                <div id="blog-editor-container">
+                                                        <div class="editor ql-container ql-snow"style="min-height:300px;">
+                                                        <div class="ql-editor h-25" data-gramm="false" contenteditable="true">
+                                                            <p></p>
+                                                        </div>
+                                                        <div class="ql-clipboard" contenteditable="true" tabindex="-1"></div>
+                                                            <div class="ql-tooltip ql-hidden">
+                                                                <a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a>
+                                                                <input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL">
+                                                                <a class="ql-action"></a><a class="ql-remove"></a>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary">حفظ</button>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="select-type">نوع الصفحة</label>
+                                                <select class="select2 form-control" id="select-type">
+                                                    <option value="type">صفحة</option>
+                                                    <option value="type">صفحة </option>
+                                                </select>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                       
+                                        <div class="col-12">
+                                            <h6>تحسينات SEO</h6>
+                                            <div class="form-group">
+                                                <label for="page-product-title">عنوان صفحة المنتج (page title)</label>
+                                                <input type="text" name="" class="form-control" id="page-product-title" placeholder="عنوان صفحة المنتج (page title) ">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="page-description">وصف صفحة المنتج (page description)</label>
+                                                <textarea class="form-control" id="page-description" rows="3" placeholder="Textarea"></textarea>                                            </div>
+                                        </div>
 
-                                <div class="col-12">
-                                    <button type="button" class="btn btn-primary mr-1 waves-effect waves-float waves-light" data-toggle="modal" data-target="#exportModal">حفظ</button>
-                                </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
+                                        <div class="col-12 mt-2 p-0">
+                                            <button type="submit" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ</button>
+                                        </div>
+                                    </div> 
+                                </form>
+                            </div> 
+                        </div> 
+
                     </div>
                 </div>
-            </div>
         </div>
+        
     </div>
-
     <!-- END: Content-->
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
- <!-- BEGIN: Footer-->
- <footer class="footer footer-static footer-light">
+!-- BEGIN: Footer-->
+<footer class="footer footer-static footer-light">
+
     <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">جميع الحقوق محفوظة &copy; 2021
         <a class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">شركة طيف</a></span>
         <span class="float-md-right d-none d-md-block"> بواسطة <img src="../../../app-assets/images/logo.svg" width="100" alt="" srcset=""></span></p>
@@ -696,8 +643,11 @@
 <!-- BEGIN Vendor JS-->
 
 <!-- BEGIN: Page Vendor JS-->
-<script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
 
+<script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+<script src="../../../app-assets/vendors/js/editors/quill/katex.min.js"></script>
+<script src="../../../app-assets/vendors/js/editors/quill/highlight.min.js"></script>
+<script src="../../../app-assets/vendors/js/editors/quill/quill.min.js"></script>
 <!-- END: Page Vendor JS-->
 
 <!-- BEGIN: Page Vendor JS-->
@@ -707,12 +657,19 @@
 <!-- BEGIN: Theme JS-->
 <script src="../../../app-assets/js/core/app-menu.js"></script>
 <script src="../../../app-assets/js/core/app.js"></script>
+
 <!-- END: Theme JS-->
 
- <!-- BEGIN: Page JS-->
- <script src="../../../app-assets/js/scripts/forms/form-select2.js"></script>
- <script src="../../../app-assets/js/scripts/forms/pickers/form-pickers.min.js"></script>
- <!-- END: Page JS-->
+<!-- BEGIN: Page JS-->
+
+<script src="../../../app-assets/js/scripts/forms/form-select2.js"></script>
+<script src="../../../app-assets/js/scripts/forms/pickers/form-pickers.min.js"></script>
+<script src="../../../app-assets/js/scripts/tables/table-datatables-basic.js"></script>
+<script src="../../../app-assets/js/scripts/pages/page-blog-edit.min.js"></script>
+<!-- END: Page JS-->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
 <script>
     $(window).on('load', function() {
@@ -724,6 +681,7 @@
         }
     })
 </script>
+
 </body>
 <!-- END: Body-->
 
