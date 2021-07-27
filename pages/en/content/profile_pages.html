@@ -564,6 +564,7 @@
                                             </th>
 
                                             <th> </th>
+                                            <th> </th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -585,6 +586,7 @@
                                                                     <span aria-hidden="true">×</span>
                                                                 </button>
                                                             </div>
+
                                                             <div class="modal-body mt-1">
                                                                 <div class="row"> 
                                                                     <div class="input-group">
@@ -596,10 +598,9 @@
                                                                             </svg>
                                                                         </button> 
                                                                     </div>
-                                                                    
                                                                 </div>
-
                                                             </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -609,6 +610,23 @@
                                                 <div class="custom-control custom-switch">
                                                     <input type="checkbox" class="custom-control-input" id="activation">
                                                     <label class="custom-control-label" for="activation"></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button type="button" class="btn btn-sm dropdown-toggle hide-arrow waves-effect waves-float waves-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                                                    </button>
+                                                    <div class="dropdown-menu" style="">
+                                                        <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 me-50"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+                                                        <span>تعديل</span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash me-50"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                                                        <span>حذف</span>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </td>
                                         </tr>
@@ -672,6 +690,8 @@
 <script src="../../../app-assets/js/scripts/tables/table-datatables-basic.js"></script>
 
 <!-- BEGIN: Page JS-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <!-- END: Page JS-->
 
 <script>
