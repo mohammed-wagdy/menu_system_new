@@ -14,6 +14,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
+  <link rel="stylesheet" href="node_modules/intl-tel-input/src/css/intlTelInput.scss">
 
   <!-- BEGIN: Vendor CSS-->
   <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
@@ -547,8 +548,8 @@
               <button type="button" class="step-trigger">
                 <span class="bs-stepper-box">2</span>
                 <span class="bs-stepper-label">
-                                        <span class="bs-stepper-title">الأدوار</span>
-                                        <span class="bs-stepper-subtitle">إضافة الأدوار</span>
+                                        <span class="bs-stepper-title">الدور</span>
+                                        <span class="bs-stepper-subtitle">إضافة الدور</span>
                                     </span>
               </button>
             </div>
@@ -566,18 +567,24 @@
                     <input type="text" name="username" id="username" class="form-control" placeholder="ادخل الاسم" />
                   </div>
                   <div class="form-group col-md-6">
-                    <label class="form-label" for="email">الإيميل</label>
+                    <label class="form-label" for="email">البريد الإلكتروني</label>
                     <input type="email" name="email" id="email" class="form-control" placeholder="john.doe@email.com" aria-label="john.doe" />
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-group form-password-toggle col-md-6">
-                    <label class="form-label" for="password">كلمة السر</label>
+                    <label class="form-label" for="password">كلمة المرور</label>
                     <input type="password" name="password" id="password" class="form-control" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
                   </div>
                   <div class="form-group form-password-toggle col-md-6">
-                    <label class="form-label" for="confirm-password">إعادة كلمة السر</label>
+                    <label class="form-label" for="confirm-password">إعادة كلمة المرور</label>
                     <input type="password" name="confirm-password" id="confirm-password" class="form-control" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label class="form-label" for="phone">رقم الجوال</label>
+                    <input type="text" name="phone" id="phone" class="form-control" />
                   </div>
                 </div>
               </form>
@@ -594,19 +601,15 @@
             </div>
             <div id="personal-info" class="content">
               <div class="content-header">
-                <h5 class="mb-0">الأدوار</h5>
-                <small>أدخل الأدوار</small>
+                <h5 class="mb-0">الدور</h5>
+                <small>أدخل الدور</small>
               </div>
               <form>
                 <div class="row">
-                  <div class="form-group col-md-6">
-                    <label class="form-label" for="first-name">دور الشركة</label>
-                    <input type="text" name="first-name" id="first-name" class="form-control"  />
-                  </div>
                   <!-- Multiple -->
                   <div class="col-md-6 mb-1">
                     <div class="form-group">
-                      <label for="basicSelect">دور العمل</label>
+                      <label for="basicSelect">الدور</label>
                       <select class="form-control" id="basicSelect">
                         <option>IT</option>
                         <option>Blade Runner</option>
@@ -614,23 +617,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="form-group col-md-6">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck1" />
-                      <label class="custom-control-label" for="customCheck1">تعيين على العمل الحالي</label>
-                    </div>
-                  </div>
 
-
-                </div>
-                <div class="row">
-                  <div class="form-group col-md-6">
-                    <label class="form-label" for="first-name">دور الفرع</label>
-                    <input type="text" name="first-name" id="first-name" class="form-control"  />
-                  </div>
-                  <!-- Multiple -->
                   <div class="col-md-6 mb-1">
                     <label>الفروع</label>
                     <select class="select2 form-control" multiple>
@@ -696,6 +683,8 @@
                       </optgroup>
                     </select>
                   </div>
+
+
                 </div>
                 <div class="d-flex justify-content-between">
                   <button class="btn btn-outline-secondary btn-prev">
