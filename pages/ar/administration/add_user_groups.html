@@ -190,7 +190,7 @@
             <div class="media d-flex align-items-center">
               <h6 class="font-weight-bolder mr-auto mb-0">System Notifications</h6>
               <div class="custom-control custom-control-primary custom-switch">
-                <input class="custom-control-input" id="systemNotification" type="checkbox" checked="">
+                <input class="custom-control-input" id="systemNotification" type="checkbox" ="">
                 <label class="custom-control-label" for="systemNotification"></label>
               </div>
             </div><a class="d-flex" href="javascript:void(0)">
@@ -548,155 +548,112 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 mt-1">
+                  <div class="form-group">
+                    <h6 for="permisionss">إختر صلاحيات</h6>
+                  </div>
+                </div>
+                <div class="col-md-6">
                   <div class="table-responsive border rounded mt-1">
                     <h6 class="py-1 mx-1 mb-0 font-medium-2">
                       <i data-feather="lock" class="font-medium-3 mr-25"></i>
-                      <span class="align-middle">الصلاحيات</span>
+                      <span class="align-middle">restaurants</span>
                     </h6>
                     <table class="table table-striped table-borderless">
                       <thead class="thead-light">
                       <tr>
                         <th>Module</th>
-                        <th>Read</th>
-                        <th>Write</th>
-                        <th>Create</th>
-                        <th>Delete</th>
+                        <th>Active</th>
                       </tr>
                       </thead>
                       <tbody>
                       <tr>
-                        <td>Admin</td>
+                        <td>read_restaurants</td>
                         <td>
                           <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="admin-read" checked />
-                            <label class="custom-control-label" for="admin-read"></label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="admin-write" />
-                            <label class="custom-control-label" for="admin-write"></label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="admin-create" />
-                            <label class="custom-control-label" for="admin-create"></label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="admin-delete" />
-                            <label class="custom-control-label" for="admin-delete"></label>
+                            <input type="checkbox" class="custom-control-input" id="read_restaurants"  />
+                            <label class="custom-control-label" for="read_restaurants"></label>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>Staff</td>
+                        <td>create_restaurants</td>
                         <td>
                           <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="staff-read" />
-                            <label class="custom-control-label" for="staff-read"></label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="staff-write" checked />
-                            <label class="custom-control-label" for="staff-write"></label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="staff-create" />
-                            <label class="custom-control-label" for="staff-create"></label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="staff-delete" />
-                            <label class="custom-control-label" for="staff-delete"></label>
+                            <input type="checkbox" class="custom-control-input" id="create_restaurants" checked />
+                            <label class="custom-control-label" for="create_restaurants"></label>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>Author</td>
+                        <td>update_restaurants</td>
                         <td>
                           <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="author-read" checked />
-                            <label class="custom-control-label" for="author-read"></label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="author-write" />
-                            <label class="custom-control-label" for="author-write"></label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="author-create" checked />
-                            <label class="custom-control-label" for="author-create"></label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="author-delete" />
-                            <label class="custom-control-label" for="author-delete"></label>
+                            <input type="checkbox" class="custom-control-input" id="update_restaurants" checked />
+                            <label class="custom-control-label" for="update_restaurants"></label>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>Contributor</td>
+                        <td>delete_restaurants</td>
                         <td>
                           <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="contributor-read" />
-                            <label class="custom-control-label" for="contributor-read"></label>
+                            <input type="checkbox" class="custom-control-input" id="delete_restaurants"  />
+                            <label class="custom-control-label" for="delete_restaurants"></label>
                           </div>
                         </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="table-responsive border rounded mt-1">
+                    <h6 class="py-1 mx-1 mb-0 font-medium-2">
+                      <i data-feather="lock" class="font-medium-3 mr-25"></i>
+                      <span class="align-middle">roles</span>
+                    </h6>
+                    <table class="table table-striped table-borderless">
+                      <thead class="thead-light">
+                      <tr>
+                        <th>Module</th>
+                        <th>Active</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>read_roles</td>
                         <td>
                           <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="contributor-write" />
-                            <label class="custom-control-label" for="contributor-write"></label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="contributor-create" />
-                            <label class="custom-control-label" for="contributor-create"></label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="contributor-delete" />
-                            <label class="custom-control-label" for="contributor-delete"></label>
+                            <input type="checkbox" class="custom-control-input" id="read_roles" checked />
+                            <label class="custom-control-label" for="read_roles"></label>
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <td>User</td>
+                        <td>create_roles</td>
                         <td>
                           <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="user-read" />
-                            <label class="custom-control-label" for="user-read"></label>
+                            <input type="checkbox" class="custom-control-input" id="create_roles"  />
+                            <label class="custom-control-label" for="create_roles"></label>
                           </div>
                         </td>
+                      </tr>
+                      <tr>
+                        <td>update_roles</td>
                         <td>
                           <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="user-create" />
-                            <label class="custom-control-label" for="user-create"></label>
+                            <input type="checkbox" class="custom-control-input" id="update_roles"  />
+                            <label class="custom-control-label" for="update_roles"></label>
                           </div>
                         </td>
+                      </tr>
+                      <tr>
+                        <td>delete_roles</td>
                         <td>
                           <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="user-write" />
-                            <label class="custom-control-label" for="user-write"></label>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="user-delete" checked />
-                            <label class="custom-control-label" for="user-delete"></label>
+                            <input type="checkbox" class="custom-control-input" id="delete_roles"  />
+                            <label class="custom-control-label" for="delete_roles"></label>
                           </div>
                         </td>
                       </tr>
