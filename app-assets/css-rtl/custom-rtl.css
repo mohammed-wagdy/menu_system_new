@@ -12,7 +12,6 @@
   -ms-flex-align : center;
           align-items : center;
 }
-
 .vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation li.has-sub > a:after, .vertical-layout.vertical-overlay-menu.menu-open .main-menu .navigation li.has-sub > a:after {
   -webkit-transform : rotate(180deg);
       -ms-transform : rotate(180deg);
