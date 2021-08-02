@@ -428,8 +428,8 @@ $(function () {
   if (ajax.length) {
     ajax.on('click', function () {
       Swal.fire({
-        title: 'Search for a user',
-        input: 'text',
+        title: 'أدخل رمز التفعيل المكون من 4 أرقام',
+        input: 'number',
         customClass: {
           confirmButton: 'btn btn-primary',
           cancelButton: 'btn btn-outline-danger ml-1'
@@ -438,8 +438,8 @@ $(function () {
         inputAttributes: {
           autocapitalize: 'off'
         },
-        showCancelButton: true,
-        confirmButtonText: 'Look up',
+        showCancelButton: false,
+        confirmButtonText: 'تحقق',
         showLoaderOnConfirm: true,
         preConfirm: function (login) {
           return fetch('//api.github.com/users/' + login + '')
