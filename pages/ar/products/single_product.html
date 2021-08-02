@@ -24,7 +24,8 @@
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/forms/pickers/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/forms/pickers/form-pickadate.css">
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap.css">
@@ -653,17 +654,21 @@
                               <div class="col-12">
                                 <div class="form-group ">
                                   <label >صورة المنتج</label>
-                                    <div class="mb-2">
-                                        <div  class="d-flex border border-1 mb-1 imgshow">
-                                            
-                                        </div>  
-                                        <div class="col-12">
-                                                <label class="btn btn-primary me-75 mb-0 waves-effect waves-float waves-light" for="imgload">
-                                                إضافة
-                                                <input  class="form-control" type="file" id="imgload" multiple hidden="" accept="image/png, image/jpeg, image/jpg">
-                                                </label>
+                                  <div class="media mb-2">
+                                    <img src="../../../app-assets/images/avatars/7.png" alt="users avatar" class="user-avatar users-avatar-shadow rounded mr-2 my-25 cursor-pointer" height="90" width="90" />
+                                    <div class="media-body mt-50">
+                                        <div class="col-12 d-flex mt-1 px-0">
+                                            <label class="btn btn-primary mr-75 mb-0" for="change-picture">
+                                                <span class="d-none d-sm-block">تحميل صورة المنتج</span>
+                                                <input class="form-control" type="file" id="change-picture" hidden accept="image/png, image/jpeg, image/jpg" />
+                                                <span class="d-block d-sm-none">
+                                                    <i class="mr-0" data-feather="edit"></i>
+                                                </span>
+                                            </label>
+                                        
                                         </div>
                                     </div>
+                                </div>
                                 </div>
                               </div>
                               <div class="col-12">
@@ -692,10 +697,7 @@
                                 <div class="form-group">
                                   <label for="price">السعر </label>
                                   <input type="number" class="form-control" id="price" value='0'>
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                        <label class="custom-control-label" for="customSwitch1">شامل الضريبة</label>
-                                    </div>
+                                   
                                 </div>
                               </div>
                               <div class="col-6">
@@ -704,231 +706,171 @@
                                   <input type="number" class="form-control" id="calories" value='0'>
                                 </div>
                               </div>
-                              <div class="col-12 my-1">                                    
-                                  <label class="form-label" for="select_Ingredients">المكونات</label>
-                                  <div class="form-group border border-1">
-                                    <div class='row my-1 '>
-                                        <div class="col">
-                                            <label class="form-label" for="select_Ingredients">المكون</label>
-                                            <select class="select2 form-control" id="select_Ingredients">
-                                                <option value="Ingredient1"> المكون 1 </option>
-                                                <option value="Ingredient2"> المكون 2 </option>
-                                            </select>                                   
-                                        </div>
-                                        <div class='col-2 '>
-                                            <label class="form-label" for="quantitative "> الكمية </label>
-                                            <p>20</p>
-                                        </div>
-                                        <div class='col-2 '>
-                                            <label class="form-label" for="removability">القابلية للازالة</label>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="removability">
-                                                <label class="custom-control-label" for="removability"> </label>
+                              <div class="col-6">
+                                <div class="form-group">
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                        <label class="custom-control-label" for="customSwitch1">شامل الضريبة</label>
+                                    </div>
+                                </div>
+                              </div>
+
+                              <div class="col-12 my-2 d-none">
+                                <label class="form-label">الاضافات</label>
+                                <div class="form-group">
+                                    <form action="#" class="invoice-repeater">
+                                        <div data-repeater-list="invoice">
+                                            <div data-repeater-item>
+                                                <div class="row d-flex align-items-end">
+                                                    <div class="col-md-4 col-12">
+                                                        <div class="form-group">
+                                                            <label for="selectSize">الإضافة</label>
+                                                            <select class="select2 form-control" id="selectSize_3">
+                                                                <option value="big">كبير</option>
+                                                                <option value="middle">وسط</option>
+                                                                <option value="small">صغير</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-12">
+                                                        <div class="form-group">
+                                                            <label for="price">التكلفة</label>
+                                                            <input type="number" class="form-control" id="price"  placeholder="1" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-12">
+                                                        <div class="form-group">
+                                                            <label for="calories">السعرات الحرارية</label>
+                                                            <input type="number" class="form-control" id="calories"  placeholder="1" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-12 ">
+                                                        <div class="form-group">
+                                                            <button class="btn btn-danger text-nowrap px-1" data-repeater-delete type="button">
+                                                                <i data-feather="x" class="mr-25"></i>
+                                                                <span>حذف</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class='col-1 '>
-                                            <button class='btn btn-icon mr-1 waves-effect waves-float waves-light mt-1 p-1'>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
-                                                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
-                                                </svg>
-                                            </button>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <button class="btn btn-icon btn-primary" type="button" data-repeater-create>
+                                                    <i data-feather="plus" class="mr-25"></i>
+                                                    <span>إضافة</span>
+                                                </button>
+                                            </div>
                                         </div>
-                                    </div>
-                                 </div>
-                                  <div class="table-responsive">
-                                    <table class="table">
-                                            <thead >
-                                                <tr>
-                                                    <th>المكون</th>
-                                                    <th>الكمية</th>
-                                                    <th>القابلية للإزالة</th>
-                                                    <th>العمليات</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                  <td>1المكون</td>
-                                                    <td>
-                                                       20
-                                                    </td>
-                                                    <td class='text-info'> 
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle " viewBox="0 0 16 16">
-                                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                                        </svg>
-                                                    </td>
-                                                    <td>
-                                                        <button type="reset" class="btn btn-info waves-effect waves-float waves-light" data-toggle="modal" data-target="#default_2">تعديل</button>
-                                                        <button type="reset" class="btn btn-danger waves-effect waves-float waves-light"id='deleteButton'>حذف</button>
-    
-    
-                                                        <div class="modal fade text-left" id="default_2" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
-                                                            <div class="modal-dialog" role="document">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header">
-                                                                        <h4 class="modal-title" id="myModalLabel1">تعديل المكونات</h4>
-                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                            <span aria-hidden="true">×</span>
-                                                                        </button>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                       <form action="">
-                                                                          <div class="row">
-                                                                            <div class="col-12">
-                                                                                <div class="form-group">
-                                                                                  <label for="email-id-vertical">المكون</label>
-                                                                                  <select class="select2 form-control" id="default-select_2">
-                                                                                    <option value="square"> المكون </option>
-                                                                                    <option value="rectangle">المكون </option>
-                                                                                </select>
-                                                                                </div>
-                                                                              </div>
-                    
-                                                                              <div class="col-12">
-                                                                                  <div class="form-group">
-                                                                                      <label for="quantitative">الكمية</label>
-                                                                                      <p>20</p>
-                                                                                  </div>
-                                                                              </div>
-                                                                              <div class="col-12">
-                                                                                <div >
-                                                                                    <label class="form-label" for="modalRemovability">القابلية للازالة</label>
-                                                                                    <div class="custom-control custom-switch">
-                                                                                        <input type="checkbox" class="custom-control-input" id="modalRemovability">
-                                                                                        <label class="custom-control-label" for="modalRemovability"> </label>
-                                                                                    </div>
-                                                                                </div>
-                                                                              </div>
-                                                                            </div>
-                                                                        </form>
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
-                                                                    </div>
-                                                                </div>
+                                    </form>
+                                </div>
+                              </div>
+
+                              <div class="col-12 my-2">                                    
+                                  <label class="form-label">المكونات</label>
+                                   <div class="form-group">
+                                        <form action="#" class="invoice-repeater">
+                                            <div data-repeater-list="invoice">
+                                                <div data-repeater-item>
+                                                    <div class="row d-flex align-items-end">
+                                                        <div class="col-md-4 col-12">
+                                                            <div class="form-group">
+                                                                <label for="selectSize">المكون</label>
+                                                                <select class="select2 form-control" id="selectSize_2">
+                                                                    <option value="big">كبير</option>
+                                                                    <option value="middle">وسط</option>
+                                                                    <option value="small">صغير</option>
+                                                                </select>
                                                             </div>
                                                         </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>    
-                                  </div>
+                                                        <div class="col-md-2 col-12">
+                                                            <div class="form-group">
+                                                                <label for="price">التكلفة</label>
+                                                                <input type="number" class="form-control" id="price"  placeholder="1" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 col-12">
+                                                            <div class="form-group">
+                                                                <label for="calories">السعرات الحرارية</label>
+                                                                <input type="number" class="form-control" id="calories"  placeholder="1" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 col-12 ">
+                                                            <div class="form-group">
+                                                                <button class="btn btn-danger text-nowrap px-1" data-repeater-delete type="button">
+                                                                    <i data-feather="x" class="mr-25"></i>
+                                                                    <span>حذف</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <button class="btn btn-icon btn-primary" type="button" data-repeater-create>
+                                                        <i data-feather="plus" class="mr-25"></i>
+                                                        <span>إضافة</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                               </div>       
 
                               <div class="col-12 my-2">
-                                <label class="form-label" for="select2-extra">الاضافات</label>
-
-                                <div class="form-group border border-1">
-                                    <div class='row my-1'>
-                                        <div class="col">
-                                            <label class="form-label" for="select2-extra">الاضافة</label>
-                                            <select class="select2 form-select" id="select2-extra">
-                                            <optgroup label="الاضافات" >
-                                                <option value="option 1"> 1 الاضافة</option>
-                                                <option value="option 2">الاضافة 2</option>
-                                            </optgroup>
-                                        </select>                             
-                                        </div>
-                                        <div class='col '>
-                                            <div class="form-check form-check-primary ">
-                                                <input class="form-check-input" type="checkbox" value="" id="amountCheck">
-                                                <label class="form-check-label" for="amountCheck">
-                                                    هل عليها تكلفة ؟
-                                                </label>
-                                            </div>
-                                            <div class="">
-                                                <input type="number" id="amount"disabled class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class='col '>
-                                            <label class="form-label" for="calories "> السعرات الحرارية </label>
-                                            <input type="number" id="calories"  class="form-control">
-                                        </div>
-                                        
-                                        <div class='col-1 '>
-                                            <button class='btn btn-icon mr-1 waves-effect waves-float waves-light mt-1 p-1'>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
-                                                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                              <div class="table-responsive">
-                                    <table class="table">
-                                            <thead >
-                                                <tr>
-                                                    <th>الاضافة</th>
-                                                    <th>السعر</th>
-                                                    <th> السعرات الحرارية</th>
-                                                    <th>العمليات</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>20</td>
-                                                    <td > 20</td>
-                                                    <td>
-                                                        <button type="reset" class="btn btn-info waves-effect waves-float waves-light" data-toggle="modal" data-target="#default_2">تعديل</button>
-                                                        <button type="reset" class="btn btn-danger waves-effect waves-float waves-light"id='deleteButton'>حذف</button>
-    
-                                                        <div class="modal fade text-left" id="default_2" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true" style="display: none;">
-                                                            <div class="modal-dialog" role="document">
-                                                                <div class="modal-content">
-                                                                    <div class="modal-header">
-                                                                        <h4 class="modal-title" id="myModalLabel1">تعديل الاضافة</h4>
-                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                            <span aria-hidden="true">×</span>
-                                                                        </button>
-                                                                    </div>
-                                                                    <div class="modal-body">
-                                                                       <form action="">
-                                                                          <div class="row">
-                                                                            <div class="col-12">
-                                                                                <div class="form-group">
-                                                                                  <label for="email-id-vertical">الاضافة</label>
-                                                                                  <select class="select2 form-control" id="default-select_2">
-                                                                                    <option value="square"> الاضافة </option>
-                                                                                    <option value="rectangle">الاضافة </option>
-                                                                                </select>
-                                                                                </div>
-                                                                              </div>
-                    
-                                                                              <div class="col-12">
-                                                                                  <div class="form-group">
-                                                                                      <label for="calories">  السعرات الحرارية</label>
-                                                                                      <input type="number" id="calories" class="form-control" >
-                                                                                  </div>
-                                                                              </div>
-                                                                              <div class='col '>
-                                                                                <div class="form-check form-check-primary ">
-                                                                                    <input class="form-check-input" type="checkbox" value="" id="amountCheck">
-                                                                                    <label class="form-check-label" for="amountCheck">
-                                                                                        هل لها تكلفة؟
-                                                                                    </label>
-                                                                                </div>
-                                                                                <div class="">
-                                                                                    <input type="number" id="amount"disabled class="form-control">
-                                                                                </div>
-                                                                              </div>
-                                                                              
-
-                                                                          </div>
-                                                                       </form>
-                                                                    </div>
-                                                                    <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-primary waves-effect waves-float waves-light" data-dismiss="modal">حفظ</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                <label class="form-label">الاضافات</label>
+                                <div class="form-group">
+                                    <form action="#" class="invoice-repeater">
+                                        <div data-repeater-list="invoice">
+                                            <div data-repeater-item>
+                                                <div class="row d-flex align-items-end">
+                                                    <div class="col-md-4 col-12">
+                                                        <div class="form-group">
+                                                            <label for="selectSize">الإضافة</label>
+                                                            <select class="select2 form-control" id="selectSize_4">
+                                                                <option value="big">كبير</option>
+                                                                <option value="middle">وسط</option>
+                                                                <option value="small">صغير</option>
+                                                            </select>
                                                         </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>    
+                                                    </div>
+                                                    <div class="col-md-2 col-12">
+                                                        <div class="form-group">
+                                                            <label for="price">التكلفة</label>
+                                                            <input type="number" class="form-control" id="price"  placeholder="1" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-12">
+                                                        <div class="form-group">
+                                                            <label for="calories">السعرات الحرارية</label>
+                                                            <input type="number" class="form-control" id="calories"  placeholder="1" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-12 ">
+                                                        <div class="form-group">
+                                                            <button class="btn btn-danger text-nowrap px-1" data-repeater-delete type="button">
+                                                                <i data-feather="x" class="mr-25"></i>
+                                                                <span>حذف</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <button class="btn btn-icon btn-primary" type="button" data-repeater-create>
+                                                    <i data-feather="plus" class="mr-25"></i>
+                                                    <span>إضافة</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                               </div>
 
-                              </div>  
                               <div class="col-12 mt-2 mb-1">
                                     <label class="mb-1">الأحجام</label>
                                     <div class="form-group">
@@ -980,6 +922,7 @@
                                         </form>
                                     </div>
                               </div>
+                              
                               <div class="col-12">
                                 <div class="form-group">
                                   <label for="select2"> مسببات الحساسية</label>
@@ -991,24 +934,25 @@
                               </div>
                               <div class="col-12">
                                 <div class="form-group">
-                                  <label for="fp-date-time">مدة التحضير</label>
-                                  <input type="text"  id="fp-time" class="form-control text-start active" placeholder="HH:MM" >
+                                    <label for="fp-date-time">مدة التحضير</label>
+                                    <input type="text" id="fp-time" class="form-control flatpickr-time text-left flatpickr-input active" placeholder="HH:MM" readonly="readonly">                    </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="form-group">
                                     <div class="custom-control custom-switch mt-1">
                                         <input type="checkbox" class="custom-control-input" id="ripe" >
                                         <label class="custom-control-label" for="ripe">منتج جاهز</label>
                                     </div>
                                 </div>
                               </div>
-                              <div class="col-12 mt-1">
-                                <div class="form-group border border-1">
-                                    <div class="custom-control custom-switch my-1">
-                                        <input type="checkbox" class="custom-control-input" id="delivery">
-                                        <label class="custom-control-label" for="delivery">متوفر للتوصيل</label>
-                                    </div>
-                                    <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="pick-up">
-                                        <label class="custom-control-label" for="pick-up">متوفر لطلبات الاستالم من الفرع</label>
-                                    </div>
+                              <div class="col-12 mb-2">
+                                <div class="custom-control custom-switch my-1">
+                                    <input type="checkbox" class="custom-control-input" id="delivery">
+                                    <label class="custom-control-label" for="delivery">متوفر للتوصيل</label>
+                                </div>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="pick-up">
+                                    <label class="custom-control-label" for="pick-up">متوفر لطلبات الاستالم من الفرع</label>
                                 </div>
                               </div>                              
 
@@ -1087,9 +1031,13 @@
  <script src="../../../app-assets/js/scripts/tables/table-datatables-basic.js"></script>
 <script src="../../../app-assets/vendors/js/forms/repeater/jquery.repeater.min.js"></script>
 <script src="../../../app-assets/js/scripts/forms/form-repeater.js"></script>
+<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
 
  <!-- END: Page JS-->
-
+ <script src="../../../app-assets/js/scripts/forms/pickers/form-pickers.js"></script>
+ <script src="../../../app-assets/js/scripts/pages/app-user-edit.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 

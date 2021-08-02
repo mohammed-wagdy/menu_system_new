@@ -605,9 +605,20 @@
                               <div class="col-12">
                                 <div class="form-group">
                                   <label for="imgload">الأيقونه   </label>
-                                <div >
-                                  <img src="#" id="imgshow"alt="image" class=" rounded me-2 my-25 cursor-pointer" height="20" width="20">
-                                  <input class="form-control" type="file" id="imgload" accept="image/*">
+                                  <div class="media mb-2">
+                                    <img src="../../../app-assets/images/avatars/7.png" alt="users avatar" class="user-avatar users-avatar-shadow rounded mr-2 my-25 cursor-pointer" height="90" width="90" />
+                                    <div class="media-body mt-50">
+                                        <div class="col-12 d-flex mt-1 px-0">
+                                            <label class="btn btn-primary mr-75 mb-0" for="change-picture">
+                                                <span class="d-none d-sm-block">تحميل صورة المنتج</span>
+                                                <input class="form-control" type="file" id="change-picture" hidden accept="image/png, image/jpeg, image/jpg" />
+                                                <span class="d-block d-sm-none">
+                                                    <i class="mr-0" data-feather="edit"></i>
+                                                </span>
+                                            </label>
+                                        
+                                        </div>
+                                    </div>
                                 </div>
                                 </div>
                               </div>
@@ -646,6 +657,7 @@
 
 
 <!-- BEGIN: Theme JS-->
+<script src="../../../app-assets/js/scripts/pages/app-user-edit.js"></script>
 <script src="../../../app-assets/js/core/app-menu.js"></script>
 <script src="../../../app-assets/js/core/app.js"></script>
 <!-- END: Theme JS-->
