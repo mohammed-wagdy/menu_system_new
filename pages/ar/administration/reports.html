@@ -6,25 +6,35 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
-    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="description"
+          content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords"
+          content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
     <title>التقارير</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600"
+          rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
     <!-- END: Vendor CSS-->
-
-
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/pickadate/pickadate.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <!-- END: Vendor CSS-->
 
+    <link rel="stylesheet" type="text/css"
+          href="../../../app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="../../../app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="../../../app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="../../../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap-extended.css">
@@ -34,9 +44,16 @@
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/bordered-layout.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/semi-dark-layout.css">
 
-
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/charts/apexcharts.css">
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+    <!-- END: Page CSS-->
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/forms/pickers/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/forms/pickers/form-pickadate.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/charts/chart-apex.css">
+
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -50,26 +67,48 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click"
+      data-menu="vertical-menu-modern" data-col="">
 
 <!-- BEGIN: Header-->
 <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow">
     <div class="navbar-container d-flex content">
 
         <ul class="nav navbar-nav align-items-center ml-auto">
-            <li class="nav-item dropdown dropdown-language"><a class="nav-link dropdown-toggle" id="dropdown-flag" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="javascript:void(0);" data-language="en"><i class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item" href="javascript:void(0);" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="javascript:void(0);" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item" href="javascript:void(0);" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></div>
+            <li class="nav-item dropdown dropdown-language"><a class="nav-link dropdown-toggle" id="dropdown-flag"
+                                                               href="javascript:void(0);" data-toggle="dropdown"
+                                                               aria-haspopup="true" aria-expanded="false"><i
+                    class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-flag"><a class="dropdown-item"
+                                                                                                  href="javascript:void(0);"
+                                                                                                  data-language="en"><i
+                        class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item"
+                                                                          href="javascript:void(0);" data-language="fr"><i
+                        class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item"
+                                                                         href="javascript:void(0);"
+                                                                         data-language="de"><i
+                        class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item"
+                                                                         href="javascript:void(0);"
+                                                                         data-language="pt"><i
+                        class="flag-icon flag-icon-pt"></i> Portuguese</a></div>
             </li>
-            <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li>
-            <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon" data-feather="search"></i></a>
+            <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon"
+                                                                                         data-feather="moon"></i></a>
+            </li>
+            <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon"
+                                                                                   data-feather="search"></i></a>
                 <div class="search-input">
                     <div class="search-input-icon"><i data-feather="search"></i></div>
-                    <input class="form-control input" type="text" placeholder="Explore Vuexy..." tabindex="-1" data-search="search">
+                    <input class="form-control input" type="text" placeholder="Explore Vuexy..." tabindex="-1"
+                           data-search="search">
                     <div class="search-input-close"><i data-feather="x"></i></div>
                     <ul class="search-list search-list-main"></ul>
                 </div>
             </li>
-            <li class="nav-item dropdown dropdown-cart mr-25"><a class="nav-link" href="javascript:void(0);" data-toggle="dropdown"><i class="ficon" data-feather="shopping-cart"></i><span class="badge badge-pill badge-primary badge-up cart-item-count">6</span></a>
+            <li class="nav-item dropdown dropdown-cart mr-25"><a class="nav-link" href="javascript:void(0);"
+                                                                 data-toggle="dropdown"><i class="ficon"
+                                                                                           data-feather="shopping-cart"></i><span
+                    class="badge badge-pill badge-primary badge-up cart-item-count">6</span></a>
                 <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                     <li class="dropdown-menu-header">
                         <div class="dropdown-header d-flex">
@@ -78,10 +117,13 @@
                         </div>
                     </li>
                     <li class="scrollable-container media-list">
-                        <div class="media align-items-center"><img class="d-block rounded mr-1" src="app-assets/images/pages/eCommerce/1.png" alt="donuts" width="62">
+                        <div class="media align-items-center"><img class="d-block rounded mr-1"
+                                                                   src="app-assets/images/pages/eCommerce/1.png"
+                                                                   alt="donuts" width="62">
                             <div class="media-body"><i class="ficon cart-item-remove" data-feather="x"></i>
                                 <div class="media-heading">
-                                    <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html"> Apple watch 5</a></h6><small class="cart-item-by">By Apple</small>
+                                    <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html">
+                                        Apple watch 5</a></h6><small class="cart-item-by">By Apple</small>
                                 </div>
                                 <div class="cart-item-qty">
                                     <div class="input-group">
@@ -91,10 +133,13 @@
                                 <h5 class="cart-item-price">$374.90</h5>
                             </div>
                         </div>
-                        <div class="media align-items-center"><img class="d-block rounded mr-1" src="app-assets/images/pages/eCommerce/7.png" alt="donuts" width="62">
+                        <div class="media align-items-center"><img class="d-block rounded mr-1"
+                                                                   src="app-assets/images/pages/eCommerce/7.png"
+                                                                   alt="donuts" width="62">
                             <div class="media-body"><i class="ficon cart-item-remove" data-feather="x"></i>
                                 <div class="media-heading">
-                                    <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html"> Google Home Mini</a></h6><small class="cart-item-by">By Google</small>
+                                    <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html">
+                                        Google Home Mini</a></h6><small class="cart-item-by">By Google</small>
                                 </div>
                                 <div class="cart-item-qty">
                                     <div class="input-group">
@@ -104,10 +149,13 @@
                                 <h5 class="cart-item-price">$129.40</h5>
                             </div>
                         </div>
-                        <div class="media align-items-center"><img class="d-block rounded mr-1" src="app-assets/images/pages/eCommerce/2.png" alt="donuts" width="62">
+                        <div class="media align-items-center"><img class="d-block rounded mr-1"
+                                                                   src="app-assets/images/pages/eCommerce/2.png"
+                                                                   alt="donuts" width="62">
                             <div class="media-body"><i class="ficon cart-item-remove" data-feather="x"></i>
                                 <div class="media-heading">
-                                    <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html"> iPhone 11 Pro</a></h6><small class="cart-item-by">By Apple</small>
+                                    <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html">
+                                        iPhone 11 Pro</a></h6><small class="cart-item-by">By Apple</small>
                                 </div>
                                 <div class="cart-item-qty">
                                     <div class="input-group">
@@ -117,10 +165,13 @@
                                 <h5 class="cart-item-price">$699.00</h5>
                             </div>
                         </div>
-                        <div class="media align-items-center"><img class="d-block rounded mr-1" src="app-assets/images/pages/eCommerce/3.png" alt="donuts" width="62">
+                        <div class="media align-items-center"><img class="d-block rounded mr-1"
+                                                                   src="app-assets/images/pages/eCommerce/3.png"
+                                                                   alt="donuts" width="62">
                             <div class="media-body"><i class="ficon cart-item-remove" data-feather="x"></i>
                                 <div class="media-heading">
-                                    <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html"> iMac Pro</a></h6><small class="cart-item-by">By Apple</small>
+                                    <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html">
+                                        iMac Pro</a></h6><small class="cart-item-by">By Apple</small>
                                 </div>
                                 <div class="cart-item-qty">
                                     <div class="input-group">
@@ -130,10 +181,13 @@
                                 <h5 class="cart-item-price">$4,999.00</h5>
                             </div>
                         </div>
-                        <div class="media align-items-center"><img class="d-block rounded mr-1" src="app-assets/images/pages/eCommerce/5.png" alt="donuts" width="62">
+                        <div class="media align-items-center"><img class="d-block rounded mr-1"
+                                                                   src="app-assets/images/pages/eCommerce/5.png"
+                                                                   alt="donuts" width="62">
                             <div class="media-body"><i class="ficon cart-item-remove" data-feather="x"></i>
                                 <div class="media-heading">
-                                    <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html"> MacBook Pro</a></h6><small class="cart-item-by">By Apple</small>
+                                    <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html">
+                                        MacBook Pro</a></h6><small class="cart-item-by">By Apple</small>
                                 </div>
                                 <div class="cart-item-qty">
                                     <div class="input-group">
@@ -148,11 +202,15 @@
                         <div class="d-flex justify-content-between mb-1">
                             <h6 class="font-weight-bolder mb-0">Total:</h6>
                             <h6 class="text-primary font-weight-bolder mb-0">$10,999.00</h6>
-                        </div><a class="btn btn-primary btn-block" href="app-ecommerce-checkout.html">Checkout</a>
+                        </div>
+                        <a class="btn btn-primary btn-block" href="app-ecommerce-checkout.html">Checkout</a>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item dropdown dropdown-notification mr-25"><a class="nav-link" href="javascript:void(0);" data-toggle="dropdown"><i class="ficon" data-feather="bell"></i><span class="badge badge-pill badge-danger badge-up">5</span></a>
+            <li class="nav-item dropdown dropdown-notification mr-25"><a class="nav-link" href="javascript:void(0);"
+                                                                         data-toggle="dropdown"><i class="ficon"
+                                                                                                   data-feather="bell"></i><span
+                    class="badge badge-pill badge-danger badge-up">5</span></a>
                 <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                     <li class="dropdown-menu-header">
                         <div class="dropdown-header d-flex">
@@ -164,20 +222,26 @@
                         <a class="d-flex" href="javascript:void(0)">
                             <div class="media d-flex align-items-start">
                                 <div class="media-left">
-                                    <div class="avatar"><img src="../../app-assets/images/portrait/small/avatar-s-15.jpg" alt="avatar" width="32" height="32"></div>
+                                    <div class="avatar"><img
+                                            src="../../app-assets/images/portrait/small/avatar-s-15.jpg" alt="avatar"
+                                            width="32" height="32"></div>
                                 </div>
                                 <div class="media-body">
-                                    <p class="media-heading"><span class="font-weight-bolder">Congratulation Sam 🎉</span>winner!</p><small class="notification-text"> Won the monthly best seller badge.</small>
+                                    <p class="media-heading"><span
+                                            class="font-weight-bolder">Congratulation Sam 🎉</span>winner!</p><small
+                                        class="notification-text"> Won the monthly best seller badge.</small>
                                 </div>
                             </div>
                         </a>
                         <a class="d-flex" href="javascript:void(0)">
                             <div class="media d-flex align-items-start">
                                 <div class="media-left">
-                                    <div class="avatar"><img src="../../app-assets/images/portrait/small/avatar-s-3.jpg" alt="avatar" width="32" height="32"></div>
+                                    <div class="avatar"><img src="../../app-assets/images/portrait/small/avatar-s-3.jpg"
+                                                             alt="avatar" width="32" height="32"></div>
                                 </div>
                                 <div class="media-body">
-                                    <p class="media-heading"><span class="font-weight-bolder">New message</span>&nbsp;received</p><small class="notification-text"> You have 10 unread messages</small>
+                                    <p class="media-heading"><span class="font-weight-bolder">New message</span>&nbsp;received
+                                    </p><small class="notification-text"> You have 10 unread messages</small>
                                 </div>
                             </div>
                         </a><a class="d-flex" href="javascript:void(0)">
@@ -188,20 +252,33 @@
                                 </div>
                             </div>
                             <div class="media-body">
-                                <p class="media-heading"><span class="font-weight-bolder">Revised Order 👋</span>&nbsp;checkout</p><small class="notification-text"> MD Inc. order updated</small>
+                                <p class="media-heading"><span class="font-weight-bolder">Revised Order 👋</span>&nbsp;checkout
+                                </p><small class="notification-text"> MD Inc. order updated</small>
                             </div>
                         </div>
                     </a>
 
                     </li>
-                    <li class="dropdown-menu-footer"><a class="btn btn-primary btn-block" href="javascript:void(0)">Read all notifications</a></li>
+                    <li class="dropdown-menu-footer"><a class="btn btn-primary btn-block" href="javascript:void(0)">Read
+                        all notifications</a></li>
                 </ul>
             </li>
-            <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
+            <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link"
+                                                           id="dropdown-user" href="javascript:void(0);"
+                                                           data-toggle="dropdown" aria-haspopup="true"
+                                                           aria-expanded="false">
+                <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">John Doe</span><span
+                        class="user-status">Admin</span></div>
+                <span class="avatar"><img class="round" src="../../../app-assets/images/portrait/small/avatar-s-11.jpg"
+                                          alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
             </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
-                    <a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i> الملف الشخصي</a><a class="dropdown-item" href="page-account-settings.html"><i class="mr-50" data-feather="settings"></i> تحديث النظام</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> تسجيل الخروج</a>
+                    <a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i> الملف
+                        الشخصي</a><a class="dropdown-item" href="page-account-settings.html"><i class="mr-50"
+                                                                                                data-feather="settings"></i>
+                    تحديث النظام</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50"
+                                                                                               data-feather="power"></i>
+                    تسجيل الخروج</a>
                 </div>
             </li>
         </ul>
@@ -211,68 +288,88 @@
     <li class="d-flex align-items-center"><a href="javascript:void(0);">
         <h6 class="section-label mt-75 mb-0">Files</h6>
     </a></li>
-    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100"
+                                   href="app-file-manager.html">
         <div class="d-flex">
             <div class="mr-75"><img src="app-assets/images/icons/xls.png" alt="png" height="32"></div>
             <div class="search-data">
-                <p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing Manager</small>
+                <p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing
+                Manager</small>
             </div>
-        </div><small class="search-data-size mr-50 text-muted">&apos;17kb</small>
+        </div>
+        <small class="search-data-size mr-50 text-muted">&apos;17kb</small>
     </a></li>
-    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100"
+                                   href="app-file-manager.html">
         <div class="d-flex">
             <div class="mr-75"><img src="app-assets/images/icons/jpg.png" alt="png" height="32"></div>
             <div class="search-data">
-                <p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd Developer</small>
+                <p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd
+                Developer</small>
             </div>
-        </div><small class="search-data-size mr-50 text-muted">&apos;11kb</small>
+        </div>
+        <small class="search-data-size mr-50 text-muted">&apos;11kb</small>
     </a></li>
-    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100"
+                                   href="app-file-manager.html">
         <div class="d-flex">
             <div class="mr-75"><img src="app-assets/images/icons/pdf.png" alt="png" height="32"></div>
             <div class="search-data">
-                <p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing Manager</small>
+                <p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing
+                Manager</small>
             </div>
-        </div><small class="search-data-size mr-50 text-muted">&apos;150kb</small>
+        </div>
+        <small class="search-data-size mr-50 text-muted">&apos;150kb</small>
     </a></li>
-    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100"
+                                   href="app-file-manager.html">
         <div class="d-flex">
             <div class="mr-75"><img src="app-assets/images/icons/doc.png" alt="png" height="32"></div>
             <div class="search-data">
                 <p class="search-data-title mb-0">Anna_Strong.doc</p><small class="text-muted">Web Designer</small>
             </div>
-        </div><small class="search-data-size mr-50 text-muted">&apos;256kb</small>
+        </div>
+        <small class="search-data-size mr-50 text-muted">&apos;256kb</small>
     </a></li>
     <li class="d-flex align-items-center"><a href="javascript:void(0);">
         <h6 class="section-label mt-75 mb-0">Members</h6>
     </a></li>
-    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100"
+                                   href="app-user-view.html">
         <div class="d-flex align-items-center">
-            <div class="avatar mr-75"><img src="app-assets/images/portrait/small/avatar-s-8.jpg" alt="png" height="32"></div>
+            <div class="avatar mr-75"><img src="app-assets/images/portrait/small/avatar-s-8.jpg" alt="png" height="32">
+            </div>
             <div class="search-data">
                 <p class="search-data-title mb-0">John Doe</p><small class="text-muted">UI designer</small>
             </div>
         </div>
     </a></li>
-    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100"
+                                   href="app-user-view.html">
         <div class="d-flex align-items-center">
-            <div class="avatar mr-75"><img src="app-assets/images/portrait/small/avatar-s-1.jpg" alt="png" height="32"></div>
+            <div class="avatar mr-75"><img src="app-assets/images/portrait/small/avatar-s-1.jpg" alt="png" height="32">
+            </div>
             <div class="search-data">
                 <p class="search-data-title mb-0">Michal Clark</p><small class="text-muted">FontEnd Developer</small>
             </div>
         </div>
     </a></li>
-    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100"
+                                   href="app-user-view.html">
         <div class="d-flex align-items-center">
-            <div class="avatar mr-75"><img src="app-assets/images/portrait/small/avatar-s-14.jpg" alt="png" height="32"></div>
+            <div class="avatar mr-75"><img src="app-assets/images/portrait/small/avatar-s-14.jpg" alt="png" height="32">
+            </div>
             <div class="search-data">
-                <p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing Manager</small>
+                <p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing
+                Manager</small>
             </div>
         </div>
     </a></li>
-    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+    <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100"
+                                   href="app-user-view.html">
         <div class="d-flex align-items-center">
-            <div class="avatar mr-75"><img src="app-assets/images/portrait/small/avatar-s-6.jpg" alt="png" height="32"></div>
+            <div class="avatar mr-75"><img src="app-assets/images/portrait/small/avatar-s-6.jpg" alt="png" height="32">
+            </div>
             <div class="search-data">
                 <p class="search-data-title mb-0">Anna Strong</p><small class="text-muted">Web Designer</small>
             </div>
@@ -280,8 +377,10 @@
     </a></li>
 </ul>
 <ul class="main-search-list-defaultlist-other-list d-none">
-    <li class="auto-suggestion justify-content-between"><a class="d-flex align-items-center justify-content-between w-100 py-50">
-        <div class="d-flex justify-content-start"><span class="mr-75" data-feather="alert-circle"></span><span>No results found.</span></div>
+    <li class="auto-suggestion justify-content-between"><a
+            class="d-flex align-items-center justify-content-between w-100 py-50">
+        <div class="d-flex justify-content-start"><span class="mr-75" data-feather="alert-circle"></span><span>No results found.</span>
+        </div>
     </a></li>
 </ul>
 <!-- END: Header-->
@@ -291,14 +390,19 @@
 <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
     <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
-            <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/rtl/vertical-menu-template/index.html"><span class="brand-logo">
-                            <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24">
+            <li class="nav-item mr-auto"><a class="navbar-brand"
+                                            href="../../../html/rtl/vertical-menu-template/index.html"><span
+                    class="brand-logo">
+                            <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" height="24">
                                 <defs>
-                                    <lineargradient id="linearGradient-1" x1="100%" y1="10.5120544%" x2="50%" y2="89.4879456%">
+                                    <lineargradient id="linearGradient-1" x1="100%" y1="10.5120544%" x2="50%"
+                                                    y2="89.4879456%">
                                         <stop stop-color="#000000" offset="0%"></stop>
                                         <stop stop-color="#FFFFFF" offset="100%"></stop>
                                     </lineargradient>
-                                    <lineargradient id="linearGradient-2" x1="64.0437835%" y1="46.3276743%" x2="37.373316%" y2="100%">
+                                    <lineargradient id="linearGradient-2" x1="64.0437835%" y1="46.3276743%"
+                                                    x2="37.373316%" y2="100%">
                                         <stop stop-color="#EEEEEE" stop-opacity="0" offset="0%"></stop>
                                         <stop stop-color="#FFFFFF" offset="100%"></stop>
                                     </lineargradient>
@@ -306,18 +410,28 @@
                                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="Artboard" transform="translate(-400.000000, -178.000000)">
                                         <g id="Group" transform="translate(400.000000, 178.000000)">
-                                            <path class="text-primary" id="Path" d="M-5.68434189e-14,2.84217094e-14 L39.1816085,2.84217094e-14 L69.3453773,32.2519224 L101.428699,2.84217094e-14 L138.784583,2.84217094e-14 L138.784199,29.8015838 C137.958931,37.3510206 135.784352,42.5567762 132.260463,45.4188507 C128.736573,48.2809251 112.33867,64.5239941 83.0667527,94.1480575 L56.2750821,94.1480575 L6.71554594,44.4188507 C2.46876683,39.9813776 0.345377275,35.1089553 0.345377275,29.8015838 C0.345377275,24.4942122 0.230251516,14.560351 -5.68434189e-14,2.84217094e-14 Z" style="fill:currentColor"></path>
-                                            <path id="Path1" d="M69.3453773,32.2519224 L101.428699,1.42108547e-14 L138.784583,1.42108547e-14 L138.784199,29.8015838 C137.958931,37.3510206 135.784352,42.5567762 132.260463,45.4188507 C128.736573,48.2809251 112.33867,64.5239941 83.0667527,94.1480575 L56.2750821,94.1480575 L32.8435758,70.5039241 L69.3453773,32.2519224 Z" fill="url(#linearGradient-1)" opacity="0.2"></path>
-                                            <polygon id="Path-2" fill="#000000" opacity="0.049999997" points="69.3922914 32.4202615 32.8435758 70.5039241 54.0490008 16.1851325"></polygon>
-                                            <polygon id="Path-21" fill="#000000" opacity="0.099999994" points="69.3922914 32.4202615 32.8435758 70.5039241 58.3683556 20.7402338"></polygon>
-                                            <polygon id="Path-3" fill="url(#linearGradient-2)" opacity="0.099999994" points="101.428699 0 83.0667527 94.1480575 130.378721 47.0740288"></polygon>
+                                            <path class="text-primary" id="Path"
+                                                  d="M-5.68434189e-14,2.84217094e-14 L39.1816085,2.84217094e-14 L69.3453773,32.2519224 L101.428699,2.84217094e-14 L138.784583,2.84217094e-14 L138.784199,29.8015838 C137.958931,37.3510206 135.784352,42.5567762 132.260463,45.4188507 C128.736573,48.2809251 112.33867,64.5239941 83.0667527,94.1480575 L56.2750821,94.1480575 L6.71554594,44.4188507 C2.46876683,39.9813776 0.345377275,35.1089553 0.345377275,29.8015838 C0.345377275,24.4942122 0.230251516,14.560351 -5.68434189e-14,2.84217094e-14 Z"
+                                                  style="fill:currentColor"></path>
+                                            <path id="Path1"
+                                                  d="M69.3453773,32.2519224 L101.428699,1.42108547e-14 L138.784583,1.42108547e-14 L138.784199,29.8015838 C137.958931,37.3510206 135.784352,42.5567762 132.260463,45.4188507 C128.736573,48.2809251 112.33867,64.5239941 83.0667527,94.1480575 L56.2750821,94.1480575 L32.8435758,70.5039241 L69.3453773,32.2519224 Z"
+                                                  fill="url(#linearGradient-1)" opacity="0.2"></path>
+                                            <polygon id="Path-2" fill="#000000" opacity="0.049999997"
+                                                     points="69.3922914 32.4202615 32.8435758 70.5039241 54.0490008 16.1851325"></polygon>
+                                            <polygon id="Path-21" fill="#000000" opacity="0.099999994"
+                                                     points="69.3922914 32.4202615 32.8435758 70.5039241 58.3683556 20.7402338"></polygon>
+                                            <polygon id="Path-3" fill="url(#linearGradient-2)" opacity="0.099999994"
+                                                     points="101.428699 0 83.0667527 94.1480575 130.378721 47.0740288"></polygon>
                                         </g>
                                     </g>
                                 </g>
                             </svg></span>
                 <h2 class="brand-text">Vuexy</h2>
             </a></li>
-            <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+            <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i
+                    class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
+                    class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc"
+                    data-ticon="disc"></i></a></li>
         </ul>
     </div>
     <div class="shadow-bottom"></div>
@@ -326,12 +440,14 @@
 
             <!-- Home Page -->
             <li class=" nav-item"><a class="d-flex align-items-center" href="../home-page.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الصفحة الرئيسية</span>
+                <i data-feather="home"></i><span class="menu-title text-truncate"
+                                                 data-i18n="Dashboards">الصفحة الرئيسية</span>
             </a>
             </li>
 
             <!-- Orders -->
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">الطلبات</span><i data-feather="more-horizontal"></i>
+            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">الطلبات</span><i
+                    data-feather="more-horizontal"></i>
             </li>
 
             <!-- Orders -->
@@ -361,51 +477,58 @@
             </li>
 
 
-
             <!-- Screens -->
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">شاشات العرض</span><i data-feather="more-horizontal"></i>
+            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">شاشات العرض</span><i
+                    data-feather="more-horizontal"></i>
             </li>
 
             <!-- kitchen -->
             <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/kitchen.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض المطبخ</span>
+                <i data-feather="home"></i><span class="menu-title text-truncate"
+                                                 data-i18n="Dashboards">عرض المطبخ</span>
             </a>
             </li>
 
 
             <!-- Waintg -->
             <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/waiting.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإنتظار</span>
+                <i data-feather="home"></i><span class="menu-title text-truncate"
+                                                 data-i18n="Dashboards">عرض الإنتظار</span>
             </a>
             </li>
 
 
             <!-- Ads -->
             <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/ads.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإعلانات</span>
+                <i data-feather="home"></i><span class="menu-title text-truncate"
+                                                 data-i18n="Dashboards">عرض الإعلانات</span>
             </a>
             </li>
 
             <!-- Begin Finances -->
 
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">المالية</span><i data-feather="more-horizontal"></i>
+            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">المالية</span><i
+                    data-feather="more-horizontal"></i>
             </li>
 
             <!-- Revenue -->
             <li class=" nav-item"><a class="d-flex align-items-center" href="revenue.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإيرادات</span>
+                <i data-feather="home"></i><span class="menu-title text-truncate"
+                                                 data-i18n="Dashboards">الإيرادات</span>
             </a>
             </li>
 
             <!-- Expenditure -->
             <li class=" nav-item"><a class="d-flex align-items-center" href="expenditure.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المصروفات</span>
+                <i data-feather="home"></i><span class="menu-title text-truncate"
+                                                 data-i18n="Dashboards">المصروفات</span>
             </a>
             </li>
 
             <!-- Financial report -->
             <li class=" nav-item"><a class="d-flex align-items-center" href="financial_report.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">التقرير المالي</span>
+                <i data-feather="home"></i><span class="menu-title text-truncate"
+                                                 data-i18n="Dashboards">التقرير المالي</span>
             </a>
             </li>
 
@@ -418,14 +541,15 @@
 
             <!-- Payment methods -->
             <li class=" nav-item"><a class="d-flex align-items-center" href="payment_methods.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">طرق الدفع</span>
+                <i data-feather="home"></i><span class="menu-title text-truncate"
+                                                 data-i18n="Dashboards">طرق الدفع</span>
             </a>
             </li>
 
 
-
             <!-- End Finances -->
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">المخزون</span><i data-feather="more-horizontal"></i>
+            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">المخزون</span><i
+                    data-feather="more-horizontal"></i>
             </li>
 
             <!-- Materials -->
@@ -455,15 +579,18 @@
 
             <!-- Stock Level -->
             <li class=" nav-item"><a class="d-flex align-items-center" href="../Inventory/stock_level.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">مستوي المخزون</span>
+                <i data-feather="home"></i><span class="menu-title text-truncate"
+                                                 data-i18n="Dashboards">مستوي المخزون</span>
             </a>
             </li>
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">إدارة</span><i data-feather="more-horizontal"></i>
+            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">إدارة</span><i
+                    data-feather="more-horizontal"></i>
             </li>
 
             <!-- Materials -->
             <li class=" nav-item"><a class="d-flex align-items-center" href="users.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المستخدمين</span>
+                <i data-feather="home"></i><span class="menu-title text-truncate"
+                                                 data-i18n="Dashboards">المستخدمين</span>
             </a>
             </li>
 
@@ -492,7 +619,8 @@
             </a>
             </li>
 
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">الإعدادات</span><i data-feather="more-horizontal"></i>
+            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">الإعدادات</span><i
+                    data-feather="more-horizontal"></i>
             </li>
 
 
@@ -503,16 +631,19 @@
 
             <!-- Help -->
             <li class=" nav-item"><a class="d-flex align-items-center" href="Inventory/units.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">قسم المساعدة</span>
+                <i data-feather="home"></i><span class="menu-title text-truncate"
+                                                 data-i18n="Dashboards">قسم المساعدة</span>
             </a>
             </li>
 
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">إدارة</span><i data-feather="more-horizontal"></i>
+            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">إدارة</span><i
+                    data-feather="more-horizontal"></i>
             </li>
 
             <!-- Materials -->
             <li class=" nav-item"><a class="d-flex align-items-center" href="users.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المستخدمين</span>
+                <i data-feather="home"></i><span class="menu-title text-truncate"
+                                                 data-i18n="Dashboards">المستخدمين</span>
             </a>
             </li>
 
@@ -542,7 +673,8 @@
             </li>
 
             <li class=" nav-item"><a class="d-flex align-items-center" href="system_control.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">إعدادات النظام</span>
+                <i data-feather="home"></i><span class="menu-title text-truncate"
+                                                 data-i18n="Dashboards">إعدادات النظام</span>
             </a>
             </li>
 
@@ -573,164 +705,566 @@
 
         </div>
         <div class="content-body">
+            <section id="card-navigation">
+                <h5 class="mt-3 mb-2">تاريخ التقرير</h5>
+                <div class="row">
 
-            <div class="row match-height">
-                <div class="col-lg-4 col-12">
-                    <div class="row match-height">
-                        <!-- Bar Chart - Orders -->
-                        <div class="col-lg-6 col-md-3 col-6">
-                            <div class="card">
-                                <div class="card-body pb-50">
-                                    <h6>الطلبات</h6>
-                                    <h4 class="font-weight-bolder mb-1">725 طلب</h4>
-                                    <div id="statistics-order-chart"></div>
-                                </div>
+                    <div class="col-12 col-md-6 form-group">
+                        <label for="pd-months-year">الفترة ( من )</label>
+                        <input type="text" id="pd-months-year" class="form-control pickadate-months-year" placeholder="18 June, 2020" />
+                    </div>
+                    <div class="col-12 col-md-6 form-group">
+                        <label for="pd-months-year2">الفترة ( إلى )</label>
+                        <input type="text" id="pd-months-year2" class="form-control pickadate-months-year" placeholder="18 June, 2020" />
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <h5 class="card-header">نوع التقرير</h5>
+                            <div class="card-header py-2">
+                                <ul class="nav nav-tabs justify-content-center card-header-pills ml-0" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">المبيعات</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">المنتجات</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">العملاء</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">الزيارات</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false">الأكثر طلباً</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <!--/ Bar Chart - Orders -->
+                        <div class="text-center">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="card py-2">
+                                        <ul class="card-text nav nav-link-search row">
+                                            <li class="nav-item col-4">
+                                                <a class="nav-link active" href="#summary">ملخص</a>
+                                            </li>
+                                            <li class="nav-item col-4">
+                                                <a class="nav-link" href="#sold_products">مبيعات المنتجات</a>
+                                            </li>
+                                            <li class="nav-item col-4">
+                                                <a class="nav-link" href="#sold_category">مبيعات التصنيفات</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="summary" class="card-text row">
+                                       <div class="col-6">
+                                           <div class="card table-responsive">
+                                               <table class="table">
+                                                   <thead>
+                                                   <tr class="font-weight-bold bg-dark text-white">
+                                                       <td>
+                                                           <span>المبيعات</span>
+                                                       </td>
+                                                       <td>القيمة</td>
+                                                   </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                   <tr>
+                                                       <td>
+                                                           <span class="">إجمالي المبيعات</span>
+                                                       </td>
+                                                       <td class="bg-light-success">50,00 ر.س</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>
+                                                           <span class="">تكاليف المنتجات</span>
+                                                       </td>
+                                                       <td class="bg-light-danger">50,00 ر.س</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>
+                                                           <span class="">كوبونات التخفيض</span>
+                                                       </td>
+                                                       <td class="bg-light-danger">50,00 ر.س</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>
+                                                           <span class="">الشحن</span>
+                                                       </td>
+                                                       <td class="bg-light-danger" >50,00 ر.س</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>
+                                                           <span class="">الضرائب</span>
+                                                       </td>
+                                                       <td class="bg-light-danger" >200 ر.س</td>
+                                                   </tr>
+                                                   <tr>
+                                                       <td>
+                                                           <span class="">رسوم الدفع الإلكتروني</span>
+                                                       </td>
+                                                       <td class="bg-light-danger" >200 ر.س</td>
+                                                   </tr>
+                                                   <tr class="font-weight-bold">
+                                                       <td class="bg-success text-white">
+                                                           <span>صافي المبيعات</span>
+                                                       </td>
+                                                       <td class="bg-light-success">50,00 ر.س</td>
+                                                   </tr>
+                                                   </tbody>
+                                               </table>
+                                           </div>
+                                       </div>
+                                       <div class="col-6">
+                                            <!-- Line Chart Starts -->
 
-                        <!-- Line Chart - Profit -->
-                        <div class="col-lg-6 col-md-3 col-6">
-                            <div class="card card-tiny-line-stats">
-                                <div class="card-body pb-50">
-                                    <h6>الربح</h6>
-                                    <h4 class="font-weight-bolder mb-1">3450 ر.س</h4>
-                                    <div id="statistics-profit-chart"></div>
+                                            <div class="card">
+                                                <div class="card-header d-flex flex-sm-row flex-column justify-content-md-between align-items-start justify-content-start">
+                                                    <div>
+                                                        <h4 class="card-title mb-25">الطلبات</h4>
+                                                        <span class="card-subtitle text-muted">384 طلب</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap mt-sm-0 mt-1">
+                                                        <h5 class="font-weight-bolder mb-0 mr-1">$ 100,000</h5>
+                                                        <div class="badge badge-light-secondary">
+                                                            <i class="text-danger font-small-3" data-feather="arrow-down"></i>
+                                                            <span class="align-middle">20%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div id="line-chart"></div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Line Chart Ends -->
+
+                                        </div>
+                                    </div>
+
+                                    <div id="sold_products" class="card-text col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title">مبيعات المنتجات</h4>
+                                            </div>
+                                            <div class="table-responsive text-center">
+                                                <table class="table">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th>المنتج</th>
+                                                        <th>النوع</th>
+                                                        <th>السعر</th>
+                                                        <th>الكمية المباعة</th>
+                                                        <th>المبيعات ( قبل التخفيض )</th>
+                                                        <th>التخفيض</th>
+                                                        <th>صافي المبيعات</th>
+                                                        <th>الضرائب</th>
+                                                        <th>الإجمالي</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="font-weight-bold">منتج</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold">منتج جاهز</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold">200 ر.س</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold">382</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold"> 250 ر.س</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold"> 250 ر.س</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold"> 250 ر.س</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold"> 250 ر.س</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold"> 250 ر.س</span>
+                                                        </td>
+                                                    </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sold_category" class="card-text col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title">مبيعات التصنيفات</h4>
+                                            </div>
+                                            <div class="table-responsive text-center">
+                                                <table class="table">
+                                                    <thead class="thead-dark">
+                                                    <tr>
+                                                        <th>التنصيف</th>
+                                                        <th>السعر</th>
+                                                        <th>الكمية المباعة</th>
+                                                        <th>المبيعات ( قبل التخفيض )</th>
+                                                        <th>التخفيض</th>
+                                                        <th>صافي المبيعات</th>
+                                                        <th>الضرائب</th>
+                                                        <th>الإجمالي</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="font-weight-bold">المشويات</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold">200 ر.س</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold">382</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold"> 250 ر.س</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold"> 250 ر.س</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold"> 250 ر.س</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold"> 250 ر.س</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="font-weight-bold"> 250 ر.س</span>
+                                                        </td>
+                                                    </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!--/ Line Chart - Profit -->
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="card-text">
+                                        <div class="card py-2">
+                                            <ul class="card-text nav nav-link-search row">
+                                                <li class="nav-item col-4">
+                                                    <a class="nav-link active" href="#most_sold_products">المنتجات الأكثر مبيعاً</a>
+                                                </li>
+                                                <li class="nav-item col-4">
+                                                    <a class="nav-link" href="#forgot_baskcets">السلات المتروكة</a>
+                                                </li>
+                                                <li class="nav-item col-4">
+                                                    <a class="nav-link" href="#most_profitable_products">المنتجات الأكثر ربحاً</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="most_sold_products" class="col-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title">المنتجات الأكثر مبيعاً</h4>
+                                                </div>
+                                                <div class="table-responsive text-center">
+                                                    <table class="table">
+                                                        <thead class="thead-dark">
+                                                        <tr>
+                                                            <th>صورة المنتج</th>
+                                                            <th>اسم المنتج</th>
+                                                            <th>الكمية</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <img width="38" height="38" src="../../../app-assets/images/avatars/6-small.png" alt="">
+                                                            </td>
+                                                            <td>
+                                                                <span class="font-weight-bold">منتج</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="font-weight-bold">21</span>
+                                                            </td>
+                                                        </tr>
 
-                        <!-- Earnings Card -->
-                        <div class="col-lg-12 col-md-6 col-12">
-                            <div class="card earnings-card">
-                                <div class="card-body">
-                                    <div class="row">
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="forgot_baskcets"  class="col-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title">السلات المتروكة</h4>
+                                                </div>
+                                                <div class="table-responsive text-center">
+                                                    <table class="table">
+                                                        <thead class="thead-dark">
+                                                        <tr>
+                                                            <th>صورة المنتج</th>
+                                                            <th>اسم المنتج</th>
+                                                            <th>الكمية</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <img width="38" height="38" src="../../../app-assets/images/avatars/6-small.png" alt="">
+                                                            </td>
+                                                            <td>
+                                                                <span class="font-weight-bold">منتج</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="font-weight-bold">21</span>
+                                                            </td>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="most_profitable_products"  class="col-12">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title">المنتجات الأكثر ربحاً</h4>
+                                                </div>
+                                                <div class="table-responsive text-center">
+                                                    <table class="table">
+                                                        <thead class="thead-dark">
+                                                        <tr>
+                                                            <th>صورة المنتج</th>
+                                                            <th>اسم المنتج</th>
+                                                            <th>الكمية</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <img width="38" height="38" src="../../../app-assets/images/avatars/6-small.png" alt="">
+                                                            </td>
+                                                            <td>
+                                                                <span class="font-weight-bold">منتج</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="font-weight-bold">21</span>
+                                                            </td>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+                                    <div class="card-text row">
+                                        <!-- Customers Chart Card -->
                                         <div class="col-6">
-                                            <h4 class="card-title mb-1">الأرباح</h4>
-                                            <div class="font-small-2">هذا الشهر</div>
-                                            <h5 class="mb-1">4055.56 ر.س</h5>
-                                            <p class="card-text text-muted font-small-2">
-                                                <span> أكثر من الشهر الماضي بنسبة </span><span class="font-weight-bolder">68.2%</span>
-                                            </p>
+                                            <div class="card">
+                                                <div class="card-header d-flex justify-content-between align-items-end">
+                                                    <div class="card-title">
+                                                        <h4>العملاء</h4>
+                                                        <span class="text-muted">75 عميل</span>
+                                                    </div>
+                                                    <div class="dropdown chart-dropdown">
+                                                        <button class="btn btn-sm border-0 dropdown-toggle px-50" type="button" id="dropdownItem3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            آخر 7 أيام
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownItem3">
+                                                            <a class="dropdown-item" href="javascript:void(0);">آخر 28 يوم</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">آخر شهر</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">آخر سنة</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div id="customer-chart" class="mt-2 mb-1"></div>
+                                                    <div class="pt-25">
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <div class="d-flex align-items-center">
+                                                                <i data-feather="circle" class="font-medium-1 text-primary"></i>
+                                                                <span class="font-weight-bold ml-75">New</span>
+                                                            </div>
+                                                            <span>690</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <div class="d-flex align-items-center">
+                                                                <i data-feather="circle" class="font-medium-1 text-warning"></i>
+                                                                <span class="font-weight-bold ml-75">Returning</span>
+                                                            </div>
+                                                            <span>258</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <i data-feather="circle" class="font-medium-1 text-danger"></i>
+                                                                <span class="font-weight-bold ml-75">Referrals</span>
+                                                            </div>
+                                                            <span>149</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col-6">
-                                            <div id="earnings-chart"></div>
+                                            <div class="card">
+                                                <div class="card-header d-flex justify-content-between align-items-end">
+                                                    <div class="card-title">
+                                                        <h4>رضا العملاء</h4>
+                                                        <span class="text-muted">75 تقييم</span>
+                                                    </div>
+                                                    <div class="dropdown chart-dropdown">
+                                                        <button class="btn btn-sm border-0 dropdown-toggle px-50" type="button" id="dropdownItem4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            آخر 7 أيام
+                                                        </button>
+                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownItem3">
+                                                            <a class="dropdown-item" href="javascript:void(0);">آخر 28 يوم</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">آخر شهر</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">آخر سنة</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div id="customer-chart2" class="mt-2 mb-1"></div>
+                                                    <div class="pt-25">
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <div class="d-flex align-items-center">
+                                                                <i data-feather="circle" class="font-medium-1 text-primary"></i>
+                                                                <span class="font-weight-bold ml-75">5 نجوم</span>
+                                                            </div>
+                                                            <span>690</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-1">
+                                                            <div class="d-flex align-items-center">
+                                                                <i data-feather="circle" class="font-medium-1 text-warning"></i>
+                                                                <span class="font-weight-bold ml-75">4 نجوم</span>
+                                                            </div>
+                                                            <span>258</span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="d-flex align-items-center">
+                                                                <i data-feather="circle" class="font-medium-1 text-danger"></i>
+                                                                <span class="font-weight-bold ml-75">3 نجوم</span>
+                                                            </div>
+                                                            <span>149</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <!--/ Customers Chart Card -->
+                                        <div class="col-6">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title">العملاء الأكثر دفعاً</h4>
+                                                </div>
+                                                <div class="table-responsive text-center">
+                                                    <table class="table">
+                                                        <thead class="thead-dark">
+                                                        <tr>
+                                                            <th>اسم العميل</th>
+                                                            <th>المبلغ المدفوع</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <a href="#" class="font-weight-bold">محمد احمد</a>
+                                                            </td>
+                                                            <td>
+                                                                <span class="font-weight-bold">200 ر.س</span>
+                                                            </td>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!--/ Earnings Card -->
-                    </div>
-                </div>
-
-                <!-- Revenue Report Card -->
-                <div class="col-lg-8 col-12">
-                    <div class="card card-revenue-budget">
-                        <div class="row mx-0">
-                            <div class="col-md-8 col-12 revenue-report-wrapper">
-                                <div class="d-sm-flex justify-content-between align-items-center mb-3">
-                                    <h4 class="card-title mb-50 mb-sm-0">تقرير مالي</h4>
-                                    <div class="d-flex align-items-center">
-                                        <div class="d-flex align-items-center mr-2">
-                                            <span class="bullet bullet-primary font-small-3 mr-50 cursor-pointer"></span>
-                                            <span>الإيرادات</span>
+                                <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+                                    <h4 class="card-title">الزيارات</h4>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="javascript:void(0);" class="btn btn-outline-primary">الزيارات</a>
+                                </div>
+                                <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
+                                    <div class="card-text row">
+                                        <!-- Bar Chart Starts -->
+                                        <div class="col-xl-6 col-12">
+                                            <div class="card">
+                                                <div class="card-header d-flex flex-sm-row flex-column justify-content-md-between align-items-start justify-content-start">
+                                                    <div>
+                                                        <h4 class="card-title font-weight-bolder">الأوقات الأكثر طلباً</h4>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-md-0 mt-1">
+                                                        <i class="font-medium-2" data-feather="calendar"></i>
+                                                        <input type="text" class="form-control flat-picker bg-transparent border-0 shadow-none" placeholder="YYYY-MM-DD" />
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div id="bar-chart"></div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="d-flex align-items-center ml-75">
-                                            <span class="bullet bullet-warning font-small-3 mr-50 cursor-pointer"></span>
-                                            <span>المصروفات</span>
+                                        <!-- Bar Chart Ends -->
+                                        <div class="col-6">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h4 class="card-title">العملاء الأكثر طلباً</h4>
+                                                </div>
+                                                <div class="table-responsive text-center">
+                                                    <table class="table">
+                                                        <thead class="thead-dark">
+                                                        <tr>
+                                                            <th>اسم العميل</th>
+                                                            <th>عدد الطلبات</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <a href="#" class="font-weight-bold">محمد احمد</a>
+                                                            </td>
+                                                            <td>
+                                                                <span class="font-weight-bold">200 طلب</span>
+                                                            </td>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div id="revenue-report-chart"></div>
-                            </div>
-                            <div class="col-md-4 col-12 budget-wrapper">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle budget-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        2020
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="javascript:void(0);">2020</a>
-                                        <a class="dropdown-item" href="javascript:void(0);">2019</a>
-                                        <a class="dropdown-item" href="javascript:void(0);">2018</a>
-                                    </div>
-                                </div>
-                                <h2 class="mb-25">25,852 ر.س</h2>
-                                <div class="d-flex justify-content-center">
-                                    <span class="font-weight-bolder mr-25">الميزانية:</span>
-                                    <span>56,800 ر.س</span>
-                                </div>
-                                <div id="budget-chart"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/ Revenue Report Card -->
-
-                <div class="col-xl-3 col-md-6 col-sm-12">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <div class="avatar bg-light-info p-50 mb-1">
-                                <div class="avatar-content">
-                                    <i data-feather='shopping-bag'></i>                                </div>
-                            </div>
-                            <h2 class="font-weight-bolder">2.1k</h2>
-                            <p class="card-text">المنتجات</p>
-                            <a href="#">التفاصيل</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-sm-12">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <div class="avatar bg-light-danger p-50 mb-1">
-                                <div class="avatar-content">
-                                    <i data-feather='truck'></i>
                                 </div>
                             </div>
-                            <h2 class="font-weight-bolder">2.1k</h2>
-                            <p class="card-text">المخزون</p>
-                            <a href="#">التفاصيل</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col-sm-12">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <div class="avatar bg-light-primary p-50 mb-1">
-                                <div class="avatar-content">
-                                    <i data-feather='package'></i>                                </div>
-                            </div>
-                            <h2 class="font-weight-bolder">2.1k</h2>
-                            <p class="card-text">الطلبات</p>
-                            <a href="#">التفاصيل</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 col-sm-12">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <div class="avatar bg-light-success p-50 mb-1">
-                                <div class="avatar-content">
-                                    <i data-feather='bar-chart-2'></i>                                </div>
-                            </div>
-                            <h2 class="font-weight-bolder">2.1k</h2>
-                            <p class="card-text">المالية</p>
-                            <a href="#">التفاصيل</a>
-                        </div>
-                    </div>
-                </div>
+            </section>
+            <!--/ Navigation -->
 
-
-
-            </div>
         </div>
     </div>
-    <!--end::Container-->
-
-</div>
-</div>
 </div>
 <!-- END: Content-->
 
@@ -741,7 +1275,8 @@
 <footer class="footer footer-static footer-light">
     <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">جميع الحقوق محفوظة &copy; 2021
         <a class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">شركة طيف</a></span>
-        <span class="float-md-right d-none d-md-block"> بواسطة <img src="../../../app-assets/images/logo.svg" width="100" alt="" srcset=""></span></p>
+        <span class="float-md-right d-none d-md-block"> بواسطة <img src="../../../app-assets/images/logo.svg"
+                                                                    width="100" alt="" srcset=""></span></p>
 </footer>
 <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
 <!-- END: Footer-->
@@ -752,22 +1287,12 @@
 <!-- BEGIN Vendor JS-->
 
 <!-- BEGIN: Page Vendor JS-->
-<!-- END: Page Vendor JS-->
-
-
-<!-- BEGIN: Page Vendor JS-->
-<script src="../../../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
+<script src="../../../app-assets/vendors/js/charts/apexcharts.min.js"></script>
+<script src="../../../app-assets/vendors/js/extensions/toastr.min.js"></script>
+<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+<script src="../../../app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
 <script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
 <!-- END: Page Vendor JS-->
 
@@ -775,15 +1300,16 @@
 <script src="../../../app-assets/js/core/app-menu.js"></script>
 <script src="../../../app-assets/js/core/app.js"></script>
 <!-- END: Theme JS-->
-<script src="../../../app-assets/vendors/js/charts/apexcharts.min.js"></script>
-<script src="../../../app-assets/vendors/js/extensions/toastr.min.js"></script>
+
 <!-- BEGIN: Page JS-->
 <script src="../../../app-assets/js/scripts/pages/dashboard-ecommerce.js"></script>
-<!-- BEGIN: Page JS-->
+<script src="../../../app-assets/js/scripts/forms/pickers/form-pickers.js"></script>
+<script src="../../../app-assets/js/scripts/charts/chart-apex.js"></script>
+<script src="../../../app-assets/js/scripts/cards/card-analytics.js"></script>
 <!-- END: Page JS-->
 
 <script>
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         if (feather) {
             feather.replace({
                 width: 14,
