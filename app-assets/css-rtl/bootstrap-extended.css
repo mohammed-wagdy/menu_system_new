@@ -511,7 +511,7 @@ textarea.form-control-lg {
 }
 
 select.form-control:not([multiple='multiple']) {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%23d8d6de\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-down\'%3E%3Cpolyline points=\'6 9 12 15 18 9\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%23e0d7d7\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-down\'%3E%3Cpolyline points=\'6 9 12 15 18 9\'%3E%3C/polyline%3E%3C/svg%3E');
   background-position : calc(100% - (100% - 12px)) 13px, calc(100% - (100% - 20px)) 13px, 0 0;
   background-size : 18px 14px, 18px 14px;
   background-repeat : no-repeat;
@@ -1942,7 +1942,7 @@ input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-o
 
 .card-developer-meetup .meetup-header .meetup-day {
   text-align : center;
-  border-left : 1px solid #D8D6DE;
+  border-left : 1px solid #e0d7d7;
   padding-left : 1.3rem;
   margin-left : 1.3rem;
 }

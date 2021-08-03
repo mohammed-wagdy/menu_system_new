@@ -27,7 +27,7 @@
   font-size : 1rem;
   padding : 0.438rem 1rem;
   color : #6E6B7B;
-  border-color : #D8D6DE;
+  border-color : #e0d7d7;
   border-radius : 0.357rem;
   line-height : 1.45;
 }
@@ -42,7 +42,7 @@
 }
 
 .swal2-container .swal2-popup .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step-line, .swal2-container .swal2-popup .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step {
-  background-color : #B3ADF7;
+  background-color : #faafaf;
 }
 
 .swal2-container .swal2-popup .swal2-progress-steps .swal2-progress-step-line {

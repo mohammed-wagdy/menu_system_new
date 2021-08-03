@@ -34,7 +34,7 @@
   font-family: 'Ubuntu Mono'; }
 
 .ql-toolbar {
-  border-color: #d8d6de !important; }
+  border-color: #e0d7d7 !important; }
 
 .ql-toolbar .ql-formats:focus,
 .ql-toolbar .ql-formats *:focus {
@@ -78,7 +78,7 @@
   fill: #fff !important; }
 
 .ql-container {
-  border-color: #d8d6de !important;
+  border-color: #e0d7d7 !important;
   font-family: "Montserrat", Helvetica, Arial, serif; }
 
 .ql-editor a {

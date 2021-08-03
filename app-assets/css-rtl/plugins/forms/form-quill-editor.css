@@ -45,7 +45,7 @@
 }
 
 .ql-toolbar {
-  border-color : #D8D6DE !important;
+  border-color : #e0d7d7 !important;
 }
 
 .ql-toolbar .ql-formats:focus, .ql-toolbar .ql-formats *:focus {
@@ -93,7 +93,7 @@
 }
 
 .ql-container {
-  border-color : #D8D6DE !important;
+  border-color : #e0d7d7 !important;
   font-family : 'Montserrat', Helvetica, Arial, serif;
 }
 

@@ -2,6 +2,7 @@
   color: rgb(255, 255, 255);
   background: #d06666a6;
 }
+
 .main-menu .navigation li > a > svg, .main-menu .navigation li > a > i, .main-menu .dropdown-menu svg, .main-menu .dropdown-menu i, .main-menu .dropdown-user > a > svg, .main-menu .dropdown-user > a > i, .main-menu .navigation > li > a > svg, .main-menu .navigation > li > a > i {
   float : right;
 }

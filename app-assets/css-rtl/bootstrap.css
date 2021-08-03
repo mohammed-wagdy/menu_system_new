@@ -2029,19 +2029,19 @@ pre code {
 }
 
 .table-primary, .table-primary > th, .table-primary > td {
-  background-color : #D8D4FB;
+  background-color : #f2cece;
 }
 
 .table-primary th, .table-primary td, .table-primary thead th, .table-primary tbody + tbody {
-  border-color : #B6B0F7;
+  border-color : #f7b0b0;
 }
 
 .table-hover .table-primary:hover {
-  background-color : #C3BDF9;
+  background-color : #f5baba;
 }
 
 .table-hover .table-primary:hover > td, .table-hover .table-primary:hover > th {
-  background-color : #C3BDF9;
+  background-color : #f5baba;
 }
 
 .table-secondary, .table-secondary > th, .table-secondary > td {
@@ -2272,7 +2272,7 @@ pre code {
   color : #6E6B7B;
   background-color : #FFFFFF;
   background-clip : padding-box;
-  border : 1px solid #D8D6DE;
+  border : 1px solid #e0d7d7;
   border-radius : 0.357rem;
   -webkit-transition : border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
           transition : border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2533,7 +2533,7 @@ textarea.form-control {
 .was-validated .custom-select:valid, .custom-select.is-valid {
   border-color : #28C76F;
   padding-left : calc(0.75em + 2.657rem);
-  background : url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'4\' height=\'5\' viewBox=\'0 0 4 5\'%3e%3cpath fill=\'%23d8d6de\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/%3e%3c/svg%3e') left 1rem center/10px 10px no-repeat, #FFFFFF url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\' viewBox=\'0 0 8 8\'%3e%3cpath fill=\'%2328c76f\' d=\'M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z\'/%3e%3c/svg%3e') center left 2rem/calc(0.725em + 0.438rem) calc(0.725em + 0.438rem) no-repeat;
+  background : url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'4\' height=\'5\' viewBox=\'0 0 4 5\'%3e%3cpath fill=\'%23e0d7d7\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/%3e%3c/svg%3e') left 1rem center/10px 10px no-repeat, #FFFFFF url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\' viewBox=\'0 0 8 8\'%3e%3cpath fill=\'%2328c76f\' d=\'M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z\'/%3e%3c/svg%3e') center left 2rem/calc(0.725em + 0.438rem) calc(0.725em + 0.438rem) no-repeat;
 }
 
 .was-validated .custom-select:valid:focus, .custom-select.is-valid:focus {
@@ -2633,7 +2633,7 @@ textarea.form-control {
 .was-validated .custom-select:invalid, .custom-select.is-invalid {
   border-color : #EA5455;
   padding-left : calc(0.75em + 2.657rem);
-  background : url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'4\' height=\'5\' viewBox=\'0 0 4 5\'%3e%3cpath fill=\'%23d8d6de\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/%3e%3c/svg%3e') left 1rem center/10px 10px no-repeat, #FFFFFF url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' fill=\'none\' stroke=\'%23ea5455\' viewBox=\'0 0 12 12\'%3e%3ccircle cx=\'6\' cy=\'6\' r=\'4.5\'/%3e%3cpath stroke-linejoin=\'round\' d=\'M5.8 3.6h.4L6 6.5z\'/%3e%3ccircle cx=\'6\' cy=\'8.2\' r=\'.6\' fill=\'%23ea5455\' stroke=\'none\'/%3e%3c/svg%3e') center left 2rem/calc(0.725em + 0.438rem) calc(0.725em + 0.438rem) no-repeat;
+  background : url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'4\' height=\'5\' viewBox=\'0 0 4 5\'%3e%3cpath fill=\'%23e0d7d7\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/%3e%3c/svg%3e') left 1rem center/10px 10px no-repeat, #FFFFFF url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'12\' fill=\'none\' stroke=\'%23ea5455\' viewBox=\'0 0 12 12\'%3e%3ccircle cx=\'6\' cy=\'6\' r=\'4.5\'/%3e%3cpath stroke-linejoin=\'round\' d=\'M5.8 3.6h.4L6 6.5z\'/%3e%3ccircle cx=\'6\' cy=\'8.2\' r=\'.6\' fill=\'%23ea5455\' stroke=\'none\'/%3e%3c/svg%3e') center left 2rem/calc(0.725em + 0.438rem) calc(0.725em + 0.438rem) no-repeat;
 }
 
 .was-validated .custom-select:invalid:focus, .custom-select.is-invalid:focus {
@@ -2843,15 +2843,15 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color : #FFFFFF;
-  background-color : #5344ED;
+  background-color : #d64d4d;
   border-color : #d98585;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color : #FFFFFF;
-  background-color : #5344ED;
+  background-color : #d64d4d;
   border-color : #d98585;
-  box-shadow : 0 0 0 0.2rem rgba(136, 126, 242, 0.5);
+  box-shadow : 0 0 0 0.2rem rgba(245, 125, 125, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
@@ -2863,11 +2863,11 @@ a.btn.disabled, fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color : #FFFFFF;
   background-color : #d98585;
-  border-color : #3E2DEA;
+  border-color : #cc4141;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow : 0 0 0 0.2rem rgba(136, 126, 242, 0.5);
+  box-shadow : 0 0 0 0.2rem rgba(245, 125, 125, 0.5);
 }
 
 .btn-secondary {
@@ -3922,7 +3922,7 @@ input[type='submit'].btn-block, input[type='reset'].btn-block, input[type='butto
   text-align : center;
   white-space : nowrap;
   background-color : white;
-  border : 1px solid #D8D6DE;
+  border : 1px solid #e0d7d7;
   border-radius : 0.357rem;
 }
 
@@ -4037,7 +4037,7 @@ input[type='submit'].btn-block, input[type='reset'].btn-block, input[type='butto
   pointer-events : none;
   content : '';
   background-color : #FFFFFF;
-  border : #D8D6DE solid 1px;
+  border : #e0d7d7 solid 1px;
 }
 
 .custom-control-label::after {
@@ -4104,7 +4104,7 @@ input[type='submit'].btn-block, input[type='reset'].btn-block, input[type='butto
   right : calc(-3.5rem + 2px);
   width : 1rem;
   height : 1rem;
-  background-color : #D8D6DE;
+  background-color : #e0d7d7;
   border-radius : 1rem;
   -webkit-transition : background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background 0s, border-color 0s, -webkit-transform 0.15s ease-in-out;
           transition : background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background 0s, border-color 0s, -webkit-transform 0.15s ease-in-out;
@@ -4140,8 +4140,8 @@ input[type='submit'].btn-block, input[type='reset'].btn-block, input[type='butto
   line-height : 1.45;
   color : #6E6B7B;
   vertical-align : middle;
-  background : #FFFFFF url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'4\' height=\'5\' viewBox=\'0 0 4 5\'%3e%3cpath fill=\'%23d8d6de\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/%3e%3c/svg%3e') left 1rem center/10px 10px no-repeat;
-  border : 1px solid #D8D6DE;
+  background : #FFFFFF url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'4\' height=\'5\' viewBox=\'0 0 4 5\'%3e%3cpath fill=\'%23e0d7d7\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/%3e%3c/svg%3e') left 1rem center/10px 10px no-repeat;
+  border : 1px solid #e0d7d7;
   border-radius : 0.357rem;
   -webkit-appearance : none;
      -moz-appearance : none;
@@ -4243,7 +4243,7 @@ input[type='submit'].btn-block, input[type='reset'].btn-block, input[type='butto
   line-height : 1.45;
   color : #6E6B7B;
   background-color : #FFFFFF;
-  border : 1px solid #D8D6DE;
+  border : 1px solid #e0d7d7;
   border-radius : 0.357rem;
 }
 
@@ -5627,17 +5627,17 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-primary {
-  color : #4C4993;
-  background-color : #E3E1FC;
-  border-color : #D8D4FB;
+  color : #8f4646;
+  background-color : #fadede;
+  border-color : #f2cece;
 }
 
 .alert-primary hr {
-  border-top-color : #C3BDF9;
+  border-top-color : #f5baba;
 }
 
 .alert-primary .alert-link {
-  color : #3A3871;
+  color : #703737;
 }
 
 .alert-secondary {
@@ -6069,19 +6069,19 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item-primary {
-  color : #4C4993;
-  background-color : #D8D4FB;
+  color : #8f4646;
+  background-color : #f2cece;
 }
 
 .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
-  color : #4C4993;
-  background-color : #C3BDF9;
+  color : #8f4646;
+  background-color : #f5baba;
 }
 
 .list-group-item-primary.list-group-item-action.active {
   color : #FFFFFF;
-  background-color : #4C4993;
-  border-color : #4C4993;
+  background-color : #8f4646;
+  border-color : #8f4646;
 }
 
 .list-group-item-secondary {
