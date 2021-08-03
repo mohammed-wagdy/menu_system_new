@@ -18,12 +18,12 @@
 }
 
 .context-menu-list .context-menu-item.context-menu-hover, .context-menu-list .context-menu-item:hover, .context-menu-list .context-menu-item:focus {
-  background-color : rgba(115, 103, 240, 0.12) !important;
-  color : #7367F0;
+  background-color : rgba(208, 102, 102, 0.12) !important;
+  color : #D06666;
 }
 
 .context-menu-list .context-menu-item.context-menu-hover.context-menu-submenu:after, .context-menu-list .context-menu-item:hover.context-menu-submenu:after, .context-menu-list .context-menu-item:focus.context-menu-submenu:after {
-  border-color : transparent #7367F0 transparent transparent !important;
+  border-color : transparent #D06666 transparent transparent !important;
 }
 
 .context-menu-list .context-menu-item:focus {
@@ -44,7 +44,7 @@
 }
 
 .dark-layout .context-menu-list .context-menu-item.context-menu-hover > span {
-  color : #7367F0;
+  color : #D06666;
 }
 
 .dark-layout .context-menu-list .context-menu-item.context-menu-submenu:after {
@@ -66,7 +66,7 @@
 }
 
 [data-textdirection='rtl'] .context-menu-list .context-menu-item.context-menu-hover.context-menu-submenu:after {
-  border-color : transparent transparent transparent #7367F0 !important;
+  border-color : transparent transparent transparent #D06666 !important;
 }
 
 [data-textdirection='rtl'] .context-menu-list .context-menu-item > .context-menu-list {

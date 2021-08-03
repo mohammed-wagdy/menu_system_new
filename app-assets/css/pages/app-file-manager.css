@@ -66,8 +66,8 @@
 
 .file-manager-application .sidebar-file-manager .sidebar-inner .sidebar-list .active {
   background-color: transparent;
-  border-color: #7367f0;
-  color: #7367f0; }
+  border-color: #D06666;
+  color: #D06666; }
 
 .file-manager-application .sidebar-file-manager.show {
   transition: all 0.25s ease, background 0s !important;
@@ -75,19 +75,19 @@
   z-index: 10; }
 
 .file-manager-application .content-area-wrapper {
-  border: 1px solid #ebe9f1;
+  border: 1px solid #f7eeee;
   border-radius: 0.25rem; }
 
 .file-manager-application .content-area-wrapper .content-right .content-wrapper {
   padding: 0; }
 
 .file-manager-application .content-area-wrapper .file-manager-main-content {
-  border-left: 1px solid #ebe9f1;
+  border-left: 1px solid #f7eeee;
   height: inherit; }
 
 .file-manager-application .content-area-wrapper .file-manager-main-content .file-manager-content-header {
   padding: 0.4rem 1rem;
-  border-bottom: 1px solid #ebe9f1;
+  border-bottom: 1px solid #f7eeee;
   background-color: #fff;
   border-top-right-radius: 0.357rem; }
 
@@ -112,7 +112,7 @@
   flex-wrap: wrap; }
 
 .file-manager-application .content-area-wrapper .file-manager-main-content .file-manager-content-body .view-container .file-manager-item {
-  border: 1px solid #ebe9f1;
+  border: 1px solid #f7eeee;
   margin-bottom: 1.6rem;
   box-shadow: none;
   margin-right: 1rem;
@@ -152,7 +152,7 @@
   margin-bottom: 0; }
 
 .file-manager-application .content-area-wrapper .file-manager-main-content .file-manager-content-body .view-container .file-manager-item.selected {
-  border-color: #7367f0; }
+  border-color: #D06666; }
 
 .file-manager-application .content-area-wrapper .file-manager-main-content .file-manager-content-body .view-container .file-name {
   width: calc(100% - 26rem);

@@ -13,7 +13,7 @@ $(window).on('load', function () {
   var $avgSessionStrokeColor2 = '#ebf0f7';
   var $textHeadingColor = '#5e5873';
   var $white = '#fff';
-  var $strokeColor = '#ebe9f1';
+  var $strokeColor = '#f7eeee';
 
   var $gainedChart = document.querySelector('#gained-chart');
   var $orderChart = document.querySelector('#order-chart');

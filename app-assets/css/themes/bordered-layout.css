@@ -2,21 +2,21 @@
   box-shadow: none; }
 
 .bordered-layout .header-navbar.floating-nav {
-  border: 1px solid #ebe9f1; }
+  border: 1px solid #f7eeee; }
 
 .bordered-layout .header-navbar.fixed-top {
-  border-bottom: 1px solid #ebe9f1;
+  border-bottom: 1px solid #f7eeee;
   background: #f8f8f8; }
 
 .bordered-layout .main-menu {
-  border-right: 1px solid #ebe9f1;
+  border-right: 1px solid #f7eeee;
   box-shadow: none; }
 
 .bordered-layout .main-menu.menu-light .navigation > li.open:not(.menu-item-closing) > a, .bordered-layout .main-menu.menu-light .navigation > li.sidebar-group-active > a {
   background: #ededed; }
 
 .bordered-layout .dropdown-menu {
-  border: 1px solid #ebe9f1 !important;
+  border: 1px solid #f7eeee !important;
   box-shadow: none; }
 
 .bordered-layout .main-menu .navigation,
@@ -26,11 +26,11 @@
 .bordered-layout .card,
 .bordered-layout .bs-stepper:not(.wizard-modern):not(.checkout-tab-steps),
 .bordered-layout .bs-stepper.wizard-modern .bs-stepper-content {
-  border: 1px solid #ebe9f1;
+  border: 1px solid #f7eeee;
   box-shadow: none; }
 
 .bordered-layout .footer {
   box-shadow: none !important; }
 
 .bordered-layout .footer-fixed .footer {
-  border-top: 1px solid #ebe9f1; }
+  border-top: 1px solid #f7eeee; }

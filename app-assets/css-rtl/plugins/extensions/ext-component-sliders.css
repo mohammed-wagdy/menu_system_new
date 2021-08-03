@@ -1,5 +1,5 @@
 .noUi-target {
-  background-color : rgba(115, 103, 240, 0.12);
+  background-color : rgba(208, 102, 102, 0.12);
   border-width : 0;
   box-shadow : none;
   border-radius : 1rem;
@@ -30,7 +30,7 @@
 }
 
 .noUi-marker {
-  background : #EBE9F1;
+  background : #f7eeee;
 }
 
 .noUi-value {
@@ -46,7 +46,7 @@
   border : none;
   border-radius : 50%;
   background : #FFFFFF;
-  border : 2px solid #7367F0;
+  border : 2px solid #D06666;
 }
 
 .noUi-handle:after, .noUi-handle:before {
@@ -54,7 +54,7 @@
 }
 
 .noUi-connect {
-  background : #7367F0;
+  background : #D06666;
   box-shadow : none;
 }
 

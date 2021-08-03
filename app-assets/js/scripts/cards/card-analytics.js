@@ -11,7 +11,7 @@ $(window).on('load', function () {
   'use strict';
 
   var $textHeadingColor = '#5e5873';
-  var $strokeColor = '#ebe9f1';
+  var $strokeColor = '#f7eeee';
   var $labelColor = '#e7eef7';
   var $avgSessionStrokeColor2 = '#ebf0f7';
   var $budgetStrokeColor2 = '#dcdae3';

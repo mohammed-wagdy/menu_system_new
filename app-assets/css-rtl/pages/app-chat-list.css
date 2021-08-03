@@ -25,7 +25,7 @@
   height : 65px;
   background-color : #FFFFFF;
   padding : 0 1rem;
-  border-bottom : 1px solid #EBE9F1;
+  border-bottom : 1px solid #f7eeee;
 }
 
 .chat-app-window .chats .chat-avatar {
@@ -44,8 +44,8 @@
   margin : 0 0 10px 1rem;
   clear : both;
   color : #FFFFFF;
-  background-image : -webkit-linear-gradient(170deg, #7367F0, #9E95F5);
-  background-image :         linear-gradient(-80deg, #7367F0, #9E95F5);
+  background-image : -webkit-linear-gradient(170deg, #D06666, #9E95F5);
+  background-image :         linear-gradient(-80deg, #D06666, #9E95F5);
   background-repeat : repeat-x;
   border-radius : 0.357rem;
   box-shadow : 0 4px 8px 0 rgba(34, 41, 47, 0.12);
@@ -80,7 +80,7 @@
   -webkit-align-items : center;
   -ms-flex-align : center;
           align-items : center;
-  border-top : 1px solid #EBE9F1;
+  border-top : 1px solid #f7eeee;
 }
 
 .chat-widget .card-header {

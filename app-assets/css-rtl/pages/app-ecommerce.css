@@ -337,7 +337,7 @@
 
 .ecommerce-application .list-view .ecommerce-card .card-body {
   padding : 1.5rem 1rem;
-  border-left : 1px solid #EBE9F1;
+  border-left : 1px solid #f7eeee;
   display : -webkit-box;
   display : -webkit-flex;
   display : -ms-flexbox;
@@ -420,7 +420,7 @@
 }
 
 .ecommerce-application .list-view .ecommerce-card .item-options .item-wrapper .item-cost .item-price {
-  color : #7367F0;
+  color : #D06666;
   margin-bottom : 0;
 }
 

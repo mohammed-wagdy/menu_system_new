@@ -3,16 +3,16 @@
 }
 
 .bordered-layout .header-navbar.floating-nav {
-  border : 1px solid #EBE9F1;
+  border : 1px solid #f7eeee;
 }
 
 .bordered-layout .header-navbar.fixed-top {
-  border-bottom : 1px solid #EBE9F1;
+  border-bottom : 1px solid #f7eeee;
   background : #F8F8F8;
 }
 
 .bordered-layout .main-menu {
-  border-left : 1px solid #EBE9F1;
+  border-left : 1px solid #f7eeee;
   box-shadow : none;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .bordered-layout .dropdown-menu {
-  border : 1px solid #EBE9F1 !important;
+  border : 1px solid #f7eeee !important;
   box-shadow : none;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .bordered-layout .card, .bordered-layout .bs-stepper:not(.wizard-modern):not(.checkout-tab-steps), .bordered-layout .bs-stepper.wizard-modern .bs-stepper-content {
-  border : 1px solid #EBE9F1;
+  border : 1px solid #f7eeee;
   box-shadow : none;
 }
 
@@ -39,5 +39,5 @@
 }
 
 .bordered-layout .footer-fixed .footer {
-  border-top : 1px solid #EBE9F1;
+  border-top : 1px solid #f7eeee;
 }

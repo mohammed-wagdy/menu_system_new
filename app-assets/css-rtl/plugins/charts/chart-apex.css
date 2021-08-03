@@ -4,12 +4,12 @@
 
 .apexcharts-canvas .apexcharts-tooltip {
   background : #FFFFFF;
-  border-color : #EBE9F1;
+  border-color : #f7eeee;
 }
 
 .apexcharts-canvas .apexcharts-tooltip .apexcharts-tooltip-title {
   background : #FFFFFF !important;
-  border-color : #EBE9F1 !important;
+  border-color : #f7eeee !important;
   font-weight : 600;
 }
 
@@ -19,7 +19,7 @@
 
 .apexcharts-canvas .apexcharts-xaxistooltip, .apexcharts-canvas .apexcharts-yaxistooltip {
   background : #F8F8F8;
-  border-color : #EBE9F1;
+  border-color : #f7eeee;
 }
 
 .apexcharts-canvas .apexcharts-xaxistooltip:after, .apexcharts-canvas .apexcharts-xaxistooltip:before, .apexcharts-canvas .apexcharts-yaxistooltip:after, .apexcharts-canvas .apexcharts-yaxistooltip:before {
@@ -63,7 +63,7 @@
 }
 
 .apexcharts-canvas .apexcharts-xcrosshairs, .apexcharts-canvas .apexcharts-ycrosshairs, .apexcharts-canvas .apexcharts-gridline {
-  stroke : #EBE9F1;
+  stroke : #f7eeee;
 }
 
 .apexcharts-legend.position-bottom {

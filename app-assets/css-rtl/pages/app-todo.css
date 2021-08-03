@@ -1,5 +1,5 @@
 .todo-application .content-area-wrapper {
-  border : 1px solid #EBE9F1;
+  border : 1px solid #f7eeee;
   border-radius : 0.428rem;
 }
 
@@ -46,11 +46,11 @@
 
 .todo-application .content-area-wrapper .sidebar .todo-sidebar .todo-app-menu .list-group .list-group-item:hover, .todo-application .content-area-wrapper .sidebar .todo-sidebar .todo-app-menu .list-group .list-group-item:focus, .todo-application .content-area-wrapper .sidebar .todo-sidebar .todo-app-menu .list-group .list-group-item.active {
   background : transparent;
-  color : #7367F0;
+  color : #D06666;
 }
 
 .todo-application .content-area-wrapper .sidebar .todo-sidebar .todo-app-menu .list-group .list-group-item.active {
-  border-color : #7367F0;
+  border-color : #D06666;
 }
 
 .todo-application .content-area-wrapper .ql-editor {
@@ -59,7 +59,7 @@
 
 .todo-application .content-area-wrapper .content-right {
   width : calc(100% - 260px);
-  border-right : 1px solid #EBE9F1;
+  border-right : 1px solid #f7eeee;
 }
 
 .todo-application .content-area-wrapper .content-right .todo-app-list {
@@ -68,7 +68,7 @@
 
 .todo-application .content-area-wrapper .content-right .app-fixed-search {
   padding : 0.35rem 0.5rem;
-  border-bottom : 1px solid #EBE9F1;
+  border-bottom : 1px solid #f7eeee;
   background-color : #FFFFFF;
   border-top-left-radius : 0.357rem;
 }
@@ -113,14 +113,14 @@
 }
 
 .todo-application .content-area-wrapper .content-right .todo-task-list-wrapper .todo-task-list li:not(:first-child) {
-  border-top : 1px solid #EBE9F1;
+  border-top : 1px solid #f7eeee;
 }
 
 .todo-application .content-area-wrapper .content-right .todo-task-list-wrapper .todo-task-list li:hover {
   -webkit-transform : translateY(-4px);
       -ms-transform : translateY(-4px);
           transform : translateY(-4px);
-  box-shadow : 0 3px 10px 0 #EBE9F1;
+  box-shadow : 0 3px 10px 0 #f7eeee;
   -webkit-transition : all 0.2s;
           transition : all 0.2s;
 }
@@ -225,8 +225,8 @@
   list-style : none;
   padding : 0.893rem 2rem;
   background-color : #FFFFFF;
-  border-top : 1px solid #EBE9F1;
-  border-bottom : 1px solid #EBE9F1;
+  border-top : 1px solid #f7eeee;
+  border-bottom : 1px solid #f7eeee;
   box-shadow : 0 0 10px 0 rgba(34, 41, 47, 0.25);
 }
 
