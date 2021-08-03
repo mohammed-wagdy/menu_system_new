@@ -32,13 +32,13 @@ pre[class*="language-"] {
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
-	background: #b3d4fc;
+	background: #f3d8d8;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	text-shadow: none;
-	background: #b3d4fc;
+	background: #f3d8d8;
 }
 
 @media print {
@@ -59,7 +59,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	background: #FFF;
     border: 1px solid #F0F0F0;
-    border-left: 2px solid #3BAFDA;
+    border-left: 2px solid #cf8a8a;
     border-radius: 4px;
 }
 
