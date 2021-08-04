@@ -53,6 +53,9 @@
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/forms/pickers/form-flat-pickr.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/forms/pickers/form-pickadate.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/charts/chart-apex.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css"
+          href="../../../app-assets/css-rtl/plugins/extensions/ext-component-sweet-alerts.css">
 
     <!-- END: Page CSS-->
 
@@ -711,11 +714,13 @@
 
                     <div class="col-4 form-group">
                         <label for="pd-months-year">الفترة ( من )</label>
-                        <input type="text" id="pd-months-year" class="form-control pickadate-months-year" placeholder="18 June, 2020" />
+                        <input type="text" id="pd-months-year" class="form-control pickadate-months-year"
+                               placeholder="18 June, 2020"/>
                     </div>
                     <div class="col-4  form-group">
                         <label for="pd-months-year2">الفترة ( إلى )</label>
-                        <input type="text" id="pd-months-year2" class="form-control pickadate-months-year" placeholder="18 June, 2020" />
+                        <input type="text" id="pd-months-year2" class="form-control pickadate-months-year"
+                               placeholder="18 June, 2020"/>
                     </div>
                     <div class="col-4 form-group">
                         <button class="btn btn-primary mt-2">طباعة</button>
@@ -729,33 +734,42 @@
                         <div class="card">
                             <h5 class="card-header">نوع التقرير</h5>
                             <div class="card-header py-2">
-                                <ul class="nav nav-tabs justify-content-center card-header-pills ml-0" id="pills-tab" role="tablist">
+                                <ul class="nav nav-tabs justify-content-center card-header-pills ml-0" id="pills-tab"
+                                    role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">المبيعات</a>
+                                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill"
+                                           href="#pills-home" role="tab" aria-controls="pills-home"
+                                           aria-selected="true">المبيعات</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">المنتجات</a>
+                                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill"
+                                           href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                           aria-selected="false">المنتجات</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">العملاء</a>
+                                        <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3"
+                                           role="tab" aria-controls="pills-3" aria-selected="false">العملاء</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">الزيارات</a>
+                                        <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4"
+                                           role="tab" aria-controls="pills-4" aria-selected="false">الزيارات</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false">الأكثر طلباً</a>
+                                        <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5"
+                                           role="tab" aria-controls="pills-5" aria-selected="false">الأكثر طلباً</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="text-center">
                             <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                     aria-labelledby="pills-home-tab">
                                     <div class="card card-text py-2">
                                         <div class="card-body form-group">
                                             <label for="display_method">طريقة العرض</label>
-                                            <select  onchange="displayBySold()" class="form-control" id="display_method">
-                                                <option>إختر طريقة عرض التقرير</option>
+                                            <select onchange="displayBySold()" class="form-control" id="display_method">
+                                                <option selected>إختر طريقة عرض التقرير</option>
                                                 <option value="summary">ملخص</option>
                                                 <option value="sold_by_products">مبيعات المنتجات</option>
                                                 <option value="sold_by_categories">مبيعات التصنيفات</option>
@@ -764,65 +778,65 @@
 
                                     </div>
                                     <div style="display: none" id="summary" class="Display card-text row">
-                                       <div class="col-6">
-                                           <div class="card table-responsive">
-                                               <table class="table">
-                                                   <thead>
-                                                   <tr class="font-weight-bold bg-dark text-white">
-                                                       <td>
-                                                           <span>المبيعات</span>
-                                                       </td>
-                                                       <td>القيمة</td>
-                                                   </tr>
-                                                   </thead>
-                                                   <tbody>
-                                                   <tr>
-                                                       <td>
-                                                           <span class="">إجمالي المبيعات</span>
-                                                       </td>
-                                                       <td class="bg-light-success">50,00 ر.س</td>
-                                                   </tr>
-                                                   <tr>
-                                                       <td>
-                                                           <span class="">تكاليف المنتجات</span>
-                                                       </td>
-                                                       <td class="bg-light-danger">50,00 ر.س</td>
-                                                   </tr>
-                                                   <tr>
-                                                       <td>
-                                                           <span class="">كوبونات التخفيض</span>
-                                                       </td>
-                                                       <td class="bg-light-danger">50,00 ر.س</td>
-                                                   </tr>
-                                                   <tr>
-                                                       <td>
-                                                           <span class="">الشحن</span>
-                                                       </td>
-                                                       <td class="bg-light-danger" >50,00 ر.س</td>
-                                                   </tr>
-                                                   <tr>
-                                                       <td>
-                                                           <span class="">الضرائب</span>
-                                                       </td>
-                                                       <td class="bg-light-danger" >200 ر.س</td>
-                                                   </tr>
-                                                   <tr>
-                                                       <td>
-                                                           <span class="">رسوم الدفع الإلكتروني</span>
-                                                       </td>
-                                                       <td class="bg-light-danger" >200 ر.س</td>
-                                                   </tr>
-                                                   <tr class="font-weight-bold">
-                                                       <td class="bg-success text-white">
-                                                           <span>صافي المبيعات</span>
-                                                       </td>
-                                                       <td class="bg-light-success">50,00 ر.س</td>
-                                                   </tr>
-                                                   </tbody>
-                                               </table>
-                                           </div>
-                                       </div>
-                                       <div class="col-6">
+                                        <div class="col-6">
+                                            <div class="card table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                    <tr class="font-weight-bold bg-dark text-white">
+                                                        <td>
+                                                            <span>المبيعات</span>
+                                                        </td>
+                                                        <td>القيمة</td>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="">إجمالي المبيعات</span>
+                                                        </td>
+                                                        <td class="bg-light-success">50,00 ر.س</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="">تكاليف المنتجات</span>
+                                                        </td>
+                                                        <td class="bg-light-danger">50,00 ر.س</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="">كوبونات التخفيض</span>
+                                                        </td>
+                                                        <td class="bg-light-danger">50,00 ر.س</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="">الشحن</span>
+                                                        </td>
+                                                        <td class="bg-light-danger">50,00 ر.س</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="">الضرائب</span>
+                                                        </td>
+                                                        <td class="bg-light-danger">200 ر.س</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="">رسوم الدفع الإلكتروني</span>
+                                                        </td>
+                                                        <td class="bg-light-danger">200 ر.س</td>
+                                                    </tr>
+                                                    <tr class="font-weight-bold">
+                                                        <td class="bg-success text-white">
+                                                            <span>صافي المبيعات</span>
+                                                        </td>
+                                                        <td class="bg-light-success">50,00 ر.س</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
                                             <!-- Line Chart Starts -->
 
                                             <div class="card">
@@ -834,7 +848,8 @@
                                                     <div class="d-flex align-items-center flex-wrap mt-sm-0 mt-1">
                                                         <h5 class="font-weight-bolder mb-0 mr-1">$ 100,000</h5>
                                                         <div class="badge badge-light-secondary">
-                                                            <i class="text-danger font-small-3" data-feather="arrow-down"></i>
+                                                            <i class="text-danger font-small-3"
+                                                               data-feather="arrow-down"></i>
                                                             <span class="align-middle">20%</span>
                                                         </div>
                                                     </div>
@@ -957,13 +972,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                     aria-labelledby="pills-profile-tab">
                                     <div class="card-text">
                                         <div class="card card-text py-2">
                                             <div class="card-body form-group">
                                                 <label for="display_method2">طريقة العرض</label>
-                                                <select  onchange="displayByProducts()" class="form-control" id="display_method2">
-                                                    <option>إختر طريقة عرض التقرير</option>
+                                                <select onchange="displayByProducts()" class="form-control"
+                                                        id="display_method2">
+                                                    <option selected>إختر طريقة عرض التقرير</option>
                                                     <option value="most_sold_products">المنتجات الأكثر مبيعاً</option>
                                                     <option value="abandoned_baskets">السلات المتروكة</option>
                                                     <option value="most_value_products">المنتجات الأكثر ربحاً</option>
@@ -988,7 +1005,9 @@
                                                         <tbody>
                                                         <tr>
                                                             <td>
-                                                                <img width="38" height="38" src="../../../app-assets/images/avatars/6-small.png" alt="">
+                                                                <img width="38" height="38"
+                                                                     src="../../../app-assets/images/avatars/6-small.png"
+                                                                     alt="">
                                                             </td>
                                                             <td>
                                                                 <span class="font-weight-bold">منتج</span>
@@ -1003,7 +1022,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div style="display: none" id="abandoned_baskets"  class="col-12">
+                                        <div style="display: none" id="abandoned_baskets" class="col-12">
                                             <div class="card">
                                                 <div class="card-header">
                                                     <h4 class="card-title">السلات المتروكة</h4>
@@ -1020,7 +1039,9 @@
                                                         <tbody>
                                                         <tr>
                                                             <td>
-                                                                <img width="38" height="38" src="../../../app-assets/images/avatars/6-small.png" alt="">
+                                                                <img width="38" height="38"
+                                                                     src="../../../app-assets/images/avatars/6-small.png"
+                                                                     alt="">
                                                             </td>
                                                             <td>
                                                                 <span class="font-weight-bold">منتج</span>
@@ -1035,7 +1056,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div style="display: none" id="most_value_products"  class="col-12">
+                                        <div style="display: none" id="most_value_products" class="col-12">
                                             <div class="card">
                                                 <div class="card-header">
                                                     <h4 class="card-title">المنتجات الأكثر ربحاً</h4>
@@ -1052,7 +1073,9 @@
                                                         <tbody>
                                                         <tr>
                                                             <td>
-                                                                <img width="38" height="38" src="../../../app-assets/images/avatars/6-small.png" alt="">
+                                                                <img width="38" height="38"
+                                                                     src="../../../app-assets/images/avatars/6-small.png"
+                                                                     alt="">
                                                             </td>
                                                             <td>
                                                                 <span class="font-weight-bold">منتج</span>
@@ -1082,13 +1105,19 @@
                                                         <span class="text-muted">75 عميل</span>
                                                     </div>
                                                     <div class="dropdown chart-dropdown">
-                                                        <button class="btn btn-sm border-0 dropdown-toggle px-50" type="button" id="dropdownItem3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <button class="btn btn-sm border-0 dropdown-toggle px-50"
+                                                                type="button" id="dropdownItem3" data-toggle="dropdown"
+                                                                aria-haspopup="true" aria-expanded="false">
                                                             آخر 7 أيام
                                                         </button>
-                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownItem3">
-                                                            <a class="dropdown-item" href="javascript:void(0);">آخر 28 يوم</a>
-                                                            <a class="dropdown-item" href="javascript:void(0);">آخر شهر</a>
-                                                            <a class="dropdown-item" href="javascript:void(0);">آخر سنة</a>
+                                                        <div class="dropdown-menu dropdown-menu-right"
+                                                             aria-labelledby="dropdownItem3">
+                                                            <a class="dropdown-item" href="javascript:void(0);">آخر 28
+                                                                يوم</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">آخر
+                                                                شهر</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">آخر
+                                                                سنة</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1097,21 +1126,24 @@
                                                     <div class="pt-25">
                                                         <div class="d-flex justify-content-between mb-1">
                                                             <div class="d-flex align-items-center">
-                                                                <i data-feather="circle" class="font-medium-1 text-primary"></i>
+                                                                <i data-feather="circle"
+                                                                   class="font-medium-1 text-primary"></i>
                                                                 <span class="font-weight-bold ml-75">New</span>
                                                             </div>
                                                             <span>690</span>
                                                         </div>
                                                         <div class="d-flex justify-content-between mb-1">
                                                             <div class="d-flex align-items-center">
-                                                                <i data-feather="circle" class="font-medium-1 text-warning"></i>
+                                                                <i data-feather="circle"
+                                                                   class="font-medium-1 text-warning"></i>
                                                                 <span class="font-weight-bold ml-75">Returning</span>
                                                             </div>
                                                             <span>258</span>
                                                         </div>
                                                         <div class="d-flex justify-content-between">
                                                             <div class="d-flex align-items-center">
-                                                                <i data-feather="circle" class="font-medium-1 text-danger"></i>
+                                                                <i data-feather="circle"
+                                                                   class="font-medium-1 text-danger"></i>
                                                                 <span class="font-weight-bold ml-75">Referrals</span>
                                                             </div>
                                                             <span>149</span>
@@ -1128,13 +1160,19 @@
                                                         <span class="text-muted">75 تقييم</span>
                                                     </div>
                                                     <div class="dropdown chart-dropdown">
-                                                        <button class="btn btn-sm border-0 dropdown-toggle px-50" type="button" id="dropdownItem4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <button class="btn btn-sm border-0 dropdown-toggle px-50"
+                                                                type="button" id="dropdownItem4" data-toggle="dropdown"
+                                                                aria-haspopup="true" aria-expanded="false">
                                                             آخر 7 أيام
                                                         </button>
-                                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownItem3">
-                                                            <a class="dropdown-item" href="javascript:void(0);">آخر 28 يوم</a>
-                                                            <a class="dropdown-item" href="javascript:void(0);">آخر شهر</a>
-                                                            <a class="dropdown-item" href="javascript:void(0);">آخر سنة</a>
+                                                        <div class="dropdown-menu dropdown-menu-right"
+                                                             aria-labelledby="dropdownItem3">
+                                                            <a class="dropdown-item" href="javascript:void(0);">آخر 28
+                                                                يوم</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">آخر
+                                                                شهر</a>
+                                                            <a class="dropdown-item" href="javascript:void(0);">آخر
+                                                                سنة</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1143,21 +1181,24 @@
                                                     <div class="pt-25">
                                                         <div class="d-flex justify-content-between mb-1">
                                                             <div class="d-flex align-items-center">
-                                                                <i data-feather="circle" class="font-medium-1 text-primary"></i>
+                                                                <i data-feather="circle"
+                                                                   class="font-medium-1 text-primary"></i>
                                                                 <span class="font-weight-bold ml-75">5 نجوم</span>
                                                             </div>
                                                             <span>690</span>
                                                         </div>
                                                         <div class="d-flex justify-content-between mb-1">
                                                             <div class="d-flex align-items-center">
-                                                                <i data-feather="circle" class="font-medium-1 text-warning"></i>
+                                                                <i data-feather="circle"
+                                                                   class="font-medium-1 text-warning"></i>
                                                                 <span class="font-weight-bold ml-75">4 نجوم</span>
                                                             </div>
                                                             <span>258</span>
                                                         </div>
                                                         <div class="d-flex justify-content-between">
                                                             <div class="d-flex align-items-center">
-                                                                <i data-feather="circle" class="font-medium-1 text-danger"></i>
+                                                                <i data-feather="circle"
+                                                                   class="font-medium-1 text-danger"></i>
                                                                 <span class="font-weight-bold ml-75">3 نجوم</span>
                                                             </div>
                                                             <span>149</span>
@@ -1197,15 +1238,12 @@
                                         </div>
 
 
-
-
-
-
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
                                     <h4 class="card-title">الزيارات</h4>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
                                     <a href="javascript:void(0);" class="btn btn-outline-primary">الزيارات</a>
                                 </div>
                                 <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
@@ -1215,11 +1253,14 @@
                                             <div class="card">
                                                 <div class="card-header d-flex flex-sm-row flex-column justify-content-md-between align-items-start justify-content-start">
                                                     <div>
-                                                        <h4 class="card-title font-weight-bolder">الأوقات الأكثر طلباً</h4>
+                                                        <h4 class="card-title font-weight-bolder">الأوقات الأكثر
+                                                            طلباً</h4>
                                                     </div>
                                                     <div class="d-flex align-items-center mt-md-0 mt-1">
                                                         <i class="font-medium-2" data-feather="calendar"></i>
-                                                        <input type="text" class="form-control flat-picker bg-transparent border-0 shadow-none" placeholder="YYYY-MM-DD" />
+                                                        <input type="text"
+                                                               class="form-control flat-picker bg-transparent border-0 shadow-none"
+                                                               placeholder="YYYY-MM-DD"/>
                                                     </div>
                                                 </div>
                                                 <div class="card-body">
@@ -1256,6 +1297,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1288,6 +1330,8 @@
 <!-- BEGIN Vendor JS-->
 
 <!-- BEGIN: Page Vendor JS-->
+<script src="../../../app-assets/vendors/js/extensions/sweetalert2.all.min.js"></script>
+<script src="../../../app-assets/vendors/js/extensions/polyfill.min.js"></script>
 <script src="../../../app-assets/vendors/js/charts/apexcharts.min.js"></script>
 <script src="../../../app-assets/vendors/js/extensions/toastr.min.js"></script>
 <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
@@ -1307,37 +1351,39 @@
 <script src="../../../app-assets/js/scripts/forms/pickers/form-pickers.js"></script>
 <script src="../../../app-assets/js/scripts/charts/chart-apex.js"></script>
 <script src="../../../app-assets/js/scripts/cards/card-analytics.js"></script>
+<script src="../../../app-assets/js/scripts/extensions/ext-component-sweet-alerts.js"></script>
+
 <!-- END: Page JS-->
 
 <script>
 
 
-
     function displayBySold() {
 
-        const displayMethods = ['summary' , 'sold_by_products' , 'sold_by_categories'];
+        const displayMethods = ['summary', 'sold_by_products', 'sold_by_categories'];
         let method = $('#display_method').val();
         let index = displayMethods.indexOf(method);
         displayMethods.splice(index, 1);
-         $(document.getElementById(method)).show();
-         $(document.getElementById(displayMethods[0])).hide();
-         $(document.getElementById(displayMethods[1])).hide();
+        $(document.getElementById(method)).show();
+        for (let i = 0; i < displayMethods.length; i++) {
+            $(document.getElementById(displayMethods[i])).hide();
+        }
 
     }
 
 
     function displayByProducts() {
 
-        const displayMethods = ['most_sold_products' , 'abandoned_baskets' , 'most_value_products'];
+        const displayMethods = ['most_sold_products', 'abandoned_baskets', 'most_value_products'];
         let method = $('#display_method2').val();
         let index = displayMethods.indexOf(method);
         displayMethods.splice(index, 1);
         $(document.getElementById(method)).show();
-        $(document.getElementById(displayMethods[0])).hide();
-        $(document.getElementById(displayMethods[1])).hide();
+        for (let i = 0; i < displayMethods.length; i++) {
+            $(document.getElementById(displayMethods[i])).hide();
+        }
 
     }
-
 
 
     $(window).on('load', function () {
