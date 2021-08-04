@@ -751,20 +751,19 @@
                         <div class="text-center">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                    <div class="card py-2">
-                                        <ul class="card-text nav nav-link-search row">
-                                            <li class="nav-item col-4">
-                                                <a class="nav-link active" href="#summary">ملخص</a>
-                                            </li>
-                                            <li class="nav-item col-4">
-                                                <a class="nav-link" href="#sold_products">مبيعات المنتجات</a>
-                                            </li>
-                                            <li class="nav-item col-4">
-                                                <a class="nav-link" href="#sold_category">مبيعات التصنيفات</a>
-                                            </li>
-                                        </ul>
+                                    <div class="card card-text py-2">
+                                        <div class="card-body form-group">
+                                            <label for="display_method">طريقة العرض</label>
+                                            <select  onchange="displayBySold()" class="form-control" id="display_method">
+                                                <option>إختر طريقة عرض التقرير</option>
+                                                <option value="summary">ملخص</option>
+                                                <option value="sold_by_products">مبيعات المنتجات</option>
+                                                <option value="sold_by_categories">مبيعات التصنيفات</option>
+                                            </select>
+                                        </div>
+
                                     </div>
-                                    <div id="summary" class="card-text row">
+                                    <div style="display: none" id="summary" class="Display card-text row">
                                        <div class="col-6">
                                            <div class="card table-responsive">
                                                <table class="table">
@@ -849,8 +848,7 @@
 
                                         </div>
                                     </div>
-
-                                    <div id="sold_products" class="card-text col-12">
+                                    <div style="display: none" id="sold_by_products" class="Display card-text col-12">
                                         <div class="card">
                                             <div class="card-header">
                                                 <h4 class="card-title">مبيعات المنتجات</h4>
@@ -906,7 +904,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="sold_category" class="card-text col-12">
+                                    <div style="display: none" id="sold_by_categories" class="Display card-text col-12">
                                         <div class="card">
                                             <div class="card-header">
                                                 <h4 class="card-title">مبيعات التصنيفات</h4>
@@ -961,20 +959,19 @@
                                 </div>
                                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                     <div class="card-text">
-                                        <div class="card py-2">
-                                            <ul class="card-text nav nav-link-search row">
-                                                <li class="nav-item col-4">
-                                                    <a class="nav-link active" href="#most_sold_products">المنتجات الأكثر مبيعاً</a>
-                                                </li>
-                                                <li class="nav-item col-4">
-                                                    <a class="nav-link" href="#forgot_baskcets">السلات المتروكة</a>
-                                                </li>
-                                                <li class="nav-item col-4">
-                                                    <a class="nav-link" href="#most_profitable_products">المنتجات الأكثر ربحاً</a>
-                                                </li>
-                                            </ul>
+                                        <div class="card card-text py-2">
+                                            <div class="card-body form-group">
+                                                <label for="display_method2">طريقة العرض</label>
+                                                <select  onchange="displayByProducts()" class="form-control" id="display_method2">
+                                                    <option>إختر طريقة عرض التقرير</option>
+                                                    <option value="most_sold_products">المنتجات الأكثر مبيعاً</option>
+                                                    <option value="abandoned_baskets">السلات المتروكة</option>
+                                                    <option value="most_value_products">المنتجات الأكثر ربحاً</option>
+                                                </select>
+                                            </div>
+
                                         </div>
-                                        <div id="most_sold_products" class="col-12">
+                                        <div style="display: none" id="most_sold_products" class="col-12">
                                             <div class="card">
                                                 <div class="card-header">
                                                     <h4 class="card-title">المنتجات الأكثر مبيعاً</h4>
@@ -1006,7 +1003,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="forgot_baskcets"  class="col-12">
+                                        <div style="display: none" id="abandoned_baskets"  class="col-12">
                                             <div class="card">
                                                 <div class="card-header">
                                                     <h4 class="card-title">السلات المتروكة</h4>
@@ -1038,7 +1035,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="most_profitable_products"  class="col-12">
+                                        <div style="display: none" id="most_value_products"  class="col-12">
                                             <div class="card">
                                                 <div class="card-header">
                                                     <h4 class="card-title">المنتجات الأكثر ربحاً</h4>
@@ -1313,6 +1310,36 @@
 <!-- END: Page JS-->
 
 <script>
+
+
+
+    function displayBySold() {
+
+        const displayMethods = ['summary' , 'sold_by_products' , 'sold_by_categories'];
+        let method = $('#display_method').val();
+        let index = displayMethods.indexOf(method);
+        displayMethods.splice(index, 1);
+         $(document.getElementById(method)).show();
+         $(document.getElementById(displayMethods[0])).hide();
+         $(document.getElementById(displayMethods[1])).hide();
+
+    }
+
+
+    function displayByProducts() {
+
+        const displayMethods = ['most_sold_products' , 'abandoned_baskets' , 'most_value_products'];
+        let method = $('#display_method2').val();
+        let index = displayMethods.indexOf(method);
+        displayMethods.splice(index, 1);
+        $(document.getElementById(method)).show();
+        $(document.getElementById(displayMethods[0])).hide();
+        $(document.getElementById(displayMethods[1])).hide();
+
+    }
+
+
+
     $(window).on('load', function () {
         if (feather) {
             feather.replace({
