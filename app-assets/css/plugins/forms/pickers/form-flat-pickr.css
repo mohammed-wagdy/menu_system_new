@@ -14,9 +14,9 @@
   border-color: #D06666; }
 
 .flatpickr-calendar .flatpickr-day.inRange, .flatpickr-calendar .flatpickr-day.inRange:hover {
-  background: #f3f2fe;
-  border-color: #f3f2fe;
-  box-shadow: -5px 0 0 #f3f2fe, 5px 0 0 #f3f2fe; }
+  background: #fff2f2;
+  border-color: #fff2f2;
+  box-shadow: -5px 0 0 #fff2f2, 5px 0 0 #fff2f2; }
 
 .flatpickr-calendar .flatpickr-day.startRange, .flatpickr-calendar .flatpickr-day.endRange, .flatpickr-calendar .flatpickr-day.startRange:hover, .flatpickr-calendar .flatpickr-day.endRange:hover {
   background: #D06666;

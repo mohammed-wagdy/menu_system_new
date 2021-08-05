@@ -18,9 +18,9 @@
 }
 
 .flatpickr-calendar .flatpickr-day.inRange, .flatpickr-calendar .flatpickr-day.inRange:hover {
-  background : #F3F2FE;
-  border-color : #F3F2FE;
-  box-shadow : 5px 0 0 #F3F2FE, -5px 0 0 #F3F2FE;
+  background : #fff2f2;
+  border-color : #fff2f2;
+  box-shadow : 5px 0 0 #fff2f2, -5px 0 0 #fff2f2;
 }
 
 .flatpickr-calendar .flatpickr-day.startRange, .flatpickr-calendar .flatpickr-day.endRange, .flatpickr-calendar .flatpickr-day.startRange:hover, .flatpickr-calendar .flatpickr-day.endRange:hover {

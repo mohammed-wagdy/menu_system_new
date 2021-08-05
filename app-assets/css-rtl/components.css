@@ -341,7 +341,7 @@ html .navbar-static.footer-hidden .app-content .content-area-wrapper, html .navb
   100vh -
   calc(
   calc(2rem * 2) + 4.45rem + 0rem + 0rem + 0rem
-  ));D06666
+  ));
   height : calc(
   var(--vh, 1vh) * 100 -
   calc(
@@ -663,7 +663,7 @@ html .pace .pace-progress {
 
 .sidenav-overlay {
   position : fixed;
-  top : 0;D06666
+  top : 0;
   right : 0;
   left : 0;
   height : 120vh;
@@ -1454,7 +1454,7 @@ D06666
 }
 
 .avatar-group {
-  display : flex;D06666
+  display : flex;
   justify-content : flex-start;
 }
 
@@ -2781,7 +2781,7 @@ D06666
   background-color : #DD4B39;
 }
 
-.bg-instagram {D06666
+.bg-instagram {
   background-color : #3F729B;
 }
 
@@ -2808,7 +2808,7 @@ D06666
 .bg-reddit {
   background-color : #FF4500;
 }
-D06666
+
 .bg-soundcloud {
   background-color : #FF5500;
 }
@@ -2928,7 +2928,7 @@ D06666
 }
 
 .dark-layout #breadcrumb-alignment .breadcrumb-wrapper {
-  box-shadow : -1px 1pD06666 rgba(0, 0, 0, 0.24);
+  box-shadow : -1px 1px 10px rgba(0, 0, 0, 0.24);
 }
 
 .buy-now {
@@ -2938,7 +2938,7 @@ D06666
   z-index : 1031;
 }
 
-.buy-now .btn {D06666
+.buy-now .btn {
   box-shadow : 0 1px 20px 1px #EA5455 !important;
 }
 
@@ -2954,7 +2954,7 @@ D06666
 	Author: PIXINVENT
 	Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
-.customizerD06666
+.customizer{
   width : 400px;
   left : -400px;
   padding : 0;
@@ -3099,7 +3099,7 @@ D06666
 }
 
 .divider.divider-right-center .divider-text {
-  left : -25%;D06666
+  left : -25%;
 }
 
 .divider.divider-dotted .divider-text:before, .divider.divider-dotted .divider-text:after {
@@ -3134,13 +3134,13 @@ D06666
 }
 
 .timeline .timeline-item .timeline-point {
-  position : absolD06666
+  position : absolute;
   right : -0.85rem;
   top : 0;
   z-index : 2;
   display : flex;
-  justify-content : ceD06666
-  align-items : ceD06666
+  justify-content : center;
+  align-items : center;
   height : 1.75rem;
   width : 1.75rem;
   text-align : center;
@@ -3211,7 +3211,7 @@ D06666
 }
 
 @media screen and (min-width: 544px) {
-  head {D06666
+  head {
     font-family : 'sm 544px';
   }
   body:after {
