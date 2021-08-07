@@ -836,30 +836,28 @@
                                                 </table>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <!-- Line Chart Starts -->
 
+                                        <!--Bar Chart Start -->
+                                        <div class="col-xl-6 col-12">
                                             <div class="card">
-                                                <div class="card-header d-flex flex-sm-row flex-column justify-content-md-between align-items-start justify-content-start">
-                                                    <div>
-                                                        <h4 class="card-title mb-25">الطلبات</h4>
-                                                        <span class="card-subtitle text-muted">384 طلب</span>
+                                                <div class="card-header d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column">
+                                                    <div class="header-left">
+                                                        <h4 class="card-title">Latest Statistics</h4>
                                                     </div>
-                                                    <div class="d-flex align-items-center flex-wrap mt-sm-0 mt-1">
-                                                        <h5 class="font-weight-bolder mb-0 mr-1">$ 100,000</h5>
-                                                        <div class="badge badge-light-secondary">
-                                                            <i class="text-danger font-small-3"
-                                                               data-feather="arrow-down"></i>
-                                                            <span class="align-middle">20%</span>
-                                                        </div>
+                                                    <div class="header-right d-flex align-items-center mt-sm-0 mt-1">
+                                                        <i data-feather="calendar"></i>
+                                                        <input type="text"
+                                                               class="form-control flat-picker border-0 shadow-none bg-transparent pr-0"
+                                                               placeholder="YYYY-MM-DD"/>
                                                     </div>
                                                 </div>
                                                 <div class="card-body">
-                                                    <div id="line-chart"></div>
+                                                    <canvas class="bar-chart-ex chartjs" data-height="400"></canvas>
                                                 </div>
                                             </div>
 
-                                            <!-- Line Chart Ends -->
+                                            <!-- Bar Chart End -->
+
 
                                         </div>
                                     </div>
@@ -1339,6 +1337,8 @@
 <script src="../../../app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
 <script src="../../../app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
 <script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+<script src="../../../app-assets/vendors/js/charts/chart.min.js"></script>
+
 <!-- END: Page Vendor JS-->
 
 <!-- BEGIN: Theme JS-->
@@ -1351,6 +1351,7 @@
 <script src="../../../app-assets/js/scripts/forms/pickers/form-pickers.js"></script>
 <script src="../../../app-assets/js/scripts/charts/chart-apex.js"></script>
 <script src="../../../app-assets/js/scripts/cards/card-analytics.js"></script>
+<script src="../../../app-assets/js/scripts/charts/chart-chartjs.js"></script>
 <script src="../../../app-assets/js/scripts/extensions/ext-component-sweet-alerts.js"></script>
 
 <!-- END: Page JS-->
