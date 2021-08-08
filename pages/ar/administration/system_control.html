@@ -42,6 +42,29 @@
   <link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
   <link rel="stylesheet" type="text/css" href="../../../assets/css/custom_rtl.css">
   <!-- END: Custom CSS-->
+  <style>
+
+    .custom-hover{
+      text-transform: capitalize;
+      transition: .5s ease all;
+      text-decoration: none;
+
+
+    }
+    .custom-hover:hover{
+      transform: translateY(-5px);
+    }
+    .link{
+      color: #4a5464;
+      text-decoration: none;
+
+    }
+    .link:hover{
+      color: #0a6aa1;
+    }
+
+
+  </style>
 
 </head>
 <!-- END: Head-->
@@ -589,138 +612,178 @@
 
     </div>
     <div class="content-body">
-
-
+     <div class="row align-content-center align-items-center">
+       <!-- Apply Job Card -->
+       <div class="col-4">
+         <div class="card card-apply-job">
+           <div class="card-body">
+             <div class="d-flex justify-content-between align-items-center mb-1">
+               <div class="media">
+                 <h3>الباقة الأساسية</h3>
+               </div>
+             </div>
+             <h5 class="text-center ">
+               <span class="badge badge-pill badge-glow badge-warning font-weight-bold">التجديد القادم في الأحد 2 يوليو 2021</span></h5>
+             <p class="card-text mb-2">
+              تفاصيل الباقة أساسية
+             </p>
+             <div class="apply-job-package bg-light-primary rounded">
+               <div>
+                 <sup class="text-body"><small>$</small></sup>
+                 <h2 class="d-inline mr-25">48</h2>
+                 <sub class="text-body"><small>/ شهر</small></sub>
+               </div>
+               <div class="badge badge-pill badge-light-primary">سنوياً</div>
+             </div>
+             <a type="button" class="btn btn-primary btn-block" href="pricing_plans.html">ترقية هذه الباقة</a>
+           </div>
+         </div>
+       </div>
+       <!--/ Apply Job Card -->
+     </div>
 
     <div class="row">
-      <div class="col-xl-4 col-md-4 col-sm-6 cursor-pointer">
-        <a href="general_settings.html">
-          <div class="card text-center">
-            <div class="card-body">
-              <div class="avatar bg-light-danger p-50 mb-1">
-                <div class="avatar-content">
-                  <i data-feather="settings" class="font-medium-5"></i>
-                </div>
-              </div>
-              <h2 class="font-weight-bolder">الإعدادات الأساسية</h2>
-              <p class="card-text">وسائل الإتصال ، الشعار ، الإسم ، المقر</p>
-            </div>
+
+      <!-- Transaction Card -->
+      <div class="col-12">
+        <div class="card card-transaction">
+          <div class="card-header">
+            <h4 class="card-title">إعدادات المتجر</h4>
           </div>
-        </a>
-      </div>
+          <div class="card-body row">
 
 
-      <div class="col-xl-4 col-md-4 col-sm-6 cursor-pointer">
-        <a href="payment_methods.html">
-          <div class="card text-center">
-            <div class="card-body">
-              <div class="avatar bg-light-secondary p-50 mb-1">
-                <div class="avatar-content">
-                  <i data-feather="dollar-sign" class="font-medium-5"></i>
+            <div class="transaction-item col-12 mb-3 mt-2 custom-hover">
+              <a class="link " href="general_settings.html">
+                <div class="media">
+                  <div class="avatar bg-light-primary rounded">
+                    <div class="avatar-content">
+                      <i data-feather="settings" class="avatar-icon font-medium-3"></i>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <div class="font-weight-bold">الإعدادات الأساسية</div>
+                    <small>وسائل الإتصال ، الشعار ، الإسم ، المقر</small>
+                  </div>
                 </div>
-              </div>
-              <h2 class="font-weight-bolder">طرق الدفع</h2>
-              <p class="card-text">تفعيل بوابات الدفع</p>
+              </a>
             </div>
-          </div>
-        </a>
-      </div>
+            <div class="transaction-item col-12 mb-3 mt-2 custom-hover">
+              <a class="link " href="payment_methods.html">
+                <div class="media">
+                  <div class="avatar bg-light-success rounded">
+                    <div class="avatar-content">
+                      <i data-feather="credit-card" class="avatar-icon font-medium-3"></i>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <div class="font-weight-bold">طرق الدفع</div>
+                    <small>إختيار وتفعيل بوابات الدفع</small>
+                  </div>
+                </div>
+              </a>
+            </div>
 
-      <div class="col-xl-4 col-md-4 col-sm-6 cursor-pointer">
-        <a href="wallet_and_invoices.html">
-          <div class="card text-center">
-            <div class="card-body">
-              <div class="avatar bg-light-success p-50 mb-1">
-                <div class="avatar-content">
-                  <i data-feather="dollar-sign" class="font-medium-5"></i>
+            <div class="transaction-item col-12 mb-3 mt-2 custom-hover">
+              <a class="link " href="wallet_and_invoices.html">
+                <div class="media">
+                  <div class="avatar bg-light-info rounded">
+                    <div class="avatar-content">
+                      <i data-feather="dollar-sign" class="avatar-icon font-medium-3"></i>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <div class="font-weight-bold">المحفظة والفواتير</div>
+                    <small>الإشتراكات ، رصيد المحفظة ، الفواتير</small>
+                  </div>
                 </div>
-              </div>
-              <h2 class="font-weight-bolder">المحفظة والفواتير</h2>
-              <p class="card-text">رصيد المحفظة ، الفواتير ، إشتراكاتي </p>
+              </a>
             </div>
-          </div>
-        </a>
-      </div>
 
-      <div class="col-xl-4 col-md-4 col-sm-6 cursor-pointer">
-        <a href="store_options.html">
-          <div class="card text-center">
-            <div class="card-body">
-              <div class="avatar bg-light-primary p-50 mb-1">
-                <div class="avatar-content">
-                  <i data-feather="more-vertical" class="font-medium-5"></i>
+            <div class="transaction-item col-12 mb-3 mt-2 custom-hover">
+              <a class="link " href="store_options.html">
+                <div class="media">
+                  <div class="avatar bg-light-danger rounded">
+                    <div class="avatar-content">
+                      <i data-feather="more-vertical" class="avatar-icon font-medium-3"></i>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <div class="font-weight-bold">خيارات المتجر</div>
+                    <small>التحكم في خيارات المتجر</small>
+                  </div>
                 </div>
-              </div>
-              <h2 class="font-weight-bolder">خيارات المتجر</h2>
-              <p class="card-text">خيارات التحكم بالمتجر</p>
+              </a>
             </div>
-          </div>
-        </a>
-      </div>
+            <div class="transaction-item col-12 mb-3 mt-2 custom-hover">
+              <a class="link " href="rating_control.html">
+                <div class="media">
+                  <div class="avatar bg-light-warning rounded">
+                    <div class="avatar-content">
+                      <i data-feather="star" class="avatar-icon font-medium-3"></i>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <div class="font-weight-bold">إعدادات التقييم</div>
+                    <small>اتحديد إعدادات التقييم الخاصة بمتجرك</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="transaction-item col-12 mb-3 mt-2 custom-hover">
+              <a class="link " href="domain_control.html">
+                <div class="media">
+                  <div class="avatar bg-light-info rounded">
+                    <div class="avatar-content">
+                      <i data-feather="globe" class="avatar-icon font-medium-3"></i>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <div class="font-weight-bold">إعدادات الدومين</div>
+                    <small>التحكم في إعدادات ودومين المتجر</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="transaction-item col-12 mb-3 mt-2 custom-hover">
+              <a class="link " href="maintenance_mode.html">
+                <div class="media">
+                  <div class="avatar bg-light-secondary rounded">
+                    <div class="avatar-content">
+                      <i data-feather="eye-off" class="avatar-icon font-medium-3"></i>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <div class="font-weight-bold">وضع الصيانة</div>
+                    <small>تفعيل وإيقاف وضع الصيانة</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="transaction-item col-12 mb-3 mt-2 custom-hover">
+              <a class="link " href="maintenance_mode.html">
+                <div class="media">
+                  <div class="avatar bg-light-danger rounded">
+                    <div class="avatar-content">
+                      <i data-feather="user" class="avatar-icon font-medium-3"></i>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <div class="font-weight-bold">التحكم بالحساب</div>
+                    <small>إيقاف الإشتراك ، حذف المتجر ، إلغاء خدمة</small>
+                  </div>
+                </div>
+              </a>
+            </div>
 
-      <div class="col-xl-4 col-md-4 col-sm-6 cursor-pointer">
-        <a href="rating_control.html">
-          <div class="card text-center">
-            <div class="card-body">
-              <div class="avatar bg-light-warning p-50 mb-1">
-                <div class="avatar-content">
-                  <i data-feather="star" class="font-medium-5"></i>
-                </div>
-              </div>
-              <h2 class="font-weight-bolder">إعدادات التقييم</h2>
-              <p class="card-text">تحديد إعدادات التقييم الخاصة بمتجرك</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-xl-4 col-md-4 col-sm-6 cursor-pointer">
-        <a href="domain_control.html">
-          <div class="card text-center">
-            <div class="card-body">
-              <div class="avatar bg-light-info p-50 mb-1">
-                <div class="avatar-content">
-                  <i data-feather="globe" class="font-medium-5"></i>
-                </div>
-              </div>
-              <h2 class="font-weight-bolder">إعدادات الدومين</h2>
-              <p class="card-text">التحكم في إعدادات ودومين المتجر</p>
-            </div>
-          </div>
-        </a>
-      </div>
 
 
-      <div class="col-xl-4 col-md-4 col-sm-6 cursor-pointer">
-        <a href="maintenance_mode.html">
-          <div class="card text-center">
-            <div class="card-body">
-              <div class="avatar bg-light-secondary p-50 mb-1">
-                <div class="avatar-content">
-                  <i data-feather='eye-off' class="font-medium-5"></i>
-                </div>
-              </div>
-              <h2 class="font-weight-bolder">وضع الصيانة</h2>
-              <p class="card-text">تفعيل وإيقاف وضع الصيانة</p>
-            </div>
+
+
           </div>
-        </a>
+        </div>
       </div>
-      <div class="col-xl-4 col-md-4 col-sm-6 cursor-pointer">
-        <a href="account_control.html">
-          <div class="card text-center">
-            <div class="card-body">
-              <div class="avatar bg-light-danger p-50 mb-1">
-                <div class="avatar-content">
-                  <i data-feather='eye-off' class="font-medium-5"></i>
-                </div>
-              </div>
-              <h2 class="font-weight-bolder">التحكم بالحساب</h2>
-              <p class="card-text">إيقاف الإشتراك ، حذف المتجر ، إلغاء الخدمة</p>
-            </div>
-          </div>
-        </a>
-      </div>
+      <!--/ Transaction Card -->
 
     </div>
 

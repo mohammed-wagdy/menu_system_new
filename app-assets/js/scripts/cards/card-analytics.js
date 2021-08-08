@@ -46,6 +46,7 @@ $(window).on('load', function () {
   var salesLineChart;
   var sessionChart;
   var customerChart;
+  var customerChart2;
   var orderChart;
   var earningsChart;
 
@@ -59,6 +60,7 @@ $(window).on('load', function () {
   var $salesLineChart = document.querySelector('#sales-line-chart');
   var $sessionChart = document.querySelector('#session-chart');
   var $customerChart = document.querySelector('#customer-chart');
+  var $customerChart2 = document.querySelector('#customer-chart2');
   var $productOrderChart = document.querySelector('#product-order-chart');
   var $earningsChart = document.querySelector('#earnings-donut-chart');
 
@@ -649,6 +651,8 @@ $(window).on('load', function () {
   };
   customerChart = new ApexCharts($customerChart, customerChartOptions);
   customerChart.render();
+  customerChart2 = new ApexCharts($customerChart2, customerChartOptions);
+  customerChart2.render();
 
   // Product Order Chart
   // -----------------------------
