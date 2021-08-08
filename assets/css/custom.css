@@ -13,7 +13,7 @@ body , html , .navigation, .navigation-header span {
     background: none
 }
 .shuffle_buttons button.mixitup-control-active {
-    color: #7367F0;
+    color: #D06666;
     font-weight: bold;
 }
 .ecommerce-application .ecommerce-card:hover {
@@ -55,7 +55,6 @@ body , html , .navigation, .navigation-header span {
 .dropzone .dz-message:before {
     width: 31px !important;
     height: 31px !important;
-<<<<<<< HEAD
 }
 .orders .order_block {
     background-color: white;
@@ -94,6 +93,4 @@ body , html , .navigation, .navigation-header span {
     .order_block .order_time {
         text-align: left;
     }
-=======
->>>>>>> 286e05a318a83c9c69ea7e701265a6daae8634f6
 }

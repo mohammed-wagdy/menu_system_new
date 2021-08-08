@@ -26,7 +26,7 @@
 }
 
 .jstree .jstree-container-ul .jstree-node .jstree-wholerow-clicked {
-  background : rgba(115, 103, 240, 0.1);
+  background : rgba(208, 102, 102, 0.1);
 }
 
 .jstree .jstree-container-ul .jstree-node .jstree-wholerow-hovered:not(.jstree-wholerow-clicked) {
@@ -56,7 +56,7 @@
 
 .vakata-context.jstree-contextmenu li.vakata-context-separator a {
   margin : 0;
-  border-color : #EBE9F1;
+  border-color : #f7eeee;
 }
 
 .vakata-context.jstree-contextmenu li.vakata-contextmenu-disabled a {

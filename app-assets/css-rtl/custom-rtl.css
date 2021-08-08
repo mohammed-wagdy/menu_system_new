@@ -1,3 +1,8 @@
+::selection {
+  color: rgb(255, 255, 255);
+  background: #d06666a6;
+}
+
 .main-menu .navigation li > a > svg, .main-menu .navigation li > a > i, .main-menu .dropdown-menu svg, .main-menu .dropdown-menu i, .main-menu .dropdown-user > a > svg, .main-menu .dropdown-user > a > i, .main-menu .navigation > li > a > svg, .main-menu .navigation > li > a > i {
   float : right;
 }
@@ -12,6 +17,7 @@
   -ms-flex-align : center;
           align-items : center;
 }
+
 .vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation li.has-sub > a:after, .vertical-layout.vertical-overlay-menu.menu-open .main-menu .navigation li.has-sub > a:after {
   -webkit-transform : rotate(180deg);
       -ms-transform : rotate(180deg);

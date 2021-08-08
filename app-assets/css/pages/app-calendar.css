@@ -42,13 +42,13 @@
 
 .fc .fc-toolbar .fc-button-group .fc-button-primary:not(.fc-prev-button):not(.fc-next-button) {
   background-color: transparent;
-  border-color: #7367f0;
-  color: #7367f0; }
+  border-color: #D06666;
+  color: #D06666; }
 
 .fc .fc-toolbar .fc-button-group .fc-button-primary:not(.fc-prev-button):not(.fc-next-button).fc-button-active, .fc .fc-toolbar .fc-button-group .fc-button-primary:not(.fc-prev-button):not(.fc-next-button):hover {
-  background-color: rgba(115, 103, 240, 0.2) !important;
-  border-color: #7367f0 !important;
-  color: #7367f0; }
+  background-color: rgba(208, 102, 102, 0.2) !important;
+  border-color: #D06666 !important;
+  color: #D06666; }
 
 .fc .fc-toolbar .fc-button-group .fc-button-primary.fc-sidebarToggle-button {
   border: 0; }
@@ -111,7 +111,7 @@
 
 .fc tbody td,
 .fc thead th {
-  border-color: #ebe9f1; }
+  border-color: #f7eeee; }
 
 .fc tbody td.fc-col-header-cell,
 .fc thead th.fc-col-header-cell {
@@ -152,12 +152,12 @@
 
 .fc .fc-timegrid .fc-scrollgrid-section .fc-col-header-cell,
 .fc .fc-timegrid .fc-scrollgrid-section .fc-timegrid-axis {
-  border-color: #ebe9f1;
+  border-color: #f7eeee;
   border-left: 0;
   border-right: 0; }
 
 .fc .fc-timegrid .fc-scrollgrid-section .fc-timegrid-axis {
-  border-color: #ebe9f1; }
+  border-color: #f7eeee; }
 
 .fc .fc-timegrid .fc-timegrid-axis.fc-scrollgrid-shrink .fc-timegrid-axis-cushion {
   text-transform: capitalize;
@@ -176,7 +176,7 @@
   display: none; }
 
 .fc .fc-list {
-  border-color: #ebe9f1; }
+  border-color: #f7eeee; }
 
 .fc .fc-list .fc-list-day-cushion {
   background: #f8f8f8; }
@@ -185,7 +185,7 @@
   background-color: #f8f8f8; }
 
 .fc .fc-list .fc-list-event td {
-  border-color: #ebe9f1; }
+  border-color: #f7eeee; }
 
 .app-calendar {
   position: relative;
@@ -199,7 +199,7 @@
   height: 100%;
   z-index: 5;
   background-color: #fff;
-  border-right: 1px solid #ebe9f1;
+  border-right: 1px solid #f7eeee;
   flex-basis: 18rem;
   transition: all 0.2s, background 0s, border 0s; }
 
@@ -263,7 +263,7 @@
   margin: 0 -1.6rem; }
 
 .app-calendar .fc-scrollgrid {
-  border-color: #ebe9f1; }
+  border-color: #f7eeee; }
 
 .app-calendar .fc-day-past .fc-daygrid-day-number,
 .app-calendar .fc-day-future .fc-daygrid-day-number {

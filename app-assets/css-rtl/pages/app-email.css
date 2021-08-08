@@ -1,5 +1,5 @@
 .email-application .content-area-wrapper {
-  border : 1px solid #EBE9F1;
+  border : 1px solid #f7eeee;
   border-radius : 0.428rem;
 }
 
@@ -44,16 +44,16 @@
 
 .email-application .content-area-wrapper .sidebar .list-group .list-group-item:hover, .email-application .content-area-wrapper .sidebar .list-group .list-group-item:focus, .email-application .content-area-wrapper .sidebar .list-group .list-group-item.active {
   background : transparent;
-  color : #7367F0;
+  color : #D06666;
 }
 
 .email-application .content-area-wrapper .sidebar .list-group .list-group-item.active {
-  border-color : #7367F0;
+  border-color : #D06666;
 }
 
 .email-application .content-area-wrapper .content-right {
   width : calc(100% - 260px);
-  border-right : 1px solid #EBE9F1;
+  border-right : 1px solid #f7eeee;
 }
 
 .email-application .content-area-wrapper .content-right .email-app-list {
@@ -62,7 +62,7 @@
 
 .email-application .content-area-wrapper .content-right .app-fixed-search {
   padding : 0.35rem 0.5rem;
-  border-bottom : 1px solid #EBE9F1;
+  border-bottom : 1px solid #f7eeee;
   background-color : #FFFFFF;
   border-top-left-radius : 0.357rem;
 }
@@ -91,7 +91,8 @@
 
 .email-application .content-area-wrapper .email-user-list {
   position : relative;
-  height : calc(  100% - calc(3.49rem + 3.32rem));
+  height : calc(
+  100% - calc(3.49rem + 3.32rem));
 }
 
 .email-application .content-area-wrapper .email-user-list .email-media-list {
@@ -25119,7 +25120,7 @@
   -webkit-transform : translateY(-2px);
       -ms-transform : translateY(-2px);
           transform : translateY(-2px);
-  box-shadow : 0 3px 10px 0 #EBE9F1;
+  box-shadow : 0 3px 10px 0 #f7eeee;
   -webkit-transition : all 0.2s;
           transition : all 0.2s;
   z-index : 1;
@@ -25155,7 +25156,7 @@
 }
 
 .email-application .content-area-wrapper .email-user-list .email-media-list li.selected-row-bg {
-  background-color : rgba(115, 103, 240, 0.06);
+  background-color : rgba(208, 102, 102, 0.06);
 }
 
 .email-application .content-area-wrapper .email-user-list .email-media-list li.selected-row-bg:not(:first-child) {
@@ -25163,7 +25164,7 @@
 }
 
 .email-application .content-area-wrapper .email-user-list .email-media-list li:not(:first-child) {
-  border-top : 1px solid #EBE9F1;
+  border-top : 1px solid #f7eeee;
 }
 
 .email-application .content-area-wrapper .email-user-list .email-media-list li .mail-details {
@@ -25231,7 +25232,7 @@
   -webkit-justify-content : space-between;
   -ms-flex-pack : justify;
           justify-content : space-between;
-  border-bottom : 1px solid #EBE9F1;
+  border-bottom : 1px solid #f7eeee;
   background-color : #FFFFFF;
 }
 
@@ -25315,7 +25316,7 @@
 }
 
 .email-application .email-app-details .email-scroll-area .email-detail-head {
-  border-bottom : 1px solid #EBE9F1;
+  border-bottom : 1px solid #f7eeee;
 }
 
 .email-application .email-app-details .email-scroll-area .email-detail-head .mail-meta-item .dropdown {
@@ -25392,7 +25393,7 @@
 .email-application #compose-mail .ql-container, .email-application #compose-mail .ql-toolbar {
   border : none;
   border-radius : 0;
-  border-bottom : 1px solid #EBE9F1;
+  border-bottom : 1px solid #f7eeee;
 }
 
 .email-application #compose-mail .ql-container .ql-picker.ql-expanded .ql-picker-options, .email-application #compose-mail .ql-toolbar .ql-picker.ql-expanded .ql-picker-options {

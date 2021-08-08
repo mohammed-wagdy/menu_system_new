@@ -20,7 +20,7 @@
 }
 
 .ecommerce-application .app-ecommerce-details .item-price {
-  color : #7367F0;
+  color : #D06666;
 }
 
 .ecommerce-application .app-ecommerce-details .item-company {
@@ -89,7 +89,7 @@
   font-size : 2.5rem;
   height : 2.5rem;
   width : 2.5rem;
-  color : #7367F0;
+  color : #D06666;
 }
 
 .ecommerce-application .swiper-responsive-breakpoints.swiper-container .swiper-slide {
@@ -130,7 +130,7 @@
 }
 
 .ecommerce-application .swiper-button-prev:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%23D06666\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
   background-size : 44px;
@@ -145,7 +145,7 @@
 }
 
 .ecommerce-application .swiper-button-next:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%23D06666\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
   background-size : 44px;
@@ -156,7 +156,7 @@
 }
 
 .ecommerce-application .swiper-container-rtl .swiper-button-prev:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%23D06666\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
   background-size : 44px;
@@ -167,7 +167,7 @@
 }
 
 .ecommerce-application .swiper-container-rtl .swiper-button-next:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%23D06666\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
   background-size : 44px;
@@ -192,11 +192,11 @@
 }
 
 .ecommerce-application .product-color-options .selected .b-primary {
-  border-color : #7367F0;
+  border-color : #D06666;
 }
 
 .ecommerce-application .product-color-options .selected .b-primary .filloption {
-  box-shadow : 0 2px 4px 0 rgba(115, 103, 240, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(208, 102, 102, 0.4);
 }
 
 .ecommerce-application .product-color-options .selected .b-success {
@@ -232,7 +232,7 @@
 }
 
 .ecommerce-application .product-color-options .b-primary .filloption {
-  box-shadow : 0 2px 4px 0 rgba(115, 103, 240, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(208, 102, 102, 0.4);
 }
 
 .ecommerce-application .product-color-options .b-success .filloption {

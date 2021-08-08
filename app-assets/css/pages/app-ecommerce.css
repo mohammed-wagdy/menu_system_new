@@ -222,7 +222,7 @@
 
 .ecommerce-application .list-view .ecommerce-card .card-body {
   padding: 1.5rem 1rem;
-  border-right: 1px solid #ebe9f1;
+  border-right: 1px solid #f7eeee;
   display: flex;
   flex-direction: column; }
 
@@ -266,7 +266,7 @@
   position: relative; }
 
 .ecommerce-application .list-view .ecommerce-card .item-options .item-wrapper .item-cost .item-price {
-  color: #7367f0;
+  color: #D06666;
   margin-bottom: 0; }
 
 .ecommerce-application .list-view .ecommerce-card .item-options .shipping {

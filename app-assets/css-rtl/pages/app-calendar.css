@@ -47,14 +47,14 @@
 
 .fc .fc-toolbar .fc-button-group .fc-button-primary:not(.fc-prev-button):not(.fc-next-button) {
   background-color : transparent;
-  border-color : #7367F0;
-  color : #7367F0;
+  border-color : #D06666;
+  color : #D06666;
 }
 
 .fc .fc-toolbar .fc-button-group .fc-button-primary:not(.fc-prev-button):not(.fc-next-button).fc-button-active, .fc .fc-toolbar .fc-button-group .fc-button-primary:not(.fc-prev-button):not(.fc-next-button):hover {
-  background-color : rgba(115, 103, 240, 0.2) !important;
-  border-color : #7367F0 !important;
-  color : #7367F0;
+  background-color : rgba(208, 102, 102, 0.2) !important;
+  border-color : #D06666 !important;
+  color : #D06666;
 }
 
 .fc .fc-toolbar .fc-button-group .fc-button-primary.fc-sidebarToggle-button {
@@ -112,7 +112,7 @@
 }
 
 .fc tbody td, .fc thead th {
-  border-color : #EBE9F1;
+  border-color : #f7eeee;
 }
 
 .fc tbody td.fc-col-header-cell, .fc thead th.fc-col-header-cell {
@@ -160,13 +160,13 @@
 }
 
 .fc .fc-timegrid .fc-scrollgrid-section .fc-col-header-cell, .fc .fc-timegrid .fc-scrollgrid-section .fc-timegrid-axis {
-  border-color : #EBE9F1;
+  border-color : #f7eeee;
   border-right : 0;
   border-left : 0;
 }
 
 .fc .fc-timegrid .fc-scrollgrid-section .fc-timegrid-axis {
-  border-color : #EBE9F1;
+  border-color : #f7eeee;
 }
 
 .fc .fc-timegrid .fc-timegrid-axis.fc-scrollgrid-shrink .fc-timegrid-axis-cushion {
@@ -191,7 +191,7 @@
 }
 
 .fc .fc-list {
-  border-color : #EBE9F1;
+  border-color : #f7eeee;
 }
 
 .fc .fc-list .fc-list-day-cushion {
@@ -203,7 +203,7 @@
 }
 
 .fc .fc-list .fc-list-event td {
-  border-color : #EBE9F1;
+  border-color : #f7eeee;
 }
 
 .app-calendar {
@@ -219,7 +219,7 @@
   height : 100%;
   z-index : 5;
   background-color : #FFFFFF;
-  border-left : 1px solid #EBE9F1;
+  border-left : 1px solid #f7eeee;
   flex-basis : 18rem;
   transition : all 0.2s, background 0s, border 0s;
 }
@@ -295,7 +295,7 @@
 }
 
 .app-calendar .fc-scrollgrid {
-  border-color : #EBE9F1;
+  border-color : #f7eeee;
 }
 
 .app-calendar .fc-day-past .fc-daygrid-day-number, .app-calendar .fc-day-future .fc-daygrid-day-number {

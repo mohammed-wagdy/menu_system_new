@@ -1,5 +1,5 @@
 .noUi-target {
-  background-color: rgba(115, 103, 240, 0.12);
+  background-color: rgba(208, 102, 102, 0.12);
   border-width: 0;
   box-shadow: none;
   border-radius: 1rem; }
@@ -24,7 +24,7 @@
   color: #b9b9c3; }
 
 .noUi-marker {
-  background: #ebe9f1; }
+  background: #f7eeee; }
 
 .noUi-value {
   font-size: 0.857rem; }
@@ -38,13 +38,13 @@
   border: none;
   border-radius: 50%;
   background: #fff;
-  border: 2px solid #7367f0; }
+  border: 2px solid #D06666; }
 
 .noUi-handle:after, .noUi-handle:before {
   display: none; }
 
 .noUi-connect {
-  background: #7367f0;
+  background: #D06666;
   box-shadow: none; }
 
 .noUi-tooltip {

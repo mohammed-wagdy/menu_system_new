@@ -15,7 +15,7 @@ $(window).on('load', function () {
   var $textMutedColor = '#b9b9c3';
   var $budgetStrokeColor2 = '#dcdae3';
   var $goalStrokeColor2 = '#51e5a8';
-  var $strokeColor = '#ebe9f1';
+  var $strokeColor = '#f7eeee';
   var $textHeadingColor = '#5e5873';
   var $earningsStrokeColor2 = '#28c76f66';
   var $earningsStrokeColor3 = '#28c76f33';
@@ -336,11 +336,11 @@ $(window).on('load', function () {
     colors: [window.colors.solid.primary, window.colors.solid.warning],
     series: [
       {
-        name: 'الإيرادات',
+        name: 'Earning',
         data: [95, 177, 284, 256, 105, 63, 168, 218, 72]
       },
       {
-        name: 'المصروفات',
+        name: 'Expense',
         data: [-145, -80, -60, -180, -100, -60, -85, -75, -100]
       }
     ],
