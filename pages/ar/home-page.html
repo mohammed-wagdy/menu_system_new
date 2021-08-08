@@ -10,14 +10,14 @@
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
     <title>الصفحة الرئيسية</title>
-    <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors-rtl.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/extensions/toastr.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -29,27 +29,17 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/themes/bordered-layout.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/themes/semi-dark-layout.css">
 
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
-
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/plugins/forms/pickers/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/pages/dashboard-ecommerce.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/plugins/charts/chart-apex.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/plugins/extensions/ext-component-toastr.css">
     <!-- END: Page CSS-->
-    
-    <!-- BEGIN: Page icone-->
-    <link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome/css/font-awesome.min.css">
-    <!-- END: Page icone-->
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css-rtl/custom-rtl.css">
     <link rel="stylesheet" type="text/css" href="../../assets/css/style-rtl.css">
     <link rel="stylesheet" type="text/css" href="../../assets/css/custom_rtl.css">
-    <link rel="stylesheet" type="text/css" href="../../assets/scss/variables/_variables.scss">
     <!-- END: Custom CSS-->
 
 </head>
@@ -298,14 +288,32 @@
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow expanded" data-scroll-to-active="true">
         <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
-                <li class="nav-item mr-auto">
-                    <a class="navbar-brand" href="home-page.html">
-                        <span class="brand-logo">
-                            <img src="../../app-assets/images/brand-logo.jpg" height="24" alt="" srcset="">
-                        </span>
-                        <img class="brand-text" src="../../app-assets/images/brand-text.jpg"height="24" >
-                    </a>
-                </li>
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="../../html/rtl/vertical-menu-template/index.html"><span class="brand-logo">
+                            <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24">
+                                <defs>
+                                    <lineargradient id="linearGradient-1" x1="100%" y1="10.5120544%" x2="50%" y2="89.4879456%">
+                                        <stop stop-color="#000000" offset="0%"></stop>
+                                        <stop stop-color="#FFFFFF" offset="100%"></stop>
+                                    </lineargradient>
+                                    <lineargradient id="linearGradient-2" x1="64.0437835%" y1="46.3276743%" x2="37.373316%" y2="100%">
+                                        <stop stop-color="#EEEEEE" stop-opacity="0" offset="0%"></stop>
+                                        <stop stop-color="#FFFFFF" offset="100%"></stop>
+                                    </lineargradient>
+                                </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Artboard" transform="translate(-400.000000, -178.000000)">
+                                        <g id="Group" transform="translate(400.000000, 178.000000)">
+                                            <path class="text-primary" id="Path" d="M-5.68434189e-14,2.84217094e-14 L39.1816085,2.84217094e-14 L69.3453773,32.2519224 L101.428699,2.84217094e-14 L138.784583,2.84217094e-14 L138.784199,29.8015838 C137.958931,37.3510206 135.784352,42.5567762 132.260463,45.4188507 C128.736573,48.2809251 112.33867,64.5239941 83.0667527,94.1480575 L56.2750821,94.1480575 L6.71554594,44.4188507 C2.46876683,39.9813776 0.345377275,35.1089553 0.345377275,29.8015838 C0.345377275,24.4942122 0.230251516,14.560351 -5.68434189e-14,2.84217094e-14 Z" style="fill:currentColor"></path>
+                                            <path id="Path1" d="M69.3453773,32.2519224 L101.428699,1.42108547e-14 L138.784583,1.42108547e-14 L138.784199,29.8015838 C137.958931,37.3510206 135.784352,42.5567762 132.260463,45.4188507 C128.736573,48.2809251 112.33867,64.5239941 83.0667527,94.1480575 L56.2750821,94.1480575 L32.8435758,70.5039241 L69.3453773,32.2519224 Z" fill="url(#linearGradient-1)" opacity="0.2"></path>
+                                            <polygon id="Path-2" fill="#000000" opacity="0.049999997" points="69.3922914 32.4202615 32.8435758 70.5039241 54.0490008 16.1851325"></polygon>
+                                            <polygon id="Path-21" fill="#000000" opacity="0.099999994" points="69.3922914 32.4202615 32.8435758 70.5039241 58.3683556 20.7402338"></polygon>
+                                            <polygon id="Path-3" fill="url(#linearGradient-2)" opacity="0.099999994" points="101.428699 0 83.0667527 94.1480575 130.378721 47.0740288"></polygon>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg></span>
+                        <h2 class="brand-text">Vuexy</h2>
+                    </a></li>
                 <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
             </ul>
         </div>
@@ -326,85 +334,55 @@
 
                 <!-- Orders -->
                 <li class=" nav-item"><a class="d-flex align-items-center" href="orders/orders.html">
-                    <i data-feather='shopping-bag'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الطلبات</span>
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الطلبات</span>
                 </a>
                 </li>
 
 
                 <!-- Clients -->
                 <li class=" nav-item"><a class="d-flex align-items-center" href="orders/clients.html">
-                    <i class="fas fa-user-tie"></i><span class="menu-title text-truncate" data-i18n="Dashboards">العملاء</span>
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">العملاء</span>
                 </a>
                 </li>
 
 
-                <!-- Tables -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="orders/tables.html">
-                    <i class="fas fa-utensils"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الطاولات</span>
+                  <!-- Tables -->
+                  <li class=" nav-item"><a class="d-flex align-items-center" href="orders/tables.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الطاولات</span>
                 </a>
                 </li>
 
 
-                <!-- Shifts -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="orders/shifts.html">
-                    <i data-feather='calendar'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الورديات</span>
+                 <!-- Shifts -->
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="orders/shifts.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الورديات</span>
                 </a>
-                </li> 
+                </li>
+
+
 
                 <!-- Screens -->
                 <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">شاشات العرض</span><i data-feather="more-horizontal"></i>
                 </li>
 
-                <!-- kitchen -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="screens/kitchen.html">
-                    <i class="fas fa-concierge-bell"></i></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض المطبخ</span>
+                 <!-- kitchen -->
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="screens/kitchen.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض المطبخ</span>
                 </a>
                 </li>
 
-                <!-- Waintg -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="screens/waiting.html">
-                    <i data-feather='coffee'></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإنتظار</span>
+
+                 <!-- Waintg -->
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="screens/waiting.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإنتظار</span>
                 </a>
                 </li>
 
-                <!-- Ads -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="screens/ads.html">
-                    <i data-feather='radio'></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإعلانات</span>
+
+                 <!-- Ads -->
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="screens/ads.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإعلانات</span>
                 </a>
-                </li>
-                <!-- products -->
-                <li class="navigation-header">
-                    <span data-i18n="Apps &amp; Pages">المنتجات</span><i data-feather="more-horizontal"></i>
-                </li>
-
-                <li class="nav-item">
-                    <a class="d-flex align-items-center" href="products/all_categories.html">
-                        <i class="fa fa-list-alt"></i><span class="menu-title text-truncate" data-i18n="Dashboards">التصنيفات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="d-flex align-items-center" href="products/all_products.html">
-                        <i data-feather='server'></i><span class="menu-title text-truncate" data-i18n="Dashboards">المنتجات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="d-flex align-items-center"href="products/ingredients.html">
-                        <i class="fas fa-seedling"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المكونات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="d-flex align-items-center" href="products/extra.html">
-                    <i data-feather='plus-circle'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإضافات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="d-flex align-items-center" href="products/allergens.html">
-                        <i class="fas fa-allergies"></i><span class="menu-title text-truncate" data-i18n="Dashboards">مسببات الحساسية</span>
-                    </a>
                 </li>
 
                 <!-- Marketing -->
@@ -412,180 +390,77 @@
                 </li>
                  
                 <li class=" nav-item"><a class="d-flex align-items-center" href="marketing/discount_coupons.html">
-                    <i data-feather='percent'></i><span class="menu-title text-truncate" data-i18n="Dashboards">كوبونات الخصم</span>
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">كوبونات الخصم</span>
                 </a>
                 </li>
                  
                 <li class=" nav-item"><a class="d-flex align-items-center" href="marketing/vouchers.html">
-                    <i class="fas fa-money-bill"></i><span class="menu-title text-truncate" data-i18n="Dashboards">القسائم الشرائية</span>
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">القسائم الشرائية</span>
                 </a>
                 </li>
                  
                 <li class=" nav-item"><a class="d-flex align-items-center" href="marketing/marketing_offers.html">
-                   <i data-feather='tag'></i><span class="menu-title text-truncate" data-i18n="Dashboards">العروض التسويقية </span>
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">العروض التسويقية </span>
                 </a>
                 </li>
                  
                 <li class=" nav-item"><a class="d-flex align-items-center" href="marketing/special_discounts.html">
-                    <i data-feather="percent"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الخصومات الخاصة</span>
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الخصومات الخاصة</span>
                 </a>
                 </li>
                  
                 <li class=" nav-item"><a class="d-flex align-items-center" href="marketing/loyalty_and_rewards.html">
-                    <i data-feather='gift'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الولاء والمكافآت</span>
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الولاء والمكافآت</span>
                 </a>
                 </li>
-
-                <!-- Begin Finances -->
-                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">المالية</span><i data-feather="more-horizontal"></i>
-                </li>
-
-                <!-- Revenue -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="finances/revenue.html">
-                    <i data-feather='trending-up'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإيرادات</span>
-                </a>
-                </li>
-
-                <!-- Expenditure -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="finances/expenditure.html">
-                    <i class="fas fa-coins"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المصروفات</span>
-                </a>
-                </li>
-
-                <!-- Financial report -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="finances/financial_report.html">
-                    <i class="fas fa-file-invoice-dollar"></i><span class="menu-title text-truncate" data-i18n="Dashboards">التقرير المالي</span>
-                </a>
-                </li>
-
-
-                <!-- Tax -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="finances/tax.html">
-                    <i data-feather='dollar-sign'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الضريبة</span>
-                </a>
-                </li>
-
-                <!-- Payment methods -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="finances/payment_methods.html">
-                    <i class="fas fa-money-check-alt"></i><span class="menu-title text-truncate" data-i18n="Dashboards">طرق الدفع</span>
-                </a>
-                </li>
-                <!-- End Finances -->
 
                 <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">المخزون</span><i data-feather="more-horizontal"></i>
                 </li>
 
-                <!-- Materials -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="Inventory/materials.html">
-                    <i class="fas fa-dolly"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المواد</span>
+                 <!-- Materials -->
+                 <li class=" nav-item"><a class="d-flex align-items-center" href="Inventory/materials.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المواد</span>
                 </a>
                 </li>
 
                 <!-- Suppliers -->
                 <li class=" nav-item"><a class="d-flex align-items-center" href="Inventory/suppliers.html">
-                    <i class="far fa-handshake"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الموردين</span>
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الموردين</span>
                 </a>
                 </li>
 
 
                 <!-- Processess -->
                 <li class=" nav-item"><a class="d-flex align-items-center" href="Inventory/operations.html">
-                    <i class="fab fa-ubuntu"></i><span class="menu-title text-truncate" data-i18n="Dashboards">العمليات</span>
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">العمليات</span>
                 </a>
                 </li>
 
                  <!-- inventory -->
                  <li class=" nav-item"><a class="d-flex align-items-center" href="Inventory/inventory.html">
-                    <i class="fas fa-clipboard-list"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الجرد</span>
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الجرد</span>
                 </a>
                 </li>
 
                  <!-- Stock Level -->
                  <li class=" nav-item"><a class="d-flex align-items-center" href="Inventory/stock_level.html">
-                    <i class="fas fa-boxes"></i><span class="menu-title text-truncate" data-i18n="Dashboards">مستوي المخزون</span>
-                </a>
-                </li>
-                
-                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">إدارة</span><i data-feather="more-horizontal"></i>
-                </li>
-
-                <!-- Materials -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="administration/users.html">
-                    <i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المستخدمين</span>
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">مستوي المخزون</span>
                 </a>
                 </li>
 
-                <!-- Suppliers -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="administration/user_groups.html">
-                    <i class="fa fa-users" aria-hidden="true"></i><span class="menu-title text-truncate" data-i18n="Dashboards">مجموعات المستخدمين</span></a>
-                </li>
-
-                <!-- Processess -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="administration/branches.html">
-                    <i class="fas fa-store-alt"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الفروع</span></a>
-                </li>
-                <!-- inventory -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="administration/reports.html">
-                    <i data-feather="pie-chart"></i><span class="menu-title text-truncate" data-i18n="Dashboards">التقارير</span></a>
-                </li>
-
-                <!-- Stock Level -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="administration/devices.html">
-                    <i data-feather='smartphone'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الأجهزة</span></a>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="administration/system_control.html">
-                    <i data-feather='settings'></i><span class="menu-title text-truncate" data-i18n="Dashboards">إعدادات النظام</span></a>
-                </li>
-                 <!-- website content -->
-                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">محتوى الموقع</span><i data-feather="more-horizontal"></i>
-                </li>
-
-
-                <li class=" nav-item"><a class="d-flex align-items-center" href="content/profile_pages.html">
-                    <i class="fas fa-money-check"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الصفحات التعريفية</span>
-                </a>
-                </li>
-
-                <li class=" nav-item"><a class="d-flex align-items-center" href="content/blog.html">
-                    <i class="far fa-newspaper"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المدونة</span>
-                </a>
-                </li>
-
-                <li class=" nav-item"><a class="d-flex align-items-center" href="content/ads.html">
-                    <i data-feather='radio'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإعلانات</span>
-                </a>
-                </li>
-
-                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">الإشعارات</span><i data-feather="more-horizontal"></i>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="notification/general_notices.html">
-                    <i data-feather='alert-circle'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإشعارات العامة</span>
-                </a>
-                </li>
-
-                <li class=" nav-item"><a class="d-flex align-items-center" href="notification/private_notifications.html">
-                    <i data-feather='alert-circle'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإشعارات الخاصة</span>
-                </a>
-                </li>
-
-                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">تقرير النشاطات</span><i data-feather="more-horizontal"></i>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="activity_reports/activity_reports.html">
-                    <i data-feather='clock'></i><span class="menu-title text-truncate" data-i18n="Dashboards">تقرير النشاطات</span>
-                </a>
-                </li>
 
                 <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">الإعدادات</span><i data-feather="more-horizontal"></i>
                 </li>
 
+
                 <li class=" nav-item"><a class="d-flex align-items-center" href="Inventory/units.html">
-                    <i class="fas fa-balance-scale"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الوحدات</span>
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الوحدات</span>
                 </a>
                 </li>
 
-                <!-- Help -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="Inventory/units.html">
-                    <i data-feather='help-circle'></i><span class="menu-title text-truncate" data-i18n="Dashboards">قسم المساعدة</span>
+                  <!-- Help -->
+                  <li class=" nav-item"><a class="d-flex align-items-center" href="Inventory/units.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">قسم المساعدة</span>
                 </a>
                 </li>
     
@@ -600,202 +475,683 @@
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
             <div class="content-header row">
-                <div class="content-header-left col-md-9 col-12 mb-2">
-                    <div class="row breadcrumbs-top">
-                        <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">الصفحة الرئيسية</h2>
-                            <div class="breadcrumb-wrapper">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="home-page.html">الصفحة الرئيسية</a>
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
             </div>
             <div class="content-body">
-                <div class="row">
-                    <div class="col-xl-2 col-md-4 col-sm-6">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <div class="avatar bg-light-info p-50 mb-1">
-                                    <div class="avatar-content">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye font-medium-5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                                    </div>
+                <!-- Dashboard Ecommerce Starts -->
+                <section id="dashboard-ecommerce">
+                    <div class="row match-height">
+                        <!-- Medal Card -->
+                        <div class="col-xl-4 col-md-6 col-12">
+                            <div class="card card-congratulation-medal">
+                                <div class="card-body">
+                                    <h5>مبارك 🎉 محمد!</h5>
+                                    <p class="card-text font-small-3">لقد وصلت إلى هدفك</p>
+                                    <h3 class="mb-75 mt-2 pt-50">
+                                        <a href="javascript:void(0);">$48.9k</a>
+                                    </h3>
+                                    <button type="button" class="btn btn-primary">عرض المبيعات</button>
+                                    <img src="../../app-assets/images/illustration/badge.svg" class="congratulation-medal" alt="Medal Pic" />
                                 </div>
-                                <h2 class="font-weight-bolder">36.9k</h2>
-                                <p class="card-text">عدد زيارات قائمة الطعام</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-2 col-md-4 col-sm-6">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <div class="avatar bg-light-warning p-50 mb-1">
-                                    <div class="avatar-content">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square font-medium-5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                                    </div>
-                                </div>
-                                <h2 class="font-weight-bolder">12k</h2>
-                                <p class="card-text">طلبات قيد التنفيذ</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md-4 col-sm-6">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <div class="avatar bg-light-danger p-50 mb-1">
-                                    <div class="avatar-content">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag font-medium-5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-                                    </div>
-                                </div>
-                                <h2 class="font-weight-bolder">97.8k</h2>
-                                <p class="card-text">طلبات متكاملة</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md-4 col-sm-6">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <div class="avatar bg-light-primary p-50 mb-1">
-                                    <div class="avatar-content">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart font-medium-5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                                    </div>
-                                </div>
-                                <h2 class="font-weight-bolder">26.8</h2>
-                                <p class="card-text">مجموع الطلبات المحلية</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md-4 col-sm-6">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <div class="avatar bg-light-success p-50 mb-1">
-                                    <div class="avatar-content">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award font-medium-5"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-                                    </div>
-                                </div>
-                                <h2 class="font-weight-bolder">689</h2>
-                                <p class="card-text">مجموع الطلبات الخارجية</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md-4 col-sm-6">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <div class="avatar bg-light-danger p-50 mb-1">
-                                    <div class="avatar-content">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-truck font-medium-5"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-                                    </div>
-                                </div>
-                                <h2 class="font-weight-bolder">2.1k</h2>
-                                <p class="card-text">مجموع طلبات التوصيل</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md-4 col-sm-6">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <div class="avatar bg-light-danger p-50 mb-1">
-                                    <div class="avatar-content">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-truck font-medium-5"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-                                    </div>
-                                </div>
-                                <h2 class="font-weight-bolder">2.1k</h2>
-                                <p class="card-text">الطاولات الشاغرة</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md-4 col-sm-6">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <div class="avatar bg-light-danger p-50 mb-1">
-                                    <div class="avatar-content">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-truck font-medium-5"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-                                    </div>
-                                </div>
-                                <h2 class="font-weight-bolder">2.1k</h2>
-                                <p class="card-text">مجموع المبيعات</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <!--/ Medal Card -->
 
+                        <!-- Statistics Card -->
+                        <div class="col-xl-8 col-md-6 col-12">
+                            <div class="card card-statistics">
+                                <div class="card-header">
+                                    <h4 class="card-title">الإحصاءات</h4>
+                                    <div class="d-flex align-items-center">
+                                        <p class="card-text font-small-2 mr-25 mb-0">تم التحديث منذ 1 شهر</p>
+                                    </div>
+                                </div>
+                                <div class="card-body statistics-body">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
+                                            <div class="media">
+                                                <div class="avatar bg-light-primary mr-2">
+                                                    <div class="avatar-content">
+                                                        <i data-feather="trending-up" class="avatar-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="media-body my-auto">
+                                                    <h4 class="font-weight-bolder mb-0">230k</h4>
+                                                    <p class="card-text font-small-3 mb-0">المبيعات</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
+                                            <div class="media">
+                                                <div class="avatar bg-light-info mr-2">
+                                                    <div class="avatar-content">
+                                                        <i data-feather="user" class="avatar-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="media-body my-auto">
+                                                    <h4 class="font-weight-bolder mb-0">8.549k</h4>
+                                                    <p class="card-text font-small-3 mb-0">العملاء</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-sm-0">
+                                            <div class="media">
+                                                <div class="avatar bg-light-danger mr-2">
+                                                    <div class="avatar-content">
+                                                        <i data-feather="box" class="avatar-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="media-body my-auto">
+                                                    <h4 class="font-weight-bolder mb-0">1.423k</h4>
+                                                    <p class="card-text font-small-3 mb-0">المنتجات</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-sm-6 col-12">
+                                            <div class="media">
+                                                <div class="avatar bg-light-success mr-2">
+                                                    <div class="avatar-content">
+                                                        <i data-feather="dollar-sign" class="avatar-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="media-body my-auto">
+                                                    <h4 class="font-weight-bolder mb-0">$9745</h4>
+                                                    <p class="card-text font-small-3 mb-0">الإيرادات</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Statistics Card -->
+                    </div>
 
-
-                <section id="apexchart">
-                    <div class="row">
-                                <!-- Area Chart starts -->
-                                <div class="col-12">
+                    <div class="row match-height">
+                        <div class="col-lg-4 col-12">
+                            <div class="row match-height">
+                                <!-- Bar Chart - Orders -->
+                                <div class="col-lg-6 col-md-3 col-6">
                                     <div class="card">
-                                        <div class="card-header d-flex flex-sm-row flex-column justify-content-md-between align-items-start justify-content-start">
-                                            <div>
-                                                <h4 class="card-title">إحصائيات</h4>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <i class="font-medium-2" data-feather="calendar"></i>
-                                                <input type="text" class="form-control flat-picker bg-transparent border-0 shadow-none" placeholder="YYYY-MM-DD" />
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <div id="line-area-chart"></div>
+                                        <div class="card-body pb-50">
+                                            <h6>الطلبات</h6>
+                                            <h2 class="font-weight-bolder mb-1">2,76k</h2>
+                                            <div id="statistics-order-chart"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Area Chart ends -->
-                    </div>
-                </section>
+                                <!--/ Bar Chart - Orders -->
 
-                 <!-- Row grouping -->
-                 <section id="row-grouping-datatable">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-header border-bottom">
-                                    <h4 class="card-title">أحدث الطلبات</h4>
+                                <!-- Line Chart - Profit -->
+                                <div class="col-lg-6 col-md-3 col-6">
+                                    <div class="card card-tiny-line-stats">
+                                        <div class="card-body pb-50">
+                                            <h6>الربح</h6>
+                                            <h2 class="font-weight-bolder mb-1">6,24k</h2>
+                                            <div id="statistics-profit-chart"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-datatable">
-                                    <table class="dt-row-grouping table">
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Email</th>
-                                                <th>City</th>
-                                                <th>Date</th>
-                                                <th>Salary</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th></th>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Email</th>
-                                                <th>City</th>
-                                                <th>Date</th>
-                                                <th>Salary</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
+                                <!--/ Line Chart - Profit -->
+
+                                <!-- Earnings Card -->
+                                <div class="col-lg-12 col-md-6 col-12">
+                                    <div class="card earnings-card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h4 class="card-title mb-1">الأرباح</h4>
+                                                    <div class="font-small-2">هذا الشهر</div>
+                                                    <h5 class="mb-1">$4055.56</h5>
+                                                    <p class="card-text text-muted font-small-2">
+                                                        <span>أكثر من الشهر الماضي بنسبة </span><span class="font-weight-bolder">68.2%</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div id="earnings-chart"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/ Earnings Card -->
+                            </div>
+                        </div>
+
+                        <!-- Revenue Report Card -->
+                        <div class="col-lg-8 col-12">
+                            <div class="card card-revenue-budget">
+                                <div class="row mx-0">
+                                    <div class="col-md-8 col-12 revenue-report-wrapper">
+                                        <div class="d-sm-flex justify-content-between align-items-center mb-3">
+                                            <h4 class="card-title mb-50 mb-sm-0">تقرير مالي</h4>
+                                            <div class="d-flex align-items-center">
+                                                <div class="d-flex align-items-center mr-2">
+                                                    <span class="bullet bullet-primary font-small-3 mr-50 cursor-pointer"></span>
+                                                    <span>الأرباح</span>
+                                                </div>
+                                                <div class="d-flex align-items-center ml-75">
+                                                    <span class="bullet bullet-warning font-small-3 mr-50 cursor-pointer"></span>
+                                                    <span>المصروفات</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="revenue-report-chart"></div>
+                                    </div>
+                                    <div class="col-md-4 col-12 budget-wrapper">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle budget-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                2020
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="javascript:void(0);">2020</a>
+                                                <a class="dropdown-item" href="javascript:void(0);">2019</a>
+                                                <a class="dropdown-item" href="javascript:void(0);">2018</a>
+                                            </div>
+                                        </div>
+                                        <h2 class="mb-25">$25,852</h2>
+                                        <div class="d-flex justify-content-center">
+                                            <span class="font-weight-bolder mr-25">الميزانية :</span>
+                                            <span>56,800</span>
+                                        </div>
+                                        <div id="budget-chart"></div>
+                                        <button type="button" class="btn btn-primary">زيادة الميزانية</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!--/ Revenue Report Card -->
+                    </div>
+
+                    <div class="row match-height">
+                        <!-- Company Table Card -->
+                        <div class="col-12">
+                            <div class="card card-company-table">
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>الفرع</th>
+                                                <th>التصنيف</th>
+                                                <th>الطلبات</th>
+                                                <th>الإيرادات</th>
+                                                <th>المبيعات</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar rounded">
+                                                            <div class="avatar-content">
+                                                                <img src="../../app-assets/images/icons/toolbox.svg" alt="Toolbar svg" />
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="font-weight-bolder">Dixons</div>
+                                                            <div class="font-small-2 text-muted">meguc@ruj.io</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar bg-light-primary mr-1">
+                                                            <div class="avatar-content">
+                                                                <i data-feather="monitor" class="font-medium-3"></i>
+                                                            </div>
+                                                        </div>
+                                                        <span>Technology</span>
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="font-weight-bolder mb-25">23.4k</span>
+                                                        <span class="font-small-2 text-muted">in 24 hours</span>
+                                                    </div>
+                                                </td>
+                                                <td>$891.2</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="font-weight-bolder mr-1">68%</span>
+                                                        <i data-feather="trending-down" class="text-danger font-medium-1"></i>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar rounded">
+                                                            <div class="avatar-content">
+                                                                <img src="../../app-assets/images/icons/parachute.svg" alt="Parachute svg" />
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="font-weight-bolder">Motels</div>
+                                                            <div class="font-small-2 text-muted">vecav@hodzi.co.uk</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar bg-light-success mr-1">
+                                                            <div class="avatar-content">
+                                                                <i data-feather="coffee" class="font-medium-3"></i>
+                                                            </div>
+                                                        </div>
+                                                        <span>Grocery</span>
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="font-weight-bolder mb-25">78k</span>
+                                                        <span class="font-small-2 text-muted">in 2 days</span>
+                                                    </div>
+                                                </td>
+                                                <td>$668.51</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="font-weight-bolder mr-1">97%</span>
+                                                        <i data-feather="trending-up" class="text-success font-medium-1"></i>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar rounded">
+                                                            <div class="avatar-content">
+                                                                <img src="../../app-assets/images/icons/brush.svg" alt="Brush svg" />
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="font-weight-bolder">Zipcar</div>
+                                                            <div class="font-small-2 text-muted">davcilse@is.gov</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar bg-light-warning mr-1">
+                                                            <div class="avatar-content">
+                                                                <i data-feather="watch" class="font-medium-3"></i>
+                                                            </div>
+                                                        </div>
+                                                        <span>Fashion</span>
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="font-weight-bolder mb-25">162</span>
+                                                        <span class="font-small-2 text-muted">in 5 days</span>
+                                                    </div>
+                                                </td>
+                                                <td>$522.29</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="font-weight-bolder mr-1">62%</span>
+                                                        <i data-feather="trending-up" class="text-success font-medium-1"></i>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar rounded">
+                                                            <div class="avatar-content">
+                                                                <img src="../../app-assets/images/icons/star.svg" alt="Star svg" />
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="font-weight-bolder">Owning</div>
+                                                            <div class="font-small-2 text-muted">us@cuhil.gov</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar bg-light-primary mr-1">
+                                                            <div class="avatar-content">
+                                                                <i data-feather="monitor" class="font-medium-3"></i>
+                                                            </div>
+                                                        </div>
+                                                        <span>Technology</span>
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="font-weight-bolder mb-25">214</span>
+                                                        <span class="font-small-2 text-muted">in 24 hours</span>
+                                                    </div>
+                                                </td>
+                                                <td>$291.01</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="font-weight-bolder mr-1">88%</span>
+                                                        <i data-feather="trending-up" class="text-success font-medium-1"></i>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar rounded">
+                                                            <div class="avatar-content">
+                                                                <img src="../../app-assets/images/icons/book.svg" alt="Book svg" />
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="font-weight-bolder">Cafés</div>
+                                                            <div class="font-small-2 text-muted">pudais@jife.com</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar bg-light-success mr-1">
+                                                            <div class="avatar-content">
+                                                                <i data-feather="coffee" class="font-medium-3"></i>
+                                                            </div>
+                                                        </div>
+                                                        <span>Grocery</span>
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="font-weight-bolder mb-25">208</span>
+                                                        <span class="font-small-2 text-muted">in 1 week</span>
+                                                    </div>
+                                                </td>
+                                                <td>$783.93</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="font-weight-bolder mr-1">16%</span>
+                                                        <i data-feather="trending-down" class="text-danger font-medium-1"></i>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar rounded">
+                                                            <div class="avatar-content">
+                                                                <img src="../../app-assets/images/icons/rocket.svg" alt="Rocket svg" />
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="font-weight-bolder">Kmart</div>
+                                                            <div class="font-small-2 text-muted">bipri@cawiw.com</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar bg-light-warning mr-1">
+                                                            <div class="avatar-content">
+                                                                <i data-feather="watch" class="font-medium-3"></i>
+                                                            </div>
+                                                        </div>
+                                                        <span>Fashion</span>
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="font-weight-bolder mb-25">990</span>
+                                                        <span class="font-small-2 text-muted">in 1 month</span>
+                                                    </div>
+                                                </td>
+                                                <td>$780.05</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="font-weight-bolder mr-1">78%</span>
+                                                        <i data-feather="trending-up" class="text-success font-medium-1"></i>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar rounded">
+                                                            <div class="avatar-content">
+                                                                <img src="../../app-assets/images/icons/speaker.svg" alt="Speaker svg" />
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="font-weight-bolder">Payers</div>
+                                                            <div class="font-small-2 text-muted">luk@izug.io</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="avatar bg-light-warning mr-1">
+                                                            <div class="avatar-content">
+                                                                <i data-feather="watch" class="font-medium-3"></i>
+                                                            </div>
+                                                        </div>
+                                                        <span>Fashion</span>
+                                                    </div>
+                                                </td>
+                                                <td class="text-nowrap">
+                                                    <div class="d-flex flex-column">
+                                                        <span class="font-weight-bolder mb-25">12.9k</span>
+                                                        <span class="font-small-2 text-muted">in 12 hours</span>
+                                                    </div>
+                                                </td>
+                                                <td>$531.49</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="font-weight-bolder mr-1">42%</span>
+                                                        <i data-feather="trending-up" class="text-success font-medium-1"></i>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Company Table Card -->
+
+                        <!-- Browser States Card -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card card-browser-states">
+                                <div class="card-header">
+                                    <div>
+                                        <h4 class="card-title">الزيارات</h4>
+                                        <p class="card-text font-small-2">Counter August 2020</p>
+                                    </div>
+                                    <div class="dropdown chart-dropdown">
+                                        <i data-feather="more-vertical" class="font-medium-3 cursor-pointer" data-toggle="dropdown"></i>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" href="javascript:void(0);">آخر 28 يوم</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">الشهر الماضي</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">السنة الماضية</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="browser-states">
+                                        <div class="media">
+                                            <img src="../../app-assets/images/icons/google-chrome.png" class="rounded mr-1" height="30" alt="Google Chrome" />
+                                            <h6 class="align-self-center mb-0">Google Chrome</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="font-weight-bold text-body-heading mr-1">54.4%</div>
+                                            <div id="browser-state-chart-primary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="browser-states">
+                                        <div class="media">
+                                            <img src="../../app-assets/images/icons/mozila-firefox.png" class="rounded mr-1" height="30" alt="Mozila Firefox" />
+                                            <h6 class="align-self-center mb-0">Mozila Firefox</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="font-weight-bold text-body-heading mr-1">6.1%</div>
+                                            <div id="browser-state-chart-warning"></div>
+                                        </div>
+                                    </div>
+                                    <div class="browser-states">
+                                        <div class="media">
+                                            <img src="../../app-assets/images/icons/apple-safari.png" class="rounded mr-1" height="30" alt="Apple Safari" />
+                                            <h6 class="align-self-center mb-0">Apple Safari</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="font-weight-bold text-body-heading mr-1">14.6%</div>
+                                            <div id="browser-state-chart-secondary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="browser-states">
+                                        <div class="media">
+                                            <img src="../../app-assets/images/icons/internet-explorer.png" class="rounded mr-1" height="30" alt="Internet Explorer" />
+                                            <h6 class="align-self-center mb-0">Internet Explorer</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="font-weight-bold text-body-heading mr-1">4.2%</div>
+                                            <div id="browser-state-chart-info"></div>
+                                        </div>
+                                    </div>
+                                    <div class="browser-states">
+                                        <div class="media">
+                                            <img src="../../app-assets/images/icons/opera.png" class="rounded mr-1" height="30" alt="Opera Mini" />
+                                            <h6 class="align-self-center mb-0">Opera Mini</h6>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="font-weight-bold text-body-heading mr-1">8.4%</div>
+                                            <div id="browser-state-chart-danger"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Browser States Card -->
+
+                        <!-- Goal Overview Card -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h4 class="card-title">نسبة تقدم الهدف</h4>
+                                    <i data-feather="help-circle" class="font-medium-3 text-muted cursor-pointer"></i>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div id="goal-overview-radial-bar-chart" class="my-2"></div>
+                                    <div class="row border-top text-center mx-0">
+                                        <div class="col-6 border-right py-1">
+                                            <p class="card-text text-muted mb-0">مكتمل</p>
+                                            <h3 class="font-weight-bolder mb-0">786,617</h3>
+                                        </div>
+                                        <div class="col-6 py-1">
+                                            <p class="card-text text-muted mb-0">في الإنتظار</p>
+                                            <h3 class="font-weight-bolder mb-0">13,561</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Goal Overview Card -->
+
+                        <!-- Transaction Card -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card card-transaction">
+                                <div class="card-header">
+                                    <h4 class="card-title">السجل المالي</h4>
+                                    <div class="dropdown chart-dropdown">
+                                        <i data-feather="more-vertical" class="font-medium-3 cursor-pointer" data-toggle="dropdown"></i>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" href="javascript:void(0);">آخر 28 يوم</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">الشهر الماضي</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">السنة الماضية</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="transaction-item">
+                                        <div class="media">
+                                            <div class="avatar bg-light-primary rounded">
+                                                <div class="avatar-content">
+                                                    <i data-feather="pocket" class="avatar-icon font-medium-3"></i>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="transaction-title">Wallet</h6>
+                                                <small>Starbucks</small>
+                                            </div>
+                                        </div>
+                                        <div class="font-weight-bolder text-danger">- $74</div>
+                                    </div>
+                                    <div class="transaction-item">
+                                        <div class="media">
+                                            <div class="avatar bg-light-success rounded">
+                                                <div class="avatar-content">
+                                                    <i data-feather="check" class="avatar-icon font-medium-3"></i>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="transaction-title">Bank Transfer</h6>
+                                                <small>Add Money</small>
+                                            </div>
+                                        </div>
+                                        <div class="font-weight-bolder text-success">+ $480</div>
+                                    </div>
+                                    <div class="transaction-item">
+                                        <div class="media">
+                                            <div class="avatar bg-light-danger rounded">
+                                                <div class="avatar-content">
+                                                    <i data-feather="dollar-sign" class="avatar-icon font-medium-3"></i>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="transaction-title">Paypal</h6>
+                                                <small>Add Money</small>
+                                            </div>
+                                        </div>
+                                        <div class="font-weight-bolder text-success">+ $590</div>
+                                    </div>
+                                    <div class="transaction-item">
+                                        <div class="media">
+                                            <div class="avatar bg-light-warning rounded">
+                                                <div class="avatar-content">
+                                                    <i data-feather="credit-card" class="avatar-icon font-medium-3"></i>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="transaction-title">Mastercard</h6>
+                                                <small>Ordered Food</small>
+                                            </div>
+                                        </div>
+                                        <div class="font-weight-bolder text-danger">- $23</div>
+                                    </div>
+                                    <div class="transaction-item">
+                                        <div class="media">
+                                            <div class="avatar bg-light-info rounded">
+                                                <div class="avatar-content">
+                                                    <i data-feather="trending-up" class="avatar-icon font-medium-3"></i>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="transaction-title">Transfer</h6>
+                                                <small>Refund</small>
+                                            </div>
+                                        </div>
+                                        <div class="font-weight-bolder text-success">+ $98</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Transaction Card -->
                     </div>
                 </section>
-                <!--/ Row grouping -->
+                <!-- Dashboard Ecommerce ends -->
 
             </div>
         </div>
     </div>
     <!-- END: Content-->
+
+
+
+
+
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
@@ -810,29 +1166,14 @@
     <!-- END: Footer-->
 
 
+
     <!-- BEGIN: Vendor JS-->
     <script src="../../app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <!-- END: Page Vendor JS-->
-
     <script src="../../app-assets/vendors/js/charts/apexcharts.min.js"></script>
-    <script src="../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
-    <!-- BEGIN: Page Vendor JS-->
-    <script src="../../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
-    <script src="../../app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
-    <script src="../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <script src="../../app-assets/vendors/js/extensions/toastr.min.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -841,10 +1182,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="../../app-assets/js/scripts/tables/table-datatables-basic.js"></script>
-    <script src="../../app-assets/js/scripts/charts/chart-apex.js"></script>
-
-    <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/pages/dashboard-ecommerce.js"></script>
     <!-- END: Page JS-->
 
     <script>
