@@ -39,11 +39,10 @@
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css/core/menu/menu-types/vertical-menu.css">
     <!-- END: Page CSS-->
-    
+
     <!-- BEGIN: Page icone-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/fonts/font-awesome/css/font-awesome.min.css">
     <!-- END: Page icone-->
-
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css/custom.css">
@@ -717,16 +716,119 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-12">
-                                                    <div class="mb-1 row">
-                                                        <div class="col-sm-3">
-                                                            <label class="col-form-label" for="operations-per-day">عمليات الصرف المتاحة في اليوم</label>
-                                                        </div>
-                                                        <div class="col">
-                                                            <input type="number" id="operations-per-day" class="form-control" name="">
-                                                        </div>
+                                                <div class="col-12 my-2 d-none">
+                                                    <label class="form-label">الاضافات</label>
+                                                    <div class="form-group">
+                                                        <form action="#" class="invoice-repeater">
+                                                            <div data-repeater-list="invoice">
+                                                                <div data-repeater-item>
+                                                                    <div class="row d-flex align-items-end">
+                                                                        <div class="col-md-4 col-12">
+                                                                            <div class="form-group">
+                                                                                <label for="selectSize">الإضافة</label>
+                                                                                <select class="select2 form-control" id="selectSize_3">
+                                                                                    <option value="big">كبير</option>
+                                                                                    <option value="middle">وسط</option>
+                                                                                    <option value="small">صغير</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-2 col-12">
+                                                                            <div class="form-group">
+                                                                                <label for="price">التكلفة</label>
+                                                                                <input type="number" class="form-control" id="price"  placeholder="1" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-2 col-12">
+                                                                            <div class="form-group">
+                                                                                <label for="calories">السعرات الحرارية</label>
+                                                                                <input type="number" class="form-control" id="calories"  placeholder="1" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-2 col-12 ">
+                                                                            <div class="form-group">
+                                                                                <button class="btn btn-danger text-nowrap px-1" data-repeater-delete type="button">
+                                                                                    <i data-feather="x" class="mr-25"></i>
+                                                                                    <span>حذف</span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <button class="btn btn-icon btn-primary" type="button" data-repeater-create>
+                                                                        <i data-feather="plus" class="mr-25"></i>
+                                                                        <span>إضافة</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
                                                     </div>
-                                                </div>
+                                                  </div>
+
+                                                  <div class="col-12 my-2">
+                                                    <label class="form-label">المكافآت</label>
+                                                    <div class="form-group">
+                                                        <form action="#" class="invoice-repeater">
+                                                            <div data-repeater-list="invoice">
+                                                                <div data-repeater-item>
+                                                                    <div class="row d-flex align-items-end">
+                                                                        <div class="col-md-2 col-12">
+                                                                            <div class="form-group">
+                                                                                <label for="price">عدد النقاط</label>
+                                                                                <input type="number" class="form-control" id="price"  placeholder="1" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4 col-12">
+                                                                            <div class="form-group">
+                                                                                <label for="selectSize">نوع المكافئة</label>
+                                                                                <select class="select2 form-control" id="selectSize_8">
+                                                                                    <option value="big">منتج</option>
+                                                                                    <option value="middle">من تصنيف</option>
+                                                                                    <option value="small">رصيد نقدي</option>
+                                                                                    <option value="small">خصم نسبي</option>
+                                                                                    <option value="small">خدمة</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-md-4 col-12">
+                                                                            <div class="form-group">
+                                                                                <select class="select2 form-control" id="selectSize_3">
+                                                                                    <option value="big">منتج</option>
+                                                                                    <option value="middle">من تصنيف</option>
+                                                                                    <option value="small">رصيد نقدي</option>
+                                                                                    <option value="small">خصم نسبي</option>
+                                                                                    <option value="small">خدمة</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                       
+                                                                      
+                                                                        <div class="col-md-2 col-12 ">
+                                                                            <div class="form-group">
+                                                                                <button class="btn btn-danger text-nowrap px-1" data-repeater-delete type="button">
+                                                                                    <i data-feather="x" class="mr-25"></i>
+                                                                                    <span>حذف</span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <button class="btn btn-icon btn-primary" type="button" data-repeater-create>
+                                                                        <i data-feather="plus" class="mr-25"></i>
+                                                                        <span>إضافة</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                  </div>
 
                                                 <div class="col-12 mt-2">
                                                     <button type="submit" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ</button>
