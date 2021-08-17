@@ -698,93 +698,73 @@
                                   </select>
                                 </div>
                               </div>
-                               <div class="col-6">
-                                <div class="form-group">
-                                  <label for="price">السعر </label>
-                                  <input type="number" class="form-control" id="price" value='0'>
-                                   
-                                </div>
-                              </div>
-                              <div class="col-6">
+                               
+                              <div class="col-12">
                                 <div class="form-group">
                                   <label for="calories"> السعرات الحرارية </label>
                                   <input type="number" class="form-control" id="calories" value='0'>
                                 </div>
                               </div>
-                              <div class="col-12">
+                              
+                              <div class="col-12 mt-1">
                                 <div class="form-group">
                                     <div class="custom-control custom-switch">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                        <label class="custom-control-label" for="customSwitch1">شامل الضريبة</label>
+                                        <input type="checkbox" class="custom-control-input" id="active_multi_size"onchange='check_multi_size()'>
+                                        <label class="custom-control-label" for="active_multi_size">منتج متعدد الأحجام </label>
                                     </div>
                                 </div>
                               </div>
-                              <div class="col-2">
-                                <div class="form-group">
-                                  <label for="size-number">عدد الاحجام </label>
-                                  <div class="input-group">
-                                    <input type="text" class="touchspin" id="size-number" value="{number}" >
-                                  </div>
-                                  
+                              <div class="col-md-12 mb-3" id="size">
+                                <label class="form-label" for="size"> الأحجام </label>
+                                <div class="position-relative" >
+                                    <select class="select2 form-select select2-hidden-accessible tags" id="size" multiple=""tabindex="-1" aria-hidden="true">
+                                    </select>
                                 </div>
-                              </div>
-                              
-                              <div class="col-12 my-2 d-none">
-                                <label class="form-label">الاضافات</label>
-                                <div class="form-group">
-                                    <form action="#" class="invoice-repeater">
-                                        <div data-repeater-list="invoice">
-                                            <div data-repeater-item>
-                                                <div class="row d-flex align-items-end">
-                                                    <div class="col-md-4 col-12">
-                                                        <div class="form-group">
-                                                            <label for="selectSize">الإضافة</label>
-                                                            <select class="select2 form-control" id="selectSize_3">
-                                                                <option value="big">كبير</option>
-                                                                <option value="middle">وسط</option>
-                                                                <option value="small">صغير</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-2 col-12">
-                                                        <div class="form-group">
-                                                            <label for="price">التكلفة</label>
-                                                            <input type="number" class="form-control" id="price"  placeholder="1" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-2 col-12">
-                                                        <div class="form-group">
-                                                            <label for="calories">السعرات الحرارية</label>
-                                                            <input type="number" class="form-control" id="calories"  placeholder="1" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-2 col-12 ">
-                                                        <div class="form-group">
-                                                            <button class="btn btn-danger text-nowrap px-1" data-repeater-delete type="button">
-                                                                <i data-feather="x" class="mr-25"></i>
-                                                                <span>حذف</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                              </div>  
+                              <div class="col-12">
+                                <div class="row ">
+                                    <div class="col-2  mt-1">
+                                        <div class="form-group my-auto">
+                                            <span> السعر المنتج  </span>                                     
+                                        </div>
+                                    </div>
+                                    <div class="col-6 ">
+                                        <div class="row pr-1 price_section" >
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label for="">  </label>
+                                                    <input type="number" class="form-control" id="price"  placeholder="1" />
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <button class="btn btn-icon btn-primary" type="button" data-repeater-create>
-                                                    <i data-feather="plus" class="mr-25"></i>
-                                                    <span>إضافة</span>
-                                                </button>
+                                    </div>
+
+                                    <div class="col-2 ">
+                                        <div class="form-group">
+                                            <label for="">   </label>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1">شامل الضريبة</label>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
-                              </div>
+                            </div>
 
-                              <div class="col-12 my-2">                                    
+                              
+                              <div class="col-12 my-2 repeater">                                    
                                   <label class="form-label">المكونات</label>
+                                    <div >
+                                        <div class="row form-group">
+                                            <span class="col-md-4 col-12" >   </span>
+                                           <div class="col-6 d-flex justify-content-between size_title_section"id="">
+                                               
+                                           </div>
+                                        
+                                        </div>
+                                    </div>
                                    <div class="form-group">
-                                        <form action="#" class="invoice-repeater">
+                                        <form action="#" class=" repeater">
                                             <div data-repeater-list="invoice">
                                                 <div data-repeater-item>
                                                     <div class="row d-flex align-items-end">
@@ -798,19 +778,24 @@
                                                                 </select>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-2 col-12">
-                                                            <div class="form-group">
-                                                                <label for="price">التكلفة</label>
-                                                                <input type="number" class="form-control" id="price"  placeholder="1" />
-                                                            </div>
+                                                        <div>
+                                                            
                                                         </div>
-                                                        <div class="col-md-2 col-12">
-                                                            <div class="form-group">
-                                                                <label for="calories">السعرات الحرارية</label>
-                                                                <input type="number" class="form-control" id="calories"  placeholder="1" />
+                                                        <div class="col-2 size_section">
+                                                        <div class="row pr-1" id='size_section'>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="price">الكمية</label>
+                                                                    <input type="number" class="form-control" id="price"  placeholder="1" />
+                                                                </div>
                                                             </div>
+                                                            
                                                         </div>
-                                                        <div class="col-md-2 col-12">
+                                                        
+                                                        </div>
+                                                            
+                                                         
+                                                        <div class="col-md-1 col-12 p-0">
                                                             <div class="form-group"> 
                                                                 <label >قابلة لإلزالة</label>
                                                                 <div class="custom-control custom-checkbox btn">
@@ -819,7 +804,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-2 col-12 ">
+                                                        <div class="col-md-1 col-12 p-0">
                                                             <div class="form-group">
                                                                 <button class="btn btn-danger text-nowrap px-1" data-repeater-delete type="button">
                                                                     <i data-feather="x" class="mr-25"></i>
@@ -832,7 +817,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <button class="btn btn-icon btn-primary add"id='add1'onclick='check_size_and_repeter(1)' type="button" data-repeater-create>
+                                                    <button class="btn btn-icon btn-primary add"type="button" data-repeater-create>
                                                         <i data-feather="plus" class="mr-25"></i>
                                                         <span>إضافة</span>
                                                     </button>
@@ -1033,38 +1018,101 @@
 </script>
 <script>
     window.confirm = function() { return true; };
-
-    $('.touchspin').TouchSpin({
-        min: 1,
-        max: 100,
-        step: 1,
-        decimals: 0,
-        buttondown_class: 'btn btn-primary',
-        buttonup_class: 'btn btn-primary',
-        buttondown_txt: feather.icons['minus'].toSvg(),
-        buttonup_txt: feather.icons['plus'].toSvg()
-    });
-
-    function check_size_and_repeter(index){
-        let sizeNumber=  $('#size-number').val();
-        for (let i = 1; i < sizeNumber; i++) {
-            document.getElementById("add"+index).click();
+    function check_multi_size() {
+        if($('#active_multi_size').is(":checked")) {
+            $('#size' ).show();
+        }else{
+            $('#size' ).hide();
+            $('.size_title').remove();
+            $('.size_section >').each(function(index) {
+            $('.size'+index).remove();
+        });
         }
-         
+        
     }
-    
-    $('[class*="bootstrap-touchspin-"]').click(function(event) {
-        let $this = $(this);
-        let sizeNumber=  $('#size-number').val();
-        if ($this.hasClass('bootstrap-touchspin-down')) {
-             
-        } else if ($this.hasClass('bootstrap-touchspin-up')) {
-            document.getElementById("add1").click();
-            document.getElementById("add2").click();
+    check_multi_size();
+
+    function size_input(index ,element){
+        var total = $('#size > option').length;
+        if(total >=2){
+            $('.size_section').removeClass('col-2');
+            $('.size_section').addClass('col-6');
         }
 
+        element.append(`<div class="col size${index}">
+                            <div class="form-group">
+                                <label for="quantity${index}">الكمية</label>
+                                <input type="number" class="form-control" id="quantity${index}" placeholder="1" />
+                            </div>
+                        </div>`
+        );
+    };
+    function price_input(index,element,title){
+        $(".price_section >:first-child").hide();
+        element.append(`<div class="col size${index}">
+                            <div class="form-group">
+                                <label class='px-1' for="price${index}">${title}</label>
+                                <input type="number" class="form-control" id="price${index}" placeholder="1" />
+                            </div>
+                        </div>`);
+    }
+    $('#size').on("select2:select", function() {
+        console.log($(this.text));
+        
+        var total = $('#size > option').length;
+        $("#size > option").each(function(index) {
+            if(index === total - 1){
+                $('.size_title_section').append(`<span class="col size_title">${this.text}</span>`);
+                
+                if(total>=2){
+                    size_input(index ,$('.size_section >'))
+                }
+                price_input(index ,$('.price_section'),$(this).text())
+           }
+        });
     });
- 
+
+    $('#size').on("select2:unselect", function (e) { 
+        if($(this).val() === ""){
+            $(".price_section >:first-child").show();
+        }
+        console.log(e.params.data.text);
+        unselected_text = e.params.data.text;
+        $(".size_title ").each(function(index) {
+            if( $( this ).text() == unselected_text){
+                $(this).remove();
+                $('.size'+index).remove();
+            }
+            
+        })
+        
+    });
+
+
+    $(".repeater").repeater({
+            show: function () {
+                 let total = $('#size > option').length;
+                 let size_elemint = $(this).find($(".size_section >"));
+                console.log($(this).find($(".size_section >")));
+                console.log($(this) );
+                $("#size > option").each(function(index){
+                 if(total>=2 && index!=0){
+                        size_input(index ,size_elemint)
+                 }})
+                $(this).slideDown(function () {
+                $('.tax').each(function (_, el) {
+                    el.trigger('change', true);
+                });
+                
+            });
+            }, hide: function (e) {
+                $(this).slideUp(e, function () {
+                    $(this).remove();
+                    calculate()
+                });
+            }
+    });
+
 </script>
 
 </body>
