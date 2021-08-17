@@ -807,16 +807,17 @@
                     </div>
                     <div class="d-flex justify-content-end mx-1">
                         
-                        <span class="badge badge-light-primary"id='day'>يوم</span>
-                        <span class="badge badge-light-primary"id='week'>اسبوع</span>
-                        <span class="badge badge-light-primary"id='month'>شهر</span>
-                        <span class="badge badge-light-primary"id='year'>سنة</span>
+                        <span class="badge badge-light-info "id='day'>يوم</span>
+                        <span class="badge badge-light-info "id='week'>اسبوع</span>
+                        <span class="badge badge-light-info "id='month'>شهر</span>
+                        <span class="badge badge-light-info "id='year'>سنة</span>
+                        <span class="badge badge-light-info "id='all'>الكل</span>
                     </div>
                     <div class="d-flex align-items-center">
                         <i class="font-medium-2" data-feather="calendar"></i>
-                        <input type="text"
+                        <input type="text" id='ytd'
                             class="form-control flat-picker bg-transparent border-0 shadow-none"
-                            placeholder="YYYY-MM-DD"/>
+                            placeholder="YYYY-MM-DD" onchange="date_range()"/>
                         </div>
                   </div>
                   <div class="card-body">
@@ -931,6 +932,15 @@
 
     </script>
    <script>
+       let start ;
+       let end;
+       function date_range(selectedDates){
+			var _this=this;
+			var dateArr=selectedDates.map(function(date){return _this.formatDate(date,'d.m.Y');});
+			start=$('#ID_START').val(dateArr[0]);
+			end=$('#ID_END').val(dateArr[1]);
+            alert(start +end)
+		}
        var chartOptions = { series: [{
           data: [
             [1327359600000,30.95],
@@ -1275,6 +1285,84 @@
         // Initialization
         var chart = new ApexCharts(document.querySelector("#line-area-char"), chartOptions);
         chart.render();
+        
+        var resetCssClasses = function(activeEl) {
+        var els = document.querySelectorAll('button')
+        Array.prototype.forEach.call(els, function(el) {
+          el.classList.remove('active')
+        })
+      
+        activeEl.target.classList.add('active')
+      }
+      
+      document
+        .querySelector('#day')
+        .addEventListener('click', function(e) {
+          resetCssClasses(e)
+      
+          chart.zoomX(
+            new Date('28 Jan 2013').getTime()
+          )
+        })
+        document
+        .querySelector('#week')
+        .addEventListener('click', function(e) {
+          resetCssClasses(e)
+      
+          chart.zoomX(
+            new Date('28 Jan 2013').getTime(),
+            new Date('3 Feb 2013').getTime()
+          )
+        })
+      document
+        .querySelector('#month')
+        .addEventListener('click', function(e) {
+          resetCssClasses(e)
+      
+          chart.zoomX(
+            new Date('28 Jan 2013').getTime(),
+            new Date('27 Feb 2013').getTime()
+          )
+        })
+      document
+        .querySelector('#six_months')
+        .addEventListener('click', function(e) {
+          resetCssClasses(e)
+      
+          chart.zoomX(
+            new Date('27 Sep 2012').getTime(),
+            new Date('27 Feb 2013').getTime()
+          )
+        })
+      
+      document
+        .querySelector('#year')
+        .addEventListener('click', function(e) {
+          resetCssClasses(e)
+          chart.zoomX(
+            new Date('27 Feb 2012').getTime(),
+            new Date('27 Feb 2013').getTime()
+          )
+        })
+      
+      document.querySelector('#ytd').addEventListener('click', function(e) {
+        resetCssClasses(e)
+      
+        chart.zoomX(
+          new Date('01 Jan 2013').getTime(),
+          new Date('27 Feb 2013').getTime()
+        )
+      })
+      
+      document.querySelector('#all').addEventListener('click', function(e) {
+        resetCssClasses(e)
+      
+        chart.zoomX(
+          new Date('23 Jan 2012').getTime(),
+          new Date('27 Feb 2013').getTime()
+        )
+      })
+      
    </script>
 </body>
 <!-- END: Body-->
