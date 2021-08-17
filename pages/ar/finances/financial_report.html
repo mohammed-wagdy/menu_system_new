@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
-
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap-extended.css">
@@ -204,7 +204,7 @@
                 <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
             </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
-                    <a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i> الملف الشخصي</a><a class="dropdown-item" href="page-account-settings.html"><i class="mr-50" data-feather="settings"></i> تحديث النظام</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> تسجيل الخروج</a>
+                    <a class="dropdown-item" href="../user/page-profile.html"><i class="mr-50" data-feather="user"></i> الملف الشخصي</a><a class="dropdown-item" href="../user/page-system-updates.html"><i class="mr-50" data-feather="settings"></i> تحديث النظام</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> تسجيل الخروج</a>
                 </div>
             </li>
         </ul>
@@ -385,11 +385,6 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="d-flex align-items-center"href="../products/ingredients.html">
-                        <i class="fas fa-seedling"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المكونات</span>
-                    </a>
-                </li>
 
                 <li class="nav-item">
                     <a class="d-flex align-items-center" href="../products/extra.html">
@@ -667,15 +662,9 @@
                             </div>
                             <div class="col-md-4 col-12 budget-wrapper">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle budget-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        2020
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="javascript:void(0);">2020</a>
-                                        <a class="dropdown-item" href="javascript:void(0);">2019</a>
-                                        <a class="dropdown-item" href="javascript:void(0);">2018</a>
-                                    </div>
+                                    <input type="text" name="" class="btn btn-outline-primary btn-sm mb-1 "style='padding:1px;' placeholder="YYYY-MM-DD" id="datepicer">
                                 </div>
+
                                 <p class="font-weight-bolder">صافي الربح</p>
                                 <h2 class="mb-25">25.852 ر.س</h2>
                                 <div id="budget-chart"></div>
@@ -702,6 +691,7 @@
     <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">جميع الحقوق محفوظة &copy; 2021
         <a class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">شركة طيف</a></span>
         <span class="float-md-right d-none d-md-block"> بواسطة <img src="../../../app-assets/images/logo.svg" width="100" alt="" srcset=""></span></p>
+        <a href="../privacy_policy">سياسة الخصوصية</a>
 </footer>
 <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
 <!-- END: Footer-->
@@ -737,6 +727,8 @@
 <!-- END: Theme JS-->
 <script src="../../../app-assets/vendors/js/charts/apexcharts.min.js"></script>
 <script src="../../../app-assets/vendors/js/extensions/toastr.min.js"></script>
+<script src="../../../app-assets/js/scripts/forms/pickers/form-pickers.min.js"></script>
+
 <!-- BEGIN: Page JS-->
 <script src="../../../app-assets/js/scripts/pages/dashboard-ecommerce.js"></script>
 <!-- BEGIN: Page JS-->
@@ -751,6 +743,9 @@
             });
         }
     })
+</script>
+<script>
+    $('#datepicer').flatpickr();
 </script>
 </body>
 <!-- END: Body-->

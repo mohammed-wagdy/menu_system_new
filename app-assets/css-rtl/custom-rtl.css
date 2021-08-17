@@ -271,3 +271,10 @@ body .ps__rail-y {
       -ms-transform : rotate(180deg);
           transform : rotate(180deg);
 }
+
+table tr[href]{
+  cursor: pointer;
+}
+table tr[href]:hover{
+  background-color: #d6bdbd0e;
+}

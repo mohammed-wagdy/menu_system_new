@@ -239,7 +239,7 @@
                     <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
-                    <a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i> الملف الشخصي</a><a class="dropdown-item" href="page-account-settings.html"><i class="mr-50" data-feather="settings"></i> Settings</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> Logout</a>
+                    <a class="dropdown-item" href="../user/page-profile.html"><i class="mr-50" data-feather="user"></i> الملف الشخصي</a><a class="dropdown-item" href="../user/page-system-updates.html"><i class="mr-50" data-feather="settings"></i> Settings</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> Logout</a>
                 </div>
             </li>
             </ul>
@@ -420,11 +420,6 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="d-flex align-items-center"href="../products/ingredients.html">
-                        <i class="fas fa-seedling"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المكونات</span>
-                    </a>
-                </li>
 
                 <li class="nav-item">
                     <a class="d-flex align-items-center" href="../products/extra.html">
@@ -663,10 +658,29 @@
 
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <label for="discount-value">القيمة</label>
+                                        <label for="select_type">  نوع الخصم   </label>
+                                        <select class="select2 form-control" id="select_type"onchange='discount_type()'>
+                                            <option value="op1">نسبة </option>
+                                            <option value="op2">ثابت</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                                   
+                                <div class="col-12" id='percent'>
+                                    <div class="form-group">
+                                        <label for="discount-value"> قيمة الخصم</label>
                                         <div class="input-group">
-                                            <input type="number" id='discount-value' class="form-control"  aria-describedby="value">
-                                            <span class="input-group-text" id="value">%</span>
+                                            <input type="number" class="form-control" aria-describedby="value">
+                                            <span class="input-group-text" id="discount-value">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12"id='fixed'>
+                                    <div class="form-group">
+                                        <label for="discount-value2">قيمة الخصم</label>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" aria-describedby="value">
+                                            <span class="input-group-text" id="discount-value">SAR</span>
                                         </div>
                                     </div>
                                 </div>
@@ -687,7 +701,24 @@
                                         <input type="text" id="fp-range" class="form-control flatpickr-range flatpickr-input" placeholder="YYYY-MM-DD to YYYY-MM-DD" readonly="readonly">
                                     </div>
                                 </div>
-
+                                <div class="col-12 "id='activ2'>
+                                    <label class="form-label" for="select-branch-included"> الفروع المشمولة</label>
+                                    <div class="position-relative" >
+                                        <select class="select2 form-select select2-hidden-accessible" id="select-branch-included" multiple="" tabindex="-1" aria-hidden="true">
+                                            <option value="op1"> الفرع 1 </option>
+                                            <option value="op2"> الفرع 2 </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 "id='activ2'>
+                                    <label class="form-label" for="select-branch-not-included"> الفروع الغير مشمولة</label>
+                                    <div class="position-relative" >
+                                        <select class="select2 form-select select2-hidden-accessible" id="select-branch-not-included" multiple="" tabindex="-1" aria-hidden="true">
+                                            <option value="op1"> الفرع 1 </option>
+                                            <option value="op2"> الفرع 2 </option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="col-12 mt-2 p-0">
                                     <button type="submit" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ</button>
                                 </div>
@@ -711,6 +742,7 @@
     <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">جميع الحقوق محفوظة &copy; 2021
         <a class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">شركة طيف</a></span>
         <span class="float-md-right d-none d-md-block"> بواسطة <img src="../../../app-assets/images/logo.svg" width="100" alt="" srcset=""></span></p>
+        <a href="../privacy_policy">سياسة الخصوصية</a>
 </footer>
 <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
 <!-- END: Footer-->
@@ -759,7 +791,17 @@
         }
     });
 
+    function discount_type(){
+        if($('#select_type').find(":selected").val() == 'op1'){
+            $('#percent').show();
+            $('#fixed').hide();
+        }else{
+            $('#percent').hide();
+            $('#fixed').show();
 
+        }
+    }
+    discount_type()
 </script>
 </body>
 <!-- END: Body-->
