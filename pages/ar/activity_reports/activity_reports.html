@@ -239,7 +239,7 @@
                     <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
-                    <a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i> الملف الشخصي</a><a class="dropdown-item" href="page-account-settings.html"><i class="mr-50" data-feather="settings"></i> Settings</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> Logout</a>
+                    <a class="dropdown-item" href="../user/page-profile.html"><i class="mr-50" data-feather="user"></i> الملف الشخصي</a><a class="dropdown-item" href="../user/page-system-updates.html"><i class="mr-50" data-feather="settings"></i> Settings</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> Logout</a>
                 </div>
             </li>
             </ul>
@@ -420,11 +420,6 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="d-flex align-items-center"href="../products/ingredients.html">
-                        <i class="fas fa-seedling"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المكونات</span>
-                    </a>
-                </li>
 
                 <li class="nav-item">
                     <a class="d-flex align-items-center" href="../products/extra.html">
@@ -541,30 +536,30 @@
                 </li>
 
                 <!-- Materials -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="users.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../administration/users.html">
                     <i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المستخدمين</span>
                 </a>
                 </li>
 
                 <!-- Suppliers -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="user_groups.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../administration/user_groups.html">
                     <i class="fa fa-users" aria-hidden="true"></i><span class="menu-title text-truncate" data-i18n="Dashboards">مجموعات المستخدمين</span></a>
                 </li>
 
                 <!-- Processess -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="branches.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../administration/branches.html">
                     <i class="fas fa-store-alt"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الفروع</span></a>
                 </li>
                 <!-- inventory -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="reports.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../administration/reports.html">
                     <i data-feather="pie-chart"></i><span class="menu-title text-truncate" data-i18n="Dashboards">التقارير</span></a>
                 </li>
 
                 <!-- Stock Level -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="devices.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../administration/devices.html">
                     <i data-feather='smartphone'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الأجهزة</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="system_control.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../administration/system_control.html">
                     <i data-feather='settings'></i><span class="menu-title text-truncate" data-i18n="Dashboards">إعدادات النظام</span></a>
                 </li>
                  <!-- website content -->
@@ -653,29 +648,29 @@
                         النشاط
                     </button>
                     <div class="dropdown-menu p-1" aria-labelledby="dropdownMenuButton">
-                        <div class="form-check form-check-primary" data-mixitup-control data-filter="all">
-                            <input class="form-check-input" type="checkbox" id="select-all" onchange="select_all()" value="checked" checked="">
-                            <label class="form-check-label" for="select-all" >الكل</label>
+                        <div class="custom-control custom-checkbox" data-mixitup-control data-filter="all">
+                            <input class="custom-control-input" type="checkbox" id="select-all" onchange="select_all()" checked="">
+                            <label class="custom-control-label" for="select-all" >الكل</label>
                         </div>
-                        <div class="form-check form-check-primary" data-mixitup-control data-toggle=".category-a">
-                            <input class="form-check-input" type="checkbox" id="Checkbox2" onchange="check_clear()" value="checked" >
-                            <label class="form-check-label" for="Checkbox2">الطلبات</label>
+                        <div class="custom-control custom-checkbox" data-mixitup-control data-toggle=".category-a">
+                            <input class="custom-control-input" type="checkbox" id="Checkbox2" onchange="check_clear()" value="checked" >
+                            <label class="custom-control-label" for="Checkbox2">الطلبات</label>
                         </div>
-                        <div class="form-check form-check-primary"data-mixitup-control  data-toggle=".category-b">
-                            <input class="form-check-input" type="checkbox" id="Checkbox3" onchange="check_clear()" value="checked" >
-                            <label class="form-check-label" for="Checkbox3">المنتجات</label>
+                        <div class="custom-control custom-checkbox"data-mixitup-control  data-toggle=".category-b">
+                            <input class="custom-control-input" type="checkbox" id="Checkbox3" onchange="check_clear()" value="checked" >
+                            <label class="custom-control-label" for="Checkbox3">المنتجات</label>
                         </div>
-                        <div class="form-check form-check-primary"data-mixitup-control  data-toggle=".category-c">
-                            <input class="form-check-input" type="checkbox" id="Checkbox3" onchange="check_clear()" value="checked" >
-                            <label class="form-check-label" for="Checkbox3">التسويق</label>
+                        <div class="custom-control custom-checkbox"data-mixitup-control  data-toggle=".category-c">
+                            <input class="custom-control-input" type="checkbox" id="Checkbox3" onchange="check_clear()" value="checked" >
+                            <label class="custom-control-label" for="Checkbox3">التسويق</label>
                         </div>
-                        <div class="form-check form-check-primary"data-mixitup-control  data-toggle=".category-d">
-                            <input class="form-check-input" type="checkbox" id="Checkbox3" onchange="check_clear()" value="checked" >
-                            <label class="form-check-label" for="Checkbox3">النظام</label>
+                        <div class="custom-control custom-checkbox"data-mixitup-control  data-toggle=".category-d">
+                            <input class="custom-control-input" type="checkbox" id="Checkbox3" onchange="check_clear()" value="checked" >
+                            <label class="custom-control-label" for="Checkbox3">النظام</label>
                         </div>
-                        <div class="form-check form-check-primary"data-mixitup-control  data-toggle=".category-e">
-                            <input class="form-check-input" type="checkbox" id="Checkbox3" onchange="check_clear()" value="checked" >
-                            <label class="form-check-label" for="Checkbox3">الإشعارات</label>
+                        <div class="custom-control custom-checkbox"data-mixitup-control  data-toggle=".category-e">
+                            <input class="custom-control-input" type="checkbox" id="Checkbox3" onchange="check_clear()" value="checked" >
+                            <label class="custom-control-label" for="Checkbox3">الإشعارات</label>
                         </div>
                     </div>
                 </div>                               
@@ -703,8 +698,15 @@
                                             </div>
                                         </div>
                                         <div class="d-flex flex-row align-items-center w-75 px-2" >
-                                            <p>إضافة خصم</p>
+                                            <div class="col ms-50">
+                                                <p  class="mb-0">إضافة كود خصم</p>
+                                                <span>تسويقي</span>
+                                            </div>
+                                            <div class='col'>
+                                                <p>MA</p>
+                                            </div>
                                         </div>
+                                       
                                         <span class="timeline-event-time me-1">2:00</span>
                                     </div>
                                 </div>
@@ -725,7 +727,12 @@
                                             </div>
                                         </div>
                                         <div class="d-flex flex-row align-items-center w-75 px-2" >
-                                            <p>إعدادات النظام</p>
+                                            <div class="col">
+                                                <p>إعدادات النظام</p>
+                                            </div>
+                                            <div class='col'>
+                                                <p>MA</p>
+                                            </div>
                                         </div>
                                         <span class="timeline-event-time me-1">2:00</span>
                                     </div>
@@ -747,7 +754,12 @@
                                             </div>
                                         </div>
                                         <div class="d-flex flex-row align-items-center w-75 px-2" >
-                                            <p>طلب جديد</p>
+                                            <div class="col">
+                                                <p>طلب جديد</p>
+                                            </div>
+                                            <div class='col'>
+                                                <p>MA</p>
+                                            </div>
                                         </div>
                                         <span class="timeline-event-time me-1">2:01</span>
                                     </div>
@@ -772,7 +784,13 @@
                                             </div>
                                         </div>
                                         <div class="d-flex flex-row align-items-center w-75 px-2" >
-                                            <p>طلب جديد</p>
+                                            <div class="col">
+                                                <p>طلب جديد</p>
+                                            </div>
+                                            <div class='col'>
+                                                <p>MA</p>
+                                            </div>
+                                            
                                         </div>
                                         <span class="timeline-event-time me-1">2:01</span>
                                     </div>
@@ -794,7 +812,12 @@
                                             </div>
                                         </div>
                                         <div class="d-flex flex-row align-items-center w-75 px-2" >
-                                            <p>إرسال اشعار خاص</p>
+                                            <div class="col">
+                                                <p>إرسال اشعار خاص</p>
+                                            </div>
+                                            <div class='col'>
+                                                <p>MA</p>
+                                            </div>
                                         </div>
                                         <span class="timeline-event-time me-1">2:01</span>
                                     </div>
@@ -821,6 +844,7 @@
     <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">جميع الحقوق محفوظة &copy; 2021
         <a class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">شركة طيف</a></span>
         <span class="float-md-right d-none d-md-block"> بواسطة <img src="../../../app-assets/images/logo.svg" width="100" alt="" srcset=""></span></p>
+        <a href="../privacy_policy">سياسة الخصوصية</a>
 </footer>
 <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
 <!-- END: Footer-->
@@ -861,17 +885,7 @@
         }
     })
 </script>
-<script>
-    function check_scheduling() {
-        if ($('#scheduling').is(':checked')) {
-            $('#sending-time').show();
-        }
-        else{
-            $('#sending-time').hide();
-        }
-    };
-    check_scheduling()
-</script>
+
 <script>
     let containerEl =$('.myContainer')
     mixitup(containerEl, {
@@ -882,7 +896,7 @@
 
     function select_all() {   
         
-        if(this.checked) {
+        if($('#select-all').is(":checked")) {
             // Iterate each checkbox
             $(':checkbox').each(function() {
                 this.checked = true;                        
@@ -893,7 +907,7 @@
             });
         }
     };
-
+    select_all()
     function check_clear(event){  
         if($('#select-all').is(":checked") ){
             $(':checkbox').each(function() {

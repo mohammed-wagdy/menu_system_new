@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAMA,AAAA,UAAU,AAAC,CALT,eAAe,CAAE,OAAO,CACxB,mBAAmB,CAAE,GAAG,CACxB,iBAAiB,CAAE,SAAS,CAK5B,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,YAAY,CACrB,KAAK,CAAE,SAAa,CACpB,WAAW,CAAE,GAAG,CAOjB,AAZD,AAME,UANQ,AAMP,OAAO,AAAC,CACP,OAAO,CAAE,OAAO,CACjB,AARH,AASE,UATQ,AASP,kBAAkB,AAAC,CAClB,KAAK,CAAE,GAAG,CACX",
+    "sources": [
+        "flag-icon-base.scss"
+    ],
+    "names": [],
+    "file": "flag-icon-base.css"
+}

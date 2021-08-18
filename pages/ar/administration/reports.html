@@ -59,6 +59,10 @@
 
     <!-- END: Page CSS-->
 
+    <!-- BEGIN: Page icone-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/fonts/font-awesome/css/font-awesome.min.css">
+    <!-- END: Page icone-->
+
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
     <link rel="stylesheet" type="text/css" href="../../../assets/css/style-rtl.css">
@@ -276,8 +280,8 @@
                                           alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
             </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
-                    <a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i> الملف
-                        الشخصي</a><a class="dropdown-item" href="page-account-settings.html"><i class="mr-50"
+                    <a class="dropdown-item" href="../user/page-profile.html"><i class="mr-50" data-feather="user"></i> الملف
+                        الشخصي</a><a class="dropdown-item" href="../user/page-system-updates.html"><i class="mr-50"
                                                                                                 data-feather="settings"></i>
                     تحديث النظام</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50"
                                                                                                data-feather="power"></i>
@@ -408,220 +412,75 @@
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
-            <!-- Orders -->
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">الطلبات</span><i
-                    data-feather="more-horizontal"></i>
-            </li>
-
-            <!-- Orders -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="../orders/orders.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الطلبات</span>
-            </a>
-            </li>
-
-            <!-- Clients -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="../orders/clients.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">العملاء</span>
-            </a>
-            </li>
+                <!-- Home Page -->
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../home-page.html">
+                    <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الصفحة الرئيسية</span>
+                </a>
+                </li>
 
 
-            <!-- Tables -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="../orders/tables.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الطاولات</span>
-            </a>
-            </li>
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">الطلبات</span><i data-feather="more-horizontal"></i>
+                </li>
 
 
-            <!-- Shifts -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="../orders/shifts.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الورديات</span>
-            </a>
-            </li>
+                <!-- Orders -->
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../orders/orders.html">
+                    <i data-feather='shopping-bag'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الطلبات</span>
+                </a>
+                </li>
 
 
-            <!-- Screens -->
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">شاشات العرض</span><i
-                    data-feather="more-horizontal"></i>
-            </li>
-
-            <!-- kitchen -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/kitchen.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate"
-                                                 data-i18n="Dashboards">عرض المطبخ</span>
-            </a>
-            </li>
+                <!-- Clients -->
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../orders/clients.html">
+                    <i class="fas fa-user-tie"></i><span class="menu-title text-truncate" data-i18n="Dashboards">العملاء</span>
+                </a>
+                </li>
 
 
-            <!-- Waintg -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/waiting.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate"
-                                                 data-i18n="Dashboards">عرض الإنتظار</span>
-            </a>
-            </li>
+                <!-- Tables -->
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../orders/tables.html">
+                    <i class="fas fa-utensils"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الطاولات</span>
+                </a>
+                </li>
 
 
-            <!-- Ads -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/ads.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate"
-                                                 data-i18n="Dashboards">عرض الإعلانات</span>
-            </a>
-            </li>
+                <!-- Shifts -->
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../orders/shifts.html">
+                    <i data-feather='calendar'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الورديات</span>
+                </a>
+                </li> 
 
-            <!-- Begin Finances -->
+                <!-- Screens -->
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">شاشات العرض</span><i data-feather="more-horizontal"></i>
+                </li>
 
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">المالية</span><i
-                    data-feather="more-horizontal"></i>
-            </li>
+                <!-- kitchen -->
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/kitchen.html">
+                    <i class="fas fa-concierge-bell"></i></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض المطبخ</span>
+                </a>
+                </li>
 
-            <!-- Revenue -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="revenue.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate"
-                                                 data-i18n="Dashboards">الإيرادات</span>
-            </a>
-            </li>
+                <!-- Waintg -->
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/waiting.html">
+                    <i data-feather='coffee'></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإنتظار</span>
+                </a>
+                </li>
 
-            <!-- Expenditure -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="expenditure.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate"
-                                                 data-i18n="Dashboards">المصروفات</span>
-            </a>
-            </li>
+                <!-- Ads -->
+                <li class=" nav-item"><a class="d-flex align-items-center" href="../screens/ads.html">
+                    <i data-feather='radio'></i><span class="menu-title text-truncate" data-i18n="Dashboards">عرض الإعلانات</span>
+                </a>
+                </li>
+                <!-- products -->
+                <li class="navigation-header">
+                    <span data-i18n="Apps &amp; Pages">المنتجات</span><i data-feather="more-horizontal"></i>
+                </li>
 
-            <!-- Financial report -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="financial_report.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate"
-                                                 data-i18n="Dashboards">التقرير المالي</span>
-            </a>
-            </li>
-
-
-            <!-- Tax -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="tax.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الضريبة</span>
-            </a>
-            </li>
-
-            <!-- Payment methods -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="payment_methods.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate"
-                                                 data-i18n="Dashboards">طرق الدفع</span>
-            </a>
-            </li>
-
-
-            <!-- End Finances -->
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">المخزون</span><i
-                    data-feather="more-horizontal"></i>
-            </li>
-
-            <!-- Materials -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="../Inventory/materials.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المواد</span>
-            </a>
-            </li>
-
-            <!-- Suppliers -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="../Inventory/suppliers.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الموردين</span>
-            </a>
-            </li>
-
-
-            <!-- Processess -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="../Inventory/operations.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">العمليات</span>
-            </a>
-            </li>
-
-            <!-- inventory -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="../Inventory/inventory.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الجرد</span>
-            </a>
-            </li>
-
-            <!-- Stock Level -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="../Inventory/stock_level.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate"
-                                                 data-i18n="Dashboards">مستوي المخزون</span>
-            </a>
-            </li>
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">إدارة</span><i
-                    data-feather="more-horizontal"></i>
-            </li>
-
-            <!-- Materials -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="users.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate"
-                                                 data-i18n="Dashboards">المستخدمين</span>
-            </a>
-            </li>
-
-            <!-- Suppliers -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="user_groups.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">مجموعات المستخدمين</span>
-            </a>
-            </li>
-
-
-            <!-- Processess -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="branches.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الفروع</span>
-            </a>
-            </li>
-
-            <!-- inventory -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="reports.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">التقارير</span>
-            </a>
-            </li>
-
-            <!-- Stock Level -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="devices.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الأجهزة</span>
-            </a>
-            </li>
-
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">الإعدادات</span><i
-                    data-feather="more-horizontal"></i>
-            </li>
-
-
-            <li class=" nav-item"><a class="d-flex align-items-center" href="../Inventory/units.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الوحدات</span>
-            </a>
-            </li>
-
-            <!-- Help -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="Inventory/units.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate"
-                                                 data-i18n="Dashboards">قسم المساعدة</span>
-            </a>
-            </li>
-
-            <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">إدارة</span><i
-                    data-feather="more-horizontal"></i>
-            </li>
-
-            <!-- Materials -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="users.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate"
-                                                 data-i18n="Dashboards">المستخدمين</span>
-            </a>
-            </li>
-
-            <!-- Suppliers -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="user_groups.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">مجموعات المستخدمين</span>
-            </a>
-            </li>
-
-
-            <!-- Processess -->
-            <li class=" nav-item"><a class="d-flex align-items-center" href="branches.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الفروع</span>
-            </a>
-            </li>
+                <li class="nav-item">
+                    <a class="d-flex align-items-center" href="../products/all_categories.html">
+                        <i class="fa fa-list-alt"></i><span class="menu-title text-truncate" data-i18n="Dashboards">التصنيفات</span>
+                    </a>
+                </li>
 
                 <li class="nav-item">
                     <a class="d-flex align-items-center" href="../products/all_products.html">
@@ -629,17 +488,12 @@
                     </a>
                 </li>
 
+
                 <li class="nav-item">
-                    <a class="d-flex align-items-center"href="../products/ingredients.html">
-                        <i class="fas fa-seedling"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المكونات</span>
+                    <a class="d-flex align-items-center" href="../products/extra.html">
+                    <i data-feather='plus-circle'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإضافات</span>
                     </a>
                 </li>
-
-            <li class=" nav-item"><a class="d-flex align-items-center" href="system_control.html">
-                <i data-feather="home"></i><span class="menu-title text-truncate"
-                                                 data-i18n="Dashboards">إعدادات النظام</span>
-            </a>
-            </li>
 
                 <li class="nav-item">
                     <a class="d-flex align-items-center" href="../products/allergens.html">
@@ -899,7 +753,8 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4"
-                                           role="tab" aria-controls="pills-4" aria-selected="false">الزيارات</a>
+                                           role="tab" aria-controls="pills-4" aria-selected="false"
+                                           onclick="hits_report()">الزيارات</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5"
@@ -1368,10 +1223,86 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
-                                    <h4 class="card-title">الزيارات</h4>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="javascript:void(0);" class="btn btn-outline-primary">الزيارات</a>
+                                    <div class="row">
+                                        <div  class="col-lg-8  ">
+                                            <div class="card"id="hits_chart"></div>
+                                        </div>
+                                          
+                                    
+                                    <!-- Browser States Card -->
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="card card-browser-states">
+                                            <div class="card-header">
+                                                <div>
+                                                    <h4 class="card-title">الزيارات</h4>
+                                                    <p class="card-text font-small-2">Counter August 2020</p>
+                                                </div>
+                                                <div class="dropdown chart-dropdown">
+                                                    <i data-feather="more-vertical" class="font-medium-3 cursor-pointer" data-toggle="dropdown"></i>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="javascript:void(0);">آخر 28 يوم</a>
+                                                        <a class="dropdown-item" href="javascript:void(0);">الشهر الماضي</a>
+                                                        <a class="dropdown-item" href="javascript:void(0);">السنة الماضية</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="browser-states">
+                                                    <div class="media">
+                                                        <img src="../../app-assets/images/icons/google-chrome.png" class="rounded mr-1" height="30" alt="Google Chrome" />
+                                                        <h6 class="align-self-center mb-0">Google Chrome</h6>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="font-weight-bold text-body-heading mr-1">54.4%</div>
+                                                        <div id="browser-state-chart-primary"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="browser-states">
+                                                    <div class="media">
+                                                        <img src="../../app-assets/images/icons/mozila-firefox.png" class="rounded mr-1" height="30" alt="Mozila Firefox" />
+                                                        <h6 class="align-self-center mb-0">Mozila Firefox</h6>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="font-weight-bold text-body-heading mr-1">6.1%</div>
+                                                        <div id="browser-state-chart-warning"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="browser-states">
+                                                    <div class="media">
+                                                        <img src="../../app-assets/images/icons/apple-safari.png" class="rounded mr-1" height="30" alt="Apple Safari" />
+                                                        <h6 class="align-self-center mb-0">Apple Safari</h6>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="font-weight-bold text-body-heading mr-1">14.6%</div>
+                                                        <div id="browser-state-chart-secondary"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="browser-states">
+                                                    <div class="media">
+                                                        <img src="../../app-assets/images/icons/internet-explorer.png" class="rounded mr-1" height="30" alt="Internet Explorer" />
+                                                        <h6 class="align-self-center mb-0">Internet Explorer</h6>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="font-weight-bold text-body-heading mr-1">4.2%</div>
+                                                        <div id="browser-state-chart-info"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="browser-states">
+                                                    <div class="media">
+                                                        <img src="../../app-assets/images/icons/opera.png" class="rounded mr-1" height="30" alt="Opera Mini" />
+                                                        <h6 class="align-self-center mb-0">Opera Mini</h6>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="font-weight-bold text-body-heading mr-1">8.4%</div>
+                                                        <div id="browser-state-chart-danger"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/ Browser States Card -->
+
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
                                     <div class="card-text row">
@@ -1517,6 +1448,46 @@
 
     }
 
+    function hits_report(){
+        // Chart options
+
+        var chartOptions = {
+            series: [{
+                name: "زيارات متكررة",
+                data: [45, 52, 38, 24, 33, 26, 21, 20, 6, 8, 15, 10]
+            },
+            {
+                name: "زيارات لأول مرة",
+                data: [35, 41, 62, 42, 13, 18, 29, 37, 36, 51, 32, 35]
+            },
+            ],
+            chart: {
+            height: 250,
+            type: 'line',
+            zoom: {
+                enabled: false
+            },
+            },
+            dataLabels: {
+            enabled: false
+            },
+            stroke: {
+            width: [5, 7, 5],
+            curve: 'straight',
+            dashArray: [0, 8, 5]
+            },
+            xaxis: {
+            categories: ['01 Jan', '02 Jan', '03 Jan', '04 Jan', '05 Jan', '06 Jan', '07 Jan', '08 Jan', '09 Jan',
+                '10 Jan', '11 Jan', '12 Jan'
+            ],
+            },
+             colors: ['#D06666', '#D0D2D6']
+        };
+
+        var chart = new ApexCharts(document.querySelector("#hits_chart"), chartOptions);
+
+        chart.render();
+    }
 
     $(window).on('load', function () {
         if (feather) {

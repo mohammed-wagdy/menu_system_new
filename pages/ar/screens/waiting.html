@@ -24,6 +24,8 @@
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/wizard/bs-stepper.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap.css">
@@ -205,7 +207,7 @@
                     <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
-                    <a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i> الملف الشخصي</a><a class="dropdown-item" href="page-account-settings.html"><i class="mr-50" data-feather="settings"></i> تحديث النظام</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> تسجيل الخروج</a>
+                    <a class="dropdown-item" href="../user/page-profile.html"><i class="mr-50" data-feather="user"></i> الملف الشخصي</a><a class="dropdown-item" href="../user/page-system-updates.html"><i class="mr-50" data-feather="settings"></i> تحديث النظام</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> تسجيل الخروج</a>
                 </div>
             </li>
             </ul>
@@ -386,11 +388,6 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="d-flex align-items-center"href="../products/ingredients.html">
-                        <i class="fas fa-seedling"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المكونات</span>
-                    </a>
-                </li>
 
                 <li class="nav-item">
                     <a class="d-flex align-items-center" href="../products/extra.html">
@@ -597,37 +594,81 @@
         <div class="content-wrapper">
             
             <div class="content-body">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title">عرض الإنتظار</h4>
+                <h4 class="card-title">عرض الإنتظار</h4>
+                <div class="row">
+                    <div class="col-12 col-sm-offset-2 col-sm-10 col-md-12 col-lg-offset-2 col-lg-10 mx-auto">
+                    <div class="row">
+                        
+                        <div class="col-12 col-md-4">
+                        <div class="card border-success">
+                            <div class="card-body">
+                                <div class=" text-center">
+                                    <h3 class="badge badge-light-success px-1">
+                                        <span><i data-feather="more-horizontal"></i></span>
+                                        <span>تم التسليم</span>
+                                    </h3>
+                                </div>
+                            
+                            
+                            <ul class="list-group list-group-circle text-start px-2">
+                                <li class="list-group-item">23</li>
+                                <li class="list-group-item">23</li>
+                                <li class="list-group-item">23</li>
+                                <li class="list-group-item">23</li>
+                                <li class="list-group-item">23</li>
+                            </ul>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div class="col-12 col-md-4">
+                        <div class="card border-warning">
+                            <div class="card-body">
+                                <div class=" text-center">
+                                    <h3 class="badge badge-light-warning px-1">
+                                        <span><i data-feather='rotate-cw'></i></span>
+                                        <span>قيد التنفيذ</span>
+                                    </h3>
+                                </div>
+                            
+                            
+                            <ul class="list-group list-group-circle text-start px-2">
+                                <li class="list-group-item">23</li>
+                                <li class="list-group-item">23</li>
+                                <li class="list-group-item">23</li>
+                                <li class="list-group-item">23</li>
+                                <li class="list-group-item">23</li>
+                            </ul>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div class="col-12 col-md-4">
+                        <div class="card border-dark ">
+                            <div class="card-body">
+                                <div class=" text-center">
+                                    <h3 class="badge badge-light-dark px-1">
+                                        <span><i data-feather='loader'></i></span>
+                                        <span>جاري الأنتظار </span>
+                                    </h3>
+                                </div>
+                            
+                            
+                            <ul class="list-group list-group-circle text-start px-2">
+                                <li class="list-group-item">23</li>
+                                <li class="list-group-item">23</li>
+                                <li class="list-group-item">23</li>
+                                <li class="list-group-item">23</li>
+                                <li class="list-group-item">23</li>
+                            </ul>
+                            </div>
+                        </div>
+                        </div>
+              
                     </div>
-                   
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th>رقم الطابور</th>
-                                    <th>حالة الطلب</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>54</td>  
-                                    <td><div class="badge badge-warning">قيد التنفيذ</div></td>            
-                                </tr>
-                                <tr>
-                                    <td>55</td>  
-                                    <td><div class="badge badge-dark">جاري الأنتظار</div></td>           
-                                </tr>
-                                <tr>
-                                    <td>55</td>  
-                                    <td><div class="badge badge-success">تم التسليم</div></td>           
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
-                   
                 </div>
+              
             </div>
         </div>
     </div>
@@ -641,6 +682,7 @@
     <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">جميع الحقوق محفوظة &copy; 2021
         <a class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">شركة طيف</a></span>
         <span class="float-md-right d-none d-md-block"> بواسطة <img src="../../../app-assets/images/logo.svg" width="100" alt="" srcset=""></span></p>
+        <a href="../privacy_policy">سياسة الخصوصية</a>
 </footer>
 <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
 <!-- END: Footer-->
@@ -668,6 +710,8 @@
 <script src="../../../app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
 <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
 <script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+<script src="../../../app-assets/vendors/js/forms/wizard/bs-stepper.min.js"></script>
+
 <!-- END: Page Vendor JS-->
 
 <!-- BEGIN: Theme JS-->
@@ -680,6 +724,8 @@
 
 <!-- BEGIN: Page JS-->
 <!-- END: Page JS-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
 <script>
     $(window).on('load', function() {

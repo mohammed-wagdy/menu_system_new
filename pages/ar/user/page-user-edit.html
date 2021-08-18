@@ -9,21 +9,16 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title> إضافة مكون</title>
+    <title>الصفحة الرئيسية</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
-    <!-- END: Vendor CSS-->
-
-
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap.css">
@@ -34,9 +29,11 @@
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/bordered-layout.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/semi-dark-layout.css">
 
-
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/pickers/form-flat-pickr.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/pages/app-user.min.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Page icone-->
@@ -59,7 +56,7 @@
     <!-- BEGIN: Header-->
     <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow">
         <div class="navbar-container d-flex content">
-        
+           
             <ul class="nav navbar-nav align-items-center ml-auto">
                 <li class="nav-item dropdown dropdown-language"><a class="nav-link dropdown-toggle" id="dropdown-flag" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="javascript:void(0);" data-language="en"><i class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item" href="javascript:void(0);" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="javascript:void(0);" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item" href="javascript:void(0);" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></div>
@@ -168,7 +165,7 @@
                             <a class="d-flex" href="javascript:void(0)">
                                 <div class="media d-flex align-items-start">
                                     <div class="media-left">
-                                        <div class="avatar"><img src="../../app-assets/images/portrait/small/avatar-s-15.jpg" alt="avatar" width="32" height="32"></div>
+                                        <div class="avatar"><img src="../../../app-assets/images/portrait/small/avatar-s-15.jpg" alt="avatar" width="32" height="32"></div>
                                     </div>
                                     <div class="media-body">
                                         <p class="media-heading"><span class="font-weight-bolder">Congratulation Sam 🎉</span>winner!</p><small class="notification-text"> Won the monthly best seller badge.</small>
@@ -178,7 +175,7 @@
                             <a class="d-flex" href="javascript:void(0)">
                                 <div class="media d-flex align-items-start">
                                     <div class="media-left">
-                                        <div class="avatar"><img src="../../app-assets/images/portrait/small/avatar-s-3.jpg" alt="avatar" width="32" height="32"></div>
+                                        <div class="avatar"><img src="../../../app-assets/images/portrait/small/avatar-s-3.jpg" alt="avatar" width="32" height="32"></div>
                                     </div>
                                     <div class="media-body">
                                         <p class="media-heading"><span class="font-weight-bolder">New message</span>&nbsp;received</p><small class="notification-text"> You have 10 unread messages</small>
@@ -205,7 +202,7 @@
                     <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
-                    <a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i> الملف الشخصي</a><a class="dropdown-item" href="page-account-settings.html"><i class="mr-50" data-feather="settings"></i> تحديث النظام</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> تسجيل الخروج</a>
+                    <a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i> الملف الشخصي</a><a class="dropdown-item" href="page-system-updates.html"><i class="mr-50" data-feather="settings"></i> تحديث النظام</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> تسجيل الخروج</a>
                 </div>
             </li>
             </ul>
@@ -375,31 +372,26 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="d-flex align-items-center" href="all_categories.html">
+                    <a class="d-flex align-items-center" href="../products/all_categories.html">
                         <i class="fa fa-list-alt"></i><span class="menu-title text-truncate" data-i18n="Dashboards">التصنيفات</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="d-flex align-items-center" href="all_products.html">
+                    <a class="d-flex align-items-center" href="../products/all_products.html">
                         <i data-feather='server'></i><span class="menu-title text-truncate" data-i18n="Dashboards">المنتجات</span>
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="d-flex align-items-center"href="ingredients.html">
-                        <i class="fas fa-seedling"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المكونات</span>
-                    </a>
-                </li>
 
                 <li class="nav-item">
-                    <a class="d-flex align-items-center" href="extra.html">
+                    <a class="d-flex align-items-center" href="../products/extra.html">
                     <i data-feather='plus-circle'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإضافات</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="d-flex align-items-center" href="allergens.html">
+                    <a class="d-flex align-items-center" href="../products/allergens.html">
                         <i class="fas fa-allergies"></i><span class="menu-title text-truncate" data-i18n="Dashboards">مسببات الحساسية</span>
                     </a>
                 </li>
@@ -507,30 +499,30 @@
                 </li>
 
                 <!-- Materials -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="../administration/users.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="users.html">
                     <i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المستخدمين</span>
                 </a>
                 </li>
 
                 <!-- Suppliers -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="../administration/user_groups.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="user_groups.html">
                     <i class="fa fa-users" aria-hidden="true"></i><span class="menu-title text-truncate" data-i18n="Dashboards">مجموعات المستخدمين</span></a>
                 </li>
 
                 <!-- Processess -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="../administration/branches.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="branches.html">
                     <i class="fas fa-store-alt"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الفروع</span></a>
                 </li>
                 <!-- inventory -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="../administration/reports.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="reports.html">
                     <i data-feather="pie-chart"></i><span class="menu-title text-truncate" data-i18n="Dashboards">التقارير</span></a>
                 </li>
 
                 <!-- Stock Level -->
-                <li class=" nav-item"><a class="d-flex align-items-center" href="../administration/devices.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="devices.html">
                     <i data-feather='smartphone'></i><span class="menu-title text-truncate" data-i18n="Dashboards">الأجهزة</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="../administration/system_control.html">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="system_control.html">
                     <i data-feather='settings'></i><span class="menu-title text-truncate" data-i18n="Dashboards">إعدادات النظام</span></a>
                 </li>
                  <!-- website content -->
@@ -596,136 +588,449 @@
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
             <div class="content-header row">
-                <div class="content-header-left col-md-9 col-12 mb-2">
-                    <div class="row breadcrumbs-top">
-                        <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">المكونات</h2>
-                            <div class="breadcrumb-wrapper">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="add_ingredients.html"> إضافة مكون</a>
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
             </div>
             <div class="content-body">
-                <div class="row">
-                    <div class="col-md-12 col-12">
-                      <div class="card">
-                        <div class="card-header">
-                          <h4 class="card-title"> إضافة مكون جديد </h4>
+                <section class="app-user-edit">
+                <div class="card">
+                    <div class="card-body">
+                    <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center active" id="account-tab" data-bs-toggle="tab" href="#account" aria-controls="account" role="tab" aria-selected="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span class="d-none d-sm-block">Account</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" id="information-tab" data-bs-toggle="tab" href="#information" aria-controls="information" role="tab" aria-selected="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg><span class="d-none d-sm-block">Information</span>
+                        </a>
+                        </li>
+                        
+                    </ul>
+                    <div class="tab-content">
+                        <!-- Account Tab starts -->
+                        <div class="tab-pane active" id="account" aria-labelledby="account-tab" role="tabpanel">
+                        <!-- users edit start -->
+                        <div class="d-flex mb-2">
+                            <img src="../../../app-assets/images/avatars/7.png" alt="users avatar" class="user-avatar users-avatar-shadow rounded me-2 my-25 cursor-pointer" height="90" width="90">
+                            <div class="mt-50 px-1">
+                            <h4>Eleanor Aguilar</h4>
+                            <div class="col-12 d-flex mt-1 px-0">
+                                <label class="btn btn-primary me-75 mb-0 waves-effect waves-float waves-light" for="change-picture">
+                                <span class="d-none d-sm-block">Change</span>
+                                <input class="form-control" type="file" id="change-picture" hidden="" accept="image/png, image/jpeg, image/jpg">
+                                <span class="d-block d-sm-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit me-0"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                                </span>
+                                </label>
+                                <button class="btn btn-outline-secondary d-none d-sm-block waves-effect  mx-1">Remove</button>
+                                <button class="btn btn-outline-secondary d-block d-sm-none waves-effect ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2 me-0"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                                </button>
+                            </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                          <form class="form form-vertical">
+                        <!-- users edit ends -->
+                        <!-- users edit account form start -->
+                        <form class="form-validate" novalidate="novalidate">
                             <div class="row">
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="ingredient-name">اسم المكون</label>
-                                  <input type="text" class="form-control" id="ingredient-name" placeholder="أدخل اسم المكون">
+                            <div class="col-md-4">
+                                <div class="mb-1">
+                                <label class="form-label" for="username">Username</label>
+                                <input type="text" class="form-control" placeholder="Username" value="eleanor.aguilar" name="username" id="username">
                                 </div>
-                              </div>  
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="ingredient-name">وحدات المكون</label>
-                                  <input type="number" class="form-control" id="ingredient-name" placeholder="أدخل اسم المكون">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-1">
+                                <label class="form-label" for="name">Name</label>
+                                <input type="text" class="form-control" placeholder="Name" value="Eleanor Aguilar" name="name" id="name">
                                 </div>
-                              </div>  
-                              
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="ingredient-name">وحدة الحساب</label>
-                                  <select class="select2 form-control" id="select_type">
-                                    <option value="op1"> خام </option>
-                                    <option value="op2"> جاهز </option>
-                                </select>                                </div>
-                              </div>   
-                                                         
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label for="select_type"> النوع</label>
-                                  <select class="select2 form-control" id="select_type">
-                                    <option value="op1"> خام </option>
-                                    <option value="op2"> جاهز </option>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-1">
+                                <label class="form-label" for="email">E-mail</label>
+                                <input type="email" class="form-control" placeholder="Email" value="eleanor.aguilar@gmail.com" name="email" id="email" aria-invalid="false">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-1">
+                                <label class="form-label" for="status">Status</label>
+                                <select class="select2 form-control" id="status" aria-invalid="false">
+                                    <option>Active</option>
+                                    <option>Blocked</option>
+                                    <option>Deactivated</option>
                                 </select>
                                 </div>
-                              </div>
-                             <div class="col-12">
-                                <button type="reset" class="btn btn-primary mr-1 waves-effect waves-float waves-light">حفظ</button>
-                              </div>
                             </div>
-                          </form>
+                            <div class="col-md-4">
+                                <div class="mb-1">
+                                <label class="form-label" for="role">Role</label>
+                                <select class="select2 form-control" id="role" aria-invalid="false">
+                                    <option>Admin</option>
+                                    <option>User</option>
+                                    <option>Staff</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-1">
+                                <label class="form-label" for="company">Company</label>
+                                <input type="text" class="form-control" value="WinDon Technologies Pvt Ltd" placeholder="Company name" id="company" aria-invalid="false">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive border rounded mt-1">
+                                <h6 class="py-1 mx-1 mb-0 font-medium-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock font-medium-3 me-25"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                    <span class="align-middle">Permission</span>
+                                </h6>
+                                <table class="table table-striped table-borderless">
+                                    <thead class="table-light">
+                                    <tr>
+                                        <th>Module</th>
+                                        <th>Read</th>
+                                        <th>Write</th>
+                                        <th>Create</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Admin</td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="admin-read" checked="">
+                                            <label class="custom-control-label" for="admin-read"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="admin-write">
+                                            <label class="custom-control-label" for="admin-write"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="admin-create">
+                                            <label class="custom-control-label" for="admin-create"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="admin-delete">
+                                            <label class="custom-control-label" for="admin-delete"></label>
+                                        </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Staff</td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="staff-read">
+                                            <label class="custom-control-label" for="staff-read"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="staff-write" checked="">
+                                            <label class="custom-control-label" for="staff-write"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="staff-create">
+                                            <label class="custom-control-label" for="staff-create"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="staff-delete">
+                                            <label class="custom-control-label" for="staff-delete"></label>
+                                        </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Author</td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="author-read" checked="">
+                                            <label class="custom-control-label" for="author-read"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="author-write">
+                                            <label class="custom-control-label" for="author-write"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="author-create" checked="">
+                                            <label class="custom-control-label" for="author-create"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="author-delete">
+                                            <label class="custom-control-label" for="author-delete"></label>
+                                        </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Contributor</td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="contributor-read">
+                                            <label class="custom-control-label" for="contributor-read"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="contributor-write">
+                                            <label class="custom-control-label" for="contributor-write"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="contributor-create">
+                                            <label class="custom-control-label" for="contributor-create"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="contributor-delete">
+                                            <label class="custom-control-label" for="contributor-delete"></label>
+                                        </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>User</td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="user-read">
+                                            <label class="custom-control-label" for="user-read"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="user-create">
+                                            <label class="custom-control-label" for="user-create"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="user-write">
+                                            <label class="custom-control-label" for="user-write"></label>
+                                        </div>
+                                        </td>
+                                        <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="user-delete" checked="">
+                                            <label class="custom-control-label" for="user-delete"></label>
+                                        </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex flex-sm-row flex-column mt-2">
+                                <button type="submit" class="btn btn-primary mb-1 mb-sm-0 me-0 me-sm-1 waves-effect waves-float waves-light">Save Changes</button>
+                                <button type="reset" class="btn btn-outline-secondary waves-effect mx-1">Reset</button>
+                            </div>
+                            </div>
+                        </form>
+                        <!-- users edit account form ends -->
                         </div>
-                      </div>
+                        <!-- Account Tab ends -->
+
+                        <!-- Information Tab starts -->
+                        <div class="tab-pane" id="information" aria-labelledby="information-tab" role="tabpanel">
+                        <!-- users edit Info form start -->
+                        <form class="form-validate" novalidate="novalidate">
+                            <div class="row mt-1">
+                            <div class="col-12">
+                                <h4 class="mb-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user font-medium-4 me-25"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                <span class="align-middle">Personal Information</span>
+                                </h4>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="mb-1">
+                                <label class="form-label" for="birth">Birth date</label>
+                                <input id="birth" type="text" class="form-control birthdate-picker flatpickr-input" name="dob" placeholder="YYYY-MM-DD" readonly="readonly">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="mb-1">
+                                <label class="form-label" for="mobile">Mobile</label>
+                                <input id="mobile" type="text" class="form-control" value="+6595895857" name="phone">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="mb-1">
+                                <label class="form-label" for="website">Website</label>
+                                <input id="website" type="text" class="form-control" placeholder="Website here..." value="https://rowboat.com/insititious/Angelo" name="website">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="mb-1">
+                                <label class="form-label" for="languages">Languages</label>
+                                <select id="languages" class="select2 form-control">
+                                    <option value="English">English</option>
+                                    <option value="Spanish">Spanish</option>
+                                    <option value="French" selected="">French</option>
+                                    <option value="Russian">Russian</option>
+                                    <option value="German">German</option>
+                                    <option value="Arabic">Arabic</option>
+                                    <option value="Sanskrit">Sanskrit</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="mb-1">
+                                <label class="d-block form-label mb-1">Gender</label>
+                                <div class="custom-radio custom-control form-check-inline">
+                                    <input type="radio" id="male" name="gender" class="custom-control-input">
+                                    <label class="custom-control-label" for="male">Male</label>
+                                </div>
+                                <div class="custom-radio custom-control form-check-inline">
+                                    <input type="radio" id="female" name="gender" class="custom-control-input" checked="">
+                                    <label class="custom-control-label" for="female">Female</label>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="mb-1">
+                                <label class="d-block form-label mb-1">Contact Options</label>
+                                <div class="custom-control  custom-checkbox form-check-inline">
+                                    <input type="checkbox" class="custom-control-input" id="email-cb" checked="">
+                                    <label class="custom-control-label" for="email-cb">Email</label>
+                                </div>
+                                <div class="custom-control  custom-checkbox form-check-inline">
+                                    <input type="checkbox" class="custom-control-input" id="message" checked="">
+                                    <label class="custom-control-label" for="message">Message</label>
+                                </div>
+                                <div class="custom-control  custom-checkbox form-check-inline">
+                                    <input type="checkbox" class="custom-control-input" id="phone">
+                                    <label class="custom-control-label" for="phone">Phone</label>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h4 class="mb-1 mt-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin font-medium-4 me-25"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span class="align-middle">Address</span>
+                                </h4>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="mb-1">
+                                <label class="form-label" for="address-1">Address Line 1</label>
+                                <input id="address-1" type="text" class="form-control" value="A-65, Belvedere Streets" name="address">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="mb-1">
+                                <label class="form-label" for="address-2">Address Line 2</label>
+                                <input id="address-2" type="text" class="form-control" placeholder="T-78, Groove Street">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="mb-1">
+                                <label class="form-label" for="postcode">Postcode</label>
+                                <input id="postcode" type="text" class="form-control" placeholder="597626" name="zip">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="mb-1">
+                                <label class="form-label" for="city">City</label>
+                                <input id="city" type="text" class="form-control" value="New York" name="city">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="mb-1">
+                                <label class="form-label" for="state">State</label>
+                                <input id="state" type="text" class="form-control" name="state" placeholder="Manhattan">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="mb-1">
+                                <label class="form-label" for="country">Country</label>
+                                <input id="country" type="text" class="form-control" name="country" placeholder="United States">
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex flex-sm-row flex-column mt-2">
+                                <button type="submit" class="btn btn-primary mb-1 mb-sm-0 me-0 me-sm-1 waves-effect waves-float waves-light">Save Changes</button>
+                                <button type="reset" class="btn btn-outline-secondary waves-effect mx-1">Reset</button>
+                            </div>
+                            </div>
+                        </form>
+                        <!-- users edit Info form ends -->
+                        </div>
+                        <!-- Information Tab ends -->
+
+                    </div>
                     </div>
                 </div>
-
+                </section>
 
             </div>
         </div>
     </div>
     <!-- END: Content-->
 
+
+
+
+
+
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
-   <!-- BEGIN: Footer-->
-   <footer class="footer footer-static footer-light">
-    <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">جميع الحقوق محفوظة &copy; 2021
-        <a class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">شركة طيف</a></span>
-        <span class="float-md-right d-none d-md-block"> بواسطة <img src="../../../app-assets/images/logo.svg" width="100" alt="" srcset=""></span></p>
-</footer>
-<button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
-<!-- END: Footer-->
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">جميع الحقوق محفوظة &copy; 2021
+            <a class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">شركة طيف</a></span>
+            <span class="float-md-right d-none d-md-block"> بواسطة <img src="../../../app-assets/images/logo.svg" width="100" alt="" srcset=""></span></p>
+        <a href="../privacy_policy">سياسة الخصوصية</a>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
 
 
-<!-- BEGIN: Vendor JS-->
-<script src="../../../app-assets/vendors/js/vendors.min.js"></script>
-<!-- BEGIN Vendor JS-->
 
-<!-- BEGIN: Page Vendor JS-->
-<!-- END: Page Vendor JS-->
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
 
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="../../../app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <!-- END: Page Vendor JS-->
 
-<!-- BEGIN: Page Vendor JS-->
-<script src="../../../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
-<script src="../../../app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
-<script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
-<!-- END: Page Vendor JS-->
+    <!-- BEGIN: Theme JS-->
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <script src="../../../app-assets/js/scripts/customizer.min.js"></script>
+    <!-- END: Theme JS-->
 
-<!-- BEGIN: Theme JS-->
-<script src="../../../app-assets/js/core/app-menu.js"></script>
-<script src="../../../app-assets/js/core/app.js"></script>
-<!-- END: Theme JS-->
-
-<!-- BEGIN: Page JS-->
-<script src="../../../app-assets/js/scripts/tables/table-datatables-basic.js"></script>
-
-<!-- BEGIN: Page JS-->
-<!-- END: Page JS-->
-
-<script>
-    $(window).on('load', function() {
-        if (feather) {
-            feather.replace({
-                width: 14,
-                height: 14
-            });
-        }
-    })
-</script>
+    <!-- BEGIN: Page JS-->
+    <script src="../../../app-assets/js/scripts/pages/app-user-view.min.js"></script>
+    <script src="../../../app-assets/js/scripts/components/components-navs.min.js"></script>
+    <!-- END: Page JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
 </body>
 <!-- END: Body-->
 

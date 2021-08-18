@@ -238,7 +238,7 @@
                     <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
-                    <a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i> الملف الشخصي</a><a class="dropdown-item" href="page-account-settings.html"><i class="mr-50" data-feather="settings"></i> Settings</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> Logout</a>
+                    <a class="dropdown-item" href="../user/page-profile.html"><i class="mr-50" data-feather="user"></i> الملف الشخصي</a><a class="dropdown-item" href="../user/page-system-updates.html"><i class="mr-50" data-feather="settings"></i> Settings</a><a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> Logout</a>
                 </div>
             </li>
             </ul>
@@ -419,11 +419,6 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="d-flex align-items-center"href="../products/ingredients.html">
-                        <i class="fas fa-seedling"></i><span class="menu-title text-truncate" data-i18n="Dashboards">المكونات</span>
-                    </a>
-                </li>
 
                 <li class="nav-item">
                     <a class="d-flex align-items-center" href="../products/extra.html">
@@ -669,10 +664,10 @@
                                     <div class="tab-content" id="myTabContent">
                                         <div class="tab-pane fade show active" id="coupon-data" role="tabpanel" aria-labelledby="coupon-data-tab">
                                             <div class="row">
-
+                                                
                                                 <div class="col-12">
                                                     <div class="form-group">
-                                                    <label for="coupon-name">اسم المجموعة</label>
+                                                    <label for="coupon-name">اسم الكوبون</label>
                                                     <input type="text" name="" class="form-control" id="coupon-name" placeholder="أدخل اسم المجموعة">
                                                     </div>
                                                 </div>
@@ -685,38 +680,53 @@
                                                 </div>
 
                                                 <div class="col-12">
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            <div class="form-group">
-                                                                <label for="discount-value">قيمة الخصم</label>
-                                                                <input type="text" name="" class="form-control" id="discount-value">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-6">
-                                                            <div class="form-group">
-                                                                <label for="minimum-purchases">الحد الادنى للمشتريات</label>
-                                                                <input type="number" name="" class="form-control" id="minimum-purchases">
-                                                            </div>
+                                                    <div class="form-group">
+                                                        <label for="discount-type">  نوع الخصم   </label>
+                                                        <select class="select2 form-control" id="discount-type">
+                                                            <option value="op1">نسبة </option>
+                                                            <option value="op2">ثابت</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                   
+                                                <div class="col-12" id='percent'>
+                                                    <div class="form-group">
+                                                        <label for="discount-value"> قيمة الخصم</label>
+                                                        <div class="input-group">
+                                                            <input type="number" class="form-control" aria-describedby="value">
+                                                            <span class="input-group-text" id="discount-value">%</span>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
-                                                <div class="col-12">
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            <div class="form-group">
-                                                                <label for="coupon-usage">مرات استخدام الكوبون</label>
-                                                                <input type="number" name="" class="form-control" id="coupon-usage">
-                                                            </div>
+                                                <div class="col-12"id='fixed'>
+                                                    <div class="form-group">
+                                                        <label for="discount-value2">قيمة الخصم</label>
+                                                        <div class="input-group">
+                                                            <input type="number" class="form-control" aria-describedby="value">
+                                                            <span class="input-group-text" id="discount-value">SAR</span>
                                                         </div>
+                                                    </div>
+                                                </div>
 
-                                                        <div class="col-6">
-                                                            <div class="form-group">
-                                                                <label for="customer-usage">مرات استخدام الكوبون للعميل</label>
-                                                                <input type="number" name="" class="form-control" id="customer-usage">
-                                                            </div>
-                                                        </div>
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label for="minimum-purchases">الحد الادنى للمشتريات</label>
+                                                        <input type="number" name="" class="form-control" id="minimum-purchases">
+                                                    </div>
+                                                </div>
+                                                    
+                                                
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="coupon-usage">مرات استخدام الكوبون</label>
+                                                        <input type="number" name="" class="form-control" id="coupon-usage">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="customer-usage">مرات استخدام الكوبون للعميل</label>
+                                                        <input type="number" name="" class="form-control" id="customer-usage">
                                                     </div>
                                                 </div>
 
@@ -743,7 +753,7 @@
                                                     <div class="form-group">
                                                         <div class="custom-control custom-switch my-1">
                                                             <input type="checkbox" class="custom-control-input" id="free-shipping">
-                                                            <label class="custom-control-label" for="free-shipping">مع الشحن المجاني؟</label>
+                                                            <label class="custom-control-label" for="free-shipping">مع التوصيل؟</label>
                                                         </div>
                                                         <div class="custom-control custom-switch">
                                                             <input type="checkbox" class="custom-control-input" id="discounted-Products">
@@ -760,14 +770,14 @@
                                                         </div>
                                                         <div class="col-2">
                                                             <div class="custom-control custom-switch">
-                                                                <input type="checkbox" class="custom-control-input" id="marketing-coupon">
-                                                                <label class="custom-control-label" for="marketing-coupon"></label>
+                                                                <input type="checkbox" class="custom-control-input" id="activity1"onchange='activity(1)'>
+                                                                <label class="custom-control-label" for="activity1"></label>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-12 marketing-coupon-data">
+                                                <div class="col-12 "id='activ1'>
                                                     <div class='row'>
                                                         <div class="col-12">
                                                             <div class="form-group">
@@ -781,7 +791,7 @@
                                                                 <label for="commission-type"> نوع العمولة للمسوق</label>
                                                                 <select class="select2 form-control" id="commission-type">
                                                                     <option value="type">نسبة </option>
-                                                                    <option value="type">قيمة</option>
+                                                                    <option value="type">ثابت</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -855,6 +865,28 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 mt-2">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6>تفعيل الخصم لطلبات الفرع</h6>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <div class="custom-control custom-switch">
+                                                                <input type="checkbox" class="custom-control-input" id="activity2" onchange="activity(2)">
+                                                                <label class="custom-control-label" for="activity2"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 "id='activ2'>
+                                                    <label class="form-label" for="select-branch"> الفرع</label>
+                                                    <div class="position-relative" >
+                                                        <select class="select2 form-select select2-hidden-accessible" id="select-branch" multiple="" tabindex="-1" aria-hidden="true">
+                                                            <option value="op1"> الفرع 1 </option>
+                                                            <option value="op2"> الفرع 2 </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-2">
                                                     <button type="button" class="prevBtn btn btn-light mr-1 waves-effect waves-float waves-light ">السابق</button>
                                                     <button type="button" class="nextBtn btn btn-primary mr-1 waves-effect waves-float waves-light ">التالي</button>
                                                 </div>
@@ -918,6 +950,7 @@
     <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">جميع الحقوق محفوظة &copy; 2021
         <a class="ml-25" href="https://1.envato.market/pixinvent_portfolio" target="_blank">شركة طيف</a></span>
         <span class="float-md-right d-none d-md-block"> بواسطة <img src="../../../app-assets/images/logo.svg" width="100" alt="" srcset=""></span></p>
+        <a href="../privacy_policy">سياسة الخصوصية</a>
 </footer>
 <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
 <!-- END: Footer-->
@@ -956,19 +989,16 @@
     })
 </script>
 <script>
-    marketing_coupon()
-    $('#marketing-coupon').on('change', marketing_coupon );
-    
-
-    function marketing_coupon() {
-        if(this.checked) {
-            $('.marketing-coupon-data').show();
+    function activity(index) {
+        if($('#activity'+index).is(":checked")) {
+            $('#activ'+index ).show();
 
         }else{
-            $('.marketing-coupon-data').hide();
+            $('#activ'+index ).hide();
         }
     }
-
+    activity(1);
+    activity(2);
     $('.nextBtn').on('click' ,function(){
         $('.nav-tabs .active').parent().next('li').find('button').trigger('click');
     })
@@ -976,6 +1006,21 @@
     $('.prevBtn').on('click' ,function(){
         $('.nav-tabs .active').parent().prev('li').find('button').trigger('click');
     })
+
+    $('#discount-type').on('change', function() {
+        if(this.value == 'op1'){
+            $('#percent').show();
+            $('#fixed').hide();
+        }else{
+            $('#percent').hide();
+            $('#fixed').show();
+
+        }
+    });
+$('.datepicker').pickadate()
+
+
+    
 </script>
 </body>
 <!-- END: Body-->
