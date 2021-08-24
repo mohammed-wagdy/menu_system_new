@@ -667,8 +667,9 @@
                     </div>
                     <!-- Wizard ends -->
 
-                    <div class="bs-stepper-content">
-                        <!-- Checkout Place order starts -->
+                    <div class="bs-stepper-content mt-3">
+                      <form action="">
+                            <!-- Checkout Place order starts -->
                         <div id="step-address" class="content">
 
 
@@ -1371,15 +1372,14 @@
                             </div>
                             <!-- Checkout Place order Ends -->
                         </div>
+                        
                         <!-- Checkout Customer Address Starts -->
                         <div id="step-cart" class="content"  >
-                            <form id="checkout-address" class="list-view product-checkout">
                                 <div class="card">
                                     <div class="card-header">
                                       <h4 class="card-title">يمكنك الأن إضافة طلب جديد</h4>
                                     </div>
                                     <div class="card-body">
-                                      <form class="form form-vertical">
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="form-group">
@@ -1446,12 +1446,10 @@
                                           </div>
                                         
                                         </div>
-                                      </form>
                                     </div>
                                   </div>
 
                           
-                            </form>
                         </div>
                         <!-- Checkout Customer Address Ends -->
                         <!-- Checkout checkout Starts -->
@@ -1715,114 +1713,113 @@
                         <!-- Checkout checkout Ends -->
                         <!-- Checkout Payment Starts -->
                         <div id="step-payment" class="content">
-                            <form id="checkout-payment" class="list-view product-checkout" onsubmit="return false;">
-                                <div class="payment-type">
-                                    <div class="card">
-                                        <div class="card-header flex-column align-items-start">
-                                            <h4 class="card-title">خيارات الدفع</h4>
-                                            <p class="card-text text-muted mt-25">أختيار طريقة من طرق الدفع</p>
-                                        </div>
-                                        <div class="card-body">
+                            <div class="payment-type">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start">
+                                        <h4 class="card-title">خيارات الدفع</h4>
+                                        <p class="card-text text-muted mt-25">أختيار طريقة من طرق الدفع</p>
+                                    </div>
+                                    <div class="card-body">
 
-                                            <ul class="other-payment-options list-unstyled">
-                                                <li class="py-50">
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customColorRadio6" onclick="javascript:yesnoCheck();" name="paymentOptions" class="custom-control-input" />
-                                                        
-                                                        <label class="custom-control-label" for="customColorRadio6"> بطاقة الائتمان / الخصم / الصراف الآلي </label>
-                                                    </div>
-                                                </li>
-
-                                                <div class="mb-1" id="ifYes" style="display:none">
-                                                    <input type="text" id="first-name-column" class="form-control" placeholder="أدخل رقم عملية الدفع" name="fname-column">
-                                                  </div>
-                                                <!-- <li class="py-50">
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customColorRadio3" name="paymentOptions" class="custom-control-input" />
-                                                        <label class="custom-control-label" for="customColorRadio3"> البنك الألكتروني </label>
-                                                    </div>
-                                                </li>
-                                                <li class="py-50">
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customColorRadio4" name="paymentOptions" class="custom-control-input" />
-                                                        <label class="custom-control-label" for="customColorRadio4"> التقسيط </label>
-                                                    </div>
-                                                </li> -->
-                                                <li class="py-50">
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customColorRadio5" onclick="javascript:yesnoCheck();" name="paymentOptions" class="custom-control-input" />
-                                                        <label class="custom-control-label" for="customColorRadio5"> الدفع عند الأستلام </label>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <hr class="my-2" />
-                                          <div class="col-12">
-                                            <div class="form-group">
-                                              <div class="demo-inline-spacing">
-                                                <div class="custom-control custom-switch custom-control-inline">
-                                                  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                                  <label class="custom-control-label" for="customSwitch1">إضافة خصم</label>
+                                        <ul class="other-payment-options list-unstyled">
+                                            <li class="py-50">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customColorRadio6" onclick="javascript:yesnoCheck();" name="paymentOptions" class="custom-control-input" />
+                                                    
+                                                    <label class="custom-control-label" for="customColorRadio6"> بطاقة الائتمان / الخصم / الصراف الآلي </label>
                                                 </div>
+                                            </li>
+
+                                            <div class="mb-1" id="ifYes" style="display:none">
+                                                <input type="text" id="first-name-column" class="form-control" placeholder="أدخل رقم عملية الدفع" name="fname-column">
                                               </div>
+                                            <!-- <li class="py-50">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customColorRadio3" name="paymentOptions" class="custom-control-input" />
+                                                    <label class="custom-control-label" for="customColorRadio3"> البنك الألكتروني </label>
+                                                </div>
+                                            </li>
+                                            <li class="py-50">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customColorRadio4" name="paymentOptions" class="custom-control-input" />
+                                                    <label class="custom-control-label" for="customColorRadio4"> التقسيط </label>
+                                                </div>
+                                            </li> -->
+                                            <li class="py-50">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customColorRadio5" onclick="javascript:yesnoCheck();" name="paymentOptions" class="custom-control-input" />
+                                                    <label class="custom-control-label" for="customColorRadio5"> الدفع عند الأستلام </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <hr class="my-2" />
+                                      <div class="col-12">
+                                        <div class="form-group">
+                                          <div class="demo-inline-spacing">
+                                            <div class="custom-control custom-switch custom-control-inline">
+                                              <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                              <label class="custom-control-label" for="customSwitch1">إضافة خصم</label>
                                             </div>
                                           </div>
-                                          <div class="col-12">
-                                            <div class="form-group">
-                                              <label for="password-vertical">نوع الخصم</label>
-                                              <select class="select2 form-control" id="default-select_2">
-                                                <option value="square">كود خصم</option>
-                                                <option value="rectangle">خصم خاص</option>
-                                            </select>
-                                            </div>
-                                          </div>
-                                      
-                                          <div class="col-12">
-                                            <div class="form-group">
-                                              <label for="email-id-vertical">القسيمة الشرائية</label>
-                                              <input type="text" class="form-control" id="basicInput" placeholder="أدخل القسيمة">
-                                            </div>
-                                          </div>
-                                           
-                                            
-                                            <hr class="my-2" />
-                                            <div class="gift-card mb-25">
-                                                <button type="button" class="btn btn-primary btn-cvv ml-0 ml-sm-1 mb-50 waves-effect waves-float waves-light">إنهاء الطلب</button>
-                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-12">
+                                        <div class="form-group">
+                                          <label for="password-vertical">نوع الخصم</label>
+                                          <select class="select2 form-control" id="default-select_2">
+                                            <option value="square">كود خصم</option>
+                                            <option value="rectangle">خصم خاص</option>
+                                        </select>
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="col-12">
+                                        <div class="form-group">
+                                          <label for="email-id-vertical">القسيمة الشرائية</label>
+                                          <input type="text" class="form-control" id="basicInput" placeholder="أدخل القسيمة">
+                                        </div>
+                                      </div>
+                                       
+                                        
+                                        <hr class="my-2" />
+                                        <div class="gift-card mb-25">
+                                            <button type="button" class="btn btn-primary btn-cvv ml-0 ml-sm-1 mb-50 waves-effect waves-float waves-light">إنهاء الطلب</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="amount-payable checkout-options">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4 class="card-title">تفاصيل المبلغ</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <ul class="list-unstyled price-details">
-                                                <li class="price-detail">
-                                                    <div class="details-title">3 منتجات</div>
-                                                    <div class="detail-amt">
-                                                        <strong>$699.30</strong>
-                                                    </div>
-                                                </li>
-                                                <li class="price-detail">
-                                                    <div class="details-title">رسوم التوصيل</div>
-                                                    <div class="detail-amt discount-amt text-success">Free</div>
-                                                </li>
-                                            </ul>
-                                            <hr />
-                                            <ul class="list-unstyled price-details">
-                                                <li class="price-detail">
-                                                    <div class="details-title">المبلغ المستحق</div>
-                                                    <div class="detail-amt font-weight-bolder">$699.30</div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                            </div>
+                            <div class="amount-payable checkout-options">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">تفاصيل المبلغ</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-unstyled price-details">
+                                            <li class="price-detail">
+                                                <div class="details-title">3 منتجات</div>
+                                                <div class="detail-amt">
+                                                    <strong>$699.30</strong>
+                                                </div>
+                                            </li>
+                                            <li class="price-detail">
+                                                <div class="details-title">رسوم التوصيل</div>
+                                                <div class="detail-amt discount-amt text-success">Free</div>
+                                            </li>
+                                        </ul>
+                                        <hr />
+                                        <ul class="list-unstyled price-details">
+                                            <li class="price-detail">
+                                                <div class="details-title">المبلغ المستحق</div>
+                                                <div class="detail-amt font-weight-bolder">$699.30</div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                         <!-- Checkout Payment Ends -->
                         <!-- </div> -->
+                      </form>
                     </div>
                 </div>
 

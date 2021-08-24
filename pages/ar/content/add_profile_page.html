@@ -17,7 +17,7 @@
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
     <!-- END: Vendor CSS-->
-
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/editors/quill/katex.min.css">
@@ -667,22 +667,8 @@
                                         <div class="col-12">
                                             <div class="mb-2">
                                             <label class="form-label">محتوى الصفحة</label>
-                                            <div id="blog-editor-wrapper">
-                                                <div id="blog-editor-container">
-                                                        <div class="editor ql-container ql-snow"style="min-height:300px;">
-                                                        <div class="ql-editor h-25" data-gramm="false" contenteditable="true">
-                                                            <p></p>
-                                                        </div>
-                                                        <div class="ql-clipboard" contenteditable="true" tabindex="-1"></div>
-                                                            <div class="ql-tooltip ql-hidden">
-                                                                <a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a>
-                                                                <input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL">
-                                                                <a class="ql-action"></a><a class="ql-remove"></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <textarea name="editor1"></textarea>                                           
+ </div>
                                         </div>
 
                                         <div class="col-12">
@@ -737,7 +723,9 @@
 <script src="../../../app-assets/vendors/js/editors/quill/highlight.min.js"></script>
 <script src="../../../app-assets/vendors/js/editors/quill/quill.min.js"></script>
 <!-- END: Page Vendor JS-->
-
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
 <!-- BEGIN: Page Vendor JS-->
 <script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
 <!-- END: Page Vendor JS-->

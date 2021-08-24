@@ -18,7 +18,7 @@
           rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
     <link rel="stylesheet" href="node_modules/intl-tel-input/src/css/intlTelInput.scss">
-
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
     <!-- END: Vendor CSS-->
@@ -771,8 +771,8 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="basicInput1">النص</label>
-                                        <div class="ql-editor ql-container ql-snow" id='editor'></div>
+                                        <label">النص</label>
+                                       <textarea name="editor1"></textarea>
                                     </div>
                                 </div>
                                 
@@ -858,7 +858,9 @@
 <script src="../../../app-assets/js/core/app-menu.js"></script>
 <script src="../../../app-assets/js/core/app.js"></script>
 <!-- END: Theme JS-->
-
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
 <!-- BEGIN: Page JS-->
 <script src="../../../app-assets/js/scripts/forms/form-wizard.js"></script>
 <!-- END: Page JS-->

@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
-
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
     <!-- END: Vendor CSS-->
@@ -669,21 +669,7 @@
                                         <div class="col-12">
                                             <div class="mb-2">
                                                 <label class="form-label">محتوى التدوينة</label>
-                                                <div id="blog-editor-wrapper">
-                                                    <div id="blog-editor-container">
-                                                        <div class="editor ql-container ql-snow"style="min-height:300px;">
-                                                            <div class="ql-editor" data-gramm="false" contenteditable="true">
-                                                                <p></p>
-                                                            </div>
-                                                            <div class="ql-clipboard" contenteditable="true" tabindex="-1"></div>
-                                                            <div class="ql-tooltip ql-hidden">
-                                                                <a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a>
-                                                                <input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL">
-                                                                <a class="ql-action"></a><a class="ql-remove"></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <textarea name="editor1"></textarea>
                                             </div>
                                         </div>
 
@@ -781,7 +767,9 @@
 <script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
  <script src="../../../app-assets/vendors/js/editors/quill/quill.min.js"></script>
 <!-- END: Page Vendor JS-->
-
+<script>
+    CKEDITOR.replace( 'editor1' );
+</script>
 <!-- BEGIN: Page Vendor JS-->
 <script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
 <!-- END: Page Vendor JS-->
